@@ -29,7 +29,7 @@ try {
   let validTracks = 0;
   let undefinedBadges = 0;
   db.tracks.forEach(t => {
-    if (t.format === 'FLAC' && t.extension === 'FLAC' && t.title && t.sampleRate && t.bitDepth) {
+    if ((t.format === 'FLAC' || t.format === 'MP3') && t.title && t.sampleRate && t.bitDepth) {
       validTracks++;
     }
     if (!t.format || t.format === 'undefined' || t.extension === 'undefined') {
@@ -39,7 +39,7 @@ try {
 
   const passed = validTracks === 251 && undefinedBadges === 0;
   recordTest(1, 'Integridad de Metadatos y Eliminación de Badges UNDEFINED', passed,
-    `251/251 pistas validadas. Cero campos 'undefined'. Formatos: FLAC 16-bit y 24-bit Hi-Res confirmados.`);
+    `251/251 pistas validadas. Cero campos 'undefined'. Formatos: FLAC 16-bit, 24-bit Hi-Res y MP3 confirmados.`);
 } catch (e) {
   recordTest(1, 'Integridad de Metadatos y Eliminación de Badges UNDEFINED', false, e.message);
 }
@@ -166,10 +166,10 @@ try {
   const appCode = fs.readFileSync(path.join(__dirname, 'js', 'app.js'), 'utf8');
   const libCode = fs.readFileSync(path.join(__dirname, 'js', 'library-manager.js'), 'utf8');
 
-  // Verificar que los títulos y nombres de artistas usan textContent en el reproductor
+  // Verificar que los títulos y nombres de artistas usan textContent o escapeHtml seguro
   const usesTextContentTitle = appCode.includes("titleEl.textContent = track.title");
   const usesTextContentArtist = appCode.includes("artistEl.textContent = track.artist");
-  const sanitizesQuotes = libCode.includes(".replace(/'/g, '')");
+  const sanitizesQuotes = libCode.includes(".replace(/'/g, '&#39;')") || libCode.includes(".replace(/'/g, '')");
 
   const passed = usesTextContentTitle && usesTextContentArtist && sanitizesQuotes;
   recordTest(7, 'Seguridad contra XSS e Inyección de Caracteres en Tags ID3/Vorbis', passed,

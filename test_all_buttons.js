@@ -258,14 +258,15 @@ const buttonTests = [
     detail: 'Segmenta la vista entre Todas las pistas, únicamente FLAC Hi-Res o Favoritos.'
   },
   {
-    id: 'sidebar-btn-link-drive',
-    name: 'Botón Vincular Carpeta Drive / Modal',
+    id: 'mobile-now-playing-controls',
+    name: 'Modal Móvil Now Playing y Controles en Segundo Plano (MediaSession)',
     test: () => {
-      return htmlContent.includes('id="sidebar-btn-link-drive"') &&
-             htmlContent.includes('id="btn-modal-link-drive"') &&
-             libJsContent.includes('openDirectoryPicker');
+      return htmlContent.includes('id="mobile-now-playing-modal"') &&
+             htmlContent.includes('openMobilePlayer()') &&
+             appJsContent.includes('setupMediaSession') &&
+             appJsContent.includes('navigator.mediaSession.setActionHandler');
     },
-    detail: 'Invoca la File System Access API para conectar G:\\Mi unidad\\MÚSICA FLAC ULICITO.'
+    detail: 'Pantalla completa deslizable en Xiaomi 15 y controles nativos en pantalla de bloqueo (pantalla apagada).'
   },
   {
     id: 'track-row-click',

@@ -1,8 +1,8 @@
 /**
  * Powerify: Spotify UI x Poweramp Audiophile Engine
  * Master Coordinator: Web Audio API Float32, Spotify Track Table,
- * Fisher-Yates Shuffle Queue, 3-State Repeat Mode, Right Sidebar Views,
- * Poweramp 10-Band EQ Studio, y Live Synced Karaoke.
+ * Background Audio con Pantalla Apagada en Celulares (Xiaomi 15 / Android),
+ * MediaSession API Completa, Mobile Now Playing Modal y Ecualizador de 10 Bandas.
  */
 
 document.addEventListener('DOMContentLoaded', async () => {
@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   const eqCurveCanvas = document.getElementById('eq-curve-canvas');
   const lyricsContainer = document.getElementById('lyrics-display');
   const rightSidebarLyrics = document.getElementById('sidebar-live-lyrics-preview');
+  const mobileLyricsPreview = document.getElementById('mobile-live-lyrics-preview');
 
   // Inicializar subsistemas
   const audioEngine = new AudioEngine(audioElement);
@@ -32,7 +33,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   let isSeeking = false;
   let currentRightSidebarTab = 'spotify'; // 'spotify' | 'poweramp'
 
-  // --- Desbloqueo del AudioContext tras primer gesto ---
+  // --- Desbloqueo del AudioContext y Asegurar Segundo Plano ---
   const unlockAudio = async () => {
     if (!audioEngine.isInitialized) {
       await audioEngine.init();
@@ -44,18 +45,26 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
   };
 
-  // --- Carga y Reproducción de una Pista ---
+  // Resistencia a la suspensión del sistema operativo (Xiaomi 15 / Android Screen Off)
+  document.addEventListener('visibilitychange', () => {
+    if (!document.hidden && isPlaying) {
+      if (audioEngine.audioCtx && audioEngine.audioCtx.state === 'suspended') {
+        audioEngine.audioCtx.resume().catch(() => {});
+      }
+    }
+  });
+
+  // --- Carga y Reproducción de una Pista con Soporte de Pantalla Apagada ---
   const loadTrack = async (track) => {
     if (!track) return;
 
     await unlockAudio();
-    audioEngine.stopSynthesizedDemo();
 
     audioElement.src = track.streamUrl || '';
     audioElement.playbackRate = currentSpeed;
     audioElement.loop = (repeatMode === 'one');
 
-    // Actualizar UI del Reproductor Inferior, Banner Hero y Panel Derecho
+    // Actualizar UI del Reproductor Inferior, Banner Hero, Panel Derecho y Modal Móvil
     updateNowPlayingInfo(track);
 
     // Cargar letras sincronizadas
@@ -64,28 +73,92 @@ document.addEventListener('DOMContentLoaded', async () => {
     // Actualizar estados de botones de favorito
     updateFavButton(track.id);
 
-    // MediaSession API para integración con pantalla de bloqueo y teclado multimedia
-    if ('mediaSession' in navigator) {
-      navigator.mediaSession.metadata = new MediaMetadata({
-        title: track.title,
-        artist: track.artist,
-        album: track.album || 'MÚSICA ULICITO',
-        artwork: [{ src: track.coverUrl || 'assets/covers/cover_1.jpg', sizes: '512x512', type: 'image/jpeg' }]
-      });
-    }
+    // Configurar MediaSession API para Controles Nativos en Pantalla de Bloqueo
+    setupMediaSession(track);
 
     try {
       await audioElement.play();
       isPlaying = true;
       updatePlayPauseUI(true);
+      if ('mediaSession' in navigator) {
+        navigator.mediaSession.playbackState = 'playing';
+      }
     } catch (e) {
-      console.warn('Reproducción en espera o error de red:', e);
+      console.warn('Reproducción en espera:', e);
       isPlaying = false;
       updatePlayPauseUI(false);
     }
   };
 
-  // Actualiza títulos, carátulas y fondos dinámicos
+  // --- Integración Robusta de MediaSession API para Xiaomi 15 (Pantalla Apagada) ---
+  const setupMediaSession = (track) => {
+    if (!('mediaSession' in navigator)) return;
+
+    const coverUrl = track.coverUrl || `assets/covers/cover_${((track.index || 0) % 241) + 1}.jpg`;
+    const absoluteCoverUrl = new URL(coverUrl, window.location.href).href;
+
+    navigator.mediaSession.metadata = new MediaMetadata({
+      title: track.title || 'Música Ulicito',
+      artist: track.artist || 'Ulianov Cuba',
+      album: track.album || 'MÚSICA ULICITO',
+      artwork: [
+        { src: absoluteCoverUrl, sizes: '96x96', type: 'image/jpeg' },
+        { src: absoluteCoverUrl, sizes: '128x128', type: 'image/jpeg' },
+        { src: absoluteCoverUrl, sizes: '192x192', type: 'image/jpeg' },
+        { src: absoluteCoverUrl, sizes: '256x256', type: 'image/jpeg' },
+        { src: absoluteCoverUrl, sizes: '384x384', type: 'image/jpeg' },
+        { src: absoluteCoverUrl, sizes: '512x512', type: 'image/jpeg' }
+      ]
+    });
+
+    navigator.mediaSession.setActionHandler('play', () => {
+      audioElement.play().catch(() => {});
+      isPlaying = true;
+      updatePlayPauseUI(true);
+      navigator.mediaSession.playbackState = 'playing';
+    });
+
+    navigator.mediaSession.setActionHandler('pause', () => {
+      audioElement.pause();
+      isPlaying = false;
+      updatePlayPauseUI(false);
+      navigator.mediaSession.playbackState = 'paused';
+    });
+
+    navigator.mediaSession.setActionHandler('previoustrack', () => {
+      playPrev();
+    });
+
+    navigator.mediaSession.setActionHandler('nexttrack', () => {
+      playNext();
+    });
+
+    navigator.mediaSession.setActionHandler('seekto', (details) => {
+      if (details.seekTime && audioElement.duration) {
+        audioElement.currentTime = details.seekTime;
+      }
+    });
+
+    navigator.mediaSession.setActionHandler('seekbackward', (details) => {
+      const skip = details.seekOffset || 10;
+      audioElement.currentTime = Math.max(audioElement.currentTime - skip, 0);
+    });
+
+    navigator.mediaSession.setActionHandler('seekforward', (details) => {
+      const skip = details.seekOffset || 10;
+      audioElement.currentTime = Math.min(audioElement.currentTime + skip, audioElement.duration || 0);
+    });
+
+    navigator.mediaSession.setActionHandler('stop', () => {
+      audioElement.pause();
+      audioElement.currentTime = 0;
+      isPlaying = false;
+      updatePlayPauseUI(false);
+      navigator.mediaSession.playbackState = 'none';
+    });
+  };
+
+  // Actualiza títulos, carátulas y fondos dinámicos (Desktop y Móvil)
   const updateNowPlayingInfo = (track) => {
     const titleEl = document.getElementById('player-track-title');
     const artistEl = document.getElementById('player-track-artist');
@@ -93,17 +166,23 @@ document.addEventListener('DOMContentLoaded', async () => {
     const rightCover = document.getElementById('right-panel-cover');
     const rightTitle = document.getElementById('right-panel-title');
     const rightArtist = document.getElementById('right-panel-artist');
+    const mobileCover = document.getElementById('mobile-player-cover');
+    const mobileTitle = document.getElementById('mobile-player-title');
+    const mobileArtist = document.getElementById('mobile-player-artist');
 
     if (titleEl) titleEl.textContent = track.title;
     if (artistEl) artistEl.textContent = track.artist;
     if (rightTitle) rightTitle.textContent = track.title;
     if (rightArtist) rightArtist.textContent = track.artist;
+    if (mobileTitle) mobileTitle.textContent = track.title;
+    if (mobileArtist) mobileArtist.textContent = track.artist;
 
     const coverUrl = track.coverUrl || `assets/covers/cover_${((track.index || 0) % 241) + 1}.jpg`;
     if (coverImg) coverImg.src = coverUrl;
     if (rightCover) rightCover.src = coverUrl;
+    if (mobileCover) mobileCover.src = coverUrl;
 
-    // Extraer colores reactivos para iluminar el banner y el fondo
+    // Colores reactivos suaves para el banner y fondo ambiental
     window.ColorExtractor.extractColors(coverUrl).then(colors => {
       visualizer.setAccentColor(colors.accent, colors.glow);
       const heroBanner = document.querySelector('.spotify-hero-banner');
@@ -115,18 +194,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     updateAudiophileBadge(track);
   };
 
-  // Manejo de errores de carga de audio (Fallback automático a demo sintetizado)
-  audioElement.addEventListener('error', (e) => {
-    console.warn('[AudioElement] Archivo no accesible directamente en red estática:', e);
-    audioEngine.startSynthesizedDemo();
-    isPlaying = true;
-    updatePlayPauseUI(true);
-
-    const modal = document.getElementById('drive-guide-modal');
-    if (modal) modal.classList.remove('hidden');
-  });
-
-  // Badge audiófilo con especificaciones de hardware y pista
   const updateAudiophileBadge = (track) => {
     const badgeEl = document.getElementById('audiophile-specs-badge');
     if (!badgeEl) return;
@@ -161,6 +228,8 @@ document.addEventListener('DOMContentLoaded', async () => {
   const updatePlayPauseUI = (playing) => {
     const btnBar = document.getElementById('btn-play-pause');
     const btnHero = document.getElementById('btn-hero-play');
+    const btnMobileMini = document.getElementById('mobile-mini-btn-play');
+    const btnMobileModal = document.getElementById('mobile-btn-play-pause');
 
     const barIcon = playing
       ? `<i data-lucide="pause" class="w-5 h-5 text-black fill-current"></i>`
@@ -170,8 +239,14 @@ document.addEventListener('DOMContentLoaded', async () => {
       ? `<i data-lucide="pause" class="w-7 h-7 text-black fill-current"></i>`
       : `<i data-lucide="play" class="w-7 h-7 text-black fill-current translate-x-0.5"></i>`;
 
+    const mobileModalIcon = playing
+      ? `<i data-lucide="pause" class="w-7 h-7 text-black fill-current"></i>`
+      : `<i data-lucide="play" class="w-7 h-7 text-black fill-current translate-x-0.5"></i>`;
+
     if (btnBar) btnBar.innerHTML = barIcon;
     if (btnHero) btnHero.innerHTML = heroIcon;
+    if (btnMobileMini) btnMobileMini.innerHTML = playing ? `<i data-lucide="pause" class="w-4 h-4 fill-black"></i>` : `<i data-lucide="play" class="w-4 h-4 fill-black translate-x-0.5"></i>`;
+    if (btnMobileModal) btnMobileModal.innerHTML = mobileModalIcon;
 
     if (window.lucide) window.lucide.createIcons();
     libraryManager.renderTrackList();
@@ -180,6 +255,8 @@ document.addEventListener('DOMContentLoaded', async () => {
   const updateFavButton = (trackId) => {
     const btnBar = document.getElementById('player-btn-fav');
     const rightFav = document.getElementById('right-panel-fav');
+    const mobileMiniFav = document.getElementById('mobile-mini-btn-fav');
+    const mobileModalFav = document.getElementById('mobile-modal-fav');
     const isFav = libraryManager.isFavorite(trackId);
 
     const barIcon = `<i data-lucide="heart" class="w-5 h-5 ${isFav ? 'fill-[#1ed760] text-[#1ed760]' : 'text-slate-400'}"></i>`;
@@ -187,6 +264,8 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     if (btnBar) btnBar.innerHTML = barIcon;
     if (rightFav) rightFav.innerHTML = rightIcon;
+    if (mobileMiniFav) mobileMiniFav.innerHTML = `<i data-lucide="heart" class="w-5 h-5 ${isFav ? 'fill-[#1ed760] text-[#1ed760]' : 'text-slate-400'}"></i>`;
+    if (mobileModalFav) mobileModalFav.innerHTML = `<i data-lucide="heart" class="w-7 h-7 ${isFav ? 'fill-[#1ed760] text-[#1ed760]' : 'text-slate-400'}"></i>`;
 
     if (window.lucide) window.lucide.createIcons();
   };
@@ -194,13 +273,6 @@ document.addEventListener('DOMContentLoaded', async () => {
   // --- Controles de Reproducción ---
   const togglePlayPause = async () => {
     await unlockAudio();
-
-    if (audioEngine.demoInterval) {
-      audioEngine.stopSynthesizedDemo();
-      isPlaying = false;
-      updatePlayPauseUI(false);
-      return;
-    }
 
     if (audioElement.paused) {
       if (!audioElement.src && libraryManager.tracks.length > 0) {
@@ -211,15 +283,15 @@ document.addEventListener('DOMContentLoaded', async () => {
         await audioElement.play();
         isPlaying = true;
         updatePlayPauseUI(true);
+        if ('mediaSession' in navigator) navigator.mediaSession.playbackState = 'playing';
       } catch (err) {
-        audioEngine.startSynthesizedDemo();
-        isPlaying = true;
-        updatePlayPauseUI(true);
+        console.warn('Error al reanudar:', err);
       }
     } else {
       audioElement.pause();
       isPlaying = false;
       updatePlayPauseUI(false);
+      if ('mediaSession' in navigator) navigator.mediaSession.playbackState = 'paused';
     }
   };
 
@@ -237,7 +309,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (prev) loadTrack(prev);
   };
 
-  // --- Aleatorio (Shuffle) Fisher-Yates con Indicador Verde y Sin Bordes ---
+  // --- Aleatorio (Shuffle) Fisher-Yates con Punto Verde Spotify ---
   const toggleShuffle = () => {
     isShuffle = !isShuffle;
     libraryManager.initShuffleQueue();
@@ -247,8 +319,9 @@ document.addEventListener('DOMContentLoaded', async () => {
   const updateShuffleUI = () => {
     const shuffleBtn = document.getElementById('btn-shuffle');
     const heroShuffleBtn = document.getElementById('btn-hero-shuffle');
+    const mobileShuffleBtn = document.getElementById('mobile-btn-shuffle');
 
-    [shuffleBtn, heroShuffleBtn].forEach(btn => {
+    [shuffleBtn, heroShuffleBtn, mobileShuffleBtn].forEach(btn => {
       if (!btn) return;
       btn.classList.toggle('active', isShuffle);
       btn.classList.toggle('text-[#1ed760]', isShuffle);
@@ -263,7 +336,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       audioElement.loop = false;
     } else if (repeatMode === 'all') {
       repeatMode = 'one';
-      audioElement.loop = true;
+      audioElement.loop = true; // Bucle instantáneo nativo sin pausas
     } else {
       repeatMode = 'off';
       audioElement.loop = false;
@@ -273,25 +346,32 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   const updateRepeatUI = () => {
     const repeatBtn = document.getElementById('btn-repeat');
+    const mobileRepeatBtn = document.getElementById('mobile-btn-repeat');
     const badge = document.getElementById('repeat-badge-one');
-    if (!repeatBtn) return;
+    const mobileBadge = document.getElementById('mobile-repeat-badge-one');
 
-    if (repeatMode === 'off') {
-      repeatBtn.classList.remove('active', 'text-[#1ed760]');
-      repeatBtn.classList.add('text-slate-400');
-      if (badge) badge.classList.add('hidden');
-    } else if (repeatMode === 'all') {
-      repeatBtn.classList.remove('text-slate-400');
-      repeatBtn.classList.add('active', 'text-[#1ed760]');
-      if (badge) badge.classList.add('hidden');
-    } else if (repeatMode === 'one') {
-      repeatBtn.classList.remove('text-slate-400');
-      repeatBtn.classList.add('active', 'text-[#1ed760]');
-      if (badge) badge.classList.remove('hidden');
-    }
+    const updateSingle = (btn, bdg) => {
+      if (!btn) return;
+      if (repeatMode === 'off') {
+        btn.classList.remove('active', 'text-[#1ed760]');
+        btn.classList.add('text-slate-400');
+        if (bdg) bdg.classList.add('hidden');
+      } else if (repeatMode === 'all') {
+        btn.classList.remove('text-slate-400');
+        btn.classList.add('active', 'text-[#1ed760]');
+        if (bdg) bdg.classList.add('hidden');
+      } else if (repeatMode === 'one') {
+        btn.classList.remove('text-slate-400');
+        btn.classList.add('active', 'text-[#1ed760]');
+        if (bdg) bdg.classList.remove('hidden');
+      }
+    };
+
+    updateSingle(repeatBtn, badge);
+    updateSingle(mobileRepeatBtn, mobileBadge);
   };
 
-  // --- Eventos del elemento HTML <audio> ---
+  // --- Eventos del elemento HTML <audio> (Actualización de Tiempo y MediaSession) ---
   audioElement.addEventListener('timeupdate', () => {
     if (isSeeking) return;
 
@@ -299,27 +379,51 @@ document.addEventListener('DOMContentLoaded', async () => {
     const duration = audioElement.duration || 0;
 
     const seekSlider = document.getElementById('player-seek-slider');
+    const mobileSeekSlider = document.getElementById('mobile-seek-slider');
+    const miniProgressBar = document.getElementById('mobile-mini-progress');
+
     const timeCur = document.getElementById('time-current');
     const timeDur = document.getElementById('time-duration');
+    const mobileTimeCur = document.getElementById('mobile-time-current');
+    const mobileTimeDur = document.getElementById('mobile-time-duration');
 
-    if (seekSlider && duration > 0) {
-      seekSlider.value = (current / duration) * 100;
-    }
+    const progressPercent = duration > 0 ? (current / duration) * 100 : 0;
 
-    if (timeCur) timeCur.textContent = formatTime(current);
-    if (timeDur && duration > 0) timeDur.textContent = formatTime(duration);
+    if (seekSlider) seekSlider.value = progressPercent;
+    if (mobileSeekSlider) mobileSeekSlider.value = progressPercent;
+    if (miniProgressBar) miniProgressBar.style.width = `${progressPercent}%`;
+
+    const formattedCur = formatTime(current);
+    const formattedDur = duration > 0 ? formatTime(duration) : '0:00';
+
+    if (timeCur) timeCur.textContent = formattedCur;
+    if (timeDur && duration > 0) timeDur.textContent = formattedDur;
+    if (mobileTimeCur) mobileTimeCur.textContent = formattedCur;
+    if (mobileTimeDur && duration > 0) mobileTimeDur.textContent = formattedDur;
 
     lyricsEngine.update(current);
 
-    // Actualizar snippet de letra en el sidebar derecho
-    if (rightSidebarLyrics) {
-      const activeLine = document.querySelector('#lyrics-display .active-lyric');
-      if (activeLine) {
-        rightSidebarLyrics.innerHTML = `<p class="text-white">${activeLine.textContent}</p>`;
-      }
+    // Actualizar snippet de letra en el sidebar derecho y modal móvil
+    const activeLine = document.querySelector('#lyrics-display .active-lyric');
+    if (activeLine) {
+      const lineText = `<p class="text-white">${activeLine.textContent}</p>`;
+      if (rightSidebarLyrics) rightSidebarLyrics.innerHTML = lineText;
+      if (mobileLyricsPreview) mobileLyricsPreview.innerHTML = lineText;
+    }
+
+    // Actualizar posición para la barra de bloqueo nativa de Android / Xiaomi 15
+    if ('mediaSession' in navigator && 'setPositionState' in navigator.mediaSession && duration > 0) {
+      try {
+        navigator.mediaSession.setPositionState({
+          duration: duration,
+          playbackRate: audioElement.playbackRate || 1,
+          position: Math.min(current, duration)
+        });
+      } catch (e) {}
     }
   });
 
+  // Salto automático continuo de canciones con pantalla apagada
   audioElement.addEventListener('ended', () => {
     if (repeatMode === 'one') {
       audioElement.currentTime = 0;
@@ -339,6 +443,26 @@ document.addEventListener('DOMContentLoaded', async () => {
     const m = Math.floor(seconds / 60);
     const s = Math.floor(seconds % 60);
     return `${m}:${s < 10 ? '0' : ''}${s}`;
+  };
+
+  // --- Modal Móvil Now Playing (Xiaomi 15) ---
+  window.openMobilePlayer = () => {
+    const modal = document.getElementById('mobile-now-playing-modal');
+    if (modal) modal.classList.add('open');
+  };
+
+  window.closeMobilePlayer = () => {
+    const modal = document.getElementById('mobile-now-playing-modal');
+    if (modal) modal.classList.remove('open');
+  };
+
+  window.toggleMobileEQ = () => {
+    const panel = document.getElementById('right-sidebar-panel');
+    if (panel) {
+      panel.classList.toggle('hidden');
+      setRightSidebarView('poweramp');
+    }
+    window.closeMobilePlayer();
   };
 
   // --- Configuración del Ecualizador Poweramp UI (10 Bandas) ---
@@ -516,24 +640,41 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
   };
 
-  // --- Enlazar Todos los Botones y Controles ---
+  // --- Enlazar Todos los Botones y Controles (Desktop & Móvil) ---
   const bindEvents = () => {
     // 1. Play / Pause
     const playBtnBar = document.getElementById('btn-play-pause');
     const playBtnHero = document.getElementById('btn-hero-play');
-    if (playBtnBar) playBtnBar.addEventListener('click', togglePlayPause);
-    if (playBtnHero) playBtnHero.addEventListener('click', togglePlayPause);
+    const playBtnMobileMini = document.getElementById('mobile-mini-btn-play');
+    const playBtnMobileModal = document.getElementById('mobile-btn-play-pause');
+
+    [playBtnBar, playBtnHero, playBtnMobileMini, playBtnMobileModal].forEach(btn => {
+      if (btn) btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        togglePlayPause();
+      });
+    });
 
     // 2. Next / Prev
     const nextBtn = document.getElementById('btn-next');
     const prevBtn = document.getElementById('btn-prev');
+    const mobileNextMini = document.getElementById('mobile-mini-btn-next');
+    const mobileNextModal = document.getElementById('mobile-btn-next');
+    const mobilePrevModal = document.getElementById('mobile-btn-prev');
+
     if (nextBtn) nextBtn.addEventListener('click', playNext);
     if (prevBtn) prevBtn.addEventListener('click', playPrev);
+    if (mobileNextMini) mobileNextMini.addEventListener('click', (e) => { e.stopPropagation(); playNext(); });
+    if (mobileNextModal) mobileNextModal.addEventListener('click', playNext);
+    if (mobilePrevModal) mobilePrevModal.addEventListener('click', playPrev);
 
-    // 3. Shuffle (Aleatorio)
+    // 3. Shuffle
     const shuffleBtn = document.getElementById('btn-shuffle');
     const heroShuffleBtn = document.getElementById('btn-hero-shuffle');
+    const mobileShuffleBtn = document.getElementById('mobile-btn-shuffle');
+
     if (shuffleBtn) shuffleBtn.addEventListener('click', toggleShuffle);
+    if (mobileShuffleBtn) mobileShuffleBtn.addEventListener('click', toggleShuffle);
     if (heroShuffleBtn) {
       heroShuffleBtn.addEventListener('click', () => {
         isShuffle = true;
@@ -542,25 +683,30 @@ document.addEventListener('DOMContentLoaded', async () => {
       });
     }
 
-    // 4. Repeat (Repetir)
+    // 4. Repeat
     const repeatBtn = document.getElementById('btn-repeat');
+    const mobileRepeatBtn = document.getElementById('mobile-btn-repeat');
     if (repeatBtn) repeatBtn.addEventListener('click', toggleRepeat);
+    if (mobileRepeatBtn) mobileRepeatBtn.addEventListener('click', toggleRepeat);
 
-    // 5. Seek Slider (Progreso de pista con soporte táctil y mouse sin jitter)
-    const seekSlider = document.getElementById('player-seek-slider');
-    if (seekSlider) {
-      seekSlider.addEventListener('mousedown', () => { isSeeking = true; });
-      seekSlider.addEventListener('touchstart', () => { isSeeking = true; }, { passive: true });
+    // 5. Seek Sliders (Desktop y Modal Móvil)
+    const setupSeeker = (slider) => {
+      if (!slider) return;
+      slider.addEventListener('mousedown', () => { isSeeking = true; });
+      slider.addEventListener('touchstart', () => { isSeeking = true; }, { passive: true });
 
-      seekSlider.addEventListener('input', (e) => {
+      slider.addEventListener('input', (e) => {
         if (audioElement.duration) {
           const target = (parseFloat(e.target.value) / 100) * audioElement.duration;
           const timeCur = document.getElementById('time-current');
-          if (timeCur) timeCur.textContent = formatTime(target);
+          const mobileTimeCur = document.getElementById('mobile-time-current');
+          const fmt = formatTime(target);
+          if (timeCur) timeCur.textContent = fmt;
+          if (mobileTimeCur) mobileTimeCur.textContent = fmt;
         }
       });
 
-      seekSlider.addEventListener('change', (e) => {
+      slider.addEventListener('change', (e) => {
         if (audioElement.duration) {
           const target = (parseFloat(e.target.value) / 100) * audioElement.duration;
           audioElement.currentTime = target;
@@ -568,9 +714,12 @@ document.addEventListener('DOMContentLoaded', async () => {
         isSeeking = false;
       });
 
-      seekSlider.addEventListener('mouseup', () => { isSeeking = false; });
-      seekSlider.addEventListener('touchend', () => { isSeeking = false; });
-    }
+      slider.addEventListener('mouseup', () => { isSeeking = false; });
+      slider.addEventListener('touchend', () => { isSeeking = false; });
+    };
+
+    setupSeeker(document.getElementById('player-seek-slider'));
+    setupSeeker(document.getElementById('mobile-seek-slider'));
 
     // 6. Volumen y Mute
     const volSlider = document.getElementById('player-volume-slider');
@@ -605,15 +754,22 @@ document.addEventListener('DOMContentLoaded', async () => {
     // 7. Favoritos
     const favBtn = document.getElementById('player-btn-fav');
     const rightFavBtn = document.getElementById('right-panel-fav');
-    const toggleCurrentFav = () => {
+    const mobileMiniFav = document.getElementById('mobile-mini-btn-fav');
+    const mobileModalFav = document.getElementById('mobile-modal-fav');
+
+    const toggleCurrentFav = (e) => {
+      if (e) e.stopPropagation();
       const cur = libraryManager.getCurrentTrack();
       if (cur) {
         libraryManager.toggleFavorite(cur.id);
         updateFavButton(cur.id);
       }
     };
+
     if (favBtn) favBtn.addEventListener('click', toggleCurrentFav);
     if (rightFavBtn) rightFavBtn.addEventListener('click', toggleCurrentFav);
+    if (mobileMiniFav) mobileMiniFav.addEventListener('click', toggleCurrentFav);
+    if (mobileModalFav) mobileModalFav.addEventListener('click', toggleCurrentFav);
 
     // 8. Panel Derecho y Pestañas
     const btnToggleRightSidebar = document.getElementById('btn-toggle-right-sidebar');
@@ -694,46 +850,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       });
     }
 
-    // 13. Vincular Carpeta y Fallbacks
-    const btnLinkDriveSidebar = document.getElementById('sidebar-btn-link-drive');
-    const btnLinkDriveModal = document.getElementById('btn-modal-link-drive');
-    const btnCloseDriveModal = document.getElementById('btn-close-drive-guide');
-    const btnStartDemo = document.getElementById('btn-start-demo-audio');
-
-    const handleLinkFolder = () => {
-      libraryManager.openDirectoryPicker();
-      const modal = document.getElementById('drive-guide-modal');
-      if (modal) modal.classList.add('hidden');
-    };
-
-    if (btnLinkDriveSidebar) btnLinkDriveSidebar.addEventListener('click', handleLinkFolder);
-    if (btnLinkDriveModal) btnLinkDriveModal.addEventListener('click', handleLinkFolder);
-    if (btnCloseDriveModal) {
-      btnCloseDriveModal.addEventListener('click', () => {
-        document.getElementById('drive-guide-modal').classList.add('hidden');
-      });
-    }
-
-    if (btnStartDemo) {
-      btnStartDemo.addEventListener('click', async () => {
-        await unlockAudio();
-        audioEngine.startSynthesizedDemo();
-        isPlaying = true;
-        updatePlayPauseUI(true);
-        document.getElementById('drive-guide-modal').classList.add('hidden');
-      });
-    }
-
-    const folderInputFallback = document.getElementById('input-folder-fallback');
-    if (folderInputFallback) {
-      folderInputFallback.addEventListener('change', (e) => {
-        if (e.target.files && e.target.files.length > 0) {
-          libraryManager.loadFromFileInput(e.target.files);
-        }
-      });
-    }
-
-    // 14. Teclado Multimedia y Atajos
+    // 13. Teclado Multimedia y Atajos (Desktop)
     document.addEventListener('keydown', (e) => {
       if (['input', 'textarea'].includes(document.activeElement.tagName.toLowerCase())) return;
 
@@ -760,11 +877,12 @@ document.addEventListener('DOMContentLoaded', async () => {
   });
 
   libraryManager.setLibraryLoadedCallback((tracks) => {
-    console.log(`[Powerify] ${tracks.length} pistas cargadas.`);
+    console.log(`[Powerify] ${tracks.length} pistas cargadas automáticamente desde Google Drive.`);
     if (tracks.length > 0 && !audioElement.src) {
       const first = tracks[0];
       updateNowPlayingInfo(first);
       updateFavButton(first.id);
+      setupMediaSession(first);
     }
   });
 
@@ -773,9 +891,8 @@ document.addEventListener('DOMContentLoaded', async () => {
   updateShuffleUI();
   updateRepeatUI();
 
-  // Inicializar biblioteca y sincronización en la nube
+  // Inicializar biblioteca automáticamente sin pedir archivos ni carpetas
   await libraryManager.init();
-  await gDriveSync.init();
 
   if (window.lucide) window.lucide.createIcons();
 });

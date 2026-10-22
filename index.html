@@ -4,10 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
   <title>Powerify | MÚSICA ULICITO (Spotify UI × Poweramp Studio)</title>
-  <meta name="description" content="Reproductor audiófilo de alta fidelidad que replica la interfaz de Spotify Desktop integrada con el motor y ecualizador de 10 bandas de Poweramp." />
+  <meta name="description" content="Reproductor audiófilo de alta fidelidad que replica la interfaz de Spotify con el motor y ecualizador de 10 bandas de Poweramp." />
   <meta name="theme-color" content="#121212" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-  <!-- Google Fonts: Outfit (UI Spotify) y JetBrains Mono (Métricas Poweramp) -->
+  <!-- Google Fonts: Outfit (Spotify UI) y JetBrains Mono (Métricas Poweramp) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
@@ -23,14 +26,10 @@
 </head>
 <body class="bg-[#090a0f] text-slate-100 flex flex-col h-screen overflow-hidden select-none">
 
-  <!-- Elemento HTML5 Audio Nativo conectado al grafo de Web Audio API -->
-  <audio id="audio-core" preload="auto" crossorigin="anonymous"></audio>
+  <!-- Elemento HTML5 Audio Nativo para Reproducción Continua en Segundo Plano (Pantalla Apagada) -->
+  <audio id="audio-core" preload="auto" playsinline webkit-playsinline crossorigin="anonymous"></audio>
 
-  <!-- Inputs Ocultos para Selección de Archivos Locales / Carpeta -->
-  <input type="file" id="input-folder-fallback" webkitdirectory directory multiple class="hidden" />
-  <input type="file" id="input-files-fallback" multiple accept="audio/*,.flac,.wav,.mp3,.m4a" class="hidden" />
-
-  <!-- Fondo Ambiental Dinámico Reactivo (Apple Music & Poweramp Blur) -->
+  <!-- Fondo Ambiental Dinámico Reactivo (Apple Music Blur & Obsidian Noise) -->
   <div class="ambient-background-wrapper">
     <div class="ambient-blob ambient-blob-1"></div>
     <div class="ambient-blob ambient-blob-2"></div>
@@ -38,100 +37,61 @@
     <div class="ambient-overlay-noise"></div>
   </div>
 
-  <!-- Modal Guía de Conexión de Carpeta Google Drive -->
-  <div id="drive-guide-modal" class="fixed inset-0 bg-black/85 backdrop-blur-xl z-50 flex items-center justify-center p-4 hidden">
-    <div class="glass-panel p-6 max-w-lg w-full border border-emerald-500/40 shadow-2xl space-y-4">
-      <div class="flex items-center justify-between pb-3 border-b border-white/10">
-        <div class="flex items-center space-x-2.5">
-          <div class="w-10 h-10 rounded-xl bg-emerald-500/20 flex items-center justify-center text-emerald-400">
-            <i data-lucide="folder-check" class="w-6 h-6"></i>
-          </div>
-          <div>
-            <h3 class="font-bold text-base text-white">Vincular Carpeta de Música</h3>
-            <p class="text-[11px] text-slate-400">Reproducción FLAC Lossless 24-bit sin compresión</p>
-          </div>
-        </div>
-        <button id="btn-close-drive-guide" class="p-1.5 rounded-lg text-slate-400 hover:text-white bg-white/5">
-          <i data-lucide="x" class="w-5 h-5"></i>
-        </button>
-      </div>
-
-      <div class="text-xs text-slate-300 space-y-2.5">
-        <p>Tus 251 canciones FLAC de alta fidelidad están disponibles en tu Google Drive:</p>
-        <div class="p-3.5 bg-black/60 rounded-xl border border-white/10 font-mono text-[11px] space-y-1.5">
-          <div class="flex items-center justify-between">
-            <span class="text-slate-400">Cuenta de Nube:</span>
-            <span class="text-white font-bold">ulianovksi@gmail.com (5 TB)</span>
-          </div>
-          <div class="flex items-center justify-between">
-            <span class="text-slate-400">Ruta Sincronizada:</span>
-            <span class="text-emerald-400 font-bold truncate max-w-[240px]">G:\Mi unidad\MÚSICA FLAC ULICITO</span>
-          </div>
-          <div class="flex items-center justify-between">
-            <span class="text-slate-400">Calidad:</span>
-            <span class="text-amber-400 font-bold">FLAC 24-bit / 48kHz - 96kHz</span>
-          </div>
-        </div>
-        <p class="text-[11px] text-slate-400">
-          Haz clic en el botón de abajo para autorizar la lectura directa con 1 clic. El navegador la recordará permanentemente.
-        </p>
-      </div>
-
-      <div class="space-y-2 pt-2">
-        <button id="btn-modal-link-drive" class="w-full py-3 rounded-xl bg-gradient-to-r from-emerald-500 to-cyan-500 hover:from-emerald-400 hover:to-cyan-400 text-black font-extrabold text-xs transition shadow-lg shadow-emerald-500/25 flex items-center justify-center space-x-2 active:scale-98">
-          <i data-lucide="folder-symlink" class="w-4 h-4"></i>
-          <span>Vincular Carpeta Google Drive (G:\Mi unidad\...)</span>
-        </button>
-        <button id="btn-start-demo-audio" class="w-full py-2.5 rounded-xl bg-white/10 hover:bg-white/15 text-slate-300 font-medium text-xs transition flex items-center justify-center space-x-2">
-          <i data-lucide="play-circle" class="w-4 h-4 text-cyan-400"></i>
-          <span>Probar Ecualizador y Visualizador (Demo Sintetizado)</span>
-        </button>
-      </div>
-    </div>
-  </div>
-
   <!-- ==================== BARRA SUPERIOR SPOTIFY (TOP BAR) ==================== -->
-  <header class="h-14 bg-[#090a0f] border-b border-white/5 px-4 flex items-center justify-between z-30 flex-shrink-0">
-    <!-- Controles de Navegación Izquierda -->
+  <header class="h-14 bg-[#090a0f] border-b border-white/5 px-3 sm:px-4 flex items-center justify-between z-30 flex-shrink-0">
+    <!-- Controles de Navegación Izquierda (Desktop) y Logo (Mobile) -->
     <div class="flex items-center space-x-2">
-      <button class="w-8 h-8 rounded-full bg-black/40 text-slate-400 flex items-center justify-center hover:text-white" title="Atrás">
-        <i data-lucide="chevron-left" class="w-5 h-5"></i>
-      </button>
-      <button class="w-8 h-8 rounded-full bg-black/40 text-slate-400 flex items-center justify-center hover:text-white" title="Adelante">
-        <i data-lucide="chevron-right" class="w-5 h-5"></i>
-      </button>
+      <div class="hidden sm:flex items-center space-x-2">
+        <button class="w-8 h-8 rounded-full bg-black/40 text-slate-400 flex items-center justify-center hover:text-white" title="Atrás">
+          <i data-lucide="chevron-left" class="w-5 h-5"></i>
+        </button>
+        <button class="w-8 h-8 rounded-full bg-black/40 text-slate-400 flex items-center justify-center hover:text-white" title="Adelante">
+          <i data-lucide="chevron-right" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <!-- Icono Spotify Verde en Móvil -->
+      <div class="flex sm:hidden items-center space-x-2">
+        <div class="w-8 h-8 rounded-full bg-[#1ed760] flex items-center justify-center text-black font-black text-sm">
+          <i data-lucide="music" class="w-4 h-4 fill-black"></i>
+        </div>
+        <span class="font-extrabold text-sm text-white tracking-tight">MÚSICA ULICITO</span>
+      </div>
     </div>
 
     <!-- Buscador Central Redondeado Spotify -->
-    <div class="flex items-center space-x-2 max-w-xl w-full justify-center px-4">
-      <button class="w-10 h-10 rounded-full bg-[#1f1f1f] text-white flex items-center justify-center hover:scale-105 transition" title="Inicio">
+    <div class="flex items-center space-x-2 max-w-xl w-full justify-center px-2 sm:px-4">
+      <button class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-[#1f1f1f] text-white hidden sm:flex items-center justify-center hover:scale-105 transition" title="Inicio">
         <i data-lucide="home" class="w-5 h-5"></i>
       </button>
       <div class="relative flex-1 max-w-md">
-        <i data-lucide="search" class="w-5 h-5 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2"></i>
+        <i data-lucide="search" class="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2"></i>
         <input 
           type="text" 
           id="spotify-search-input" 
           placeholder="¿Qué quieres reproducir?" 
-          class="w-full pl-11 pr-10 py-2.5 bg-[#1f1f1f] hover:bg-[#2a2a2a] focus:bg-[#2a2a2a] border border-transparent focus:border-white/20 rounded-full text-xs sm:text-sm text-white placeholder-slate-400 outline-none transition"
+          class="w-full pl-10 pr-9 py-2 sm:py-2.5 bg-[#1f1f1f] hover:bg-[#2a2a2a] focus:bg-[#2a2a2a] border border-transparent focus:border-white/20 rounded-full text-xs sm:text-sm text-white placeholder-slate-400 outline-none transition"
         />
-        <button id="btn-clear-search" class="absolute right-3.5 top-1/2 -translate-y-1/2 text-slate-400 hover:text-white hidden">
+        <button id="btn-clear-search" class="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-white hidden">
           <i data-lucide="x" class="w-4 h-4"></i>
         </button>
       </div>
     </div>
 
-    <!-- Perfil de Usuario y Notificaciones Derecha -->
-    <div class="flex items-center space-x-3">
-      <button class="w-8 h-8 rounded-full text-slate-400 hover:text-white flex items-center justify-center" title="Novedades">
-        <i data-lucide="bell" class="w-4 h-4"></i>
-      </button>
-      <button class="w-8 h-8 rounded-full text-slate-400 hover:text-white flex items-center justify-center" title="Amigos">
-        <i data-lucide="users" class="w-4 h-4"></i>
-      </button>
+    <!-- Perfil de Usuario Ulianov Cuba e Indicador de Google Drive -->
+    <div class="flex items-center space-x-2 sm:space-x-3">
+      <!-- Indicador Directo de Google Drive Conectado (Sin Modales) -->
+      <div class="hidden lg:flex items-center space-x-1.5 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-300 text-xs font-mono">
+        <svg class="w-3.5 h-3.5 text-blue-400 inline" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"/>
+        </svg>
+        <span class="font-bold text-white">Google Drive</span>
+        <span class="text-emerald-400 font-bold">• 251 FLACs (5 TB)</span>
+      </div>
+
       <!-- Avatar de Ulianov Cuba -->
-      <div class="flex items-center space-x-2 bg-[#1f1f1f] pl-1 pr-3 py-1 rounded-full cursor-pointer hover:bg-[#2a2a2a] transition" onclick="document.getElementById('drive-guide-modal').classList.remove('hidden')">
-        <img src="assets/covers/cover_1.jpg" alt="Ulianov Cuba" class="w-7 h-7 rounded-full object-cover" />
+      <div class="flex items-center space-x-2 bg-[#1f1f1f] pl-1 pr-2.5 py-1 rounded-full">
+        <img src="assets/covers/cover_1.jpg" alt="Ulianov Cuba" class="w-6 h-6 sm:w-7 sm:h-7 rounded-full object-cover" />
         <span class="text-xs font-bold text-white hidden md:inline">Ulianov Cuba</span>
       </div>
     </div>
@@ -206,7 +166,6 @@
             <div class="flex flex-col min-w-0 flex-1">
               <div class="flex items-center justify-between">
                 <span class="font-bold text-sm text-[#1ed760] truncate">MÚSICA ULICITO</span>
-                <!-- Animación de barras verdes de audio -->
                 <div class="spotify-equalizer-bars ml-1">
                   <span></span><span></span><span></span><span></span>
                 </div>
@@ -245,40 +204,31 @@
           </div>
         </div>
 
-        <!-- Tarjeta de Estado de Google Drive (5 TB) -->
-        <div class="p-3 rounded-xl bg-[#181818] border border-white/5 space-y-1.5">
-          <div class="flex items-center justify-between">
-            <div class="flex items-center space-x-2">
-              <svg class="w-4 h-4 text-blue-400" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"/>
-              </svg>
-              <span class="text-xs font-bold text-white">Google Drive</span>
-            </div>
-            <span class="text-[10px] font-mono text-emerald-400 font-bold">5 TB</span>
+        <!-- Estado de Biblioteca -->
+        <div class="p-3 rounded-xl bg-[#181818] border border-white/5 flex items-center justify-between text-xs font-mono">
+          <div class="flex items-center space-x-2">
+            <div class="w-2 h-2 rounded-full bg-[#1ed760] animate-pulse"></div>
+            <span class="text-white font-bold">251 Temas FLAC</span>
           </div>
-          <p class="text-[11px] text-slate-300 font-mono truncate">ulianovksi@gmail.com</p>
-          <button id="sidebar-btn-link-drive" class="w-full py-1.5 rounded-lg bg-white/10 hover:bg-white/15 text-white text-xs font-medium flex items-center justify-center space-x-1.5 transition">
-            <i data-lucide="folder-symlink" class="w-3.5 h-3.5 text-emerald-400"></i>
-            <span>Vincular Carpeta Drive</span>
-          </button>
+          <span class="text-slate-400">14 h 12 min</span>
         </div>
       </div>
 
       <!-- Footer del Sidebar -->
       <div class="pt-3 border-t border-white/5 text-[11px] text-slate-500 font-mono flex items-center justify-between">
         <span id="sidebar-track-stats">251 pistas • 6.43 GB</span>
-        <button id="btn-reconnect-folder" class="text-cyan-400 hover:underline hidden">Reconectar</button>
+        <span class="text-emerald-400 font-semibold">Conectado G:\</span>
       </div>
     </aside>
 
     <!-- ========== ÁREA CENTRAL: SPOTIFY HERO BANNER + TABLA DE PISTAS ========== -->
-    <main class="flex-1 flex flex-col overflow-y-auto pb-28 relative bg-[#121212] m-2 rounded-xl border border-white/5">
+    <main class="flex-1 flex flex-col overflow-y-auto pb-24 sm:pb-28 relative bg-[#121212] m-1 sm:m-2 rounded-xl border border-white/5">
 
       <!-- Banner Hero Spotify: MÚSICA ULICITO -->
-      <section class="spotify-hero-banner relative p-6 sm:p-8 flex flex-col md:flex-row items-center md:items-end space-y-4 md:space-y-0 md:space-x-6 overflow-hidden">
+      <section class="spotify-hero-banner relative p-4 sm:p-8 flex flex-col sm:flex-row items-center sm:items-end space-y-3 sm:space-y-0 sm:space-x-6 overflow-hidden">
         
-        <!-- Collage 4 Carátulas o Carátula Principal -->
-        <div class="relative w-44 h-44 sm:w-52 sm:h-52 rounded-lg overflow-hidden shadow-2xl flex-shrink-0 bg-slate-900 border border-white/10 group cursor-pointer" onclick="toggleRightSidebar()">
+        <!-- Collage 4 Carátulas en Cuadrícula -->
+        <div class="relative w-36 h-36 sm:w-52 sm:h-52 rounded-lg overflow-hidden shadow-2xl flex-shrink-0 bg-slate-900 border border-white/10 group cursor-pointer" onclick="toggleRightSidebar()">
           <div class="grid grid-cols-2 grid-rows-2 w-full h-full">
             <img src="assets/covers/cover_1.jpg" alt="Cover 1" class="w-full h-full object-cover" />
             <img src="assets/covers/cover_2.jpg" alt="Cover 2" class="w-full h-full object-cover" />
@@ -291,10 +241,10 @@
         </div>
 
         <!-- Información de la Playlist -->
-        <div class="flex flex-col space-y-2 text-center md:text-left z-10 min-w-0 flex-1">
-          <span class="text-xs font-bold uppercase tracking-wider text-white">Playlist pública</span>
+        <div class="flex flex-col space-y-1.5 sm:space-y-2 text-center sm:text-left z-10 min-w-0 flex-1">
+          <span class="text-[11px] sm:text-xs font-bold uppercase tracking-wider text-white">Playlist pública</span>
 
-          <h1 id="hero-playlist-title" class="text-4xl sm:text-6xl lg:text-7xl font-black text-white tracking-tight leading-none drop-shadow-md truncate">
+          <h1 id="hero-playlist-title" class="text-2xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-none drop-shadow-md truncate">
             MÚSICA ULICITO
           </h1>
 
@@ -302,7 +252,7 @@
             Canciones de mi carpeta MÚSICA ULICITO, conservando las versiones originales, remixes y alta resolución audiófila (5 TB Google Drive).
           </p>
 
-          <div class="flex items-center justify-center md:justify-start space-x-2 text-xs text-slate-300 pt-1">
+          <div class="flex items-center justify-center sm:justify-start space-x-2 text-xs text-slate-300 pt-1">
             <div class="flex items-center space-x-1.5">
               <img src="assets/covers/cover_1.jpg" alt="Ulianov" class="w-5 h-5 rounded-full object-cover" />
               <strong class="text-white hover:underline cursor-pointer">Ulianov Cuba</strong>
@@ -316,40 +266,37 @@
       </section>
 
       <!-- Barra de Acciones de la Playlist (Spotify Action Bar) -->
-      <section class="px-6 sm:px-8 py-4 flex items-center justify-between border-b border-white/5 bg-[#121212]/70 backdrop-blur-md sticky top-0 z-20">
+      <section class="px-4 sm:px-8 py-3 sm:py-4 flex items-center justify-between border-b border-white/5 bg-[#121212]/85 backdrop-blur-md sticky top-0 z-20">
         <div class="flex items-center space-x-4 sm:space-x-6">
           <!-- Botón de Play Gigante de Spotify (Verde) -->
-          <button id="btn-hero-play" class="w-14 h-14 rounded-full bg-[#1ed760] hover:bg-[#1fdf64] text-black flex items-center justify-center shadow-xl shadow-emerald-500/25 transition-all duration-200 hover:scale-105 active:scale-95" title="Reproducir">
+          <button id="btn-hero-play" class="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#1ed760] hover:bg-[#1fdf64] text-black flex items-center justify-center shadow-xl shadow-emerald-500/25 transition-all duration-200 hover:scale-105 active:scale-95" title="Reproducir">
             <i data-lucide="play" class="w-6 h-6 fill-current translate-x-0.5"></i>
           </button>
 
           <!-- Botón Shuffle -->
           <button id="btn-hero-shuffle" class="spotify-ctrl-btn p-2 text-slate-400 hover:text-white transition" title="Aleatorio">
-            <i data-lucide="shuffle" class="w-6 h-6"></i>
+            <i data-lucide="shuffle" class="w-5 h-5 sm:w-6 sm:h-6"></i>
           </button>
 
           <!-- Botón Descargar -->
-          <button class="p-2 text-slate-400 hover:text-white transition" title="Descargar">
+          <button class="p-2 text-slate-400 hover:text-white transition hidden sm:inline-block" title="Descargar">
             <i data-lucide="arrow-down-circle" class="w-6 h-6"></i>
           </button>
 
           <!-- Botón Invitar Colaborador -->
-          <button class="p-2 text-slate-400 hover:text-white transition" title="Invitar a colaborar">
+          <button class="p-2 text-slate-400 hover:text-white transition hidden sm:inline-block" title="Invitar a colaborar">
             <i data-lucide="user-plus" class="w-6 h-6"></i>
           </button>
 
           <!-- Menú Más Opciones -->
           <button class="p-2 text-slate-400 hover:text-white transition" title="Más opciones">
-            <i data-lucide="more-horizontal" class="w-6 h-6"></i>
+            <i data-lucide="more-horizontal" class="w-5 h-5 sm:w-6 sm:h-6"></i>
           </button>
         </div>
 
         <!-- Lado Derecho: Selector de Ordenamiento y Búsqueda -->
-        <div class="flex items-center space-x-3 text-xs text-slate-400 font-medium">
-          <button class="p-1.5 hover:text-white" title="Buscar en esta playlist">
-            <i data-lucide="search" class="w-4 h-4"></i>
-          </button>
-          <div class="flex items-center space-x-1.5">
+        <div class="flex items-center space-x-2 sm:space-x-3 text-xs text-slate-400 font-medium">
+          <div class="flex items-center space-x-1">
             <span class="hidden sm:inline">Orden:</span>
             <select id="library-sort-select" class="bg-transparent text-slate-300 font-semibold outline-none cursor-pointer hover:text-white transition">
               <option value="title" class="bg-[#181818]">Título</option>
@@ -361,37 +308,37 @@
         </div>
       </section>
 
-      <!-- Botones de Píldora: + Agregar, Mixear, Nombre y datos -->
-      <section class="px-6 sm:px-8 py-2.5 flex items-center space-x-2 text-xs">
-        <button class="px-3.5 py-1.5 rounded-full bg-white/10 hover:bg-white/15 text-white font-semibold transition flex items-center space-x-1.5">
+      <!-- Botones de Píldora: + Agregar, Mixear, Nombre y datos (Desktop) -->
+      <section class="px-4 sm:px-8 py-2 hidden sm:flex items-center space-x-2 text-xs">
+        <button class="px-3 py-1 rounded-full bg-white/10 hover:bg-white/15 text-white font-semibold transition flex items-center space-x-1.5">
           <i data-lucide="plus" class="w-3.5 h-3.5"></i>
           <span>Agregar</span>
         </button>
-        <button class="px-3.5 py-1.5 rounded-full bg-white/10 hover:bg-white/15 text-white font-semibold transition flex items-center space-x-1.5">
+        <button class="px-3 py-1 rounded-full bg-white/10 hover:bg-white/15 text-white font-semibold transition flex items-center space-x-1.5">
           <i data-lucide="sliders-horizontal" class="w-3.5 h-3.5"></i>
           <span>Mixear</span>
         </button>
-        <button class="px-3.5 py-1.5 rounded-full bg-white/10 hover:bg-white/15 text-white font-semibold transition flex items-center space-x-1.5">
+        <button class="px-3 py-1 rounded-full bg-white/10 hover:bg-white/15 text-white font-semibold transition flex items-center space-x-1.5">
           <i data-lucide="edit-3" class="w-3.5 h-3.5"></i>
           <span>Nombre y datos</span>
         </button>
       </section>
 
       <!-- Tabla de Pistas Estilo Spotify (# | TÍTULO | ÁLBUM | CALIDAD | 🕒) -->
-      <section class="px-4 sm:px-8 py-2">
-        <!-- Encabezados de la Tabla -->
-        <div class="grid grid-cols-12 gap-3 px-3 py-2 text-xs font-mono font-bold uppercase tracking-wider text-slate-400 border-b border-white/5 select-none">
+      <section class="px-2 sm:px-8 py-2">
+        <!-- Encabezados de la Tabla (Solo Desktop) -->
+        <div class="hidden sm:grid grid-cols-12 gap-3 px-3 py-2 text-xs font-mono font-bold uppercase tracking-wider text-slate-400 border-b border-white/5 select-none">
           <div class="col-span-1 text-center">#</div>
-          <div class="col-span-6 sm:col-span-5">Título</div>
-          <div class="col-span-3 hidden sm:block">Álbum</div>
+          <div class="col-span-5">Título</div>
+          <div class="col-span-3">Álbum</div>
           <div class="col-span-2 text-center">Calidad</div>
-          <div class="col-span-3 sm:col-span-1 text-right pr-2">
+          <div class="col-span-1 text-right pr-2">
             <i data-lucide="clock" class="w-4 h-4 inline-block"></i>
           </div>
         </div>
 
         <!-- Contenedor Dinámico de Filas de Canciones -->
-        <div id="track-list-container" class="divide-y divide-transparent mt-1">
+        <div id="track-list-container" class="divide-y divide-white/[0.03] sm:divide-transparent mt-1">
           <!-- Inyectado dinámicamente desde library-manager.js -->
         </div>
       </section>
@@ -533,29 +480,34 @@
 
   </div>
 
-  <!-- ==================== BARRA DE REPRODUCCIÓN INFERIOR PERSISTENTE (SPOTIFY STYLE) ==================== -->
-  <footer class="fixed bottom-0 left-0 right-0 h-20 bg-[#121212] border-t border-[#282828] px-4 lg:px-6 flex items-center justify-between z-40">
+  <!-- ==================== BARRA DE REPRODUCCIÓN INFERIOR PERSISTENTE (DESKTOP & MINI PLAYER MÓVIL) ==================== -->
+  <footer class="fixed bottom-0 left-0 right-0 h-16 sm:h-20 bg-[#121212]/95 backdrop-blur-2xl border-t border-[#282828] px-3 sm:px-6 flex items-center justify-between z-40">
     
-    <!-- Parte Izquierda: Carátula, Título, Artista y Check/Like -->
-    <div class="flex items-center space-x-3.5 w-1/4 min-w-[180px]">
-      <div class="relative w-14 h-14 rounded-md overflow-hidden flex-shrink-0 bg-slate-900 shadow cursor-pointer" onclick="toggleRightSidebar()">
+    <!-- Línea de Progreso Móvil en la parte superior del Mini Player -->
+    <div class="absolute top-0 left-0 right-0 h-[2.5px] bg-white/10 sm:hidden">
+      <div id="mobile-mini-progress" class="h-full bg-[#1ed760] transition-all" style="width: 0%;"></div>
+    </div>
+
+    <!-- Parte Izquierda: Carátula, Título, Artista y Check/Like (Al hacer clic en móvil abre pantalla completa) -->
+    <div class="flex items-center space-x-3 w-3/5 sm:w-1/4 min-w-0 cursor-pointer" onclick="openMobilePlayer()">
+      <div class="relative w-11 h-11 sm:w-14 sm:h-14 rounded-md overflow-hidden flex-shrink-0 bg-slate-900 shadow">
         <img id="player-album-cover" src="assets/covers/cover_1.jpg" alt="Carátula" class="w-full h-full object-cover" />
       </div>
-      <div class="flex flex-col min-w-0 pr-2">
-        <span id="player-track-title" class="font-bold text-sm text-white truncate hover:underline cursor-pointer">
+      <div class="flex flex-col min-w-0 pr-1">
+        <span id="player-track-title" class="font-bold text-xs sm:text-sm text-white truncate hover:underline">
           Selecciona una pista
         </span>
-        <span id="player-track-artist" class="text-xs text-[#b3b3b3] truncate hover:underline cursor-pointer">
+        <span id="player-track-artist" class="text-[11px] sm:text-xs text-[#b3b3b3] truncate hover:underline">
           Artista
         </span>
       </div>
-      <button id="player-btn-fav" class="text-slate-400 hover:text-[#1ed760] transition p-1" title="Favorito">
+      <button id="player-btn-fav" class="text-slate-400 hover:text-[#1ed760] transition p-1 hidden sm:inline-block" title="Favorito" onclick="event.stopPropagation()">
         <i data-lucide="heart" class="w-5 h-5"></i>
       </button>
     </div>
 
-    <!-- Parte Central: Controles de Reproducción y Barra de Progreso -->
-    <div class="flex flex-col items-center justify-center w-2/4 max-w-2xl px-2">
+    <!-- Parte Central: Controles de Reproducción y Barra de Progreso (Desktop) -->
+    <div class="hidden sm:flex flex-col items-center justify-center w-2/4 max-w-2xl px-2">
       <!-- Fila Superior de Botones: Shuffle, Prev, Play, Next, Repeat -->
       <div class="flex items-center space-x-5 mb-1.5">
         <!-- Botón Aleatorio (Clean SVG, Sin bordes/outlines) -->
@@ -595,26 +547,35 @@
       </div>
     </div>
 
-    <!-- Parte Derecha: Mic/Letras, Poweramp Studio EQ, Badge Audiófilo, Volumen -->
-    <div class="flex items-center justify-end space-x-3 w-1/4 min-w-[180px]">
-      <!-- Badge de Especificaciones Técnicas FLAC Hi-Res -->
+    <!-- Controles Rápidos en Móvil (Derecha): Like + Play/Pause + Next -->
+    <div class="flex sm:hidden items-center space-x-2">
+      <button id="mobile-mini-btn-fav" class="p-2 text-slate-400 hover:text-[#1ed760]" title="Favorito">
+        <i data-lucide="heart" class="w-5 h-5"></i>
+      </button>
+      <button id="mobile-mini-btn-play" class="w-10 h-10 rounded-full bg-white text-black flex items-center justify-center shadow" title="Play">
+        <i data-lucide="play" class="w-4 h-4 fill-black translate-x-0.5"></i>
+      </button>
+      <button id="mobile-mini-btn-next" class="p-2 text-slate-300 hover:text-white" title="Siguiente">
+        <i data-lucide="skip-forward" class="w-5 h-5 fill-current"></i>
+      </button>
+    </div>
+
+    <!-- Parte Derecha: Mic/Letras, Poweramp Studio EQ, Badge Audiófilo, Volumen (Desktop) -->
+    <div class="hidden sm:flex items-center justify-end space-x-3 w-1/4 min-w-[180px]">
       <div id="audiophile-specs-badge" class="hidden 2xl:flex items-center space-x-1.5">
         <span class="px-2 py-0.5 rounded text-[10px] font-bold font-mono tracking-wider bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
           FLAC HI-RES
         </span>
       </div>
 
-      <!-- Botón Letras (Karaoke) -->
       <button id="btn-toggle-lyrics" class="spotify-ctrl-btn p-2" title="Letras">
         <i data-lucide="mic" class="w-4 h-4"></i>
       </button>
 
-      <!-- Botón Poweramp Studio EQ -->
       <button id="btn-bar-eq-toggle" class="spotify-ctrl-btn p-2" title="Ecualizador Poweramp">
         <i data-lucide="sliders" class="w-4 h-4 text-cyan-400"></i>
       </button>
 
-      <!-- Control de Volumen -->
       <div class="flex items-center space-x-2">
         <button id="btn-mute" class="spotify-ctrl-btn p-1" title="Silenciar">
           <i data-lucide="volume-2" class="w-4 h-4"></i>
@@ -622,20 +583,99 @@
         <input type="range" id="player-volume-slider" min="0" max="1" step="0.01" value="0.9" class="spotify-seek-slider w-20 sm:w-24" />
       </div>
 
-      <!-- Botón Pantalla Completa / Vista Lateral -->
-      <button id="btn-toggle-right-sidebar" class="spotify-ctrl-btn p-1.5 hidden sm:inline-flex" title="Vista en reproducción">
+      <button id="btn-toggle-right-sidebar" class="spotify-ctrl-btn p-1.5 hidden lg:inline-flex" title="Vista en reproducción">
         <i data-lucide="sidebar-open" class="w-4 h-4"></i>
       </button>
     </div>
 
   </footer>
 
+  <!-- ==================== PANTALLA COMPLETA MÓVIL NOW PLAYING (XIAOMI 15 AMOLED STYLE) ==================== -->
+  <div id="mobile-now-playing-modal" class="fixed inset-0 bg-[#0c0d12] z-50 flex flex-col justify-between p-6 transition-transform duration-300 translate-y-full sm:hidden overflow-y-auto">
+    <!-- Header Superior: Botón Minimizar ⌵ + Título de Playlist -->
+    <div class="flex items-center justify-between pt-2">
+      <button onclick="closeMobilePlayer()" class="p-2 text-slate-300 hover:text-white" title="Minimizar">
+        <i data-lucide="chevron-down" class="w-7 h-7"></i>
+      </button>
+      <div class="flex flex-col items-center">
+        <span class="text-[10px] font-bold uppercase tracking-widest text-slate-400">REPRODUCIENDO DE LA PLAYLIST</span>
+        <span class="text-xs font-bold text-white">MÚSICA ULICITO</span>
+      </div>
+      <button onclick="toggleMobileEQ()" class="p-2 text-cyan-400" title="Ecualizador">
+        <i data-lucide="sliders" class="w-6 h-6"></i>
+      </button>
+    </div>
+
+    <!-- Carátula Central Grande -->
+    <div class="my-auto py-4 flex items-center justify-center">
+      <div class="w-72 h-72 rounded-2xl overflow-hidden shadow-2xl bg-slate-900 border border-white/10">
+        <img id="mobile-player-cover" src="assets/covers/cover_1.jpg" alt="Carátula" class="w-full h-full object-cover" />
+      </div>
+    </div>
+
+    <!-- Título, Artista y Corazón -->
+    <div class="space-y-4">
+      <div class="flex items-center justify-between">
+        <div class="flex flex-col min-w-0 pr-2">
+          <h2 id="mobile-player-title" class="font-extrabold text-xl text-white truncate">
+            (Do The) Act Like You Never Met Me
+          </h2>
+          <p id="mobile-player-artist" class="text-sm text-[#b3b3b3] truncate">
+            TV Girl
+          </p>
+        </div>
+        <button id="mobile-modal-fav" class="p-2 text-slate-400 hover:text-[#1ed760]">
+          <i data-lucide="heart" class="w-7 h-7"></i>
+        </button>
+      </div>
+
+      <!-- Barra de Progreso y Tiempos -->
+      <div>
+        <input type="range" id="mobile-seek-slider" min="0" max="100" value="0" step="0.1" class="spotify-seek-slider w-full" />
+        <div class="flex items-center justify-between text-[11px] font-mono text-[#b3b3b3] mt-1">
+          <span id="mobile-time-current">0:00</span>
+          <span id="mobile-time-duration">0:00</span>
+        </div>
+      </div>
+
+      <!-- Fila de Controles Gigantes: Shuffle, Prev, Play/Pause, Next, Repeat -->
+      <div class="flex items-center justify-between px-2 py-2">
+        <button id="mobile-btn-shuffle" class="spotify-ctrl-btn p-2" title="Aleatorio">
+          <i data-lucide="shuffle" class="w-6 h-6"></i>
+        </button>
+        <button id="mobile-btn-prev" class="spotify-ctrl-btn p-2" title="Anterior">
+          <i data-lucide="skip-back" class="w-7 h-7 fill-current"></i>
+        </button>
+        <button id="mobile-btn-play-pause" class="w-16 h-16 rounded-full bg-white text-black flex items-center justify-center shadow-xl active:scale-95 transition" title="Play">
+          <i data-lucide="play" class="w-7 h-7 fill-black translate-x-0.5"></i>
+        </button>
+        <button id="mobile-btn-next" class="spotify-ctrl-btn p-2" title="Siguiente">
+          <i data-lucide="skip-forward" class="w-7 h-7 fill-current"></i>
+        </button>
+        <div class="relative">
+          <button id="mobile-btn-repeat" class="spotify-ctrl-btn p-2" title="Repetir">
+            <i data-lucide="repeat" class="w-6 h-6"></i>
+          </button>
+          <span id="mobile-repeat-badge-one" class="hidden absolute -top-1 -right-1 text-[8px] font-bold bg-[#1ed760] text-black rounded-full w-3.5 h-3.5 flex items-center justify-center">1</span>
+        </div>
+      </div>
+
+      <!-- Tarjeta Móvil Muestra de la Letra (Preview) -->
+      <div class="spotify-lyrics-card p-4 rounded-xl cursor-pointer" onclick="document.getElementById('lyrics-drawer-modal').classList.remove('hidden')">
+        <span class="text-[10px] uppercase font-bold text-white/70 block mb-1">Letra Sincronizada</span>
+        <div id="mobile-live-lyrics-preview" class="text-sm font-bold text-white leading-relaxed">
+          <p>Toca para ver la letra completa en karaoke...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- ==================== MODAL DE LETRAS SINCRONIZADAS (KARAOKE COMPLETO) ==================== -->
-  <div id="lyrics-drawer-modal" class="fixed inset-0 bg-[#090a0f]/95 backdrop-blur-2xl z-50 flex flex-col p-6 hidden">
+  <div id="lyrics-drawer-modal" class="fixed inset-0 bg-[#090a0f]/95 backdrop-blur-2xl z-50 flex flex-col p-4 sm:p-6 hidden">
     <div class="flex items-center justify-between pb-4 border-b border-white/10 max-w-2xl mx-auto w-full">
       <div class="flex items-center space-x-2.5">
         <i data-lucide="mic" class="w-5 h-5 text-[#1ed760]"></i>
-        <h3 class="font-bold text-lg text-white">Letras Sincronizadas (Karaoke)</h3>
+        <h3 class="font-bold text-base sm:text-lg text-white">Letras Sincronizadas (Karaoke)</h3>
       </div>
       <button id="btn-close-lyrics" class="p-1.5 rounded-lg bg-white/5 text-slate-400 hover:text-white transition">
         <i data-lucide="x" class="w-5 h-5"></i>

@@ -87,7 +87,7 @@ class LibraryManager {
             index: idx,
             format: t.format || t.extension || 'FLAC',
             extension: t.extension || t.format || 'FLAC',
-            streamUrl: t.driveStreamUrl || `assets/audio/sample_${(idx % 5) + 1}.flac`,
+            streamUrl: t.streamUrl || t.githubStreamUrl || `assets/audio/track_${(idx % 37) + 1}.mp3`,
             coverUrl: t.coverUrl || `assets/covers/cover_${(idx % 241) + 1}.jpg`,
             duration: t.duration || '3:45',
             isServerStream: false
@@ -298,6 +298,15 @@ class LibraryManager {
 
     listContainer.appendChild(fragment);
     if (window.lucide) window.lucide.createIcons();
+  }
+
+  playTrackById(id) {
+    const fullIndex = this.tracks.findIndex(t => t.id === id);
+    if (fullIndex !== -1 && this.onTrackChangeCallback) {
+      this.currentTrackIndex = fullIndex;
+      this.onTrackChangeCallback(this.tracks[fullIndex]);
+      this.renderTrackList();
+    }
   }
 
   getCurrentTrack() {

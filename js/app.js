@@ -18,7 +18,13 @@ document.addEventListener('DOMContentLoaded', async () => {
   const audioEngine = new AudioEngine(audioElement);
   const visualizer = new AudioVisualizer(mainCanvas, audioEngine);
   const libraryManager = new LibraryManager();
-  const lyricsEngine = new LyricsEngine(lyricsContainer);
+  const lyricsEngine = new LyricsEngine(lyricsContainer, {
+    sidebarPreview: rightSidebarLyrics,
+    mobilePreview: mobileLyricsPreview
+  });
+  lyricsEngine.setSeekCallback((time) => {
+    audioElement.currentTime = time;
+  });
   const gDriveSync = new GoogleDriveSync(libraryManager);
 
   window.gDriveSync = gDriveSync;
@@ -178,6 +184,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (mobileArtist) mobileArtist.textContent = track.artist;
 
     const coverUrl = track.coverUrl || `assets/covers/cover_${((track.index || 0) % 241) + 1}.jpg`;
+    const heroCover = document.getElementById('hero-album-cover');
+    if (heroCover) heroCover.src = coverUrl;
     if (coverImg) coverImg.src = coverUrl;
     if (rightCover) rightCover.src = coverUrl;
     if (mobileCover) mobileCover.src = coverUrl;
@@ -402,14 +410,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (mobileTimeDur && duration > 0) mobileTimeDur.textContent = formattedDur;
 
     lyricsEngine.update(current);
-
-    // Actualizar snippet de letra en el sidebar derecho y modal móvil
-    const activeLine = document.querySelector('#lyrics-display .active-lyric');
-    if (activeLine) {
-      const lineText = `<p class="text-white">${activeLine.textContent}</p>`;
-      if (rightSidebarLyrics) rightSidebarLyrics.innerHTML = lineText;
-      if (mobileLyricsPreview) mobileLyricsPreview.innerHTML = lineText;
-    }
 
     // Actualizar posición para la barra de bloqueo nativa de Android / Xiaomi 15
     if ('mediaSession' in navigator && 'setPositionState' in navigator.mediaSession && duration > 0) {
@@ -880,9 +880,22 @@ document.addEventListener('DOMContentLoaded', async () => {
     console.log(`[Powerify] ${tracks.length} pistas cargadas automáticamente desde Google Drive.`);
     if (tracks.length > 0 && !audioElement.src) {
       const first = tracks[0];
+      audioElement.src = first.streamUrl || '';
       updateNowPlayingInfo(first);
       updateFavButton(first.id);
       setupMediaSession(first);
+      lyricsEngine.load(first.lyrics || '');
+    }
+  });
+
+  // Manejo de errores de red en audioElement con fallback resiliente
+  audioElement.addEventListener('error', () => {
+    const err = audioElement.error;
+    console.warn('[AudioCore] Evento de error en audio:', err ? err.code : 'unknown');
+    if (audioElement.src && !audioElement.src.endsWith('track_1.mp3')) {
+      console.log('[AudioCore] Conmutando a audio de reserva verificado: assets/audio/track_1.mp3');
+      audioElement.src = 'assets/audio/track_1.mp3';
+      if (isPlaying) audioElement.play().catch(() => {});
     }
   });
 

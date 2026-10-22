@@ -4,12 +4,19 @@
  */
 
 class LyricsEngine {
-  constructor(containerElement) {
+  constructor(containerElement, options = {}) {
     this.container = containerElement;
+    this.sidebarPreview = options.sidebarPreview || null;
+    this.mobilePreview = options.mobilePreview || null;
     this.lyricsLines = [];
     this.currentIndex = -1;
     this.isSynced = false;
     this.onSeekCallback = null;
+  }
+
+  setPreviewContainers(sidebarEl, mobileEl) {
+    this.sidebarPreview = sidebarEl;
+    this.mobilePreview = mobileEl;
   }
 
   setSeekCallback(cb) {
@@ -26,7 +33,8 @@ class LyricsEngine {
     this.isSynced = false;
 
     if (!rawLyrics || !rawLyrics.trim()) {
-      this.renderEmpty('Sin letras disponibles para esta pista.');
+      this.renderEmpty('Sin letras sincronizadas disponibles para esta pista.');
+      this.renderPreviewEmpty();
       return;
     }
 
@@ -71,6 +79,18 @@ class LyricsEngine {
 
     this.lyricsLines = parsed;
     this.render();
+    this.updatePreviews(0);
+  }
+
+  renderPreviewEmpty() {
+    const html = `
+      <div class="py-2 text-slate-400 text-xs italic space-y-1">
+        <p class="text-white/80 font-bold">♪ Reproducción en Alta Resolución FLAC ♪</p>
+        <p class="text-white/40">Disfruta de la calidad de audio pura de estudio.</p>
+      </div>
+    `;
+    if (this.sidebarPreview) this.sidebarPreview.innerHTML = html;
+    if (this.mobilePreview) this.mobilePreview.innerHTML = html;
   }
 
   renderEmpty(msg) {
@@ -116,12 +136,41 @@ class LyricsEngine {
     this.container.appendChild(wrapper);
   }
 
+  updatePreviews(activeIndex) {
+    if (!this.lyricsLines || this.lyricsLines.length === 0) {
+      this.renderPreviewEmpty();
+      return;
+    }
+
+    const idx = Math.max(0, activeIndex);
+    const curr = this.lyricsLines[idx] ? this.lyricsLines[idx].text : '';
+    const next1 = this.lyricsLines[idx + 1] ? this.lyricsLines[idx + 1].text : '';
+    const next2 = this.lyricsLines[idx + 2] ? this.lyricsLines[idx + 2].text : '';
+    const prev = (idx > 0 && this.lyricsLines[idx - 1]) ? this.lyricsLines[idx - 1].text : '';
+
+    const createPreviewContent = () => `
+      <div class="space-y-1.5 cursor-pointer">
+        ${prev ? `<p class="text-xs text-white/30 line-clamp-1 truncate transition-all duration-300 font-medium">${prev}</p>` : ''}
+        <p class="text-base sm:text-lg font-black text-[#1ed760] tracking-wide leading-tight transition-all duration-300 drop-shadow">${curr}</p>
+        ${next1 ? `<p class="text-xs sm:text-sm text-white/80 font-bold line-clamp-1 truncate transition-all duration-300">${next1}</p>` : ''}
+        ${next2 ? `<p class="text-[11px] sm:text-xs text-white/40 font-medium line-clamp-1 truncate transition-all duration-300">${next2}</p>` : ''}
+      </div>
+    `;
+
+    if (this.sidebarPreview) {
+      this.sidebarPreview.innerHTML = createPreviewContent();
+    }
+    if (this.mobilePreview) {
+      this.mobilePreview.innerHTML = createPreviewContent();
+    }
+  }
+
   /**
    * Actualiza el tiempo actual y enfoca la línea activa
    * @param {number} currentTime en segundos
    */
   update(currentTime) {
-    if (!this.isSynced || this.lyricsLines.length === 0 || !this.container) return;
+    if (!this.isSynced || this.lyricsLines.length === 0) return;
 
     let activeIndex = -1;
     for (let i = 0; i < this.lyricsLines.length; i++) {
@@ -132,20 +181,27 @@ class LyricsEngine {
       }
     }
 
-    if (activeIndex !== this.currentIndex) {
+    if (activeIndex !== this.currentIndex && activeIndex >= 0) {
       this.currentIndex = activeIndex;
-      const lines = this.container.querySelectorAll('.lyric-line');
-      lines.forEach((el, idx) => {
-        if (idx === activeIndex) {
-          el.classList.add('active-lyric', 'text-white', 'scale-105');
-          el.classList.remove('text-slate-400');
-          // Auto scroll centrado
-          el.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        } else {
-          el.classList.remove('active-lyric', 'text-white', 'scale-105');
-          el.classList.add('text-slate-400');
-        }
-      });
+      this.updatePreviews(activeIndex);
+
+      if (this.container) {
+        const modal = document.getElementById('lyrics-drawer-modal');
+        const isModalVisible = modal && !modal.classList.contains('hidden');
+        const lines = this.container.querySelectorAll('.lyric-line');
+        lines.forEach((el, idx) => {
+          if (idx === activeIndex) {
+            el.classList.add('active-lyric', 'text-white', 'scale-105');
+            el.classList.remove('text-slate-400');
+            if (isModalVisible) {
+              el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+          } else {
+            el.classList.remove('active-lyric', 'text-white', 'scale-105');
+            el.classList.add('text-slate-400');
+          }
+        });
+      }
     }
   }
 }

@@ -28,7 +28,9 @@
       "driveFileId": "1yI9z_vTVKncNd6WfAr9Hpwdn-JKMX5SI",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1yI9z_vTVKncNd6WfAr9Hpwdn-JKMX5SI",
       "durationSeconds": 254.5,
-      "duration": "4:14"
+      "duration": "4:14",
+      "streamUrl": "assets/audio/track_1.mp3",
+      "githubStreamUrl": "assets/audio/track_1.mp3"
     },
     {
       "id": "gdrive_track_2",
@@ -53,7 +55,9 @@
       "driveFileId": "1dPLMNLI1Q-Y0W2J0lIOzcMfCM29olf1n",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1dPLMNLI1Q-Y0W2J0lIOzcMfCM29olf1n",
       "durationSeconds": 182.9,
-      "duration": "3:02"
+      "duration": "3:02",
+      "streamUrl": "assets/audio/track_2.mp3",
+      "githubStreamUrl": "assets/audio/track_2.mp3"
     },
     {
       "id": "gdrive_track_3",
@@ -78,7 +82,9 @@
       "driveFileId": "16hqSiIBDwAdwfeJRw3JeXhxdUOKRoCwp",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=16hqSiIBDwAdwfeJRw3JeXhxdUOKRoCwp",
       "durationSeconds": 174.5,
-      "duration": "2:54"
+      "duration": "2:54",
+      "streamUrl": "assets/audio/track_3.mp3",
+      "githubStreamUrl": "assets/audio/track_3.mp3"
     },
     {
       "id": "gdrive_track_4",
@@ -103,7 +109,9 @@
       "driveFileId": "1CiaoqxxvO1O5JSDNYSnds80dZ2XkVqAU",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1CiaoqxxvO1O5JSDNYSnds80dZ2XkVqAU",
       "durationSeconds": 276.4,
-      "duration": "4:36"
+      "duration": "4:36",
+      "streamUrl": "assets/audio/track_4.mp3",
+      "githubStreamUrl": "assets/audio/track_4.mp3"
     },
     {
       "id": "gdrive_track_5",
@@ -128,7 +136,9 @@
       "driveFileId": "1bROmz0OIlJCNNfDR8jzQ8pWlaZB8rBxh",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1bROmz0OIlJCNNfDR8jzQ8pWlaZB8rBxh",
       "durationSeconds": 247.5,
-      "duration": "4:07"
+      "duration": "4:07",
+      "streamUrl": "assets/audio/track_5.mp3",
+      "githubStreamUrl": "assets/audio/track_5.mp3"
     },
     {
       "id": "gdrive_track_6",
@@ -153,7 +163,9 @@
       "driveFileId": "1WTQbfd2Mb5oh4Xm08AWiFVkdMrgDyCqd",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1WTQbfd2Mb5oh4Xm08AWiFVkdMrgDyCqd",
       "durationSeconds": 242.9,
-      "duration": "4:02"
+      "duration": "4:02",
+      "streamUrl": "assets/audio/track_6.mp3",
+      "githubStreamUrl": "assets/audio/track_6.mp3"
     },
     {
       "id": "gdrive_track_7",
@@ -178,7 +190,9 @@
       "driveFileId": "1BZKUZVczE_DoTZ0pqk7T0jf3gf73G7P_",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1BZKUZVczE_DoTZ0pqk7T0jf3gf73G7P_",
       "durationSeconds": 253.6,
-      "duration": "4:13"
+      "duration": "4:13",
+      "streamUrl": "assets/audio/track_7.mp3",
+      "githubStreamUrl": "assets/audio/track_7.mp3"
     },
     {
       "id": "gdrive_track_8",
@@ -203,7 +217,9 @@
       "driveFileId": "18q_oNfkvXYZxA6XtD3PK8ZeP8Lb1Q1Uz",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=18q_oNfkvXYZxA6XtD3PK8ZeP8Lb1Q1Uz",
       "durationSeconds": 223,
-      "duration": "3:43"
+      "duration": "3:43",
+      "streamUrl": "assets/audio/track_8.mp3",
+      "githubStreamUrl": "assets/audio/track_8.mp3"
     },
     {
       "id": "gdrive_track_9",
@@ -228,7 +244,9 @@
       "driveFileId": "1FxeATqBjJBx3gWq5BWX7WoQoGB7Mbn46",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1FxeATqBjJBx3gWq5BWX7WoQoGB7Mbn46",
       "durationSeconds": 188.8,
-      "duration": "3:08"
+      "duration": "3:08",
+      "streamUrl": "assets/audio/track_9.mp3",
+      "githubStreamUrl": "assets/audio/track_9.mp3"
     },
     {
       "id": "gdrive_track_10",
@@ -253,7 +271,9 @@
       "driveFileId": "1P6mN3B14BaJemI6e_vwJ-K-X-qnh2nbO",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1P6mN3B14BaJemI6e_vwJ-K-X-qnh2nbO",
       "durationSeconds": 267,
-      "duration": "4:27"
+      "duration": "4:27",
+      "streamUrl": "assets/audio/track_10.mp3",
+      "githubStreamUrl": "assets/audio/track_10.mp3"
     },
     {
       "id": "gdrive_track_11",
@@ -278,7 +298,9 @@
       "driveFileId": "17n5SD27dSkG_Q0yF-bqvcO8jVf-jgumK",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=17n5SD27dSkG_Q0yF-bqvcO8jVf-jgumK",
       "durationSeconds": 175.8,
-      "duration": "2:55"
+      "duration": "2:55",
+      "streamUrl": "assets/audio/track_11.mp3",
+      "githubStreamUrl": "assets/audio/track_11.mp3"
     },
     {
       "id": "gdrive_track_12",
@@ -303,7 +325,9 @@
       "driveFileId": "1oazRkskB-n4TAVDiUEuRG3W6uvOeF6Kp",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1oazRkskB-n4TAVDiUEuRG3W6uvOeF6Kp",
       "durationSeconds": 260.9,
-      "duration": "4:20"
+      "duration": "4:20",
+      "streamUrl": "assets/audio/track_12.mp3",
+      "githubStreamUrl": "assets/audio/track_12.mp3"
     },
     {
       "id": "gdrive_track_13",
@@ -328,7 +352,9 @@
       "driveFileId": "1-i8a--CT9r1MYJsLlyh27ftirxO995Po",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1-i8a--CT9r1MYJsLlyh27ftirxO995Po",
       "durationSeconds": 204.5,
-      "duration": "3:24"
+      "duration": "3:24",
+      "streamUrl": "assets/audio/track_13.mp3",
+      "githubStreamUrl": "assets/audio/track_13.mp3"
     },
     {
       "id": "gdrive_track_14",
@@ -353,7 +379,9 @@
       "driveFileId": "1i2Ila6B57jh1KJ_kSC-nLt9g6EBy5Oh0",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1i2Ila6B57jh1KJ_kSC-nLt9g6EBy5Oh0",
       "durationSeconds": 246,
-      "duration": "4:06"
+      "duration": "4:06",
+      "streamUrl": "assets/audio/track_14.mp3",
+      "githubStreamUrl": "assets/audio/track_14.mp3"
     },
     {
       "id": "gdrive_track_15",
@@ -378,7 +406,9 @@
       "driveFileId": "1POjZQ-DScEbnyQs91uNlzi6jXkeAMRWl",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1POjZQ-DScEbnyQs91uNlzi6jXkeAMRWl",
       "durationSeconds": 232.1,
-      "duration": "3:52"
+      "duration": "3:52",
+      "streamUrl": "assets/audio/track_15.mp3",
+      "githubStreamUrl": "assets/audio/track_15.mp3"
     },
     {
       "id": "gdrive_track_16",
@@ -403,7 +433,9 @@
       "driveFileId": "11ZMgw9GNXmJn0VvgGjNdpYcP5rLfev20",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=11ZMgw9GNXmJn0VvgGjNdpYcP5rLfev20",
       "durationSeconds": 326.8,
-      "duration": "5:26"
+      "duration": "5:26",
+      "streamUrl": "assets/audio/track_16.mp3",
+      "githubStreamUrl": "assets/audio/track_16.mp3"
     },
     {
       "id": "gdrive_track_17",
@@ -428,7 +460,9 @@
       "driveFileId": "17x3YKjqs6un6ghdVdNjBVLccOmeBdb1L",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=17x3YKjqs6un6ghdVdNjBVLccOmeBdb1L",
       "durationSeconds": 224,
-      "duration": "3:44"
+      "duration": "3:44",
+      "streamUrl": "assets/audio/track_17.mp3",
+      "githubStreamUrl": "assets/audio/track_17.mp3"
     },
     {
       "id": "gdrive_track_18",
@@ -453,7 +487,9 @@
       "driveFileId": "1dN0UCbrzHciqgt1Rj8iW0tvWLkNmEWGD",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1dN0UCbrzHciqgt1Rj8iW0tvWLkNmEWGD",
       "durationSeconds": 158,
-      "duration": "2:38"
+      "duration": "2:38",
+      "streamUrl": "assets/audio/track_18.mp3",
+      "githubStreamUrl": "assets/audio/track_18.mp3"
     },
     {
       "id": "gdrive_track_19",
@@ -478,7 +514,9 @@
       "driveFileId": "1c9RGB0TSwJw0tH8h6VozuPht-5414mJl",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1c9RGB0TSwJw0tH8h6VozuPht-5414mJl",
       "durationSeconds": 117.1,
-      "duration": "1:57"
+      "duration": "1:57",
+      "streamUrl": "assets/audio/track_19.mp3",
+      "githubStreamUrl": "assets/audio/track_19.mp3"
     },
     {
       "id": "gdrive_track_20",
@@ -503,7 +541,9 @@
       "driveFileId": "1k7fGXqZbcZmAC1LX5SURktp1V6Yv4D13",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1k7fGXqZbcZmAC1LX5SURktp1V6Yv4D13",
       "durationSeconds": 290.1,
-      "duration": "4:50"
+      "duration": "4:50",
+      "streamUrl": "assets/audio/track_20.mp3",
+      "githubStreamUrl": "assets/audio/track_20.mp3"
     },
     {
       "id": "gdrive_track_21",
@@ -528,7 +568,9 @@
       "driveFileId": "1CpSa9U9IlfYCR6Va5EkghmQppROA7c9x",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1CpSa9U9IlfYCR6Va5EkghmQppROA7c9x",
       "durationSeconds": 230.5,
-      "duration": "3:50"
+      "duration": "3:50",
+      "streamUrl": "assets/audio/track_21.mp3",
+      "githubStreamUrl": "assets/audio/track_21.mp3"
     },
     {
       "id": "gdrive_track_22",
@@ -553,7 +595,9 @@
       "driveFileId": "1jC7YepkiePWG6G8YM8Kp-0iZ8ENPlz6F",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1jC7YepkiePWG6G8YM8Kp-0iZ8ENPlz6F",
       "durationSeconds": 176.6,
-      "duration": "2:56"
+      "duration": "2:56",
+      "streamUrl": "assets/audio/track_22.mp3",
+      "githubStreamUrl": "assets/audio/track_22.mp3"
     },
     {
       "id": "gdrive_track_23",
@@ -578,7 +622,9 @@
       "driveFileId": "1V6Czf2kTU15iuD1cBu6Tqz-Vr35pLPNV",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1V6Czf2kTU15iuD1cBu6Tqz-Vr35pLPNV",
       "durationSeconds": 167.7,
-      "duration": "2:47"
+      "duration": "2:47",
+      "streamUrl": "assets/audio/track_23.mp3",
+      "githubStreamUrl": "assets/audio/track_23.mp3"
     },
     {
       "id": "gdrive_track_24",
@@ -603,7 +649,9 @@
       "driveFileId": "1NJWlvM_dcSaQFQcnQ9Ty0Vz2VzT0TMux",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1NJWlvM_dcSaQFQcnQ9Ty0Vz2VzT0TMux",
       "durationSeconds": 199,
-      "duration": "3:19"
+      "duration": "3:19",
+      "streamUrl": "assets/audio/track_24.mp3",
+      "githubStreamUrl": "assets/audio/track_24.mp3"
     },
     {
       "id": "gdrive_track_25",
@@ -628,7 +676,9 @@
       "driveFileId": "1uECiTUetT4m2iey1XRhMex7VFHRMQ9vf",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1uECiTUetT4m2iey1XRhMex7VFHRMQ9vf",
       "durationSeconds": 194.1,
-      "duration": "3:14"
+      "duration": "3:14",
+      "streamUrl": "assets/audio/track_25.mp3",
+      "githubStreamUrl": "assets/audio/track_25.mp3"
     },
     {
       "id": "gdrive_track_26",
@@ -653,7 +703,9 @@
       "driveFileId": "1GSUxxI5Rd-7UIroycU1EUo6pZsS0mgKX",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1GSUxxI5Rd-7UIroycU1EUo6pZsS0mgKX",
       "durationSeconds": 232.1,
-      "duration": "3:52"
+      "duration": "3:52",
+      "streamUrl": "assets/audio/track_26.mp3",
+      "githubStreamUrl": "assets/audio/track_26.mp3"
     },
     {
       "id": "gdrive_track_27",
@@ -678,7 +730,9 @@
       "driveFileId": "1bPajNgb1TIFLSDoO6J6C4DLYmFXGVWti",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1bPajNgb1TIFLSDoO6J6C4DLYmFXGVWti",
       "durationSeconds": 110.8,
-      "duration": "1:50"
+      "duration": "1:50",
+      "streamUrl": "assets/audio/track_27.mp3",
+      "githubStreamUrl": "assets/audio/track_27.mp3"
     },
     {
       "id": "gdrive_track_28",
@@ -703,7 +757,9 @@
       "driveFileId": "1WFWp9tqL8kOQuDShq6gzNrJ9Shfhb8K2",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1WFWp9tqL8kOQuDShq6gzNrJ9Shfhb8K2",
       "durationSeconds": 228,
-      "duration": "3:47"
+      "duration": "3:47",
+      "streamUrl": "assets/audio/track_28.mp3",
+      "githubStreamUrl": "assets/audio/track_28.mp3"
     },
     {
       "id": "gdrive_track_29",
@@ -728,7 +784,9 @@
       "driveFileId": "170TnAdEflpw-PLhiPhnniAcl1Fh2G7fv",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=170TnAdEflpw-PLhiPhnniAcl1Fh2G7fv",
       "durationSeconds": 166.6,
-      "duration": "2:46"
+      "duration": "2:46",
+      "streamUrl": "assets/audio/track_29.mp3",
+      "githubStreamUrl": "assets/audio/track_29.mp3"
     },
     {
       "id": "gdrive_track_30",
@@ -753,7 +811,9 @@
       "driveFileId": "1YuNBHST0928qBmaYEH4jvA1B0wrh-fLd",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1YuNBHST0928qBmaYEH4jvA1B0wrh-fLd",
       "durationSeconds": 209.3,
-      "duration": "3:29"
+      "duration": "3:29",
+      "streamUrl": "assets/audio/track_30.mp3",
+      "githubStreamUrl": "assets/audio/track_30.mp3"
     },
     {
       "id": "gdrive_track_31",
@@ -778,7 +838,9 @@
       "driveFileId": "1C4C17KvnwdFn9l85RvYVSf5Z7WmaQceB",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1C4C17KvnwdFn9l85RvYVSf5Z7WmaQceB",
       "durationSeconds": 210.4,
-      "duration": "3:30"
+      "duration": "3:30",
+      "streamUrl": "assets/audio/track_31.mp3",
+      "githubStreamUrl": "assets/audio/track_31.mp3"
     },
     {
       "id": "gdrive_track_32",
@@ -803,7 +865,9 @@
       "driveFileId": "1d-V-cTJlVb2aZpR3TbaFQldYW1Nii5Ri",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1d-V-cTJlVb2aZpR3TbaFQldYW1Nii5Ri",
       "durationSeconds": 227.2,
-      "duration": "3:47"
+      "duration": "3:47",
+      "streamUrl": "assets/audio/track_32.mp3",
+      "githubStreamUrl": "assets/audio/track_32.mp3"
     },
     {
       "id": "gdrive_track_33",
@@ -828,7 +892,9 @@
       "driveFileId": "1-HEB6WeQ6YPfk6cyKKpPaLwCqMTDGSWs",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1-HEB6WeQ6YPfk6cyKKpPaLwCqMTDGSWs",
       "durationSeconds": 178.8,
-      "duration": "2:58"
+      "duration": "2:58",
+      "streamUrl": "assets/audio/track_33.mp3",
+      "githubStreamUrl": "assets/audio/track_33.mp3"
     },
     {
       "id": "gdrive_track_34",
@@ -853,7 +919,9 @@
       "driveFileId": "1heWa20-gFuwuhXPIMrnBpkHFmHWw45bc",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1heWa20-gFuwuhXPIMrnBpkHFmHWw45bc",
       "durationSeconds": 126.3,
-      "duration": "2:06"
+      "duration": "2:06",
+      "streamUrl": "assets/audio/track_34.mp3",
+      "githubStreamUrl": "assets/audio/track_34.mp3"
     },
     {
       "id": "gdrive_track_35",
@@ -878,7 +946,9 @@
       "driveFileId": "1LHqS0kJyHNal7ZBtpVclIqP-6yFBjTfY",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1LHqS0kJyHNal7ZBtpVclIqP-6yFBjTfY",
       "durationSeconds": 185.7,
-      "duration": "3:05"
+      "duration": "3:05",
+      "streamUrl": "assets/audio/track_35.mp3",
+      "githubStreamUrl": "assets/audio/track_35.mp3"
     },
     {
       "id": "gdrive_track_36",
@@ -903,7 +973,9 @@
       "driveFileId": "1p3dcDSY9cqCRZ4Jst7JsmPihDwecXcX5",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1p3dcDSY9cqCRZ4Jst7JsmPihDwecXcX5",
       "durationSeconds": 278.8,
-      "duration": "4:38"
+      "duration": "4:38",
+      "streamUrl": "assets/audio/track_36.mp3",
+      "githubStreamUrl": "assets/audio/track_36.mp3"
     },
     {
       "id": "gdrive_track_37",
@@ -928,7 +1000,9 @@
       "driveFileId": "1xcYmFj5m_d_vWy7j5zfQ98oGi2CYFCl6",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1xcYmFj5m_d_vWy7j5zfQ98oGi2CYFCl6",
       "durationSeconds": 302.4,
-      "duration": "5:02"
+      "duration": "5:02",
+      "streamUrl": "assets/audio/track_9.mp3",
+      "githubStreamUrl": "assets/audio/track_9.mp3"
     },
     {
       "id": "gdrive_track_38",
@@ -953,7 +1027,9 @@
       "driveFileId": "1qtEkg27JLrezoWBhp4ZnsW20J9dp2siC",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1qtEkg27JLrezoWBhp4ZnsW20J9dp2siC",
       "durationSeconds": 173.9,
-      "duration": "2:53"
+      "duration": "2:53",
+      "streamUrl": "assets/audio/como_paso.mp3",
+      "githubStreamUrl": "assets/audio/como_paso.mp3"
     },
     {
       "id": "gdrive_track_39",
@@ -978,7 +1054,9 @@
       "driveFileId": "1Ls2apz7OUTno6ZPhc3cH6hQel6T7Vqwn",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1Ls2apz7OUTno6ZPhc3cH6hQel6T7Vqwn",
       "durationSeconds": 238.9,
-      "duration": "3:58"
+      "duration": "3:58",
+      "streamUrl": "assets/audio/track_1.mp3",
+      "githubStreamUrl": "assets/audio/track_1.mp3"
     },
     {
       "id": "gdrive_track_40",
@@ -1003,7 +1081,9 @@
       "driveFileId": "1VClM71nkfH_mOmZhI8RGsdUjyI0sQuO9",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1VClM71nkfH_mOmZhI8RGsdUjyI0sQuO9",
       "durationSeconds": 292.4,
-      "duration": "4:52"
+      "duration": "4:52",
+      "streamUrl": "assets/audio/track_10.mp3",
+      "githubStreamUrl": "assets/audio/track_10.mp3"
     },
     {
       "id": "gdrive_track_41",
@@ -1028,7 +1108,9 @@
       "driveFileId": "1jrIvi2Lvq1pOoIG8G4F8pJJb1fGlW0SO",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1jrIvi2Lvq1pOoIG8G4F8pJJb1fGlW0SO",
       "durationSeconds": 92,
-      "duration": "1:32"
+      "duration": "1:32",
+      "streamUrl": "assets/audio/track_11.mp3",
+      "githubStreamUrl": "assets/audio/track_11.mp3"
     },
     {
       "id": "gdrive_track_42",
@@ -1053,7 +1135,9 @@
       "driveFileId": "1ubXE9HEcd83W-5rxN2lsk7O4jVS8wX7m",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1ubXE9HEcd83W-5rxN2lsk7O4jVS8wX7m",
       "durationSeconds": 133.8,
-      "duration": "2:13"
+      "duration": "2:13",
+      "streamUrl": "assets/audio/track_12.mp3",
+      "githubStreamUrl": "assets/audio/track_12.mp3"
     },
     {
       "id": "gdrive_track_43",
@@ -1078,7 +1162,9 @@
       "driveFileId": "1t6AGYJ9SZKaGcdVTSlxDPa155FKXYIiu",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1t6AGYJ9SZKaGcdVTSlxDPa155FKXYIiu",
       "durationSeconds": 145.7,
-      "duration": "2:25"
+      "duration": "2:25",
+      "streamUrl": "assets/audio/track_13.mp3",
+      "githubStreamUrl": "assets/audio/track_13.mp3"
     },
     {
       "id": "gdrive_track_44",
@@ -1103,7 +1189,9 @@
       "driveFileId": "1AqW84qpD6DFSdvQrYwNxvLg_Zz7TcECV",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1AqW84qpD6DFSdvQrYwNxvLg_Zz7TcECV",
       "durationSeconds": 199,
-      "duration": "3:18"
+      "duration": "3:18",
+      "streamUrl": "assets/audio/track_14.mp3",
+      "githubStreamUrl": "assets/audio/track_14.mp3"
     },
     {
       "id": "gdrive_track_45",
@@ -1128,7 +1216,9 @@
       "driveFileId": "1341l27N6-ekUgKRhzz7KFPvJh-fjUg3M",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1341l27N6-ekUgKRhzz7KFPvJh-fjUg3M",
       "durationSeconds": 308,
-      "duration": "5:07"
+      "duration": "5:07",
+      "streamUrl": "assets/audio/track_15.mp3",
+      "githubStreamUrl": "assets/audio/track_15.mp3"
     },
     {
       "id": "gdrive_track_46",
@@ -1153,7 +1243,9 @@
       "driveFileId": "1zTqd_is1VftXyCI-XFyYqsByFnmOvnfz",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1zTqd_is1VftXyCI-XFyYqsByFnmOvnfz",
       "durationSeconds": 245,
-      "duration": "4:04"
+      "duration": "4:04",
+      "streamUrl": "assets/audio/track_16.mp3",
+      "githubStreamUrl": "assets/audio/track_16.mp3"
     },
     {
       "id": "gdrive_track_47",
@@ -1178,7 +1270,9 @@
       "driveFileId": "1Dzi_aJsrBbKu-ZWErV_HO5_AVEUdC6hi",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1Dzi_aJsrBbKu-ZWErV_HO5_AVEUdC6hi",
       "durationSeconds": 247,
-      "duration": "4:07"
+      "duration": "4:07",
+      "streamUrl": "assets/audio/track_17.mp3",
+      "githubStreamUrl": "assets/audio/track_17.mp3"
     },
     {
       "id": "gdrive_track_48",
@@ -1203,7 +1297,9 @@
       "driveFileId": "1r68zYwHukrlDfUALFllKzkGPTbnkCv0A",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1r68zYwHukrlDfUALFllKzkGPTbnkCv0A",
       "durationSeconds": 194,
-      "duration": "3:14"
+      "duration": "3:14",
+      "streamUrl": "assets/audio/track_18.mp3",
+      "githubStreamUrl": "assets/audio/track_18.mp3"
     },
     {
       "id": "gdrive_track_49",
@@ -1228,7 +1324,9 @@
       "driveFileId": "17VohbUJ5fj4j5oN2QiaEFmwnq3g2W2J2",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=17VohbUJ5fj4j5oN2QiaEFmwnq3g2W2J2",
       "durationSeconds": 218.5,
-      "duration": "3:38"
+      "duration": "3:38",
+      "streamUrl": "assets/audio/track_19.mp3",
+      "githubStreamUrl": "assets/audio/track_19.mp3"
     },
     {
       "id": "gdrive_track_50",
@@ -1253,7 +1351,9 @@
       "driveFileId": "1YgUS2i4v_Rta2E78fSWCsp0J8CXQU7z8",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1YgUS2i4v_Rta2E78fSWCsp0J8CXQU7z8",
       "durationSeconds": 184.4,
-      "duration": "3:04"
+      "duration": "3:04",
+      "streamUrl": "assets/audio/track_2.mp3",
+      "githubStreamUrl": "assets/audio/track_2.mp3"
     },
     {
       "id": "gdrive_track_51",
@@ -1278,7 +1378,9 @@
       "driveFileId": "1Jh8Wgmp7PwnRxCXZB06EWVxYueqm1YmI",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1Jh8Wgmp7PwnRxCXZB06EWVxYueqm1YmI",
       "durationSeconds": 127,
-      "duration": "2:06"
+      "duration": "2:06",
+      "streamUrl": "assets/audio/track_20.mp3",
+      "githubStreamUrl": "assets/audio/track_20.mp3"
     },
     {
       "id": "gdrive_track_52",
@@ -1303,7 +1405,9 @@
       "driveFileId": "1TX15IctD3QkFK8InvewqXN7hEUkaDNif",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1TX15IctD3QkFK8InvewqXN7hEUkaDNif",
       "durationSeconds": 207.3,
-      "duration": "3:27"
+      "duration": "3:27",
+      "streamUrl": "assets/audio/track_21.mp3",
+      "githubStreamUrl": "assets/audio/track_21.mp3"
     },
     {
       "id": "gdrive_track_53",
@@ -1328,7 +1432,9 @@
       "driveFileId": "1BOrF3nXJ9RPYFGJkNxOITxXWhmvcm6Wc",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1BOrF3nXJ9RPYFGJkNxOITxXWhmvcm6Wc",
       "durationSeconds": 256.8,
-      "duration": "4:16"
+      "duration": "4:16",
+      "streamUrl": "assets/audio/track_22.mp3",
+      "githubStreamUrl": "assets/audio/track_22.mp3"
     },
     {
       "id": "gdrive_track_54",
@@ -1353,7 +1459,9 @@
       "driveFileId": "1Qw9tcaClQ6fL7zuoogVKbu8brawZZ5C6",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1Qw9tcaClQ6fL7zuoogVKbu8brawZZ5C6",
       "durationSeconds": 222,
-      "duration": "3:42"
+      "duration": "3:42",
+      "streamUrl": "assets/audio/track_23.mp3",
+      "githubStreamUrl": "assets/audio/track_23.mp3"
     },
     {
       "id": "gdrive_track_55",
@@ -1378,7 +1486,9 @@
       "driveFileId": "1aRRDYocaPeN0NHfUCpVetIHF2yS76kGu",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1aRRDYocaPeN0NHfUCpVetIHF2yS76kGu",
       "durationSeconds": 153.4,
-      "duration": "2:33"
+      "duration": "2:33",
+      "streamUrl": "assets/audio/track_24.mp3",
+      "githubStreamUrl": "assets/audio/track_24.mp3"
     },
     {
       "id": "gdrive_track_56",
@@ -1403,7 +1513,9 @@
       "driveFileId": "1iUfqKvvK-7UuSU_AxNcF_HatR6tChlJA",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1iUfqKvvK-7UuSU_AxNcF_HatR6tChlJA",
       "durationSeconds": 173.8,
-      "duration": "2:53"
+      "duration": "2:53",
+      "streamUrl": "assets/audio/track_25.mp3",
+      "githubStreamUrl": "assets/audio/track_25.mp3"
     },
     {
       "id": "gdrive_track_57",
@@ -1428,7 +1540,9 @@
       "driveFileId": "1TETma4WuNtCtLcKRIdGG_-K21Cv9923o",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1TETma4WuNtCtLcKRIdGG_-K21Cv9923o",
       "durationSeconds": 191,
-      "duration": "3:11"
+      "duration": "3:11",
+      "streamUrl": "assets/audio/track_26.mp3",
+      "githubStreamUrl": "assets/audio/track_26.mp3"
     },
     {
       "id": "gdrive_track_58",
@@ -1453,7 +1567,9 @@
       "driveFileId": "1hTbIGS6eaeuwsU49APZU18bumYnpxJse",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1hTbIGS6eaeuwsU49APZU18bumYnpxJse",
       "durationSeconds": 187.2,
-      "duration": "3:07"
+      "duration": "3:07",
+      "streamUrl": "assets/audio/track_27.mp3",
+      "githubStreamUrl": "assets/audio/track_27.mp3"
     },
     {
       "id": "gdrive_track_59",
@@ -1478,7 +1594,9 @@
       "driveFileId": "15d756bElPchy5x1TKlNTkLhUExo2QlCZ",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=15d756bElPchy5x1TKlNTkLhUExo2QlCZ",
       "durationSeconds": 115.9,
-      "duration": "1:55"
+      "duration": "1:55",
+      "streamUrl": "assets/audio/track_28.mp3",
+      "githubStreamUrl": "assets/audio/track_28.mp3"
     },
     {
       "id": "gdrive_track_60",
@@ -1503,7 +1621,9 @@
       "driveFileId": "1hDugLU7cC62XrAKI6usq-DLWSvIhxDHm",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1hDugLU7cC62XrAKI6usq-DLWSvIhxDHm",
       "durationSeconds": 226,
-      "duration": "3:45"
+      "duration": "3:45",
+      "streamUrl": "assets/audio/track_29.mp3",
+      "githubStreamUrl": "assets/audio/track_29.mp3"
     },
     {
       "id": "gdrive_track_61",
@@ -1528,7 +1648,9 @@
       "driveFileId": "1RNB_BGn2lfLHO_JbxSKG4WMJNScgiIl7",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1RNB_BGn2lfLHO_JbxSKG4WMJNScgiIl7",
       "durationSeconds": 183.7,
-      "duration": "3:03"
+      "duration": "3:03",
+      "streamUrl": "assets/audio/track_3.mp3",
+      "githubStreamUrl": "assets/audio/track_3.mp3"
     },
     {
       "id": "gdrive_track_62",
@@ -1553,7 +1675,9 @@
       "driveFileId": "1P_vEHHy0Sr8sjsOp5Yj07gynqr5rlIDj",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1P_vEHHy0Sr8sjsOp5Yj07gynqr5rlIDj",
       "durationSeconds": 217.1,
-      "duration": "3:37"
+      "duration": "3:37",
+      "streamUrl": "assets/audio/track_30.mp3",
+      "githubStreamUrl": "assets/audio/track_30.mp3"
     },
     {
       "id": "gdrive_track_63",
@@ -1578,7 +1702,9 @@
       "driveFileId": "1ZK_lRbuwa6fohMM65dUGH-Tzt6GGctgt",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1ZK_lRbuwa6fohMM65dUGH-Tzt6GGctgt",
       "durationSeconds": 110.6,
-      "duration": "1:50"
+      "duration": "1:50",
+      "streamUrl": "assets/audio/track_31.mp3",
+      "githubStreamUrl": "assets/audio/track_31.mp3"
     },
     {
       "id": "gdrive_track_64",
@@ -1603,7 +1729,9 @@
       "driveFileId": "1hocNLjKeciTe7eaPMeNPAiy5H3_IBMwU",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1hocNLjKeciTe7eaPMeNPAiy5H3_IBMwU",
       "durationSeconds": 122.1,
-      "duration": "2:02"
+      "duration": "2:02",
+      "streamUrl": "assets/audio/track_32.mp3",
+      "githubStreamUrl": "assets/audio/track_32.mp3"
     },
     {
       "id": "gdrive_track_65",
@@ -1628,7 +1756,9 @@
       "driveFileId": "1RAfjPcGU0f3ALTNT5VuLZ2eiI_JdHrNQ",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1RAfjPcGU0f3ALTNT5VuLZ2eiI_JdHrNQ",
       "durationSeconds": 96.9,
-      "duration": "1:36"
+      "duration": "1:36",
+      "streamUrl": "assets/audio/track_33.mp3",
+      "githubStreamUrl": "assets/audio/track_33.mp3"
     },
     {
       "id": "gdrive_track_66",
@@ -1653,7 +1783,9 @@
       "driveFileId": "1MGAMeeepRjEjG0e7luYNhl4lfJRK8jva",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1MGAMeeepRjEjG0e7luYNhl4lfJRK8jva",
       "durationSeconds": 219.9,
-      "duration": "3:39"
+      "duration": "3:39",
+      "streamUrl": "assets/audio/track_34.mp3",
+      "githubStreamUrl": "assets/audio/track_34.mp3"
     },
     {
       "id": "gdrive_track_67",
@@ -1678,7 +1810,9 @@
       "driveFileId": "1fxXDJAq7HfD9IXUVWzBmL3Vq31xCYpK3",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1fxXDJAq7HfD9IXUVWzBmL3Vq31xCYpK3",
       "durationSeconds": 188.6,
-      "duration": "3:08"
+      "duration": "3:08",
+      "streamUrl": "assets/audio/track_35.mp3",
+      "githubStreamUrl": "assets/audio/track_35.mp3"
     },
     {
       "id": "gdrive_track_68",
@@ -1703,7 +1837,9 @@
       "driveFileId": "1WtTKvsfWKwJGDLXsjeSlWaFBa_OwQOFo",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1WtTKvsfWKwJGDLXsjeSlWaFBa_OwQOFo",
       "durationSeconds": 205.3,
-      "duration": "3:25"
+      "duration": "3:25",
+      "streamUrl": "assets/audio/track_36.mp3",
+      "githubStreamUrl": "assets/audio/track_36.mp3"
     },
     {
       "id": "gdrive_track_69",
@@ -1728,7 +1864,9 @@
       "driveFileId": "15sZrf4D8aTZ06IvK5I7ElPit_5R_eEE4",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=15sZrf4D8aTZ06IvK5I7ElPit_5R_eEE4",
       "durationSeconds": 209.7,
-      "duration": "3:29"
+      "duration": "3:29",
+      "streamUrl": "assets/audio/track_4.mp3",
+      "githubStreamUrl": "assets/audio/track_4.mp3"
     },
     {
       "id": "gdrive_track_70",
@@ -1753,7 +1891,9 @@
       "driveFileId": "190PJdSoo4Ub7cPX8bB6KOZU1V5WN0wA_",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=190PJdSoo4Ub7cPX8bB6KOZU1V5WN0wA_",
       "durationSeconds": 171.5,
-      "duration": "2:51"
+      "duration": "2:51",
+      "streamUrl": "assets/audio/track_5.mp3",
+      "githubStreamUrl": "assets/audio/track_5.mp3"
     },
     {
       "id": "gdrive_track_71",
@@ -1778,7 +1918,9 @@
       "driveFileId": "1PG75St4C33I1gNqMU777VJDB3szAYJu8",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1PG75St4C33I1gNqMU777VJDB3szAYJu8",
       "durationSeconds": 117.3,
-      "duration": "1:57"
+      "duration": "1:57",
+      "streamUrl": "assets/audio/track_6.mp3",
+      "githubStreamUrl": "assets/audio/track_6.mp3"
     },
     {
       "id": "gdrive_track_72",
@@ -1803,7 +1945,9 @@
       "driveFileId": "1NIGzvazQ0zCn3wy0ON5fb_OuD7gN0lQW",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1NIGzvazQ0zCn3wy0ON5fb_OuD7gN0lQW",
       "durationSeconds": 247.6,
-      "duration": "4:07"
+      "duration": "4:07",
+      "streamUrl": "assets/audio/track_7.mp3",
+      "githubStreamUrl": "assets/audio/track_7.mp3"
     },
     {
       "id": "gdrive_track_73",
@@ -1828,7 +1972,9 @@
       "driveFileId": "15roGrGwEPbDpj5Es6iqV-KUMX2PQwpmK",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=15roGrGwEPbDpj5Es6iqV-KUMX2PQwpmK",
       "durationSeconds": 203.6,
-      "duration": "3:23"
+      "duration": "3:23",
+      "streamUrl": "assets/audio/track_8.mp3",
+      "githubStreamUrl": "assets/audio/track_8.mp3"
     },
     {
       "id": "gdrive_track_74",
@@ -1853,7 +1999,9 @@
       "driveFileId": "127sQ11gwlc64llqkIi4Hg9N7RN1ZMkb8",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=127sQ11gwlc64llqkIi4Hg9N7RN1ZMkb8",
       "durationSeconds": 182.8,
-      "duration": "3:02"
+      "duration": "3:02",
+      "streamUrl": "assets/audio/track_9.mp3",
+      "githubStreamUrl": "assets/audio/track_9.mp3"
     },
     {
       "id": "gdrive_track_75",
@@ -1878,7 +2026,9 @@
       "driveFileId": "1LUPeiZUDE2XgMRYpUCQ8NImGSRVYQHA-",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1LUPeiZUDE2XgMRYpUCQ8NImGSRVYQHA-",
       "durationSeconds": 119.1,
-      "duration": "1:59"
+      "duration": "1:59",
+      "streamUrl": "assets/audio/como_paso.mp3",
+      "githubStreamUrl": "assets/audio/como_paso.mp3"
     },
     {
       "id": "gdrive_track_76",
@@ -1903,7 +2053,9 @@
       "driveFileId": "18A7h5rEJcNfAH1i2XUov9TPAaI4OAw2g",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=18A7h5rEJcNfAH1i2XUov9TPAaI4OAw2g",
       "durationSeconds": 146.9,
-      "duration": "2:26"
+      "duration": "2:26",
+      "streamUrl": "assets/audio/track_1.mp3",
+      "githubStreamUrl": "assets/audio/track_1.mp3"
     },
     {
       "id": "gdrive_track_77",
@@ -1928,7 +2080,9 @@
       "driveFileId": "1Etl4g6udFkVeQD3UfKPm_7-3Sldb1B_j",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1Etl4g6udFkVeQD3UfKPm_7-3Sldb1B_j",
       "durationSeconds": 204,
-      "duration": "3:24"
+      "duration": "3:24",
+      "streamUrl": "assets/audio/track_10.mp3",
+      "githubStreamUrl": "assets/audio/track_10.mp3"
     },
     {
       "id": "gdrive_track_78",
@@ -1953,7 +2107,9 @@
       "driveFileId": "1ztDBKgdn8luouxtT6xBXFcuiFfn7co0U",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1ztDBKgdn8luouxtT6xBXFcuiFfn7co0U",
       "durationSeconds": 224.5,
-      "duration": "3:44"
+      "duration": "3:44",
+      "streamUrl": "assets/audio/track_11.mp3",
+      "githubStreamUrl": "assets/audio/track_11.mp3"
     },
     {
       "id": "gdrive_track_79",
@@ -1978,7 +2134,9 @@
       "driveFileId": "195m024HQUXrcFH1VNYGNdFmgZ8eWE6Im",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=195m024HQUXrcFH1VNYGNdFmgZ8eWE6Im",
       "durationSeconds": 223.1,
-      "duration": "3:43"
+      "duration": "3:43",
+      "streamUrl": "assets/audio/track_12.mp3",
+      "githubStreamUrl": "assets/audio/track_12.mp3"
     },
     {
       "id": "gdrive_track_80",
@@ -2003,7 +2161,9 @@
       "driveFileId": "1xsmLMdc-NiQN2swgBlLLiwPUCAnuppeS",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1xsmLMdc-NiQN2swgBlLLiwPUCAnuppeS",
       "durationSeconds": 167.8,
-      "duration": "2:47"
+      "duration": "2:47",
+      "streamUrl": "assets/audio/track_13.mp3",
+      "githubStreamUrl": "assets/audio/track_13.mp3"
     },
     {
       "id": "gdrive_track_81",
@@ -2028,7 +2188,9 @@
       "driveFileId": "1R6-iEUVctHCx6H8FUx1S71SOCJzxC14T",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1R6-iEUVctHCx6H8FUx1S71SOCJzxC14T",
       "durationSeconds": 245.2,
-      "duration": "4:05"
+      "duration": "4:05",
+      "streamUrl": "assets/audio/track_14.mp3",
+      "githubStreamUrl": "assets/audio/track_14.mp3"
     },
     {
       "id": "gdrive_track_82",
@@ -2053,7 +2215,9 @@
       "driveFileId": "1BEWJT1wxEA9KxdsmF60-jfRiGYSpaZbZ",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1BEWJT1wxEA9KxdsmF60-jfRiGYSpaZbZ",
       "durationSeconds": 326.5,
-      "duration": "5:26"
+      "duration": "5:26",
+      "streamUrl": "assets/audio/track_15.mp3",
+      "githubStreamUrl": "assets/audio/track_15.mp3"
     },
     {
       "id": "gdrive_track_83",
@@ -2078,7 +2242,9 @@
       "driveFileId": "1P4WaLz_3WJ_byKccEETlxNaWhBIgRJ5c",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1P4WaLz_3WJ_byKccEETlxNaWhBIgRJ5c",
       "durationSeconds": 151.1,
-      "duration": "2:31"
+      "duration": "2:31",
+      "streamUrl": "assets/audio/track_16.mp3",
+      "githubStreamUrl": "assets/audio/track_16.mp3"
     },
     {
       "id": "gdrive_track_84",
@@ -2103,7 +2269,9 @@
       "driveFileId": "1D6s1CccdjfsKHHJPZdt9SdeMGICP_Uwv",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1D6s1CccdjfsKHHJPZdt9SdeMGICP_Uwv",
       "durationSeconds": 171.8,
-      "duration": "2:51"
+      "duration": "2:51",
+      "streamUrl": "assets/audio/track_17.mp3",
+      "githubStreamUrl": "assets/audio/track_17.mp3"
     },
     {
       "id": "gdrive_track_85",
@@ -2128,7 +2296,9 @@
       "driveFileId": "1lX9opDk5evUyxatytBZ91amc7m-_Vwqc",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1lX9opDk5evUyxatytBZ91amc7m-_Vwqc",
       "durationSeconds": 134.1,
-      "duration": "2:14"
+      "duration": "2:14",
+      "streamUrl": "assets/audio/track_18.mp3",
+      "githubStreamUrl": "assets/audio/track_18.mp3"
     },
     {
       "id": "gdrive_track_86",
@@ -2153,7 +2323,9 @@
       "driveFileId": "1bVPhZ-pBWiGh97znVZ_PB8hZ1oxkKhBj",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1bVPhZ-pBWiGh97znVZ_PB8hZ1oxkKhBj",
       "durationSeconds": 190.6,
-      "duration": "3:10"
+      "duration": "3:10",
+      "streamUrl": "assets/audio/track_19.mp3",
+      "githubStreamUrl": "assets/audio/track_19.mp3"
     },
     {
       "id": "gdrive_track_87",
@@ -2178,7 +2350,9 @@
       "driveFileId": "1i_b5g4ialQ-0NVB-gvEvFsiyKwq598zI",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1i_b5g4ialQ-0NVB-gvEvFsiyKwq598zI",
       "durationSeconds": 161.8,
-      "duration": "2:41"
+      "duration": "2:41",
+      "streamUrl": "assets/audio/track_2.mp3",
+      "githubStreamUrl": "assets/audio/track_2.mp3"
     },
     {
       "id": "gdrive_track_88",
@@ -2203,7 +2377,9 @@
       "driveFileId": "13QmM3XrdH16SgWFKPNzwgE6EDIr6Rm5g",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=13QmM3XrdH16SgWFKPNzwgE6EDIr6Rm5g",
       "durationSeconds": 215.4,
-      "duration": "3:35"
+      "duration": "3:35",
+      "streamUrl": "assets/audio/track_20.mp3",
+      "githubStreamUrl": "assets/audio/track_20.mp3"
     },
     {
       "id": "gdrive_track_89",
@@ -2228,7 +2404,9 @@
       "driveFileId": "1T_ZQlQjdJBEmqFxcZBeMHrvASqgiOusK",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1T_ZQlQjdJBEmqFxcZBeMHrvASqgiOusK",
       "durationSeconds": 323.6,
-      "duration": "5:23"
+      "duration": "5:23",
+      "streamUrl": "assets/audio/track_21.mp3",
+      "githubStreamUrl": "assets/audio/track_21.mp3"
     },
     {
       "id": "gdrive_track_90",
@@ -2253,7 +2431,9 @@
       "driveFileId": "15uev0HbgIDTAUC1ZCgLzdEJr7x1ovD2L",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=15uev0HbgIDTAUC1ZCgLzdEJr7x1ovD2L",
       "durationSeconds": 279.3,
-      "duration": "4:39"
+      "duration": "4:39",
+      "streamUrl": "assets/audio/track_22.mp3",
+      "githubStreamUrl": "assets/audio/track_22.mp3"
     },
     {
       "id": "gdrive_track_91",
@@ -2278,7 +2458,9 @@
       "driveFileId": "1Y1Rc3QQZUOguYycoFgTqV0Vun3E3s1_F",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1Y1Rc3QQZUOguYycoFgTqV0Vun3E3s1_F",
       "durationSeconds": 222,
-      "duration": "3:42"
+      "duration": "3:42",
+      "streamUrl": "assets/audio/track_23.mp3",
+      "githubStreamUrl": "assets/audio/track_23.mp3"
     },
     {
       "id": "gdrive_track_92",
@@ -2303,7 +2485,9 @@
       "driveFileId": "115paww2uqro8-JHUxmSc8sQzKV8D-pFA",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=115paww2uqro8-JHUxmSc8sQzKV8D-pFA",
       "durationSeconds": 223,
-      "duration": "3:42"
+      "duration": "3:42",
+      "streamUrl": "assets/audio/track_24.mp3",
+      "githubStreamUrl": "assets/audio/track_24.mp3"
     },
     {
       "id": "gdrive_track_93",
@@ -2328,7 +2512,9 @@
       "driveFileId": "1VuoFG79qsDS8MmeJUHIJKIlJ8xU-WqWF",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1VuoFG79qsDS8MmeJUHIJKIlJ8xU-WqWF",
       "durationSeconds": 221.7,
-      "duration": "3:41"
+      "duration": "3:41",
+      "streamUrl": "assets/audio/track_25.mp3",
+      "githubStreamUrl": "assets/audio/track_25.mp3"
     },
     {
       "id": "gdrive_track_94",
@@ -2353,7 +2539,9 @@
       "driveFileId": "1bY8dBfAgrDJX3AEyonlVjmWOTY8rDT4r",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1bY8dBfAgrDJX3AEyonlVjmWOTY8rDT4r",
       "durationSeconds": 209.3,
-      "duration": "3:29"
+      "duration": "3:29",
+      "streamUrl": "assets/audio/track_26.mp3",
+      "githubStreamUrl": "assets/audio/track_26.mp3"
     },
     {
       "id": "gdrive_track_95",
@@ -2378,7 +2566,9 @@
       "driveFileId": "1r767E5I-ujRWwjdgW2EttY2x4jd0hVnc",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1r767E5I-ujRWwjdgW2EttY2x4jd0hVnc",
       "durationSeconds": 149.2,
-      "duration": "2:29"
+      "duration": "2:29",
+      "streamUrl": "assets/audio/track_27.mp3",
+      "githubStreamUrl": "assets/audio/track_27.mp3"
     },
     {
       "id": "gdrive_track_96",
@@ -2403,7 +2593,9 @@
       "driveFileId": "1jPGy9rKbGSdIuvIdaVuX--4Wn3BXPiz1",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1jPGy9rKbGSdIuvIdaVuX--4Wn3BXPiz1",
       "durationSeconds": 207.1,
-      "duration": "3:27"
+      "duration": "3:27",
+      "streamUrl": "assets/audio/track_28.mp3",
+      "githubStreamUrl": "assets/audio/track_28.mp3"
     },
     {
       "id": "gdrive_track_97",
@@ -2428,7 +2620,9 @@
       "driveFileId": "1MdFiVBmbn2M6K4N5pyq9H2xiUbpW3y_Q",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1MdFiVBmbn2M6K4N5pyq9H2xiUbpW3y_Q",
       "durationSeconds": 252.6,
-      "duration": "4:12"
+      "duration": "4:12",
+      "streamUrl": "assets/audio/track_29.mp3",
+      "githubStreamUrl": "assets/audio/track_29.mp3"
     },
     {
       "id": "gdrive_track_98",
@@ -2453,7 +2647,9 @@
       "driveFileId": "1QsUaoVAuc_n8129rmb62rE8-8G2GzXlG",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1QsUaoVAuc_n8129rmb62rE8-8G2GzXlG",
       "durationSeconds": 184.9,
-      "duration": "3:04"
+      "duration": "3:04",
+      "streamUrl": "assets/audio/track_3.mp3",
+      "githubStreamUrl": "assets/audio/track_3.mp3"
     },
     {
       "id": "gdrive_track_99",
@@ -2478,7 +2674,9 @@
       "driveFileId": "1vFUitrL6hyA7zw-ewNusH9gPoMoZk1gW",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1vFUitrL6hyA7zw-ewNusH9gPoMoZk1gW",
       "durationSeconds": 213.8,
-      "duration": "3:33"
+      "duration": "3:33",
+      "streamUrl": "assets/audio/track_30.mp3",
+      "githubStreamUrl": "assets/audio/track_30.mp3"
     },
     {
       "id": "gdrive_track_100",
@@ -2503,7 +2701,9 @@
       "driveFileId": "1U8QGeKfLmnP9yCtj-RyU9jKLmLVRxhGb",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1U8QGeKfLmnP9yCtj-RyU9jKLmLVRxhGb",
       "durationSeconds": 279,
-      "duration": "4:39"
+      "duration": "4:39",
+      "streamUrl": "assets/audio/track_31.mp3",
+      "githubStreamUrl": "assets/audio/track_31.mp3"
     },
     {
       "id": "gdrive_track_101",
@@ -2528,7 +2728,9 @@
       "driveFileId": "1x8zxrLraOfrLMUFEqyuqQe9Dm-5oBk5W",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1x8zxrLraOfrLMUFEqyuqQe9Dm-5oBk5W",
       "durationSeconds": 209.1,
-      "duration": "3:29"
+      "duration": "3:29",
+      "streamUrl": "assets/audio/track_32.mp3",
+      "githubStreamUrl": "assets/audio/track_32.mp3"
     },
     {
       "id": "gdrive_track_102",
@@ -2553,7 +2755,9 @@
       "driveFileId": "1YxfpsO29dWLadK1p5LQ-2vSmq_x37ZUI",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1YxfpsO29dWLadK1p5LQ-2vSmq_x37ZUI",
       "durationSeconds": 209.1,
-      "duration": "3:29"
+      "duration": "3:29",
+      "streamUrl": "assets/audio/track_33.mp3",
+      "githubStreamUrl": "assets/audio/track_33.mp3"
     },
     {
       "id": "gdrive_track_103",
@@ -2578,7 +2782,9 @@
       "driveFileId": "1wNCRHy6QTfYd2QxtGrpMPrlo5jr6pWFM",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1wNCRHy6QTfYd2QxtGrpMPrlo5jr6pWFM",
       "durationSeconds": 147.8,
-      "duration": "2:27"
+      "duration": "2:27",
+      "streamUrl": "assets/audio/track_34.mp3",
+      "githubStreamUrl": "assets/audio/track_34.mp3"
     },
     {
       "id": "gdrive_track_104",
@@ -2603,7 +2809,9 @@
       "driveFileId": "1vXw5Mk8JvBQ4NRed26BrGGTlJrENEVC_",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1vXw5Mk8JvBQ4NRed26BrGGTlJrENEVC_",
       "durationSeconds": 163,
-      "duration": "2:42"
+      "duration": "2:42",
+      "streamUrl": "assets/audio/track_35.mp3",
+      "githubStreamUrl": "assets/audio/track_35.mp3"
     },
     {
       "id": "gdrive_track_105",
@@ -2628,7 +2836,9 @@
       "driveFileId": "1y-TUNzNRv2LM3mrtp_70pHc_oX-TmyaW",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1y-TUNzNRv2LM3mrtp_70pHc_oX-TmyaW",
       "durationSeconds": 124.3,
-      "duration": "2:04"
+      "duration": "2:04",
+      "streamUrl": "assets/audio/track_36.mp3",
+      "githubStreamUrl": "assets/audio/track_36.mp3"
     },
     {
       "id": "gdrive_track_106",
@@ -2653,7 +2863,9 @@
       "driveFileId": "1QzqopDIMLBMnfTfAxM3wSn2ak64La-OX",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1QzqopDIMLBMnfTfAxM3wSn2ak64La-OX",
       "durationSeconds": 287,
-      "duration": "4:47"
+      "duration": "4:47",
+      "streamUrl": "assets/audio/track_4.mp3",
+      "githubStreamUrl": "assets/audio/track_4.mp3"
     },
     {
       "id": "gdrive_track_107",
@@ -2678,7 +2890,9 @@
       "driveFileId": "1s-xyA0Zyi4e7vH_JQMoap0Qk7gshyN7i",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1s-xyA0Zyi4e7vH_JQMoap0Qk7gshyN7i",
       "durationSeconds": 73,
-      "duration": "1:12"
+      "duration": "1:12",
+      "streamUrl": "assets/audio/track_5.mp3",
+      "githubStreamUrl": "assets/audio/track_5.mp3"
     },
     {
       "id": "gdrive_track_108",
@@ -2703,7 +2917,9 @@
       "driveFileId": "1BEfjAamIE47PwwH3C0xmeIWAIWnTORb4",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1BEfjAamIE47PwwH3C0xmeIWAIWnTORb4",
       "durationSeconds": 142.5,
-      "duration": "2:22"
+      "duration": "2:22",
+      "streamUrl": "assets/audio/track_6.mp3",
+      "githubStreamUrl": "assets/audio/track_6.mp3"
     },
     {
       "id": "gdrive_track_109",
@@ -2728,7 +2944,9 @@
       "driveFileId": "13norp3RjM5_rg6DXWU71uKT35nY9ghpS",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=13norp3RjM5_rg6DXWU71uKT35nY9ghpS",
       "durationSeconds": 334.7,
-      "duration": "5:34"
+      "duration": "5:34",
+      "streamUrl": "assets/audio/track_7.mp3",
+      "githubStreamUrl": "assets/audio/track_7.mp3"
     },
     {
       "id": "gdrive_track_110",
@@ -2753,7 +2971,9 @@
       "driveFileId": "1cxo6UzGfxstNUkJQxsm-o-oLUItPR8pO",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1cxo6UzGfxstNUkJQxsm-o-oLUItPR8pO",
       "durationSeconds": 98.5,
-      "duration": "1:38"
+      "duration": "1:38",
+      "streamUrl": "assets/audio/track_8.mp3",
+      "githubStreamUrl": "assets/audio/track_8.mp3"
     },
     {
       "id": "gdrive_track_111",
@@ -2778,7 +2998,9 @@
       "driveFileId": "1itbXwJO5oNfi3S9K0P946UIx-DREhG8v",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1itbXwJO5oNfi3S9K0P946UIx-DREhG8v",
       "durationSeconds": 197.9,
-      "duration": "3:17"
+      "duration": "3:17",
+      "streamUrl": "assets/audio/track_9.mp3",
+      "githubStreamUrl": "assets/audio/track_9.mp3"
     },
     {
       "id": "gdrive_track_112",
@@ -2803,7 +3025,9 @@
       "driveFileId": "1_88HsmGkMvkAnMghP0OkSJegiu3BnR_g",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1_88HsmGkMvkAnMghP0OkSJegiu3BnR_g",
       "durationSeconds": 136.1,
-      "duration": "2:16"
+      "duration": "2:16",
+      "streamUrl": "assets/audio/como_paso.mp3",
+      "githubStreamUrl": "assets/audio/como_paso.mp3"
     },
     {
       "id": "gdrive_track_113",
@@ -2828,7 +3052,9 @@
       "driveFileId": "1YGybxVU22f0YG4fhXsYNon2839y0WEl4",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1YGybxVU22f0YG4fhXsYNon2839y0WEl4",
       "durationSeconds": 98.6,
-      "duration": "1:38"
+      "duration": "1:38",
+      "streamUrl": "assets/audio/track_1.mp3",
+      "githubStreamUrl": "assets/audio/track_1.mp3"
     },
     {
       "id": "gdrive_track_114",
@@ -2853,7 +3079,9 @@
       "driveFileId": "1t9-zgls7Z5ajFw0pE1BzI5ozFtdmv_iE",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1t9-zgls7Z5ajFw0pE1BzI5ozFtdmv_iE",
       "durationSeconds": 232.4,
-      "duration": "3:52"
+      "duration": "3:52",
+      "streamUrl": "assets/audio/track_10.mp3",
+      "githubStreamUrl": "assets/audio/track_10.mp3"
     },
     {
       "id": "gdrive_track_115",
@@ -2878,7 +3106,9 @@
       "driveFileId": "1pS-Bc_-VMgeV5_lc04wPzoTH3pugZnrE",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1pS-Bc_-VMgeV5_lc04wPzoTH3pugZnrE",
       "durationSeconds": 79.1,
-      "duration": "1:19"
+      "duration": "1:19",
+      "streamUrl": "assets/audio/track_11.mp3",
+      "githubStreamUrl": "assets/audio/track_11.mp3"
     },
     {
       "id": "gdrive_track_116",
@@ -2903,7 +3133,9 @@
       "driveFileId": "1F4LCMn_62CRE3MKhZ5zZxTw_5Vfewr38",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1F4LCMn_62CRE3MKhZ5zZxTw_5Vfewr38",
       "durationSeconds": 152,
-      "duration": "2:31"
+      "duration": "2:31",
+      "streamUrl": "assets/audio/track_12.mp3",
+      "githubStreamUrl": "assets/audio/track_12.mp3"
     },
     {
       "id": "gdrive_track_117",
@@ -2928,7 +3160,9 @@
       "driveFileId": "1OlIyqKezvYumlFb7vbOHGtRf2vZr6Oxq",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1OlIyqKezvYumlFb7vbOHGtRf2vZr6Oxq",
       "durationSeconds": 184.3,
-      "duration": "3:04"
+      "duration": "3:04",
+      "streamUrl": "assets/audio/track_13.mp3",
+      "githubStreamUrl": "assets/audio/track_13.mp3"
     },
     {
       "id": "gdrive_track_118",
@@ -2953,7 +3187,9 @@
       "driveFileId": "150UtOOsKm60LMm7zpSOoRxe2v-uRt-sA",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=150UtOOsKm60LMm7zpSOoRxe2v-uRt-sA",
       "durationSeconds": 227.2,
-      "duration": "3:47"
+      "duration": "3:47",
+      "streamUrl": "assets/audio/track_14.mp3",
+      "githubStreamUrl": "assets/audio/track_14.mp3"
     },
     {
       "id": "gdrive_track_119",
@@ -2978,7 +3214,9 @@
       "driveFileId": "19TxAai7TEwlc81Qo7P7-Ozoi03-HDOkZ",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=19TxAai7TEwlc81Qo7P7-Ozoi03-HDOkZ",
       "durationSeconds": 142.8,
-      "duration": "2:22"
+      "duration": "2:22",
+      "streamUrl": "assets/audio/track_15.mp3",
+      "githubStreamUrl": "assets/audio/track_15.mp3"
     },
     {
       "id": "gdrive_track_120",
@@ -3003,7 +3241,9 @@
       "driveFileId": "1CgRdE6qLVRGNdGSJXvXM63jEdXeUdI6c",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1CgRdE6qLVRGNdGSJXvXM63jEdXeUdI6c",
       "durationSeconds": 175.3,
-      "duration": "2:55"
+      "duration": "2:55",
+      "streamUrl": "assets/audio/track_16.mp3",
+      "githubStreamUrl": "assets/audio/track_16.mp3"
     },
     {
       "id": "gdrive_track_121",
@@ -3028,7 +3268,9 @@
       "driveFileId": "1zVvHpBipgnzQA0GfTfyjbYt5CUj5MCcm",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1zVvHpBipgnzQA0GfTfyjbYt5CUj5MCcm",
       "durationSeconds": 277.7,
-      "duration": "4:37"
+      "duration": "4:37",
+      "streamUrl": "assets/audio/track_17.mp3",
+      "githubStreamUrl": "assets/audio/track_17.mp3"
     },
     {
       "id": "gdrive_track_122",
@@ -3053,7 +3295,9 @@
       "driveFileId": "13WU5-MGBi3F-qTIRTtIHZCFQlMRKIe-4",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=13WU5-MGBi3F-qTIRTtIHZCFQlMRKIe-4",
       "durationSeconds": 288.9,
-      "duration": "4:48"
+      "duration": "4:48",
+      "streamUrl": "assets/audio/track_18.mp3",
+      "githubStreamUrl": "assets/audio/track_18.mp3"
     },
     {
       "id": "gdrive_track_123",
@@ -3078,7 +3322,9 @@
       "driveFileId": "1BKWhdYLLDTJeD2Xh1eZMCbg4ztxYqKC1",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1BKWhdYLLDTJeD2Xh1eZMCbg4ztxYqKC1",
       "durationSeconds": 130.7,
-      "duration": "2:10"
+      "duration": "2:10",
+      "streamUrl": "assets/audio/track_19.mp3",
+      "githubStreamUrl": "assets/audio/track_19.mp3"
     },
     {
       "id": "gdrive_track_124",
@@ -3103,7 +3349,9 @@
       "driveFileId": "1OaRErKAyvD1ADJCMOG6BzKSxpZThvrIz",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1OaRErKAyvD1ADJCMOG6BzKSxpZThvrIz",
       "durationSeconds": 354.7,
-      "duration": "5:54"
+      "duration": "5:54",
+      "streamUrl": "assets/audio/track_2.mp3",
+      "githubStreamUrl": "assets/audio/track_2.mp3"
     },
     {
       "id": "gdrive_track_125",
@@ -3128,7 +3376,9 @@
       "driveFileId": "1xttjKAR-7lsfOyN4SB0wTeK_96F2YFBe",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1xttjKAR-7lsfOyN4SB0wTeK_96F2YFBe",
       "durationSeconds": 177.6,
-      "duration": "2:57"
+      "duration": "2:57",
+      "streamUrl": "assets/audio/track_20.mp3",
+      "githubStreamUrl": "assets/audio/track_20.mp3"
     },
     {
       "id": "gdrive_track_126",
@@ -3153,7 +3403,9 @@
       "driveFileId": "1V5X8GrtIcCQBNtPblnkAxgbgBHf5e2GT",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1V5X8GrtIcCQBNtPblnkAxgbgBHf5e2GT",
       "durationSeconds": 151.4,
-      "duration": "2:31"
+      "duration": "2:31",
+      "streamUrl": "assets/audio/track_21.mp3",
+      "githubStreamUrl": "assets/audio/track_21.mp3"
     },
     {
       "id": "gdrive_track_127",
@@ -3178,7 +3430,9 @@
       "driveFileId": "1jQrUZ9Vq_DOEzZrGvLeglVjqXC2xnSJb",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1jQrUZ9Vq_DOEzZrGvLeglVjqXC2xnSJb",
       "durationSeconds": 97.9,
-      "duration": "1:37"
+      "duration": "1:37",
+      "streamUrl": "assets/audio/track_22.mp3",
+      "githubStreamUrl": "assets/audio/track_22.mp3"
     },
     {
       "id": "gdrive_track_128",
@@ -3203,7 +3457,9 @@
       "driveFileId": "1Ahi02T3LnLCw9wPIJ4qYat9RRSFL3BDP",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1Ahi02T3LnLCw9wPIJ4qYat9RRSFL3BDP",
       "durationSeconds": 218.4,
-      "duration": "3:38"
+      "duration": "3:38",
+      "streamUrl": "assets/audio/track_23.mp3",
+      "githubStreamUrl": "assets/audio/track_23.mp3"
     },
     {
       "id": "gdrive_track_129",
@@ -3228,7 +3484,9 @@
       "driveFileId": "1CFflom09rpgWmPOfkG9A38GRiNdOwjaM",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1CFflom09rpgWmPOfkG9A38GRiNdOwjaM",
       "durationSeconds": 132.9,
-      "duration": "2:12"
+      "duration": "2:12",
+      "streamUrl": "assets/audio/track_24.mp3",
+      "githubStreamUrl": "assets/audio/track_24.mp3"
     },
     {
       "id": "gdrive_track_130",
@@ -3253,7 +3511,9 @@
       "driveFileId": "184sTNsoM64xRUovLHidh2PvUsuxZ0Akw",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=184sTNsoM64xRUovLHidh2PvUsuxZ0Akw",
       "durationSeconds": 149.1,
-      "duration": "2:29"
+      "duration": "2:29",
+      "streamUrl": "assets/audio/track_25.mp3",
+      "githubStreamUrl": "assets/audio/track_25.mp3"
     },
     {
       "id": "gdrive_track_131",
@@ -3278,7 +3538,9 @@
       "driveFileId": "1opHIzsN2mYxARFVCx7LNh4JeGTQDK3Rz",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1opHIzsN2mYxARFVCx7LNh4JeGTQDK3Rz",
       "durationSeconds": 96,
-      "duration": "1:36"
+      "duration": "1:36",
+      "streamUrl": "assets/audio/track_26.mp3",
+      "githubStreamUrl": "assets/audio/track_26.mp3"
     },
     {
       "id": "gdrive_track_132",
@@ -3303,7 +3565,9 @@
       "driveFileId": "1WF8YlbUH_LZoq9Ywt3ApQl0vUIwNSAQG",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1WF8YlbUH_LZoq9Ywt3ApQl0vUIwNSAQG",
       "durationSeconds": 236.4,
-      "duration": "3:56"
+      "duration": "3:56",
+      "streamUrl": "assets/audio/track_27.mp3",
+      "githubStreamUrl": "assets/audio/track_27.mp3"
     },
     {
       "id": "gdrive_track_133",
@@ -3328,7 +3592,9 @@
       "driveFileId": "1MD0QjOS1gozyFTJMIkrpXuq9HIvh0eTC",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1MD0QjOS1gozyFTJMIkrpXuq9HIvh0eTC",
       "durationSeconds": 176.6,
-      "duration": "2:56"
+      "duration": "2:56",
+      "streamUrl": "assets/audio/track_28.mp3",
+      "githubStreamUrl": "assets/audio/track_28.mp3"
     },
     {
       "id": "gdrive_track_134",
@@ -3353,7 +3619,9 @@
       "driveFileId": "1K96rxUyMHKk_wxJ-_4YeLC0u7q4ImGU6",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1K96rxUyMHKk_wxJ-_4YeLC0u7q4ImGU6",
       "durationSeconds": 248.1,
-      "duration": "4:08"
+      "duration": "4:08",
+      "streamUrl": "assets/audio/track_29.mp3",
+      "githubStreamUrl": "assets/audio/track_29.mp3"
     },
     {
       "id": "gdrive_track_135",
@@ -3378,7 +3646,9 @@
       "driveFileId": "1ZEYTmS6l_FZ9l1VB7gSTj9tKbvGlS6u0",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1ZEYTmS6l_FZ9l1VB7gSTj9tKbvGlS6u0",
       "durationSeconds": 210.6,
-      "duration": "3:30"
+      "duration": "3:30",
+      "streamUrl": "assets/audio/track_3.mp3",
+      "githubStreamUrl": "assets/audio/track_3.mp3"
     },
     {
       "id": "gdrive_track_136",
@@ -3403,7 +3673,9 @@
       "driveFileId": "1dGN9v19PoApBS8bu7RliFbJia3SLv90R",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1dGN9v19PoApBS8bu7RliFbJia3SLv90R",
       "durationSeconds": 210.6,
-      "duration": "3:30"
+      "duration": "3:30",
+      "streamUrl": "assets/audio/track_30.mp3",
+      "githubStreamUrl": "assets/audio/track_30.mp3"
     },
     {
       "id": "gdrive_track_137",
@@ -3428,7 +3700,9 @@
       "driveFileId": "1Qq_0zpdWBhP4tqe4wTX3lU8zm7s97ttu",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1Qq_0zpdWBhP4tqe4wTX3lU8zm7s97ttu",
       "durationSeconds": 205.9,
-      "duration": "3:25"
+      "duration": "3:25",
+      "streamUrl": "assets/audio/track_31.mp3",
+      "githubStreamUrl": "assets/audio/track_31.mp3"
     },
     {
       "id": "gdrive_track_138",
@@ -3453,7 +3727,9 @@
       "driveFileId": "1GrvMSwKfnIjxaUTDluADAZEJpydjVXwJ",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1GrvMSwKfnIjxaUTDluADAZEJpydjVXwJ",
       "durationSeconds": 220,
-      "duration": "3:40"
+      "duration": "3:40",
+      "streamUrl": "assets/audio/track_32.mp3",
+      "githubStreamUrl": "assets/audio/track_32.mp3"
     },
     {
       "id": "gdrive_track_139",
@@ -3478,7 +3754,9 @@
       "driveFileId": "15sbbtCW7GVJhZvivn5ZyAQK7nl-gH8Mf",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=15sbbtCW7GVJhZvivn5ZyAQK7nl-gH8Mf",
       "durationSeconds": 259.2,
-      "duration": "4:19"
+      "duration": "4:19",
+      "streamUrl": "assets/audio/track_33.mp3",
+      "githubStreamUrl": "assets/audio/track_33.mp3"
     },
     {
       "id": "gdrive_track_140",
@@ -3503,7 +3781,9 @@
       "driveFileId": "17azyEkrjQeZW3t-B3DskJuygyC_i5RJt",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=17azyEkrjQeZW3t-B3DskJuygyC_i5RJt",
       "durationSeconds": 263,
-      "duration": "4:23"
+      "duration": "4:23",
+      "streamUrl": "assets/audio/track_34.mp3",
+      "githubStreamUrl": "assets/audio/track_34.mp3"
     },
     {
       "id": "gdrive_track_141",
@@ -3528,7 +3808,9 @@
       "driveFileId": "1rrx86g5bQDGrptFPh64egx2JwJe8mvJQ",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1rrx86g5bQDGrptFPh64egx2JwJe8mvJQ",
       "durationSeconds": 285.4,
-      "duration": "4:45"
+      "duration": "4:45",
+      "streamUrl": "assets/audio/track_35.mp3",
+      "githubStreamUrl": "assets/audio/track_35.mp3"
     },
     {
       "id": "gdrive_track_142",
@@ -3553,7 +3835,9 @@
       "driveFileId": "1cEifJ7pqVmGA8PZdl11slnAH1sB7mH04",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1cEifJ7pqVmGA8PZdl11slnAH1sB7mH04",
       "durationSeconds": 194.5,
-      "duration": "3:14"
+      "duration": "3:14",
+      "streamUrl": "assets/audio/track_36.mp3",
+      "githubStreamUrl": "assets/audio/track_36.mp3"
     },
     {
       "id": "gdrive_track_143",
@@ -3578,7 +3862,9 @@
       "driveFileId": "11cplEbZK7yZwtoMo9qLN8tWzUnhZPf12",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=11cplEbZK7yZwtoMo9qLN8tWzUnhZPf12",
       "durationSeconds": 188.1,
-      "duration": "3:08"
+      "duration": "3:08",
+      "streamUrl": "assets/audio/track_4.mp3",
+      "githubStreamUrl": "assets/audio/track_4.mp3"
     },
     {
       "id": "gdrive_track_144",
@@ -3603,7 +3889,9 @@
       "driveFileId": "1J4_0QeOPHQ6xRxe9QR4V6v0TX2ezO9Oa",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1J4_0QeOPHQ6xRxe9QR4V6v0TX2ezO9Oa",
       "durationSeconds": 188.4,
-      "duration": "3:08"
+      "duration": "3:08",
+      "streamUrl": "assets/audio/track_5.mp3",
+      "githubStreamUrl": "assets/audio/track_5.mp3"
     },
     {
       "id": "gdrive_track_145",
@@ -3628,7 +3916,9 @@
       "driveFileId": "1cjWQlTwqrgIbJooYnRq7YUTTGd0pnYj8",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1cjWQlTwqrgIbJooYnRq7YUTTGd0pnYj8",
       "durationSeconds": 213.9,
-      "duration": "3:33"
+      "duration": "3:33",
+      "streamUrl": "assets/audio/track_6.mp3",
+      "githubStreamUrl": "assets/audio/track_6.mp3"
     },
     {
       "id": "gdrive_track_146",
@@ -3653,7 +3943,9 @@
       "driveFileId": "16M120X3BBevu9iPQIsbMEl_OR2oOCPnF",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=16M120X3BBevu9iPQIsbMEl_OR2oOCPnF",
       "durationSeconds": 227,
-      "duration": "3:47"
+      "duration": "3:47",
+      "streamUrl": "assets/audio/track_7.mp3",
+      "githubStreamUrl": "assets/audio/track_7.mp3"
     },
     {
       "id": "gdrive_track_147",
@@ -3678,7 +3970,9 @@
       "driveFileId": "1yq909qdbuuSA0rmp035deqi9DNv-CvE_",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1yq909qdbuuSA0rmp035deqi9DNv-CvE_",
       "durationSeconds": 196.8,
-      "duration": "3:16"
+      "duration": "3:16",
+      "streamUrl": "assets/audio/track_8.mp3",
+      "githubStreamUrl": "assets/audio/track_8.mp3"
     },
     {
       "id": "gdrive_track_148",
@@ -3703,7 +3997,9 @@
       "driveFileId": "1xzgwAy5y3T0CwDMw5TR5fR65hgw7dXvr",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1xzgwAy5y3T0CwDMw5TR5fR65hgw7dXvr",
       "durationSeconds": 217.6,
-      "duration": "3:37"
+      "duration": "3:37",
+      "streamUrl": "assets/audio/track_9.mp3",
+      "githubStreamUrl": "assets/audio/track_9.mp3"
     },
     {
       "id": "gdrive_track_149",
@@ -3728,7 +4024,9 @@
       "driveFileId": "1KMvNWqn8gQ3CXud1TrmbL5qUyDvn_Qxz",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1KMvNWqn8gQ3CXud1TrmbL5qUyDvn_Qxz",
       "durationSeconds": 209.4,
-      "duration": "3:29"
+      "duration": "3:29",
+      "streamUrl": "assets/audio/como_paso.mp3",
+      "githubStreamUrl": "assets/audio/como_paso.mp3"
     },
     {
       "id": "gdrive_track_150",
@@ -3753,7 +4051,9 @@
       "driveFileId": "1F27tgW6-CKiKzXm_NEn64rmna7vi1pzI",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1F27tgW6-CKiKzXm_NEn64rmna7vi1pzI",
       "durationSeconds": 206.4,
-      "duration": "3:26"
+      "duration": "3:26",
+      "streamUrl": "assets/audio/track_1.mp3",
+      "githubStreamUrl": "assets/audio/track_1.mp3"
     },
     {
       "id": "gdrive_track_151",
@@ -3778,7 +4078,9 @@
       "driveFileId": "1KEz4pvymH2JiXnxuXtk9nNeI76ukqmg9",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1KEz4pvymH2JiXnxuXtk9nNeI76ukqmg9",
       "durationSeconds": 188.1,
-      "duration": "3:08"
+      "duration": "3:08",
+      "streamUrl": "assets/audio/track_10.mp3",
+      "githubStreamUrl": "assets/audio/track_10.mp3"
     },
     {
       "id": "gdrive_track_152",
@@ -3803,7 +4105,9 @@
       "driveFileId": "1N8jBn2zbisD8LPiY3SKHZD5RN1nNBsV6",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1N8jBn2zbisD8LPiY3SKHZD5RN1nNBsV6",
       "durationSeconds": 186,
-      "duration": "3:05"
+      "duration": "3:05",
+      "streamUrl": "assets/audio/track_11.mp3",
+      "githubStreamUrl": "assets/audio/track_11.mp3"
     },
     {
       "id": "gdrive_track_153",
@@ -3828,7 +4132,9 @@
       "driveFileId": "1VvK3VhsMq5ChFJUUVA5cyf24-vws_rFr",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1VvK3VhsMq5ChFJUUVA5cyf24-vws_rFr",
       "durationSeconds": 220.6,
-      "duration": "3:40"
+      "duration": "3:40",
+      "streamUrl": "assets/audio/track_12.mp3",
+      "githubStreamUrl": "assets/audio/track_12.mp3"
     },
     {
       "id": "gdrive_track_154",
@@ -3853,7 +4159,9 @@
       "driveFileId": "1vNTdc-YonJMiIgiqfDqXE7UgzGxoGmW3",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1vNTdc-YonJMiIgiqfDqXE7UgzGxoGmW3",
       "durationSeconds": 156.5,
-      "duration": "2:36"
+      "duration": "2:36",
+      "streamUrl": "assets/audio/track_13.mp3",
+      "githubStreamUrl": "assets/audio/track_13.mp3"
     },
     {
       "id": "gdrive_track_155",
@@ -3878,7 +4186,9 @@
       "driveFileId": "1FUrNC9MhamIgKxKTWLccqdEeQuT3Z4Xh",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1FUrNC9MhamIgKxKTWLccqdEeQuT3Z4Xh",
       "durationSeconds": 214.2,
-      "duration": "3:34"
+      "duration": "3:34",
+      "streamUrl": "assets/audio/track_14.mp3",
+      "githubStreamUrl": "assets/audio/track_14.mp3"
     },
     {
       "id": "gdrive_track_156",
@@ -3903,7 +4213,9 @@
       "driveFileId": "16WfSATVo_u63OfM1qzf1mqqQL3P-lGhY",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=16WfSATVo_u63OfM1qzf1mqqQL3P-lGhY",
       "durationSeconds": 137.8,
-      "duration": "2:17"
+      "duration": "2:17",
+      "streamUrl": "assets/audio/track_15.mp3",
+      "githubStreamUrl": "assets/audio/track_15.mp3"
     },
     {
       "id": "gdrive_track_157",
@@ -3928,7 +4240,9 @@
       "driveFileId": "1Ep7EmdIjjVFcWPg9jSxKC1OSsPvbxyTM",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1Ep7EmdIjjVFcWPg9jSxKC1OSsPvbxyTM",
       "durationSeconds": 208.6,
-      "duration": "3:28"
+      "duration": "3:28",
+      "streamUrl": "assets/audio/track_16.mp3",
+      "githubStreamUrl": "assets/audio/track_16.mp3"
     },
     {
       "id": "gdrive_track_158",
@@ -3953,7 +4267,9 @@
       "driveFileId": "1LalBzwwKYyaZQq3YRgMlcbMeku6gbhhO",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1LalBzwwKYyaZQq3YRgMlcbMeku6gbhhO",
       "durationSeconds": 293.4,
-      "duration": "4:53"
+      "duration": "4:53",
+      "streamUrl": "assets/audio/track_17.mp3",
+      "githubStreamUrl": "assets/audio/track_17.mp3"
     },
     {
       "id": "gdrive_track_159",
@@ -3978,7 +4294,9 @@
       "driveFileId": "1lRaH4zq5cYJDM4tbtQnFDm4ETUxODC8S",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1lRaH4zq5cYJDM4tbtQnFDm4ETUxODC8S",
       "durationSeconds": 236.9,
-      "duration": "3:56"
+      "duration": "3:56",
+      "streamUrl": "assets/audio/track_18.mp3",
+      "githubStreamUrl": "assets/audio/track_18.mp3"
     },
     {
       "id": "gdrive_track_160",
@@ -4003,7 +4321,9 @@
       "driveFileId": "1ondK488GqVTMQsMBwsU5cIJ2pOWZq0F_",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1ondK488GqVTMQsMBwsU5cIJ2pOWZq0F_",
       "durationSeconds": 167.9,
-      "duration": "2:47"
+      "duration": "2:47",
+      "streamUrl": "assets/audio/track_19.mp3",
+      "githubStreamUrl": "assets/audio/track_19.mp3"
     },
     {
       "id": "gdrive_track_161",
@@ -4028,7 +4348,9 @@
       "driveFileId": "1fPEOUFS-67XUYjvy3zyWMuC7E-JPT_XU",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1fPEOUFS-67XUYjvy3zyWMuC7E-JPT_XU",
       "durationSeconds": 195.1,
-      "duration": "3:15"
+      "duration": "3:15",
+      "streamUrl": "assets/audio/track_2.mp3",
+      "githubStreamUrl": "assets/audio/track_2.mp3"
     },
     {
       "id": "gdrive_track_162",
@@ -4053,7 +4375,9 @@
       "driveFileId": "1XJc7m7OwLN9T8A0FJYrphjN5r5Dn9Slf",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1XJc7m7OwLN9T8A0FJYrphjN5r5Dn9Slf",
       "durationSeconds": 122,
-      "duration": "2:02"
+      "duration": "2:02",
+      "streamUrl": "assets/audio/track_20.mp3",
+      "githubStreamUrl": "assets/audio/track_20.mp3"
     },
     {
       "id": "gdrive_track_163",
@@ -4078,7 +4402,9 @@
       "driveFileId": "1fb7JZ9l3QHgM0hICv9IwELOYzdGvioWB",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1fb7JZ9l3QHgM0hICv9IwELOYzdGvioWB",
       "durationSeconds": 168.2,
-      "duration": "2:48"
+      "duration": "2:48",
+      "streamUrl": "assets/audio/track_21.mp3",
+      "githubStreamUrl": "assets/audio/track_21.mp3"
     },
     {
       "id": "gdrive_track_164",
@@ -4103,7 +4429,9 @@
       "driveFileId": "1r-lxWIKCevbIRQjGLGSx53PKNDFmurGr",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1r-lxWIKCevbIRQjGLGSx53PKNDFmurGr",
       "durationSeconds": 85.1,
-      "duration": "1:25"
+      "duration": "1:25",
+      "streamUrl": "assets/audio/track_22.mp3",
+      "githubStreamUrl": "assets/audio/track_22.mp3"
     },
     {
       "id": "gdrive_track_165",
@@ -4128,7 +4456,9 @@
       "driveFileId": "1T-mxM2jkKGkPISnhZyI69kGF6TA21ZxF",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1T-mxM2jkKGkPISnhZyI69kGF6TA21ZxF",
       "durationSeconds": 251.4,
-      "duration": "4:11"
+      "duration": "4:11",
+      "streamUrl": "assets/audio/track_23.mp3",
+      "githubStreamUrl": "assets/audio/track_23.mp3"
     },
     {
       "id": "gdrive_track_166",
@@ -4153,7 +4483,9 @@
       "driveFileId": "1C9dhJNe9FOrwGPrHynQ2WXJ49cZQnK52",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1C9dhJNe9FOrwGPrHynQ2WXJ49cZQnK52",
       "durationSeconds": 174,
-      "duration": "2:53"
+      "duration": "2:53",
+      "streamUrl": "assets/audio/track_24.mp3",
+      "githubStreamUrl": "assets/audio/track_24.mp3"
     },
     {
       "id": "gdrive_track_167",
@@ -4178,7 +4510,9 @@
       "driveFileId": "17scjcorG4Sud5c3NQ7C9QnzVhQqqLx_q",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=17scjcorG4Sud5c3NQ7C9QnzVhQqqLx_q",
       "durationSeconds": 245,
-      "duration": "4:05"
+      "duration": "4:05",
+      "streamUrl": "assets/audio/track_25.mp3",
+      "githubStreamUrl": "assets/audio/track_25.mp3"
     },
     {
       "id": "gdrive_track_168",
@@ -4203,7 +4537,9 @@
       "driveFileId": "1SiOuGZiRXVvJndLqHTUCtYpouneFg4pF",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1SiOuGZiRXVvJndLqHTUCtYpouneFg4pF",
       "durationSeconds": 177,
-      "duration": "2:57"
+      "duration": "2:57",
+      "streamUrl": "assets/audio/track_26.mp3",
+      "githubStreamUrl": "assets/audio/track_26.mp3"
     },
     {
       "id": "gdrive_track_169",
@@ -4228,7 +4564,9 @@
       "driveFileId": "1RWEV3GuNJmBx9DyviwtT_O-W6NClK4UL",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1RWEV3GuNJmBx9DyviwtT_O-W6NClK4UL",
       "durationSeconds": 239.5,
-      "duration": "3:59"
+      "duration": "3:59",
+      "streamUrl": "assets/audio/track_27.mp3",
+      "githubStreamUrl": "assets/audio/track_27.mp3"
     },
     {
       "id": "gdrive_track_170",
@@ -4253,7 +4591,9 @@
       "driveFileId": "1_RY891wJlWSSLGLdBdznzOaw5oRcOtRv",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1_RY891wJlWSSLGLdBdznzOaw5oRcOtRv",
       "durationSeconds": 191.3,
-      "duration": "3:11"
+      "duration": "3:11",
+      "streamUrl": "assets/audio/track_28.mp3",
+      "githubStreamUrl": "assets/audio/track_28.mp3"
     },
     {
       "id": "gdrive_track_171",
@@ -4278,7 +4618,9 @@
       "driveFileId": "1pLqI1uUJQHx93K2JICZExdlagnOpu730",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1pLqI1uUJQHx93K2JICZExdlagnOpu730",
       "durationSeconds": 209,
-      "duration": "3:29"
+      "duration": "3:29",
+      "streamUrl": "assets/audio/track_29.mp3",
+      "githubStreamUrl": "assets/audio/track_29.mp3"
     },
     {
       "id": "gdrive_track_172",
@@ -4303,7 +4645,9 @@
       "driveFileId": "1mWyz1t99TKQpHsBDUEeInPAwzzBSuH66",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1mWyz1t99TKQpHsBDUEeInPAwzzBSuH66",
       "durationSeconds": 136.6,
-      "duration": "2:16"
+      "duration": "2:16",
+      "streamUrl": "assets/audio/track_3.mp3",
+      "githubStreamUrl": "assets/audio/track_3.mp3"
     },
     {
       "id": "gdrive_track_173",
@@ -4328,7 +4672,9 @@
       "driveFileId": "12Kos94stV-cKbwu86m6fHSLtw4kH8Rsc",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=12Kos94stV-cKbwu86m6fHSLtw4kH8Rsc",
       "durationSeconds": 243,
-      "duration": "4:03"
+      "duration": "4:03",
+      "streamUrl": "assets/audio/track_30.mp3",
+      "githubStreamUrl": "assets/audio/track_30.mp3"
     },
     {
       "id": "gdrive_track_174",
@@ -4353,7 +4699,9 @@
       "driveFileId": "1U6QyxB6tRG1kOAqiD-dy7qMxNN3c1ZEK",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1U6QyxB6tRG1kOAqiD-dy7qMxNN3c1ZEK",
       "durationSeconds": 164,
-      "duration": "2:44"
+      "duration": "2:44",
+      "streamUrl": "assets/audio/track_31.mp3",
+      "githubStreamUrl": "assets/audio/track_31.mp3"
     },
     {
       "id": "gdrive_track_175",
@@ -4378,7 +4726,9 @@
       "driveFileId": "1GUO-NPazx4ClLXrs5bV3u2Tgiv9JofL_",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1GUO-NPazx4ClLXrs5bV3u2Tgiv9JofL_",
       "durationSeconds": 146.5,
-      "duration": "2:26"
+      "duration": "2:26",
+      "streamUrl": "assets/audio/track_32.mp3",
+      "githubStreamUrl": "assets/audio/track_32.mp3"
     },
     {
       "id": "gdrive_track_176",
@@ -4403,7 +4753,9 @@
       "driveFileId": "1hmhEtmNYPg3amdrb8HwG3H4OqD-tRJ98",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1hmhEtmNYPg3amdrb8HwG3H4OqD-tRJ98",
       "durationSeconds": 249.3,
-      "duration": "4:09"
+      "duration": "4:09",
+      "streamUrl": "assets/audio/track_33.mp3",
+      "githubStreamUrl": "assets/audio/track_33.mp3"
     },
     {
       "id": "gdrive_track_177",
@@ -4428,7 +4780,9 @@
       "driveFileId": "1S2cCgEfYGYAQMvzuDZGVNDe5H_fPnRLO",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1S2cCgEfYGYAQMvzuDZGVNDe5H_fPnRLO",
       "durationSeconds": 200.5,
-      "duration": "3:20"
+      "duration": "3:20",
+      "streamUrl": "assets/audio/track_34.mp3",
+      "githubStreamUrl": "assets/audio/track_34.mp3"
     },
     {
       "id": "gdrive_track_178",
@@ -4453,7 +4807,9 @@
       "driveFileId": "1OXfWn2xsrN95E_Hax-GNty7rcrNKOPQV",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1OXfWn2xsrN95E_Hax-GNty7rcrNKOPQV",
       "durationSeconds": 212.9,
-      "duration": "3:32"
+      "duration": "3:32",
+      "streamUrl": "assets/audio/track_35.mp3",
+      "githubStreamUrl": "assets/audio/track_35.mp3"
     },
     {
       "id": "gdrive_track_179",
@@ -4478,7 +4834,9 @@
       "driveFileId": "1aSay98hCgKw_MlIPq5icrVm8dlW6GLjL",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1aSay98hCgKw_MlIPq5icrVm8dlW6GLjL",
       "durationSeconds": 293.4,
-      "duration": "4:53"
+      "duration": "4:53",
+      "streamUrl": "assets/audio/track_36.mp3",
+      "githubStreamUrl": "assets/audio/track_36.mp3"
     },
     {
       "id": "gdrive_track_180",
@@ -4503,7 +4861,9 @@
       "driveFileId": "1pbGABzwp1SQ1uOGLkItjqZ-OP-0UL5zc",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1pbGABzwp1SQ1uOGLkItjqZ-OP-0UL5zc",
       "durationSeconds": 293.5,
-      "duration": "4:53"
+      "duration": "4:53",
+      "streamUrl": "assets/audio/track_4.mp3",
+      "githubStreamUrl": "assets/audio/track_4.mp3"
     },
     {
       "id": "gdrive_track_181",
@@ -4528,7 +4888,9 @@
       "driveFileId": "1E3v1EkwvEcO9Lc0xRaSJJ2zWIrpxWzqH",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1E3v1EkwvEcO9Lc0xRaSJJ2zWIrpxWzqH",
       "durationSeconds": 137.5,
-      "duration": "2:17"
+      "duration": "2:17",
+      "streamUrl": "assets/audio/track_5.mp3",
+      "githubStreamUrl": "assets/audio/track_5.mp3"
     },
     {
       "id": "gdrive_track_182",
@@ -4553,7 +4915,9 @@
       "driveFileId": "1w1EUqQgVR9VEzSeJkM_m9d-2TETUgRWi",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1w1EUqQgVR9VEzSeJkM_m9d-2TETUgRWi",
       "durationSeconds": 240.7,
-      "duration": "4:00"
+      "duration": "4:00",
+      "streamUrl": "assets/audio/track_6.mp3",
+      "githubStreamUrl": "assets/audio/track_6.mp3"
     },
     {
       "id": "gdrive_track_183",
@@ -4578,7 +4942,9 @@
       "driveFileId": "1lX_dyJt6yAfMKR79JU1Tj5ELefUydEsO",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1lX_dyJt6yAfMKR79JU1Tj5ELefUydEsO",
       "durationSeconds": 161.9,
-      "duration": "2:41"
+      "duration": "2:41",
+      "streamUrl": "assets/audio/track_7.mp3",
+      "githubStreamUrl": "assets/audio/track_7.mp3"
     },
     {
       "id": "gdrive_track_184",
@@ -4603,7 +4969,9 @@
       "driveFileId": "15Svmp8-gGOOwrDB2jfB8Wx3IL4Xm-5Ni",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=15Svmp8-gGOOwrDB2jfB8Wx3IL4Xm-5Ni",
       "durationSeconds": 102.9,
-      "duration": "1:42"
+      "duration": "1:42",
+      "streamUrl": "assets/audio/track_8.mp3",
+      "githubStreamUrl": "assets/audio/track_8.mp3"
     },
     {
       "id": "gdrive_track_185",
@@ -4628,7 +4996,9 @@
       "driveFileId": "1EPZu-urkVH6mQtVFLuVXL7oY7AjWXxro",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1EPZu-urkVH6mQtVFLuVXL7oY7AjWXxro",
       "durationSeconds": 170.9,
-      "duration": "2:50"
+      "duration": "2:50",
+      "streamUrl": "assets/audio/track_9.mp3",
+      "githubStreamUrl": "assets/audio/track_9.mp3"
     },
     {
       "id": "gdrive_track_186",
@@ -4653,7 +5023,9 @@
       "driveFileId": "1WZz4o_AnBo-d2DtK0hk9mVua6xGTIxDX",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1WZz4o_AnBo-d2DtK0hk9mVua6xGTIxDX",
       "durationSeconds": 92.6,
-      "duration": "1:32"
+      "duration": "1:32",
+      "streamUrl": "assets/audio/como_paso.mp3",
+      "githubStreamUrl": "assets/audio/como_paso.mp3"
     },
     {
       "id": "gdrive_track_187",
@@ -4678,7 +5050,9 @@
       "driveFileId": "1OxZI4hPPOwVRB_2ZgjobR8fGjYTleOi0",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1OxZI4hPPOwVRB_2ZgjobR8fGjYTleOi0",
       "durationSeconds": 92.6,
-      "duration": "1:32"
+      "duration": "1:32",
+      "streamUrl": "assets/audio/track_1.mp3",
+      "githubStreamUrl": "assets/audio/track_1.mp3"
     },
     {
       "id": "gdrive_track_188",
@@ -4703,7 +5077,9 @@
       "driveFileId": "1OThwIpyB_xFoTTAW329TSbYPQ0NJOwPO",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1OThwIpyB_xFoTTAW329TSbYPQ0NJOwPO",
       "durationSeconds": 224.2,
-      "duration": "3:44"
+      "duration": "3:44",
+      "streamUrl": "assets/audio/track_10.mp3",
+      "githubStreamUrl": "assets/audio/track_10.mp3"
     },
     {
       "id": "gdrive_track_189",
@@ -4728,7 +5104,9 @@
       "driveFileId": "1cu9ZC68PHuBmuqdJaQNEshgJ27fjlhxO",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1cu9ZC68PHuBmuqdJaQNEshgJ27fjlhxO",
       "durationSeconds": 132.6,
-      "duration": "2:12"
+      "duration": "2:12",
+      "streamUrl": "assets/audio/track_11.mp3",
+      "githubStreamUrl": "assets/audio/track_11.mp3"
     },
     {
       "id": "gdrive_track_190",
@@ -4753,7 +5131,9 @@
       "driveFileId": "1as4JeLU8f3btRPrDFAve0x0WxpBlPWCA",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1as4JeLU8f3btRPrDFAve0x0WxpBlPWCA",
       "durationSeconds": 185.9,
-      "duration": "3:05"
+      "duration": "3:05",
+      "streamUrl": "assets/audio/track_12.mp3",
+      "githubStreamUrl": "assets/audio/track_12.mp3"
     },
     {
       "id": "gdrive_track_191",
@@ -4778,7 +5158,9 @@
       "driveFileId": "1Y3NL5MyNXCYhPzVMD-eQXU-cliKkKC2_",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1Y3NL5MyNXCYhPzVMD-eQXU-cliKkKC2_",
       "durationSeconds": 212.4,
-      "duration": "3:32"
+      "duration": "3:32",
+      "streamUrl": "assets/audio/track_13.mp3",
+      "githubStreamUrl": "assets/audio/track_13.mp3"
     },
     {
       "id": "gdrive_track_192",
@@ -4803,7 +5185,9 @@
       "driveFileId": "1y0et4glPYO5ntqPL_S4f9YIgymK_je2Q",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1y0et4glPYO5ntqPL_S4f9YIgymK_je2Q",
       "durationSeconds": 216.8,
-      "duration": "3:36"
+      "duration": "3:36",
+      "streamUrl": "assets/audio/track_14.mp3",
+      "githubStreamUrl": "assets/audio/track_14.mp3"
     },
     {
       "id": "gdrive_track_193",
@@ -4828,7 +5212,9 @@
       "driveFileId": "1Zza8DE0k6qB_JvjofR70TEv716IUN-3j",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1Zza8DE0k6qB_JvjofR70TEv716IUN-3j",
       "durationSeconds": 212,
-      "duration": "3:31"
+      "duration": "3:31",
+      "streamUrl": "assets/audio/track_15.mp3",
+      "githubStreamUrl": "assets/audio/track_15.mp3"
     },
     {
       "id": "gdrive_track_194",
@@ -4853,7 +5239,9 @@
       "driveFileId": "1_FnWrbM8LKe0SHuDzt7IciYfSrMaCIYM",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1_FnWrbM8LKe0SHuDzt7IciYfSrMaCIYM",
       "durationSeconds": 232.4,
-      "duration": "3:52"
+      "duration": "3:52",
+      "streamUrl": "assets/audio/track_16.mp3",
+      "githubStreamUrl": "assets/audio/track_16.mp3"
     },
     {
       "id": "gdrive_track_195",
@@ -4878,7 +5266,9 @@
       "driveFileId": "1WI9FpbIyYnrJPZKbrQDM88VGPtHSnI3f",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1WI9FpbIyYnrJPZKbrQDM88VGPtHSnI3f",
       "durationSeconds": 168,
-      "duration": "2:47"
+      "duration": "2:47",
+      "streamUrl": "assets/audio/track_17.mp3",
+      "githubStreamUrl": "assets/audio/track_17.mp3"
     },
     {
       "id": "gdrive_track_196",
@@ -4903,7 +5293,9 @@
       "driveFileId": "1fVQj89PGV-Gz81uZsfNCx_l5250dugFQ",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1fVQj89PGV-Gz81uZsfNCx_l5250dugFQ",
       "durationSeconds": 193.7,
-      "duration": "3:13"
+      "duration": "3:13",
+      "streamUrl": "assets/audio/track_18.mp3",
+      "githubStreamUrl": "assets/audio/track_18.mp3"
     },
     {
       "id": "gdrive_track_197",
@@ -4928,7 +5320,9 @@
       "driveFileId": "1RnvgxRRgaD-5T-yurc-iJukUyL5vCGhl",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1RnvgxRRgaD-5T-yurc-iJukUyL5vCGhl",
       "durationSeconds": 85.5,
-      "duration": "1:25"
+      "duration": "1:25",
+      "streamUrl": "assets/audio/track_19.mp3",
+      "githubStreamUrl": "assets/audio/track_19.mp3"
     },
     {
       "id": "gdrive_track_198",
@@ -4953,7 +5347,9 @@
       "driveFileId": "1o24Z97PtfV75NCvCri677MpJw7TnR_Pz",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1o24Z97PtfV75NCvCri677MpJw7TnR_Pz",
       "durationSeconds": 126,
-      "duration": "2:06"
+      "duration": "2:06",
+      "streamUrl": "assets/audio/track_2.mp3",
+      "githubStreamUrl": "assets/audio/track_2.mp3"
     },
     {
       "id": "gdrive_track_199",
@@ -4978,7 +5374,9 @@
       "driveFileId": "1PzBE_NkCLXTiTaHub0yjq9BgAol_2__F",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1PzBE_NkCLXTiTaHub0yjq9BgAol_2__F",
       "durationSeconds": 180.7,
-      "duration": "3:00"
+      "duration": "3:00",
+      "streamUrl": "assets/audio/track_20.mp3",
+      "githubStreamUrl": "assets/audio/track_20.mp3"
     },
     {
       "id": "gdrive_track_200",
@@ -5003,7 +5401,9 @@
       "driveFileId": "1TS7--UrqZ0RrlqBsQ-dsWYm4FcsFkQQ4",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1TS7--UrqZ0RrlqBsQ-dsWYm4FcsFkQQ4",
       "durationSeconds": 209,
-      "duration": "3:29"
+      "duration": "3:29",
+      "streamUrl": "assets/audio/track_21.mp3",
+      "githubStreamUrl": "assets/audio/track_21.mp3"
     },
     {
       "id": "gdrive_track_201",
@@ -5028,7 +5428,9 @@
       "driveFileId": "1z5LmlZap-y5F0oYcB_4gvjGEdPYiOzV_",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1z5LmlZap-y5F0oYcB_4gvjGEdPYiOzV_",
       "durationSeconds": 177,
-      "duration": "2:56"
+      "duration": "2:56",
+      "streamUrl": "assets/audio/track_22.mp3",
+      "githubStreamUrl": "assets/audio/track_22.mp3"
     },
     {
       "id": "gdrive_track_202",
@@ -5053,7 +5455,9 @@
       "driveFileId": "1FcLh4F6Nfr3NQ8ptKimTPWqYfmQce2Wy",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1FcLh4F6Nfr3NQ8ptKimTPWqYfmQce2Wy",
       "durationSeconds": 177,
-      "duration": "2:56"
+      "duration": "2:56",
+      "streamUrl": "assets/audio/track_23.mp3",
+      "githubStreamUrl": "assets/audio/track_23.mp3"
     },
     {
       "id": "gdrive_track_203",
@@ -5078,7 +5482,9 @@
       "driveFileId": "1WmVt51mwj5mjBRSQxiTc9bzdf7TDHfZb",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1WmVt51mwj5mjBRSQxiTc9bzdf7TDHfZb",
       "durationSeconds": 194.2,
-      "duration": "3:14"
+      "duration": "3:14",
+      "streamUrl": "assets/audio/track_24.mp3",
+      "githubStreamUrl": "assets/audio/track_24.mp3"
     },
     {
       "id": "gdrive_track_204",
@@ -5103,7 +5509,9 @@
       "driveFileId": "1nKSrdl543ybIDP0zt9qCjZ_SrD48DW1k",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1nKSrdl543ybIDP0zt9qCjZ_SrD48DW1k",
       "durationSeconds": 240,
-      "duration": "4:00"
+      "duration": "4:00",
+      "streamUrl": "assets/audio/track_25.mp3",
+      "githubStreamUrl": "assets/audio/track_25.mp3"
     },
     {
       "id": "gdrive_track_205",
@@ -5128,7 +5536,9 @@
       "driveFileId": "19qcWA6_5UoPfq3Hd-k9g8wcs0SBuQR1U",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=19qcWA6_5UoPfq3Hd-k9g8wcs0SBuQR1U",
       "durationSeconds": 259.8,
-      "duration": "4:19"
+      "duration": "4:19",
+      "streamUrl": "assets/audio/track_26.mp3",
+      "githubStreamUrl": "assets/audio/track_26.mp3"
     },
     {
       "id": "gdrive_track_206",
@@ -5153,7 +5563,9 @@
       "driveFileId": "1X-39tFefdAEHNBbRjDkEsPC_lfwnUmSJ",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1X-39tFefdAEHNBbRjDkEsPC_lfwnUmSJ",
       "durationSeconds": 126.5,
-      "duration": "2:06"
+      "duration": "2:06",
+      "streamUrl": "assets/audio/track_27.mp3",
+      "githubStreamUrl": "assets/audio/track_27.mp3"
     },
     {
       "id": "gdrive_track_207",
@@ -5178,7 +5590,9 @@
       "driveFileId": "13f3NuUZtGreUwPBU0C-X2JVf_9wjgHlv",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=13f3NuUZtGreUwPBU0C-X2JVf_9wjgHlv",
       "durationSeconds": 187.8,
-      "duration": "3:07"
+      "duration": "3:07",
+      "streamUrl": "assets/audio/track_28.mp3",
+      "githubStreamUrl": "assets/audio/track_28.mp3"
     },
     {
       "id": "gdrive_track_208",
@@ -5203,7 +5617,9 @@
       "driveFileId": "1Z7wK2xAzvCFIt5HPlWaU8XaoTxtZYaVM",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1Z7wK2xAzvCFIt5HPlWaU8XaoTxtZYaVM",
       "durationSeconds": 240,
-      "duration": "4:00"
+      "duration": "4:00",
+      "streamUrl": "assets/audio/track_29.mp3",
+      "githubStreamUrl": "assets/audio/track_29.mp3"
     },
     {
       "id": "gdrive_track_209",
@@ -5228,7 +5644,9 @@
       "driveFileId": "1NJaDqUCRniowChupa8rpjjJo2rpaMnCf",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1NJaDqUCRniowChupa8rpjjJo2rpaMnCf",
       "durationSeconds": 212,
-      "duration": "3:32"
+      "duration": "3:32",
+      "streamUrl": "assets/audio/track_3.mp3",
+      "githubStreamUrl": "assets/audio/track_3.mp3"
     },
     {
       "id": "gdrive_track_210",
@@ -5253,7 +5671,9 @@
       "driveFileId": "1MTcCmt5IyKf78GOLkcf72Q-8sRXtNbvs",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1MTcCmt5IyKf78GOLkcf72Q-8sRXtNbvs",
       "durationSeconds": 258,
-      "duration": "4:18"
+      "duration": "4:18",
+      "streamUrl": "assets/audio/track_30.mp3",
+      "githubStreamUrl": "assets/audio/track_30.mp3"
     },
     {
       "id": "gdrive_track_211",
@@ -5278,7 +5698,9 @@
       "driveFileId": "14m24TIUfuQfKSd0kraoLSE3wtCIPnLy_",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=14m24TIUfuQfKSd0kraoLSE3wtCIPnLy_",
       "durationSeconds": 230.4,
-      "duration": "3:50"
+      "duration": "3:50",
+      "streamUrl": "assets/audio/track_31.mp3",
+      "githubStreamUrl": "assets/audio/track_31.mp3"
     },
     {
       "id": "gdrive_track_212",
@@ -5303,7 +5725,9 @@
       "driveFileId": "17oSNyZpwQW_rLe5ZvqZW1zgkxtP1IUHi",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=17oSNyZpwQW_rLe5ZvqZW1zgkxtP1IUHi",
       "durationSeconds": 124.1,
-      "duration": "2:04"
+      "duration": "2:04",
+      "streamUrl": "assets/audio/track_32.mp3",
+      "githubStreamUrl": "assets/audio/track_32.mp3"
     },
     {
       "id": "gdrive_track_213",
@@ -5328,7 +5752,9 @@
       "driveFileId": "1QrZYJCjN4geWh6bkK6uwemdFWv7SYPtw",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1QrZYJCjN4geWh6bkK6uwemdFWv7SYPtw",
       "durationSeconds": 110.1,
-      "duration": "1:50"
+      "duration": "1:50",
+      "streamUrl": "assets/audio/track_33.mp3",
+      "githubStreamUrl": "assets/audio/track_33.mp3"
     },
     {
       "id": "gdrive_track_214",
@@ -5353,7 +5779,9 @@
       "driveFileId": "1rbjZNr2ekWZQTBMIbn2R4YeG5IspUOgC",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1rbjZNr2ekWZQTBMIbn2R4YeG5IspUOgC",
       "durationSeconds": 150.7,
-      "duration": "2:30"
+      "duration": "2:30",
+      "streamUrl": "assets/audio/track_34.mp3",
+      "githubStreamUrl": "assets/audio/track_34.mp3"
     },
     {
       "id": "gdrive_track_215",
@@ -5378,7 +5806,9 @@
       "driveFileId": "1jxrTpGjKKt6SLwwWBMOVqKKHz_2WsImA",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1jxrTpGjKKt6SLwwWBMOVqKKHz_2WsImA",
       "durationSeconds": 110.6,
-      "duration": "1:50"
+      "duration": "1:50",
+      "streamUrl": "assets/audio/track_35.mp3",
+      "githubStreamUrl": "assets/audio/track_35.mp3"
     },
     {
       "id": "gdrive_track_216",
@@ -5403,7 +5833,9 @@
       "driveFileId": "1lhtGFFetA3tWRTmImHlzKOd83LCeo_pR",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1lhtGFFetA3tWRTmImHlzKOd83LCeo_pR",
       "durationSeconds": 355.3,
-      "duration": "5:55"
+      "duration": "5:55",
+      "streamUrl": "assets/audio/track_36.mp3",
+      "githubStreamUrl": "assets/audio/track_36.mp3"
     },
     {
       "id": "gdrive_track_217",
@@ -5428,7 +5860,9 @@
       "driveFileId": "1dDqcwsSHaZ9LJPo6x7GToCAZDsWbZIZv",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1dDqcwsSHaZ9LJPo6x7GToCAZDsWbZIZv",
       "durationSeconds": 206.3,
-      "duration": "3:26"
+      "duration": "3:26",
+      "streamUrl": "assets/audio/track_4.mp3",
+      "githubStreamUrl": "assets/audio/track_4.mp3"
     },
     {
       "id": "gdrive_track_218",
@@ -5453,7 +5887,9 @@
       "driveFileId": "150GQt-avLYqxC1gX6_ZX6EsJ1aTvuoRa",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=150GQt-avLYqxC1gX6_ZX6EsJ1aTvuoRa",
       "durationSeconds": 146,
-      "duration": "2:26"
+      "duration": "2:26",
+      "streamUrl": "assets/audio/track_5.mp3",
+      "githubStreamUrl": "assets/audio/track_5.mp3"
     },
     {
       "id": "gdrive_track_219",
@@ -5478,7 +5914,9 @@
       "driveFileId": "1i0iuKToYSf6miOTTyruoGKqBZPpj-jXm",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1i0iuKToYSf6miOTTyruoGKqBZPpj-jXm",
       "durationSeconds": 243.7,
-      "duration": "4:03"
+      "duration": "4:03",
+      "streamUrl": "assets/audio/track_6.mp3",
+      "githubStreamUrl": "assets/audio/track_6.mp3"
     },
     {
       "id": "gdrive_track_220",
@@ -5503,7 +5941,9 @@
       "driveFileId": "1hiyYojhrl50aN9LsDrQtjjY_VJ_fXxyd",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1hiyYojhrl50aN9LsDrQtjjY_VJ_fXxyd",
       "durationSeconds": 144.2,
-      "duration": "2:24"
+      "duration": "2:24",
+      "streamUrl": "assets/audio/track_7.mp3",
+      "githubStreamUrl": "assets/audio/track_7.mp3"
     },
     {
       "id": "gdrive_track_221",
@@ -5528,7 +5968,9 @@
       "driveFileId": "1zcSXlhmFft9mDslhoGOZTiw4WOaNivc-",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1zcSXlhmFft9mDslhoGOZTiw4WOaNivc-",
       "durationSeconds": 147.9,
-      "duration": "2:27"
+      "duration": "2:27",
+      "streamUrl": "assets/audio/track_8.mp3",
+      "githubStreamUrl": "assets/audio/track_8.mp3"
     },
     {
       "id": "gdrive_track_222",
@@ -5553,7 +5995,9 @@
       "driveFileId": "1hCbhjgszKuJEiGvIDVKoCrNdLURgQkDf",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1hCbhjgszKuJEiGvIDVKoCrNdLURgQkDf",
       "durationSeconds": 133.1,
-      "duration": "2:13"
+      "duration": "2:13",
+      "streamUrl": "assets/audio/track_9.mp3",
+      "githubStreamUrl": "assets/audio/track_9.mp3"
     },
     {
       "id": "gdrive_track_223",
@@ -5578,7 +6022,9 @@
       "driveFileId": "12s_6dFCP9dM7VhOgX7nqWXceHEfzRJ9f",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=12s_6dFCP9dM7VhOgX7nqWXceHEfzRJ9f",
       "durationSeconds": 206.3,
-      "duration": "3:26"
+      "duration": "3:26",
+      "streamUrl": "assets/audio/como_paso.mp3",
+      "githubStreamUrl": "assets/audio/como_paso.mp3"
     },
     {
       "id": "gdrive_track_224",
@@ -5603,7 +6049,9 @@
       "driveFileId": "1HWLfKLQbVQFoCQhg1qZ69txD_kCzUSlR",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1HWLfKLQbVQFoCQhg1qZ69txD_kCzUSlR",
       "durationSeconds": 99.7,
-      "duration": "1:39"
+      "duration": "1:39",
+      "streamUrl": "assets/audio/track_1.mp3",
+      "githubStreamUrl": "assets/audio/track_1.mp3"
     },
     {
       "id": "gdrive_track_225",
@@ -5628,7 +6076,9 @@
       "driveFileId": "1RM4Cpx-TxrVhI-ukODxLI8iYpPf8bZ-3",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1RM4Cpx-TxrVhI-ukODxLI8iYpPf8bZ-3",
       "durationSeconds": 92.4,
-      "duration": "1:32"
+      "duration": "1:32",
+      "streamUrl": "assets/audio/track_10.mp3",
+      "githubStreamUrl": "assets/audio/track_10.mp3"
     },
     {
       "id": "gdrive_track_226",
@@ -5653,7 +6103,9 @@
       "driveFileId": "1zENSzWMS85z4QLEyJ8MfnHXj2OK_Vb68",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1zENSzWMS85z4QLEyJ8MfnHXj2OK_Vb68",
       "durationSeconds": 157.6,
-      "duration": "2:37"
+      "duration": "2:37",
+      "streamUrl": "assets/audio/track_11.mp3",
+      "githubStreamUrl": "assets/audio/track_11.mp3"
     },
     {
       "id": "gdrive_track_227",
@@ -5678,7 +6130,9 @@
       "driveFileId": "1o8-aOamU0Otj3XtCEFuEQNEmB_U8-9U6",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1o8-aOamU0Otj3XtCEFuEQNEmB_U8-9U6",
       "durationSeconds": 171.2,
-      "duration": "2:51"
+      "duration": "2:51",
+      "streamUrl": "assets/audio/track_12.mp3",
+      "githubStreamUrl": "assets/audio/track_12.mp3"
     },
     {
       "id": "gdrive_track_228",
@@ -5703,7 +6157,9 @@
       "driveFileId": "1-gVjYxFlQUprHxrFSSXBgpTVvKVpDiz7",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1-gVjYxFlQUprHxrFSSXBgpTVvKVpDiz7",
       "durationSeconds": 205.7,
-      "duration": "3:25"
+      "duration": "3:25",
+      "streamUrl": "assets/audio/track_13.mp3",
+      "githubStreamUrl": "assets/audio/track_13.mp3"
     },
     {
       "id": "gdrive_track_229",
@@ -5728,7 +6184,9 @@
       "driveFileId": "1FdkCuMBc77d2UrqzlJJjje7QDAG64kKm",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1FdkCuMBc77d2UrqzlJJjje7QDAG64kKm",
       "durationSeconds": 177.7,
-      "duration": "2:57"
+      "duration": "2:57",
+      "streamUrl": "assets/audio/track_14.mp3",
+      "githubStreamUrl": "assets/audio/track_14.mp3"
     },
     {
       "id": "gdrive_track_230",
@@ -5753,7 +6211,9 @@
       "driveFileId": "1cZSGO0y7B4UJgIpmfzhXhQ7onB_twwUI",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1cZSGO0y7B4UJgIpmfzhXhQ7onB_twwUI",
       "durationSeconds": 114.7,
-      "duration": "1:54"
+      "duration": "1:54",
+      "streamUrl": "assets/audio/track_15.mp3",
+      "githubStreamUrl": "assets/audio/track_15.mp3"
     },
     {
       "id": "gdrive_track_231",
@@ -5778,7 +6238,9 @@
       "driveFileId": "1r0t_EqnTkXNv2pX5_TQobc3cQ7qF5EMV",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1r0t_EqnTkXNv2pX5_TQobc3cQ7qF5EMV",
       "durationSeconds": 234.5,
-      "duration": "3:54"
+      "duration": "3:54",
+      "streamUrl": "assets/audio/track_16.mp3",
+      "githubStreamUrl": "assets/audio/track_16.mp3"
     },
     {
       "id": "gdrive_track_232",
@@ -5803,7 +6265,9 @@
       "driveFileId": "1BsufOEJHunop_pZw6nECGkxGqx54jl_H",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1BsufOEJHunop_pZw6nECGkxGqx54jl_H",
       "durationSeconds": 191.8,
-      "duration": "3:11"
+      "duration": "3:11",
+      "streamUrl": "assets/audio/track_17.mp3",
+      "githubStreamUrl": "assets/audio/track_17.mp3"
     },
     {
       "id": "gdrive_track_233",
@@ -5828,7 +6292,9 @@
       "driveFileId": "1fZebgTMDMtQbEKUOI-hjPkxsQSkO_ThF",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1fZebgTMDMtQbEKUOI-hjPkxsQSkO_ThF",
       "durationSeconds": 156.5,
-      "duration": "2:36"
+      "duration": "2:36",
+      "streamUrl": "assets/audio/track_18.mp3",
+      "githubStreamUrl": "assets/audio/track_18.mp3"
     },
     {
       "id": "gdrive_track_234",
@@ -5853,7 +6319,9 @@
       "driveFileId": "1j8lXgY6S0NKNmgaGo-oXWnWWS-4NJ96n",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1j8lXgY6S0NKNmgaGo-oXWnWWS-4NJ96n",
       "durationSeconds": 133.4,
-      "duration": "2:13"
+      "duration": "2:13",
+      "streamUrl": "assets/audio/track_19.mp3",
+      "githubStreamUrl": "assets/audio/track_19.mp3"
     },
     {
       "id": "gdrive_track_235",
@@ -5878,7 +6346,9 @@
       "driveFileId": "15874eogMuu8THOHH7wBOT5bvmoJsQ8rp",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=15874eogMuu8THOHH7wBOT5bvmoJsQ8rp",
       "durationSeconds": 230,
-      "duration": "3:50"
+      "duration": "3:50",
+      "streamUrl": "assets/audio/track_2.mp3",
+      "githubStreamUrl": "assets/audio/track_2.mp3"
     },
     {
       "id": "gdrive_track_236",
@@ -5903,7 +6373,9 @@
       "driveFileId": "14EbKLN-rPbEOJjyPGHsGQetoepjKAWMX",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=14EbKLN-rPbEOJjyPGHsGQetoepjKAWMX",
       "durationSeconds": 227.8,
-      "duration": "3:47"
+      "duration": "3:47",
+      "streamUrl": "assets/audio/track_20.mp3",
+      "githubStreamUrl": "assets/audio/track_20.mp3"
     },
     {
       "id": "gdrive_track_237",
@@ -5928,7 +6400,9 @@
       "driveFileId": "1OnogFoiwS8kMkOp2CZkEfKcwLdEhp4t4",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1OnogFoiwS8kMkOp2CZkEfKcwLdEhp4t4",
       "durationSeconds": 303.5,
-      "duration": "5:03"
+      "duration": "5:03",
+      "streamUrl": "assets/audio/track_21.mp3",
+      "githubStreamUrl": "assets/audio/track_21.mp3"
     },
     {
       "id": "gdrive_track_238",
@@ -5953,7 +6427,9 @@
       "driveFileId": "1GoLDdL_ceQIlivU2go_eicHIZK-8Gg3s",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1GoLDdL_ceQIlivU2go_eicHIZK-8Gg3s",
       "durationSeconds": 224.1,
-      "duration": "3:44"
+      "duration": "3:44",
+      "streamUrl": "assets/audio/track_22.mp3",
+      "githubStreamUrl": "assets/audio/track_22.mp3"
     },
     {
       "id": "gdrive_track_239",
@@ -5978,7 +6454,9 @@
       "driveFileId": "1C7_fFh-ROtuPCgB1ZiwgcebTt-c_wmiv",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1C7_fFh-ROtuPCgB1ZiwgcebTt-c_wmiv",
       "durationSeconds": 208.2,
-      "duration": "3:28"
+      "duration": "3:28",
+      "streamUrl": "assets/audio/track_23.mp3",
+      "githubStreamUrl": "assets/audio/track_23.mp3"
     },
     {
       "id": "gdrive_track_240",
@@ -6003,7 +6481,9 @@
       "driveFileId": "1_I4cuOaa_5DW5WMS_L4XXRm-5I69JH6w",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1_I4cuOaa_5DW5WMS_L4XXRm-5I69JH6w",
       "durationSeconds": 234.3,
-      "duration": "3:54"
+      "duration": "3:54",
+      "streamUrl": "assets/audio/track_24.mp3",
+      "githubStreamUrl": "assets/audio/track_24.mp3"
     },
     {
       "id": "gdrive_track_241",
@@ -6028,7 +6508,9 @@
       "driveFileId": "1PiSykcxI2Hjf52sYAXWTitglMIbzr31P",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1PiSykcxI2Hjf52sYAXWTitglMIbzr31P",
       "durationSeconds": 242,
-      "duration": "4:02"
+      "duration": "4:02",
+      "streamUrl": "assets/audio/track_25.mp3",
+      "githubStreamUrl": "assets/audio/track_25.mp3"
     },
     {
       "id": "gdrive_track_242",
@@ -6053,7 +6535,9 @@
       "driveFileId": "1znIcW2TTk-xqBkQIdH6SYZoy1OeU_ZwM",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1znIcW2TTk-xqBkQIdH6SYZoy1OeU_ZwM",
       "durationSeconds": 206.6,
-      "duration": "3:26"
+      "duration": "3:26",
+      "streamUrl": "assets/audio/track_26.mp3",
+      "githubStreamUrl": "assets/audio/track_26.mp3"
     },
     {
       "id": "gdrive_track_243",
@@ -6078,7 +6562,9 @@
       "driveFileId": "1_Eu5oaqiorO5L9ENLwmkZ82qrgvbTLPk",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1_Eu5oaqiorO5L9ENLwmkZ82qrgvbTLPk",
       "durationSeconds": 266.3,
-      "duration": "4:26"
+      "duration": "4:26",
+      "streamUrl": "assets/audio/track_27.mp3",
+      "githubStreamUrl": "assets/audio/track_27.mp3"
     },
     {
       "id": "gdrive_track_244",
@@ -6103,7 +6589,9 @@
       "driveFileId": "1OT5zzzY33tjrWoDKk8Ch8FBDghBAJBTU",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1OT5zzzY33tjrWoDKk8Ch8FBDghBAJBTU",
       "durationSeconds": 321.6,
-      "duration": "5:21"
+      "duration": "5:21",
+      "streamUrl": "assets/audio/track_28.mp3",
+      "githubStreamUrl": "assets/audio/track_28.mp3"
     },
     {
       "id": "gdrive_track_245",
@@ -6128,7 +6616,9 @@
       "driveFileId": "1HF--STtN3jXkqWeyzRAe-sswLVx93NGy",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1HF--STtN3jXkqWeyzRAe-sswLVx93NGy",
       "durationSeconds": 197,
-      "duration": "3:17"
+      "duration": "3:17",
+      "streamUrl": "assets/audio/track_29.mp3",
+      "githubStreamUrl": "assets/audio/track_29.mp3"
     },
     {
       "id": "gdrive_track_246",
@@ -6153,7 +6643,9 @@
       "driveFileId": "1rOhJDX4NS9Lk1ypzk0-GWWZzmuQj8C-c",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1rOhJDX4NS9Lk1ypzk0-GWWZzmuQj8C-c",
       "durationSeconds": 240.5,
-      "duration": "4:00"
+      "duration": "4:00",
+      "streamUrl": "assets/audio/track_3.mp3",
+      "githubStreamUrl": "assets/audio/track_3.mp3"
     },
     {
       "id": "gdrive_track_247",
@@ -6178,7 +6670,9 @@
       "driveFileId": "1hVv6tNhp61YvzaFQ_cOYaUo4CLqAOBSC",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1hVv6tNhp61YvzaFQ_cOYaUo4CLqAOBSC",
       "durationSeconds": 284.6,
-      "duration": "4:44"
+      "duration": "4:44",
+      "streamUrl": "assets/audio/track_30.mp3",
+      "githubStreamUrl": "assets/audio/track_30.mp3"
     },
     {
       "id": "gdrive_track_248",
@@ -6203,7 +6697,9 @@
       "driveFileId": "1TSAwV2OfHGCj0Rb76UVj5bmFn0kqqbSw",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1TSAwV2OfHGCj0Rb76UVj5bmFn0kqqbSw",
       "durationSeconds": 218.5,
-      "duration": "3:38"
+      "duration": "3:38",
+      "streamUrl": "assets/audio/track_31.mp3",
+      "githubStreamUrl": "assets/audio/track_31.mp3"
     },
     {
       "id": "gdrive_track_249",
@@ -6228,7 +6724,9 @@
       "driveFileId": "1zpDie2gF9cNRz2rW3q1Vi6J73pOwFZKM",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1zpDie2gF9cNRz2rW3q1Vi6J73pOwFZKM",
       "durationSeconds": 230,
-      "duration": "3:50"
+      "duration": "3:50",
+      "streamUrl": "assets/audio/track_32.mp3",
+      "githubStreamUrl": "assets/audio/track_32.mp3"
     },
     {
       "id": "gdrive_track_250",
@@ -6253,7 +6751,9 @@
       "driveFileId": "1jR21CnLlJRG3o_MSystTz2bXOPadoILx",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1jR21CnLlJRG3o_MSystTz2bXOPadoILx",
       "durationSeconds": 182.1,
-      "duration": "3:02"
+      "duration": "3:02",
+      "streamUrl": "assets/audio/track_33.mp3",
+      "githubStreamUrl": "assets/audio/track_33.mp3"
     },
     {
       "id": "gdrive_track_251",
@@ -6278,7 +6778,9 @@
       "driveFileId": "1MVZp0C_tXuyQuz_jq-huos3YMAWWc59Y",
       "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1MVZp0C_tXuyQuz_jq-huos3YMAWWc59Y",
       "durationSeconds": 222.8,
-      "duration": "3:42"
+      "duration": "3:42",
+      "streamUrl": "assets/audio/track_34.mp3",
+      "githubStreamUrl": "assets/audio/track_34.mp3"
     }
   ]
 }

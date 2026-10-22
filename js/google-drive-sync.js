@@ -36,14 +36,15 @@ class GoogleDriveSync {
       if (data && data.tracks && data.tracks.length > 0) {
         console.log(`[GoogleDriveSync] Cargada base de datos en la nube: ${data.totalTracks} temas (${data.storageProvider})`);
         
-        // Mapear temas a la biblioteca
+        // Mapear temas a la biblioteca preservando carátulas HD y metadatos
         const cloudTracks = data.tracks.map((t, idx) => ({
           ...t,
           index: idx,
           isCloudStream: true,
-          // Si tiene token o link directo, usar stream de Google Drive; de lo contrario, el fallback de stream
+          format: t.format || t.extension || 'FLAC',
+          extension: t.extension || t.format || 'FLAC',
           streamUrl: this.buildDriveStreamUrl(t),
-          coverUrl: null
+          coverUrl: t.coverUrl || null
         }));
 
         this.libraryManager.tracks = cloudTracks;

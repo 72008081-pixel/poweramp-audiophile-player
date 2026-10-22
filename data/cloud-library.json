@@ -21,7 +21,12 @@
       "sizeBytes": 33689047,
       "sizeMB": "32.13",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_1.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1yI9z_vTVKncNd6WfAr9Hpwdn-JKMX5SI",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1yI9z_vTVKncNd6WfAr9Hpwdn-JKMX5SI"
     },
     {
       "id": "gdrive_track_2",
@@ -39,7 +44,12 @@
       "sizeBytes": 43634443,
       "sizeMB": "41.61",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_2.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1dPLMNLI1Q-Y0W2J0lIOzcMfCM29olf1n",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1dPLMNLI1Q-Y0W2J0lIOzcMfCM29olf1n"
     },
     {
       "id": "gdrive_track_3",
@@ -57,7 +67,12 @@
       "sizeBytes": 41223167,
       "sizeMB": "39.31",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_3.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "16hqSiIBDwAdwfeJRw3JeXhxdUOKRoCwp",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=16hqSiIBDwAdwfeJRw3JeXhxdUOKRoCwp"
     },
     {
       "id": "gdrive_track_4",
@@ -75,7 +90,12 @@
       "sizeBytes": 34485923,
       "sizeMB": "32.89",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_4.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1CiaoqxxvO1O5JSDNYSnds80dZ2XkVqAU",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1CiaoqxxvO1O5JSDNYSnds80dZ2XkVqAU"
     },
     {
       "id": "gdrive_track_5",
@@ -93,7 +113,12 @@
       "sizeBytes": 27953090,
       "sizeMB": "26.66",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_5.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1bROmz0OIlJCNNfDR8jzQ8pWlaZB8rBxh",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1bROmz0OIlJCNNfDR8jzQ8pWlaZB8rBxh"
     },
     {
       "id": "gdrive_track_6",
@@ -111,7 +136,12 @@
       "sizeBytes": 55690938,
       "sizeMB": "53.11",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_6.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1WTQbfd2Mb5oh4Xm08AWiFVkdMrgDyCqd",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1WTQbfd2Mb5oh4Xm08AWiFVkdMrgDyCqd"
     },
     {
       "id": "gdrive_track_7",
@@ -129,7 +159,12 @@
       "sizeBytes": 29761659,
       "sizeMB": "28.38",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_7.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1BZKUZVczE_DoTZ0pqk7T0jf3gf73G7P_",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1BZKUZVczE_DoTZ0pqk7T0jf3gf73G7P_"
     },
     {
       "id": "gdrive_track_8",
@@ -147,7 +182,12 @@
       "sizeBytes": 30762313,
       "sizeMB": "29.34",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_8.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "18q_oNfkvXYZxA6XtD3PK8ZeP8Lb1Q1Uz",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=18q_oNfkvXYZxA6XtD3PK8ZeP8Lb1Q1Uz"
     },
     {
       "id": "gdrive_track_9",
@@ -165,7 +205,12 @@
       "sizeBytes": 40936293,
       "sizeMB": "39.04",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_9.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1FxeATqBjJBx3gWq5BWX7WoQoGB7Mbn46",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1FxeATqBjJBx3gWq5BWX7WoQoGB7Mbn46"
     },
     {
       "id": "gdrive_track_10",
@@ -183,7 +228,12 @@
       "sizeBytes": 54032735,
       "sizeMB": "51.53",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_10.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1P6mN3B14BaJemI6e_vwJ-K-X-qnh2nbO",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1P6mN3B14BaJemI6e_vwJ-K-X-qnh2nbO"
     },
     {
       "id": "gdrive_track_11",
@@ -201,7 +251,12 @@
       "sizeBytes": 14509625,
       "sizeMB": "13.84",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_11.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "17n5SD27dSkG_Q0yF-bqvcO8jVf-jgumK",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=17n5SD27dSkG_Q0yF-bqvcO8jVf-jgumK"
     },
     {
       "id": "gdrive_track_12",
@@ -219,7 +274,12 @@
       "sizeBytes": 34848789,
       "sizeMB": "33.23",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_12.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1oazRkskB-n4TAVDiUEuRG3W6uvOeF6Kp",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1oazRkskB-n4TAVDiUEuRG3W6uvOeF6Kp"
     },
     {
       "id": "gdrive_track_13",
@@ -237,7 +297,12 @@
       "sizeBytes": 31328083,
       "sizeMB": "29.88",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_13.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1-i8a--CT9r1MYJsLlyh27ftirxO995Po",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1-i8a--CT9r1MYJsLlyh27ftirxO995Po"
     },
     {
       "id": "gdrive_track_14",
@@ -255,7 +320,12 @@
       "sizeBytes": 9827264,
       "sizeMB": "9.37",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": null,
+      "hasCover": false,
+      "extension": "FLAC",
+      "driveFileId": "1i2Ila6B57jh1KJ_kSC-nLt9g6EBy5Oh0",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1i2Ila6B57jh1KJ_kSC-nLt9g6EBy5Oh0"
     },
     {
       "id": "gdrive_track_15",
@@ -273,7 +343,12 @@
       "sizeBytes": 48243033,
       "sizeMB": "46.01",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_15.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1POjZQ-DScEbnyQs91uNlzi6jXkeAMRWl",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1POjZQ-DScEbnyQs91uNlzi6jXkeAMRWl"
     },
     {
       "id": "gdrive_track_16",
@@ -291,7 +366,12 @@
       "sizeBytes": 41576559,
       "sizeMB": "39.65",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_16.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "11ZMgw9GNXmJn0VvgGjNdpYcP5rLfev20",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=11ZMgw9GNXmJn0VvgGjNdpYcP5rLfev20"
     },
     {
       "id": "gdrive_track_17",
@@ -309,7 +389,12 @@
       "sizeBytes": 8966268,
       "sizeMB": "8.55",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": null,
+      "hasCover": false,
+      "extension": "FLAC",
+      "driveFileId": "17x3YKjqs6un6ghdVdNjBVLccOmeBdb1L",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=17x3YKjqs6un6ghdVdNjBVLccOmeBdb1L"
     },
     {
       "id": "gdrive_track_18",
@@ -327,7 +412,12 @@
       "sizeBytes": 12303880,
       "sizeMB": "11.73",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_18.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1dN0UCbrzHciqgt1Rj8iW0tvWLkNmEWGD",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1dN0UCbrzHciqgt1Rj8iW0tvWLkNmEWGD"
     },
     {
       "id": "gdrive_track_19",
@@ -345,7 +435,12 @@
       "sizeBytes": 15865031,
       "sizeMB": "15.13",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_19.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1c9RGB0TSwJw0tH8h6VozuPht-5414mJl",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1c9RGB0TSwJw0tH8h6VozuPht-5414mJl"
     },
     {
       "id": "gdrive_track_20",
@@ -363,7 +458,12 @@
       "sizeBytes": 30540168,
       "sizeMB": "29.13",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_20.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1k7fGXqZbcZmAC1LX5SURktp1V6Yv4D13",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1k7fGXqZbcZmAC1LX5SURktp1V6Yv4D13"
     },
     {
       "id": "gdrive_track_21",
@@ -381,7 +481,12 @@
       "sizeBytes": 27772711,
       "sizeMB": "26.49",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_21.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1CpSa9U9IlfYCR6Va5EkghmQppROA7c9x",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1CpSa9U9IlfYCR6Va5EkghmQppROA7c9x"
     },
     {
       "id": "gdrive_track_22",
@@ -399,7 +504,12 @@
       "sizeBytes": 33231482,
       "sizeMB": "31.69",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_22.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1jC7YepkiePWG6G8YM8Kp-0iZ8ENPlz6F",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1jC7YepkiePWG6G8YM8Kp-0iZ8ENPlz6F"
     },
     {
       "id": "gdrive_track_23",
@@ -417,7 +527,12 @@
       "sizeBytes": 16353207,
       "sizeMB": "15.60",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_23.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1V6Czf2kTU15iuD1cBu6Tqz-Vr35pLPNV",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1V6Czf2kTU15iuD1cBu6Tqz-Vr35pLPNV"
     },
     {
       "id": "gdrive_track_24",
@@ -435,7 +550,12 @@
       "sizeBytes": 44303004,
       "sizeMB": "42.25",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_24.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1NJWlvM_dcSaQFQcnQ9Ty0Vz2VzT0TMux",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1NJWlvM_dcSaQFQcnQ9Ty0Vz2VzT0TMux"
     },
     {
       "id": "gdrive_track_25",
@@ -453,7 +573,12 @@
       "sizeBytes": 35144237,
       "sizeMB": "33.52",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_25.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1uECiTUetT4m2iey1XRhMex7VFHRMQ9vf",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1uECiTUetT4m2iey1XRhMex7VFHRMQ9vf"
     },
     {
       "id": "gdrive_track_26",
@@ -471,7 +596,12 @@
       "sizeBytes": 48269309,
       "sizeMB": "46.03",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_26.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1GSUxxI5Rd-7UIroycU1EUo6pZsS0mgKX",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1GSUxxI5Rd-7UIroycU1EUo6pZsS0mgKX"
     },
     {
       "id": "gdrive_track_27",
@@ -489,7 +619,12 @@
       "sizeBytes": 14242450,
       "sizeMB": "13.58",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_27.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1bPajNgb1TIFLSDoO6J6C4DLYmFXGVWti",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1bPajNgb1TIFLSDoO6J6C4DLYmFXGVWti"
     },
     {
       "id": "gdrive_track_28",
@@ -507,7 +642,12 @@
       "sizeBytes": 30810801,
       "sizeMB": "29.38",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_28.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1WFWp9tqL8kOQuDShq6gzNrJ9Shfhb8K2",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1WFWp9tqL8kOQuDShq6gzNrJ9Shfhb8K2"
     },
     {
       "id": "gdrive_track_29",
@@ -525,7 +665,12 @@
       "sizeBytes": 27489783,
       "sizeMB": "26.22",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_29.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "170TnAdEflpw-PLhiPhnniAcl1Fh2G7fv",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=170TnAdEflpw-PLhiPhnniAcl1Fh2G7fv"
     },
     {
       "id": "gdrive_track_30",
@@ -543,7 +688,12 @@
       "sizeBytes": 24695633,
       "sizeMB": "23.55",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_30.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1YuNBHST0928qBmaYEH4jvA1B0wrh-fLd",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1YuNBHST0928qBmaYEH4jvA1B0wrh-fLd"
     },
     {
       "id": "gdrive_track_31",
@@ -561,7 +711,12 @@
       "sizeBytes": 44483656,
       "sizeMB": "42.42",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_31.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1C4C17KvnwdFn9l85RvYVSf5Z7WmaQceB",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1C4C17KvnwdFn9l85RvYVSf5Z7WmaQceB"
     },
     {
       "id": "gdrive_track_32",
@@ -579,7 +734,12 @@
       "sizeBytes": 46206265,
       "sizeMB": "44.07",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_32.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1d-V-cTJlVb2aZpR3TbaFQldYW1Nii5Ri",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1d-V-cTJlVb2aZpR3TbaFQldYW1Nii5Ri"
     },
     {
       "id": "gdrive_track_33",
@@ -597,7 +757,12 @@
       "sizeBytes": 21576626,
       "sizeMB": "20.58",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_33.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1-HEB6WeQ6YPfk6cyKKpPaLwCqMTDGSWs",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1-HEB6WeQ6YPfk6cyKKpPaLwCqMTDGSWs"
     },
     {
       "id": "gdrive_track_34",
@@ -615,7 +780,12 @@
       "sizeBytes": 6300272,
       "sizeMB": "6.01",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_34.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1heWa20-gFuwuhXPIMrnBpkHFmHWw45bc",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1heWa20-gFuwuhXPIMrnBpkHFmHWw45bc"
     },
     {
       "id": "gdrive_track_35",
@@ -633,7 +803,12 @@
       "sizeBytes": 24251885,
       "sizeMB": "23.13",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_35.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1LHqS0kJyHNal7ZBtpVclIqP-6yFBjTfY",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1LHqS0kJyHNal7ZBtpVclIqP-6yFBjTfY"
     },
     {
       "id": "gdrive_track_36",
@@ -651,7 +826,12 @@
       "sizeBytes": 30294869,
       "sizeMB": "28.89",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_36.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1p3dcDSY9cqCRZ4Jst7JsmPihDwecXcX5",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1p3dcDSY9cqCRZ4Jst7JsmPihDwecXcX5"
     },
     {
       "id": "gdrive_track_37",
@@ -669,7 +849,12 @@
       "sizeBytes": 69954199,
       "sizeMB": "66.71",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_37.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1xcYmFj5m_d_vWy7j5zfQ98oGi2CYFCl6",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1xcYmFj5m_d_vWy7j5zfQ98oGi2CYFCl6"
     },
     {
       "id": "gdrive_track_38",
@@ -687,7 +872,12 @@
       "sizeBytes": 23136373,
       "sizeMB": "22.06",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_38.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1qtEkg27JLrezoWBhp4ZnsW20J9dp2siC",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1qtEkg27JLrezoWBhp4ZnsW20J9dp2siC"
     },
     {
       "id": "gdrive_track_39",
@@ -705,7 +895,12 @@
       "sizeBytes": 25362236,
       "sizeMB": "24.19",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_39.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1Ls2apz7OUTno6ZPhc3cH6hQel6T7Vqwn",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1Ls2apz7OUTno6ZPhc3cH6hQel6T7Vqwn"
     },
     {
       "id": "gdrive_track_40",
@@ -723,7 +918,12 @@
       "sizeBytes": 33466112,
       "sizeMB": "31.92",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_40.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1VClM71nkfH_mOmZhI8RGsdUjyI0sQuO9",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1VClM71nkfH_mOmZhI8RGsdUjyI0sQuO9"
     },
     {
       "id": "gdrive_track_41",
@@ -741,7 +941,12 @@
       "sizeBytes": 9967809,
       "sizeMB": "9.51",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_41.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1jrIvi2Lvq1pOoIG8G4F8pJJb1fGlW0SO",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1jrIvi2Lvq1pOoIG8G4F8pJJb1fGlW0SO"
     },
     {
       "id": "gdrive_track_42",
@@ -759,7 +964,12 @@
       "sizeBytes": 6689614,
       "sizeMB": "6.38",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_42.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1ubXE9HEcd83W-5rxN2lsk7O4jVS8wX7m",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1ubXE9HEcd83W-5rxN2lsk7O4jVS8wX7m"
     },
     {
       "id": "gdrive_track_43",
@@ -777,7 +987,12 @@
       "sizeBytes": 16878398,
       "sizeMB": "16.10",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_43.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1t6AGYJ9SZKaGcdVTSlxDPa155FKXYIiu",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1t6AGYJ9SZKaGcdVTSlxDPa155FKXYIiu"
     },
     {
       "id": "gdrive_track_44",
@@ -795,7 +1010,12 @@
       "sizeBytes": 23743670,
       "sizeMB": "22.64",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_44.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1AqW84qpD6DFSdvQrYwNxvLg_Zz7TcECV",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1AqW84qpD6DFSdvQrYwNxvLg_Zz7TcECV"
     },
     {
       "id": "gdrive_track_45",
@@ -813,7 +1033,12 @@
       "sizeBytes": 22002092,
       "sizeMB": "20.98",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_45.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1341l27N6-ekUgKRhzz7KFPvJh-fjUg3M",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1341l27N6-ekUgKRhzz7KFPvJh-fjUg3M"
     },
     {
       "id": "gdrive_track_46",
@@ -831,7 +1056,12 @@
       "sizeBytes": 30764061,
       "sizeMB": "29.34",
       "hasLyrics": true,
-      "lyrics": "[ti:Closer]\n[ar:The Chainsmokers]\n[by:SpotiFLAC-Mobile (source: LRCLIB (cached fallback))]\n\n[00:10.73]Hey, I was doing just fine before I met you\n[00:15.08]I drink too much and that's an issue, but I'm okay\n[00:19.61]Hey, you tell your friends it was nice to meet them\n[00:25.14]But I hope I never see them again\n[00:30.82]I know it breaks your heart\n[00:33.32]Moved to the city in a broke-down car, and\n[00:36.66]Four years, no calls\n[00:38.37]Now you're looking pretty in a hotel bar\n[00:41.15]And I-I-I can't stop\n[00:45.41]No, I-I-I can't stop\n[00:50.57]So, baby, pull me closer\n[00:52.82]In the backseat of your Rover\n[00:55.39]That I know you can't afford\n[00:57.73]Bite that tattoo on your shoulder\n[01:00.22]Pull the sheets right off the corner\n[01:02.87]Of that mattress that you stole\n[01:05.39]From your roommate back in Boulder\n[01:07.80]We ain't ever getting older\n[01:18.41]We ain't ever getting older\n[01:28.22]We ain't ever getting older\n[01:31.42]You look as good as the day I met you\n[01:35.90]I forget just why I left you, I was insane\n[01:41.69]Stay and play that Blink-182 song\n[01:46.16]That we beat to death in Tucson, okay\n[01:51.96]I know it breaks your heart\n[01:54.24]Moved to the city in a broke-down car, and\n[01:57.51]Four years, no call\n[01:59.17]Now I'm looking pretty in a hotel bar\n[02:01.91]And I-I-I can't stop\n[02:05.92]No, I-I-I can't stop\n[02:11.04]So, baby, pull me closer\n[02:13.84]In the backseat of your Rover\n[02:16.11]That I know you can't afford\n[02:18.65]Bite that tattoo on your shoulder\n[02:21.28]Pull the sheets right off the corner\n[02:23.63]Of that mattress that you stole\n[02:26.26]From your roommate back in Boulder\n[02:28.85]We ain't ever getting older\n[02:39.09]We ain't ever getting older\n[02:49.22]We ain't ever getting older\n[02:52.36]So, baby, pull me closer\n[02:54.17]In the backseat of your Rover\n[02:56.75]That I know you can't afford\n[02:59.16]Bite that tattoo on your shoulder\n[03:01.80]Pull the sheets right off the corner\n[03:04.27]Of that mattress that you stole\n[03:06.83]From your roommate back in Boulder\n[03:09.30]We ain't ever getting older\n[03:12.17]We ain't ever getting older\n[03:14.45]No, we ain't ever getting older\n[03:17.12]We ain't ever getting older\n[03:19.50]No, we ain't ever getting older\n[03:22.15]We ain't ever getting older\n[03:24.51]We ain't ever getting older\n[03:27.37]We ain't ever getting older\n[03:29.51]No, we ain't ever getting older\n[03:39.76]We ain't ever getting older\n[03:49.78]No, we ain't ever getting older\n"
+      "lyrics": "[ti:Closer]\n[ar:The Chainsmokers]\n[by:SpotiFLAC-Mobile (source: LRCLIB (cached fallback))]\n\n[00:10.73]Hey, I was doing just fine before I met you\n[00:15.08]I drink too much and that's an issue, but I'm okay\n[00:19.61]Hey, you tell your friends it was nice to meet them\n[00:25.14]But I hope I never see them again\n[00:30.82]I know it breaks your heart\n[00:33.32]Moved to the city in a broke-down car, and\n[00:36.66]Four years, no calls\n[00:38.37]Now you're looking pretty in a hotel bar\n[00:41.15]And I-I-I can't stop\n[00:45.41]No, I-I-I can't stop\n[00:50.57]So, baby, pull me closer\n[00:52.82]In the backseat of your Rover\n[00:55.39]That I know you can't afford\n[00:57.73]Bite that tattoo on your shoulder\n[01:00.22]Pull the sheets right off the corner\n[01:02.87]Of that mattress that you stole\n[01:05.39]From your roommate back in Boulder\n[01:07.80]We ain't ever getting older\n[01:18.41]We ain't ever getting older\n[01:28.22]We ain't ever getting older\n[01:31.42]You look as good as the day I met you\n[01:35.90]I forget just why I left you, I was insane\n[01:41.69]Stay and play that Blink-182 song\n[01:46.16]That we beat to death in Tucson, okay\n[01:51.96]I know it breaks your heart\n[01:54.24]Moved to the city in a broke-down car, and\n[01:57.51]Four years, no call\n[01:59.17]Now I'm looking pretty in a hotel bar\n[02:01.91]And I-I-I can't stop\n[02:05.92]No, I-I-I can't stop\n[02:11.04]So, baby, pull me closer\n[02:13.84]In the backseat of your Rover\n[02:16.11]That I know you can't afford\n[02:18.65]Bite that tattoo on your shoulder\n[02:21.28]Pull the sheets right off the corner\n[02:23.63]Of that mattress that you stole\n[02:26.26]From your roommate back in Boulder\n[02:28.85]We ain't ever getting older\n[02:39.09]We ain't ever getting older\n[02:49.22]We ain't ever getting older\n[02:52.36]So, baby, pull me closer\n[02:54.17]In the backseat of your Rover\n[02:56.75]That I know you can't afford\n[02:59.16]Bite that tattoo on your shoulder\n[03:01.80]Pull the sheets right off the corner\n[03:04.27]Of that mattress that you stole\n[03:06.83]From your roommate back in Boulder\n[03:09.30]We ain't ever getting older\n[03:12.17]We ain't ever getting older\n[03:14.45]No, we ain't ever getting older\n[03:17.12]We ain't ever getting older\n[03:19.50]No, we ain't ever getting older\n[03:22.15]We ain't ever getting older\n[03:24.51]We ain't ever getting older\n[03:27.37]We ain't ever getting older\n[03:29.51]No, we ain't ever getting older\n[03:39.76]We ain't ever getting older\n[03:49.78]No, we ain't ever getting older\n",
+      "coverUrl": "assets/covers/cover_46.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1zTqd_is1VftXyCI-XFyYqsByFnmOvnfz",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1zTqd_is1VftXyCI-XFyYqsByFnmOvnfz"
     },
     {
       "id": "gdrive_track_47",
@@ -849,7 +1079,12 @@
       "sizeBytes": 50932906,
       "sizeMB": "48.57",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_47.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1Dzi_aJsrBbKu-ZWErV_HO5_AVEUdC6hi",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1Dzi_aJsrBbKu-ZWErV_HO5_AVEUdC6hi"
     },
     {
       "id": "gdrive_track_48",
@@ -867,7 +1102,12 @@
       "sizeBytes": 46846072,
       "sizeMB": "44.68",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_48.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1r68zYwHukrlDfUALFllKzkGPTbnkCv0A",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1r68zYwHukrlDfUALFllKzkGPTbnkCv0A"
     },
     {
       "id": "gdrive_track_49",
@@ -885,7 +1125,12 @@
       "sizeBytes": 26068797,
       "sizeMB": "24.86",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_49.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "17VohbUJ5fj4j5oN2QiaEFmwnq3g2W2J2",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=17VohbUJ5fj4j5oN2QiaEFmwnq3g2W2J2"
     },
     {
       "id": "gdrive_track_50",
@@ -903,7 +1148,12 @@
       "sizeBytes": 13625164,
       "sizeMB": "12.99",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_50.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1YgUS2i4v_Rta2E78fSWCsp0J8CXQU7z8",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1YgUS2i4v_Rta2E78fSWCsp0J8CXQU7z8"
     },
     {
       "id": "gdrive_track_51",
@@ -921,7 +1171,12 @@
       "sizeBytes": 22218607,
       "sizeMB": "21.19",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_51.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1Jh8Wgmp7PwnRxCXZB06EWVxYueqm1YmI",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1Jh8Wgmp7PwnRxCXZB06EWVxYueqm1YmI"
     },
     {
       "id": "gdrive_track_52",
@@ -939,7 +1194,12 @@
       "sizeBytes": 48197397,
       "sizeMB": "45.96",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_52.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1TX15IctD3QkFK8InvewqXN7hEUkaDNif",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1TX15IctD3QkFK8InvewqXN7hEUkaDNif"
     },
     {
       "id": "gdrive_track_53",
@@ -957,7 +1217,12 @@
       "sizeBytes": 90679907,
       "sizeMB": "86.48",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_53.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1BOrF3nXJ9RPYFGJkNxOITxXWhmvcm6Wc",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1BOrF3nXJ9RPYFGJkNxOITxXWhmvcm6Wc"
     },
     {
       "id": "gdrive_track_54",
@@ -975,7 +1240,12 @@
       "sizeBytes": 44520540,
       "sizeMB": "42.46",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_54.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1Qw9tcaClQ6fL7zuoogVKbu8brawZZ5C6",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1Qw9tcaClQ6fL7zuoogVKbu8brawZZ5C6"
     },
     {
       "id": "gdrive_track_55",
@@ -993,7 +1263,12 @@
       "sizeBytes": 17125645,
       "sizeMB": "16.33",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_55.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1aRRDYocaPeN0NHfUCpVetIHF2yS76kGu",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1aRRDYocaPeN0NHfUCpVetIHF2yS76kGu"
     },
     {
       "id": "gdrive_track_56",
@@ -1011,7 +1286,12 @@
       "sizeBytes": 23815087,
       "sizeMB": "22.71",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_56.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1iUfqKvvK-7UuSU_AxNcF_HatR6tChlJA",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1iUfqKvvK-7UuSU_AxNcF_HatR6tChlJA"
     },
     {
       "id": "gdrive_track_57",
@@ -1029,7 +1309,12 @@
       "sizeBytes": 22362320,
       "sizeMB": "21.33",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_57.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1TETma4WuNtCtLcKRIdGG_-K21Cv9923o",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1TETma4WuNtCtLcKRIdGG_-K21Cv9923o"
     },
     {
       "id": "gdrive_track_58",
@@ -1047,7 +1332,12 @@
       "sizeBytes": 44882944,
       "sizeMB": "42.80",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_58.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1hTbIGS6eaeuwsU49APZU18bumYnpxJse",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1hTbIGS6eaeuwsU49APZU18bumYnpxJse"
     },
     {
       "id": "gdrive_track_59",
@@ -1065,7 +1355,12 @@
       "sizeBytes": 13635024,
       "sizeMB": "13.00",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_59.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "15d756bElPchy5x1TKlNTkLhUExo2QlCZ",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=15d756bElPchy5x1TKlNTkLhUExo2QlCZ"
     },
     {
       "id": "gdrive_track_60",
@@ -1083,7 +1378,12 @@
       "sizeBytes": 52882603,
       "sizeMB": "50.43",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_60.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1hDugLU7cC62XrAKI6usq-DLWSvIhxDHm",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1hDugLU7cC62XrAKI6usq-DLWSvIhxDHm"
     },
     {
       "id": "gdrive_track_61",
@@ -1101,7 +1401,12 @@
       "sizeBytes": 36910549,
       "sizeMB": "35.20",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_61.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1RNB_BGn2lfLHO_JbxSKG4WMJNScgiIl7",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1RNB_BGn2lfLHO_JbxSKG4WMJNScgiIl7"
     },
     {
       "id": "gdrive_track_62",
@@ -1119,7 +1424,12 @@
       "sizeBytes": 40990506,
       "sizeMB": "39.09",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_62.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1P_vEHHy0Sr8sjsOp5Yj07gynqr5rlIDj",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1P_vEHHy0Sr8sjsOp5Yj07gynqr5rlIDj"
     },
     {
       "id": "gdrive_track_63",
@@ -1137,7 +1447,12 @@
       "sizeBytes": 5732991,
       "sizeMB": "5.47",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_63.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1ZK_lRbuwa6fohMM65dUGH-Tzt6GGctgt",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1ZK_lRbuwa6fohMM65dUGH-Tzt6GGctgt"
     },
     {
       "id": "gdrive_track_64",
@@ -1155,7 +1470,12 @@
       "sizeBytes": 6958260,
       "sizeMB": "6.64",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_64.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1hocNLjKeciTe7eaPMeNPAiy5H3_IBMwU",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1hocNLjKeciTe7eaPMeNPAiy5H3_IBMwU"
     },
     {
       "id": "gdrive_track_65",
@@ -1173,7 +1493,12 @@
       "sizeBytes": 6458781,
       "sizeMB": "6.16",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_65.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1RAfjPcGU0f3ALTNT5VuLZ2eiI_JdHrNQ",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1RAfjPcGU0f3ALTNT5VuLZ2eiI_JdHrNQ"
     },
     {
       "id": "gdrive_track_66",
@@ -1191,7 +1516,12 @@
       "sizeBytes": 40826884,
       "sizeMB": "38.94",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_66.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1MGAMeeepRjEjG0e7luYNhl4lfJRK8jva",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1MGAMeeepRjEjG0e7luYNhl4lfJRK8jva"
     },
     {
       "id": "gdrive_track_67",
@@ -1209,7 +1539,12 @@
       "sizeBytes": 22732592,
       "sizeMB": "21.68",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_67.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1fxXDJAq7HfD9IXUVWzBmL3Vq31xCYpK3",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1fxXDJAq7HfD9IXUVWzBmL3Vq31xCYpK3"
     },
     {
       "id": "gdrive_track_68",
@@ -1227,7 +1562,12 @@
       "sizeBytes": 75498319,
       "sizeMB": "72.00",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_68.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1WtTKvsfWKwJGDLXsjeSlWaFBa_OwQOFo",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1WtTKvsfWKwJGDLXsjeSlWaFBa_OwQOFo"
     },
     {
       "id": "gdrive_track_69",
@@ -1245,7 +1585,12 @@
       "sizeBytes": 76428743,
       "sizeMB": "72.89",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_69.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "15sZrf4D8aTZ06IvK5I7ElPit_5R_eEE4",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=15sZrf4D8aTZ06IvK5I7ElPit_5R_eEE4"
     },
     {
       "id": "gdrive_track_70",
@@ -1263,7 +1608,12 @@
       "sizeBytes": 19447424,
       "sizeMB": "18.55",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_70.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "190PJdSoo4Ub7cPX8bB6KOZU1V5WN0wA_",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=190PJdSoo4Ub7cPX8bB6KOZU1V5WN0wA_"
     },
     {
       "id": "gdrive_track_71",
@@ -1281,7 +1631,12 @@
       "sizeBytes": 22236627,
       "sizeMB": "21.21",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_71.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1PG75St4C33I1gNqMU777VJDB3szAYJu8",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1PG75St4C33I1gNqMU777VJDB3szAYJu8"
     },
     {
       "id": "gdrive_track_72",
@@ -1299,7 +1654,12 @@
       "sizeBytes": 31256562,
       "sizeMB": "29.81",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_72.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1NIGzvazQ0zCn3wy0ON5fb_OuD7gN0lQW",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1NIGzvazQ0zCn3wy0ON5fb_OuD7gN0lQW"
     },
     {
       "id": "gdrive_track_73",
@@ -1317,7 +1677,12 @@
       "sizeBytes": 24654555,
       "sizeMB": "23.51",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_73.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "15roGrGwEPbDpj5Es6iqV-KUMX2PQwpmK",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=15roGrGwEPbDpj5Es6iqV-KUMX2PQwpmK"
     },
     {
       "id": "gdrive_track_74",
@@ -1335,7 +1700,12 @@
       "sizeBytes": 39359140,
       "sizeMB": "37.54",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_74.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "127sQ11gwlc64llqkIi4Hg9N7RN1ZMkb8",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=127sQ11gwlc64llqkIi4Hg9N7RN1ZMkb8"
     },
     {
       "id": "gdrive_track_75",
@@ -1353,7 +1723,12 @@
       "sizeBytes": 14766713,
       "sizeMB": "14.08",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_75.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1LUPeiZUDE2XgMRYpUCQ8NImGSRVYQHA-",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1LUPeiZUDE2XgMRYpUCQ8NImGSRVYQHA-"
     },
     {
       "id": "gdrive_track_76",
@@ -1371,7 +1746,12 @@
       "sizeBytes": 19321863,
       "sizeMB": "18.43",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_76.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "18A7h5rEJcNfAH1i2XUov9TPAaI4OAw2g",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=18A7h5rEJcNfAH1i2XUov9TPAaI4OAw2g"
     },
     {
       "id": "gdrive_track_77",
@@ -1389,7 +1769,12 @@
       "sizeBytes": 8167966,
       "sizeMB": "7.79",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": null,
+      "hasCover": false,
+      "extension": "FLAC",
+      "driveFileId": "1Etl4g6udFkVeQD3UfKPm_7-3Sldb1B_j",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1Etl4g6udFkVeQD3UfKPm_7-3Sldb1B_j"
     },
     {
       "id": "gdrive_track_78",
@@ -1407,7 +1792,12 @@
       "sizeBytes": 25197390,
       "sizeMB": "24.03",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_78.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1ztDBKgdn8luouxtT6xBXFcuiFfn7co0U",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1ztDBKgdn8luouxtT6xBXFcuiFfn7co0U"
     },
     {
       "id": "gdrive_track_79",
@@ -1425,7 +1815,12 @@
       "sizeBytes": 46226355,
       "sizeMB": "44.08",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_79.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "195m024HQUXrcFH1VNYGNdFmgZ8eWE6Im",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=195m024HQUXrcFH1VNYGNdFmgZ8eWE6Im"
     },
     {
       "id": "gdrive_track_80",
@@ -1443,7 +1838,12 @@
       "sizeBytes": 34904637,
       "sizeMB": "33.29",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_80.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1xsmLMdc-NiQN2swgBlLLiwPUCAnuppeS",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1xsmLMdc-NiQN2swgBlLLiwPUCAnuppeS"
     },
     {
       "id": "gdrive_track_81",
@@ -1461,7 +1861,12 @@
       "sizeBytes": 26698676,
       "sizeMB": "25.46",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_81.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1R6-iEUVctHCx6H8FUx1S71SOCJzxC14T",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1R6-iEUVctHCx6H8FUx1S71SOCJzxC14T"
     },
     {
       "id": "gdrive_track_82",
@@ -1479,7 +1884,12 @@
       "sizeBytes": 37316718,
       "sizeMB": "35.59",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_82.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1BEWJT1wxEA9KxdsmF60-jfRiGYSpaZbZ",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1BEWJT1wxEA9KxdsmF60-jfRiGYSpaZbZ"
     },
     {
       "id": "gdrive_track_83",
@@ -1497,7 +1907,12 @@
       "sizeBytes": 18789395,
       "sizeMB": "17.92",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_83.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1P4WaLz_3WJ_byKccEETlxNaWhBIgRJ5c",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1P4WaLz_3WJ_byKccEETlxNaWhBIgRJ5c"
     },
     {
       "id": "gdrive_track_84",
@@ -1515,7 +1930,12 @@
       "sizeBytes": 21024958,
       "sizeMB": "20.05",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": null,
+      "hasCover": false,
+      "extension": "FLAC",
+      "driveFileId": "1D6s1CccdjfsKHHJPZdt9SdeMGICP_Uwv",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1D6s1CccdjfsKHHJPZdt9SdeMGICP_Uwv"
     },
     {
       "id": "gdrive_track_85",
@@ -1533,7 +1953,12 @@
       "sizeBytes": 17536357,
       "sizeMB": "16.72",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_85.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1lX9opDk5evUyxatytBZ91amc7m-_Vwqc",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1lX9opDk5evUyxatytBZ91amc7m-_Vwqc"
     },
     {
       "id": "gdrive_track_86",
@@ -1551,7 +1976,12 @@
       "sizeBytes": 22745815,
       "sizeMB": "21.69",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_86.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1bVPhZ-pBWiGh97znVZ_PB8hZ1oxkKhBj",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1bVPhZ-pBWiGh97znVZ_PB8hZ1oxkKhBj"
     },
     {
       "id": "gdrive_track_87",
@@ -1569,7 +1999,12 @@
       "sizeBytes": 19535062,
       "sizeMB": "18.63",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_87.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1i_b5g4ialQ-0NVB-gvEvFsiyKwq598zI",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1i_b5g4ialQ-0NVB-gvEvFsiyKwq598zI"
     },
     {
       "id": "gdrive_track_88",
@@ -1587,7 +2022,12 @@
       "sizeBytes": 24940582,
       "sizeMB": "23.79",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_88.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "13QmM3XrdH16SgWFKPNzwgE6EDIr6Rm5g",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=13QmM3XrdH16SgWFKPNzwgE6EDIr6Rm5g"
     },
     {
       "id": "gdrive_track_89",
@@ -1605,7 +2045,12 @@
       "sizeBytes": 28767809,
       "sizeMB": "27.44",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_89.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1T_ZQlQjdJBEmqFxcZBeMHrvASqgiOusK",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1T_ZQlQjdJBEmqFxcZBeMHrvASqgiOusK"
     },
     {
       "id": "gdrive_track_90",
@@ -1623,7 +2068,12 @@
       "sizeBytes": 46471040,
       "sizeMB": "44.32",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_90.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "15uev0HbgIDTAUC1ZCgLzdEJr7x1ovD2L",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=15uev0HbgIDTAUC1ZCgLzdEJr7x1ovD2L"
     },
     {
       "id": "gdrive_track_91",
@@ -1641,7 +2091,12 @@
       "sizeBytes": 23718702,
       "sizeMB": "22.62",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_91.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1Y1Rc3QQZUOguYycoFgTqV0Vun3E3s1_F",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1Y1Rc3QQZUOguYycoFgTqV0Vun3E3s1_F"
     },
     {
       "id": "gdrive_track_92",
@@ -1659,7 +2114,12 @@
       "sizeBytes": 19031741,
       "sizeMB": "18.15",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_92.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "115paww2uqro8-JHUxmSc8sQzKV8D-pFA",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=115paww2uqro8-JHUxmSc8sQzKV8D-pFA"
     },
     {
       "id": "gdrive_track_93",
@@ -1677,7 +2137,12 @@
       "sizeBytes": 49328041,
       "sizeMB": "47.04",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_93.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1VuoFG79qsDS8MmeJUHIJKIlJ8xU-WqWF",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1VuoFG79qsDS8MmeJUHIJKIlJ8xU-WqWF"
     },
     {
       "id": "gdrive_track_94",
@@ -1695,7 +2160,12 @@
       "sizeBytes": 42375964,
       "sizeMB": "40.41",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_94.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1bY8dBfAgrDJX3AEyonlVjmWOTY8rDT4r",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1bY8dBfAgrDJX3AEyonlVjmWOTY8rDT4r"
     },
     {
       "id": "gdrive_track_95",
@@ -1713,7 +2183,12 @@
       "sizeBytes": 29512677,
       "sizeMB": "28.15",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_95.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1r767E5I-ujRWwjdgW2EttY2x4jd0hVnc",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1r767E5I-ujRWwjdgW2EttY2x4jd0hVnc"
     },
     {
       "id": "gdrive_track_96",
@@ -1731,7 +2206,12 @@
       "sizeBytes": 22294966,
       "sizeMB": "21.26",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_96.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1jPGy9rKbGSdIuvIdaVuX--4Wn3BXPiz1",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1jPGy9rKbGSdIuvIdaVuX--4Wn3BXPiz1"
     },
     {
       "id": "gdrive_track_97",
@@ -1749,7 +2229,12 @@
       "sizeBytes": 25289491,
       "sizeMB": "24.12",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_97.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1MdFiVBmbn2M6K4N5pyq9H2xiUbpW3y_Q",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1MdFiVBmbn2M6K4N5pyq9H2xiUbpW3y_Q"
     },
     {
       "id": "gdrive_track_98",
@@ -1767,7 +2252,12 @@
       "sizeBytes": 20528629,
       "sizeMB": "19.58",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": null,
+      "hasCover": false,
+      "extension": "FLAC",
+      "driveFileId": "1QsUaoVAuc_n8129rmb62rE8-8G2GzXlG",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1QsUaoVAuc_n8129rmb62rE8-8G2GzXlG"
     },
     {
       "id": "gdrive_track_99",
@@ -1785,7 +2275,12 @@
       "sizeBytes": 25904145,
       "sizeMB": "24.70",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_99.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1vFUitrL6hyA7zw-ewNusH9gPoMoZk1gW",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1vFUitrL6hyA7zw-ewNusH9gPoMoZk1gW"
     },
     {
       "id": "gdrive_track_100",
@@ -1803,7 +2298,12 @@
       "sizeBytes": 11156374,
       "sizeMB": "10.64",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": null,
+      "hasCover": false,
+      "extension": "FLAC",
+      "driveFileId": "1U8QGeKfLmnP9yCtj-RyU9jKLmLVRxhGb",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1U8QGeKfLmnP9yCtj-RyU9jKLmLVRxhGb"
     },
     {
       "id": "gdrive_track_101",
@@ -1821,7 +2321,12 @@
       "sizeBytes": 23226265,
       "sizeMB": "22.15",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_101.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1x8zxrLraOfrLMUFEqyuqQe9Dm-5oBk5W",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1x8zxrLraOfrLMUFEqyuqQe9Dm-5oBk5W"
     },
     {
       "id": "gdrive_track_102",
@@ -1839,7 +2344,12 @@
       "sizeBytes": 52088022,
       "sizeMB": "49.68",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_102.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1YxfpsO29dWLadK1p5LQ-2vSmq_x37ZUI",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1YxfpsO29dWLadK1p5LQ-2vSmq_x37ZUI"
     },
     {
       "id": "gdrive_track_103",
@@ -1857,7 +2367,12 @@
       "sizeBytes": 19173732,
       "sizeMB": "18.29",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_103.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1wNCRHy6QTfYd2QxtGrpMPrlo5jr6pWFM",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1wNCRHy6QTfYd2QxtGrpMPrlo5jr6pWFM"
     },
     {
       "id": "gdrive_track_104",
@@ -1875,7 +2390,12 @@
       "sizeBytes": 19537410,
       "sizeMB": "18.63",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_104.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1vXw5Mk8JvBQ4NRed26BrGGTlJrENEVC_",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1vXw5Mk8JvBQ4NRed26BrGGTlJrENEVC_"
     },
     {
       "id": "gdrive_track_105",
@@ -1893,7 +2413,12 @@
       "sizeBytes": 16825603,
       "sizeMB": "16.05",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_105.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1y-TUNzNRv2LM3mrtp_70pHc_oX-TmyaW",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1y-TUNzNRv2LM3mrtp_70pHc_oX-TmyaW"
     },
     {
       "id": "gdrive_track_106",
@@ -1911,7 +2436,12 @@
       "sizeBytes": 28038822,
       "sizeMB": "26.74",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_106.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1QzqopDIMLBMnfTfAxM3wSn2ak64La-OX",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1QzqopDIMLBMnfTfAxM3wSn2ak64La-OX"
     },
     {
       "id": "gdrive_track_107",
@@ -1929,7 +2459,12 @@
       "sizeBytes": 11866863,
       "sizeMB": "11.32",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_107.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1s-xyA0Zyi4e7vH_JQMoap0Qk7gshyN7i",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1s-xyA0Zyi4e7vH_JQMoap0Qk7gshyN7i"
     },
     {
       "id": "gdrive_track_108",
@@ -1947,7 +2482,12 @@
       "sizeBytes": 34013520,
       "sizeMB": "32.44",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_108.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1BEfjAamIE47PwwH3C0xmeIWAIWnTORb4",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1BEfjAamIE47PwwH3C0xmeIWAIWnTORb4"
     },
     {
       "id": "gdrive_track_109",
@@ -1965,7 +2505,12 @@
       "sizeBytes": 40379691,
       "sizeMB": "38.51",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_109.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "13norp3RjM5_rg6DXWU71uKT35nY9ghpS",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=13norp3RjM5_rg6DXWU71uKT35nY9ghpS"
     },
     {
       "id": "gdrive_track_110",
@@ -1983,7 +2528,12 @@
       "sizeBytes": 6341474,
       "sizeMB": "6.05",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_110.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1cxo6UzGfxstNUkJQxsm-o-oLUItPR8pO",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1cxo6UzGfxstNUkJQxsm-o-oLUItPR8pO"
     },
     {
       "id": "gdrive_track_111",
@@ -2001,7 +2551,12 @@
       "sizeBytes": 24548771,
       "sizeMB": "23.41",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_111.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1itbXwJO5oNfi3S9K0P946UIx-DREhG8v",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1itbXwJO5oNfi3S9K0P946UIx-DREhG8v"
     },
     {
       "id": "gdrive_track_112",
@@ -2019,7 +2574,12 @@
       "sizeBytes": 15866212,
       "sizeMB": "15.13",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_112.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1_88HsmGkMvkAnMghP0OkSJegiu3BnR_g",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1_88HsmGkMvkAnMghP0OkSJegiu3BnR_g"
     },
     {
       "id": "gdrive_track_113",
@@ -2037,7 +2597,12 @@
       "sizeBytes": 13356008,
       "sizeMB": "12.74",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_113.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1YGybxVU22f0YG4fhXsYNon2839y0WEl4",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1YGybxVU22f0YG4fhXsYNon2839y0WEl4"
     },
     {
       "id": "gdrive_track_114",
@@ -2055,7 +2620,12 @@
       "sizeBytes": 54892053,
       "sizeMB": "52.35",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_114.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1t9-zgls7Z5ajFw0pE1BzI5ozFtdmv_iE",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1t9-zgls7Z5ajFw0pE1BzI5ozFtdmv_iE"
     },
     {
       "id": "gdrive_track_115",
@@ -2073,7 +2643,12 @@
       "sizeBytes": 9061180,
       "sizeMB": "8.64",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_115.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1pS-Bc_-VMgeV5_lc04wPzoTH3pugZnrE",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1pS-Bc_-VMgeV5_lc04wPzoTH3pugZnrE"
     },
     {
       "id": "gdrive_track_116",
@@ -2091,7 +2666,12 @@
       "sizeBytes": 12993572,
       "sizeMB": "12.39",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_116.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1F4LCMn_62CRE3MKhZ5zZxTw_5Vfewr38",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1F4LCMn_62CRE3MKhZ5zZxTw_5Vfewr38"
     },
     {
       "id": "gdrive_track_117",
@@ -2109,7 +2689,12 @@
       "sizeBytes": 9052518,
       "sizeMB": "8.63",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_117.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1OlIyqKezvYumlFb7vbOHGtRf2vZr6Oxq",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1OlIyqKezvYumlFb7vbOHGtRf2vZr6Oxq"
     },
     {
       "id": "gdrive_track_118",
@@ -2127,7 +2712,12 @@
       "sizeBytes": 27422385,
       "sizeMB": "26.15",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_118.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "150UtOOsKm60LMm7zpSOoRxe2v-uRt-sA",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=150UtOOsKm60LMm7zpSOoRxe2v-uRt-sA"
     },
     {
       "id": "gdrive_track_119",
@@ -2145,7 +2735,12 @@
       "sizeBytes": 31777630,
       "sizeMB": "30.31",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_119.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "19TxAai7TEwlc81Qo7P7-Ozoi03-HDOkZ",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=19TxAai7TEwlc81Qo7P7-Ozoi03-HDOkZ"
     },
     {
       "id": "gdrive_track_120",
@@ -2163,7 +2758,12 @@
       "sizeBytes": 25909988,
       "sizeMB": "24.71",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_120.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1CgRdE6qLVRGNdGSJXvXM63jEdXeUdI6c",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1CgRdE6qLVRGNdGSJXvXM63jEdXeUdI6c"
     },
     {
       "id": "gdrive_track_121",
@@ -2181,7 +2781,12 @@
       "sizeBytes": 32887649,
       "sizeMB": "31.36",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_121.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1zVvHpBipgnzQA0GfTfyjbYt5CUj5MCcm",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1zVvHpBipgnzQA0GfTfyjbYt5CUj5MCcm"
     },
     {
       "id": "gdrive_track_122",
@@ -2199,7 +2804,12 @@
       "sizeBytes": 32705199,
       "sizeMB": "31.19",
       "hasLyrics": true,
-      "lyrics": "[ti:I'm the One]\n[ar:DJ Khaled]\n[by:SpotiFLAC-Mobile (source: LRCLIB (cached fallback))]\n\n[00:06.16]We the best music\n[00:08.91]Another one\n[00:10.49]DJ Khaled\n[00:11.73]Yeah yeah you lookin' at the truth, the man who never lie no\n[00:14.82]I'm the one yeah, I'm the one\n[00:17.27]Early morning in the dark now you wanna ride now (that's right)\n[00:20.92]I'm the one yeah (that's right)\n[00:22.53]I'm the one yeah\n[00:23.94]I'm so sick of all those other imitators\n[00:26.53]Don't let the only real one intimidate you\n[00:29.69]See you watching runnin' outta time now\n[00:32.60]I'm the one yeah oh-eh-oh oh-eh-oh\n[00:36.59]I'm the one oh-eh-oh oh-eh-oh\n[00:39.27]I'm the only one oh-eh-oh oh-eh-oh\n[00:42.26]I'm the one oh-eh-oh oh-eh-oh\n[00:45.13]I'm the only one\n[00:47.54]I'm the one that hit that same spot (hit it)\n[00:51.04]She the one that bring them rain drops (raindrops)\n[00:53.72]We go back room, remember criss cross and hopscotch? (hop scotch)\n[00:56.57]You the one that hold me down when the block's hot (hot)\n[00:59.48]I make your dreams come true when you wake up (dream)\n[01:02.30]And you look's just the same without no make up\n[01:05.24]Had to pull up on you momma, see what you're made of (mama)\n[01:08.30]And ain't gotta worry about no [?] 'cause my cake up\n[01:11.17]You can run inside my life from that fame bus\n[01:14.06]'Cause I promise, when we step out you be famous\n[01:17.17]Modern day Bonnie and Clyde what they named us\n[01:20.07]'Cause when we pull up (prr prr) all angles\n[01:22.63]Yeah yeah you lookin' at the truth, the man who never lie no\n[01:26.00]I'm the one yeah, I'm the one\n[01:28.43]Early morning in the dark now you wanna ride now (that's right)\n[01:32.10]I'm the one yeah (that's right)\n[01:33.92]I'm the one yeah\n[01:35.23]I'm so sick of all those other imitators\n[01:37.84]Don't let the only real one intimidate you\n[01:40.84]See you watching runnin' outta time now\n[01:43.91]I'm the one yeah oh-eh-oh oh-eh-oh\n[01:47.76]I'm the one oh-eh-oh oh-eh-oh\n[01:50.48]I'm the only one oh-eh-oh oh-eh-oh\n[01:53.56]I'm the one oh-eh-oh oh-eh-oh\n[01:56.49]I'm the only one\n[01:58.77]She beat her face out with that new Chanel\n[02:01.75]She like the price, she sees the ice and make her coochie melt\n[02:04.58]When I met her in the club I asked her who she felt\n[02:07.54]Then she went and put that booty on a Gucci belt\n[02:11.02]We don't got no label\n[02:13.42]She say she want bottles, she ain't got no table\n[02:16.28]She ain't got no bed frame, she don't got no tables\n[02:19.17]We just watching Netflix, she ain't got no cable (Okay though)\n[02:22.74]Plug, plug, plug, I'm the plug for her\n[02:25.46]She want a nigga that pull her hair and hold the door for her\n[02:28.55]Maybe that's only me, bet you don't get with me\n[02:32.45]Gimme okay okay though\n[02:34.10]Yeah yeah you lookin' at the truth, the man who never lie no\n[02:37.36]I'm the one yeah, I'm the one\n[02:39.62]Early morning in the dark now you wanna ride now (that's right)\n[02:43.37]I'm the one yeah (that's right)\n[02:45.03]I'm the one yeah\n[02:46.38]I'm so sick of all those other imitators\n[02:49.01]Don't let the only real one intimidate you\n[02:52.14]See you watching runnin' outta time now\n[02:55.12]I'm the one yeah oh-eh-oh oh-eh-oh\n[02:58.91]I'm the one oh-eh-oh oh-eh-oh\n[03:01.76]I'm the only one oh-eh-oh oh-eh-oh\n[03:04.66]I'm the one oh-eh-oh oh-eh-oh\n[03:07.55]I'm the only one\n[03:09.61]Lookin' for the real one, bitch you looking at the one\n[03:12.47]I'm the best yet and yet my best is yet to come\n[03:15.22]'Cause I've been lookin' for somebody, not just any fuckin' body\n[03:18.29]Don't make me catch a body, that's for any and everybody\n[03:21.23]Oh my god! She hit me up all day, give no response\n[03:24.12]Bitch you blow my hot, that's like turning gold to bronze\n[03:27.07]Roll my eyes and when she on the molly she is on me\n[03:30.19]She then climb them [?] but it's more like Whitney Bobby\n[03:32.90]God forgive me\n[03:34.11]Told you every lesson, I'm a legend\n[03:35.82]Straight about the present fly your bae down for the essence\n[03:38.82]For the record had no collar when that bubble spinnin' records\n[03:42.00]I'm just flexing all my [?]s\n[03:45.19]Yeah yeah you lookin' at the truth, the man who never lie no\n[03:48.56]I'm the one yeah, I'm the one\n[03:50.96]Early morning in the dark now you wanna ride now (that's right)\n[03:54.54]I'm the one yeah (that's right)\n[03:56.11]I'm the one yeah\n[03:57.47]I'm so sick of all those other imitators\n[04:00.21]Don't let the only real one intimidate you\n[04:03.22]See you watching runnin' outta time now\n[04:06.34]I'm the one yeah oh-eh-oh oh-eh-oh\n[04:10.14]I'm the one oh-eh-oh oh-eh-oh\n[04:12.91]I'm the only one oh-eh-oh oh-eh-oh\n[04:15.85]I'm the one oh-eh-oh oh-eh-oh\n[04:18.88]I'm the only one\n[04:20.23]Another one\n[04:21.26]Don't you know girl, don't you know girl\n[04:23.75]I am the one for you (I'm the one) yeah I'm the one\n[04:26.89]Don't you know girl, don't you know girl\n[04:29.73]I am the one for you (I'm the one) yeah I'm the one\n[04:32.66]Don't you know girl, don't you know girl\n[04:35.77]I am the one for you (I'm the one) yeah I'm the one\n[04:38.96]Don't you know girl, don't you know girl\n[04:41.86]I am the one for you (I'm the one) yeah I'm the one\n"
+      "lyrics": "[ti:I'm the One]\n[ar:DJ Khaled]\n[by:SpotiFLAC-Mobile (source: LRCLIB (cached fallback))]\n\n[00:06.16]We the best music\n[00:08.91]Another one\n[00:10.49]DJ Khaled\n[00:11.73]Yeah yeah you lookin' at the truth, the man who never lie no\n[00:14.82]I'm the one yeah, I'm the one\n[00:17.27]Early morning in the dark now you wanna ride now (that's right)\n[00:20.92]I'm the one yeah (that's right)\n[00:22.53]I'm the one yeah\n[00:23.94]I'm so sick of all those other imitators\n[00:26.53]Don't let the only real one intimidate you\n[00:29.69]See you watching runnin' outta time now\n[00:32.60]I'm the one yeah oh-eh-oh oh-eh-oh\n[00:36.59]I'm the one oh-eh-oh oh-eh-oh\n[00:39.27]I'm the only one oh-eh-oh oh-eh-oh\n[00:42.26]I'm the one oh-eh-oh oh-eh-oh\n[00:45.13]I'm the only one\n[00:47.54]I'm the one that hit that same spot (hit it)\n[00:51.04]She the one that bring them rain drops (raindrops)\n[00:53.72]We go back room, remember criss cross and hopscotch? (hop scotch)\n[00:56.57]You the one that hold me down when the block's hot (hot)\n[00:59.48]I make your dreams come true when you wake up (dream)\n[01:02.30]And you look's just the same without no make up\n[01:05.24]Had to pull up on you momma, see what you're made of (mama)\n[01:08.30]And ain't gotta worry about no [?] 'cause my cake up\n[01:11.17]You can run inside my life from that fame bus\n[01:14.06]'Cause I promise, when we step out you be famous\n[01:17.17]Modern day Bonnie and Clyde what they named us\n[01:20.07]'Cause when we pull up (prr prr) all angles\n[01:22.63]Yeah yeah you lookin' at the truth, the man who never lie no\n[01:26.00]I'm the one yeah, I'm the one\n[01:28.43]Early morning in the dark now you wanna ride now (that's right)\n[01:32.10]I'm the one yeah (that's right)\n[01:33.92]I'm the one yeah\n[01:35.23]I'm so sick of all those other imitators\n[01:37.84]Don't let the only real one intimidate you\n[01:40.84]See you watching runnin' outta time now\n[01:43.91]I'm the one yeah oh-eh-oh oh-eh-oh\n[01:47.76]I'm the one oh-eh-oh oh-eh-oh\n[01:50.48]I'm the only one oh-eh-oh oh-eh-oh\n[01:53.56]I'm the one oh-eh-oh oh-eh-oh\n[01:56.49]I'm the only one\n[01:58.77]She beat her face out with that new Chanel\n[02:01.75]She like the price, she sees the ice and make her coochie melt\n[02:04.58]When I met her in the club I asked her who she felt\n[02:07.54]Then she went and put that booty on a Gucci belt\n[02:11.02]We don't got no label\n[02:13.42]She say she want bottles, she ain't got no table\n[02:16.28]She ain't got no bed frame, she don't got no tables\n[02:19.17]We just watching Netflix, she ain't got no cable (Okay though)\n[02:22.74]Plug, plug, plug, I'm the plug for her\n[02:25.46]She want a nigga that pull her hair and hold the door for her\n[02:28.55]Maybe that's only me, bet you don't get with me\n[02:32.45]Gimme okay okay though\n[02:34.10]Yeah yeah you lookin' at the truth, the man who never lie no\n[02:37.36]I'm the one yeah, I'm the one\n[02:39.62]Early morning in the dark now you wanna ride now (that's right)\n[02:43.37]I'm the one yeah (that's right)\n[02:45.03]I'm the one yeah\n[02:46.38]I'm so sick of all those other imitators\n[02:49.01]Don't let the only real one intimidate you\n[02:52.14]See you watching runnin' outta time now\n[02:55.12]I'm the one yeah oh-eh-oh oh-eh-oh\n[02:58.91]I'm the one oh-eh-oh oh-eh-oh\n[03:01.76]I'm the only one oh-eh-oh oh-eh-oh\n[03:04.66]I'm the one oh-eh-oh oh-eh-oh\n[03:07.55]I'm the only one\n[03:09.61]Lookin' for the real one, bitch you looking at the one\n[03:12.47]I'm the best yet and yet my best is yet to come\n[03:15.22]'Cause I've been lookin' for somebody, not just any fuckin' body\n[03:18.29]Don't make me catch a body, that's for any and everybody\n[03:21.23]Oh my god! She hit me up all day, give no response\n[03:24.12]Bitch you blow my hot, that's like turning gold to bronze\n[03:27.07]Roll my eyes and when she on the molly she is on me\n[03:30.19]She then climb them [?] but it's more like Whitney Bobby\n[03:32.90]God forgive me\n[03:34.11]Told you every lesson, I'm a legend\n[03:35.82]Straight about the present fly your bae down for the essence\n[03:38.82]For the record had no collar when that bubble spinnin' records\n[03:42.00]I'm just flexing all my [?]s\n[03:45.19]Yeah yeah you lookin' at the truth, the man who never lie no\n[03:48.56]I'm the one yeah, I'm the one\n[03:50.96]Early morning in the dark now you wanna ride now (that's right)\n[03:54.54]I'm the one yeah (that's right)\n[03:56.11]I'm the one yeah\n[03:57.47]I'm so sick of all those other imitators\n[04:00.21]Don't let the only real one intimidate you\n[04:03.22]See you watching runnin' outta time now\n[04:06.34]I'm the one yeah oh-eh-oh oh-eh-oh\n[04:10.14]I'm the one oh-eh-oh oh-eh-oh\n[04:12.91]I'm the only one oh-eh-oh oh-eh-oh\n[04:15.85]I'm the one oh-eh-oh oh-eh-oh\n[04:18.88]I'm the only one\n[04:20.23]Another one\n[04:21.26]Don't you know girl, don't you know girl\n[04:23.75]I am the one for you (I'm the one) yeah I'm the one\n[04:26.89]Don't you know girl, don't you know girl\n[04:29.73]I am the one for you (I'm the one) yeah I'm the one\n[04:32.66]Don't you know girl, don't you know girl\n[04:35.77]I am the one for you (I'm the one) yeah I'm the one\n[04:38.96]Don't you know girl, don't you know girl\n[04:41.86]I am the one for you (I'm the one) yeah I'm the one\n",
+      "coverUrl": "assets/covers/cover_122.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "13WU5-MGBi3F-qTIRTtIHZCFQlMRKIe-4",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=13WU5-MGBi3F-qTIRTtIHZCFQlMRKIe-4"
     },
     {
       "id": "gdrive_track_123",
@@ -2217,7 +2827,12 @@
       "sizeBytes": 26746005,
       "sizeMB": "25.51",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_123.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1BKWhdYLLDTJeD2Xh1eZMCbg4ztxYqKC1",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1BKWhdYLLDTJeD2Xh1eZMCbg4ztxYqKC1"
     },
     {
       "id": "gdrive_track_124",
@@ -2235,7 +2850,12 @@
       "sizeBytes": 27699871,
       "sizeMB": "26.42",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_124.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1OaRErKAyvD1ADJCMOG6BzKSxpZThvrIz",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1OaRErKAyvD1ADJCMOG6BzKSxpZThvrIz"
     },
     {
       "id": "gdrive_track_125",
@@ -2253,7 +2873,12 @@
       "sizeBytes": 19475684,
       "sizeMB": "18.57",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_125.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1xttjKAR-7lsfOyN4SB0wTeK_96F2YFBe",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1xttjKAR-7lsfOyN4SB0wTeK_96F2YFBe"
     },
     {
       "id": "gdrive_track_126",
@@ -2271,7 +2896,12 @@
       "sizeBytes": 22336705,
       "sizeMB": "21.30",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_126.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1V5X8GrtIcCQBNtPblnkAxgbgBHf5e2GT",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1V5X8GrtIcCQBNtPblnkAxgbgBHf5e2GT"
     },
     {
       "id": "gdrive_track_127",
@@ -2289,7 +2919,12 @@
       "sizeBytes": 4378540,
       "sizeMB": "4.18",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_127.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1jQrUZ9Vq_DOEzZrGvLeglVjqXC2xnSJb",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1jQrUZ9Vq_DOEzZrGvLeglVjqXC2xnSJb"
     },
     {
       "id": "gdrive_track_128",
@@ -2307,7 +2942,12 @@
       "sizeBytes": 26737703,
       "sizeMB": "25.50",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_128.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1Ahi02T3LnLCw9wPIJ4qYat9RRSFL3BDP",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1Ahi02T3LnLCw9wPIJ4qYat9RRSFL3BDP"
     },
     {
       "id": "gdrive_track_129",
@@ -2325,7 +2965,12 @@
       "sizeBytes": 9247889,
       "sizeMB": "8.82",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_129.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1CFflom09rpgWmPOfkG9A38GRiNdOwjaM",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1CFflom09rpgWmPOfkG9A38GRiNdOwjaM"
     },
     {
       "id": "gdrive_track_130",
@@ -2343,7 +2988,12 @@
       "sizeBytes": 9622384,
       "sizeMB": "9.18",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_130.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "184sTNsoM64xRUovLHidh2PvUsuxZ0Akw",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=184sTNsoM64xRUovLHidh2PvUsuxZ0Akw"
     },
     {
       "id": "gdrive_track_131",
@@ -2361,7 +3011,12 @@
       "sizeBytes": 8484209,
       "sizeMB": "8.09",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_131.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1opHIzsN2mYxARFVCx7LNh4JeGTQDK3Rz",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1opHIzsN2mYxARFVCx7LNh4JeGTQDK3Rz"
     },
     {
       "id": "gdrive_track_132",
@@ -2379,7 +3034,12 @@
       "sizeBytes": 51353108,
       "sizeMB": "48.97",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_132.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1WF8YlbUH_LZoq9Ywt3ApQl0vUIwNSAQG",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1WF8YlbUH_LZoq9Ywt3ApQl0vUIwNSAQG"
     },
     {
       "id": "gdrive_track_133",
@@ -2397,7 +3057,12 @@
       "sizeBytes": 22362057,
       "sizeMB": "21.33",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_133.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1MD0QjOS1gozyFTJMIkrpXuq9HIvh0eTC",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1MD0QjOS1gozyFTJMIkrpXuq9HIvh0eTC"
     },
     {
       "id": "gdrive_track_134",
@@ -2415,7 +3080,12 @@
       "sizeBytes": 25103355,
       "sizeMB": "23.94",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_134.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1K96rxUyMHKk_wxJ-_4YeLC0u7q4ImGU6",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1K96rxUyMHKk_wxJ-_4YeLC0u7q4ImGU6"
     },
     {
       "id": "gdrive_track_135",
@@ -2433,7 +3103,12 @@
       "sizeBytes": 15117034,
       "sizeMB": "14.42",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_135.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1ZEYTmS6l_FZ9l1VB7gSTj9tKbvGlS6u0",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1ZEYTmS6l_FZ9l1VB7gSTj9tKbvGlS6u0"
     },
     {
       "id": "gdrive_track_136",
@@ -2451,7 +3126,12 @@
       "sizeBytes": 13812811,
       "sizeMB": "13.17",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_136.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1dGN9v19PoApBS8bu7RliFbJia3SLv90R",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1dGN9v19PoApBS8bu7RliFbJia3SLv90R"
     },
     {
       "id": "gdrive_track_137",
@@ -2469,7 +3149,12 @@
       "sizeBytes": 25961877,
       "sizeMB": "24.76",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_137.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1Qq_0zpdWBhP4tqe4wTX3lU8zm7s97ttu",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1Qq_0zpdWBhP4tqe4wTX3lU8zm7s97ttu"
     },
     {
       "id": "gdrive_track_138",
@@ -2487,7 +3172,12 @@
       "sizeBytes": 43216671,
       "sizeMB": "41.21",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_138.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1GrvMSwKfnIjxaUTDluADAZEJpydjVXwJ",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1GrvMSwKfnIjxaUTDluADAZEJpydjVXwJ"
     },
     {
       "id": "gdrive_track_139",
@@ -2505,7 +3195,12 @@
       "sizeBytes": 53613284,
       "sizeMB": "51.13",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_139.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "15sbbtCW7GVJhZvivn5ZyAQK7nl-gH8Mf",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=15sbbtCW7GVJhZvivn5ZyAQK7nl-gH8Mf"
     },
     {
       "id": "gdrive_track_140",
@@ -2523,7 +3218,12 @@
       "sizeBytes": 54089345,
       "sizeMB": "51.58",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_140.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "17azyEkrjQeZW3t-B3DskJuygyC_i5RJt",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=17azyEkrjQeZW3t-B3DskJuygyC_i5RJt"
     },
     {
       "id": "gdrive_track_141",
@@ -2541,7 +3241,12 @@
       "sizeBytes": 34884353,
       "sizeMB": "33.27",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_141.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1rrx86g5bQDGrptFPh64egx2JwJe8mvJQ",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1rrx86g5bQDGrptFPh64egx2JwJe8mvJQ"
     },
     {
       "id": "gdrive_track_142",
@@ -2559,7 +3264,12 @@
       "sizeBytes": 22031716,
       "sizeMB": "21.01",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_142.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1cEifJ7pqVmGA8PZdl11slnAH1sB7mH04",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1cEifJ7pqVmGA8PZdl11slnAH1sB7mH04"
     },
     {
       "id": "gdrive_track_143",
@@ -2577,7 +3287,12 @@
       "sizeBytes": 37503057,
       "sizeMB": "35.77",
       "hasLyrics": true,
-      "lyrics": "[ti:love nwantiti (ah ah ah) [feat. Joeboy & Kuami Eugene] [Remix]]\n[ar:CKay]\n[by:SpotiFLAC-Mobile (source: LRCLIB (cached fallback))]\n\n[00:05.72]Ckay yeah-yeah, aah yeah\n[00:11.62]My baby, my valentine\n[00:14.08]Girl na you dey make my temperature dey rise\n[00:16.87]If you leave me I go die, I swear\n[00:19.44]You're like the oxygen, I need to survive, I'll be honest\n[00:23.96]Your loving dey totori me\n[00:26.55]I am so obsessed\n[00:28.94]I want to chop your nkwobi (uh-le)\n[00:31.80]Your body dey baka mi isi (uh-le)\n[00:34.97]Open am make I see (uh-le)\n[00:37.41]Yemu love nwantiti\n[00:39.37]Come and make a bad man sing oh yeah\n[00:42.33]Ah-ah-ah-ah, ah, ah\n[00:44.68]Ah-ah-ah-ah, ah, ah\n[00:46.91]Ah-ah-ah\n[00:47.94]Ah-ah-ah-ah, ah, ah\n[00:49.72]Ah-ah-ah-ah, ah, ah\n[00:51.51]Ah-ah-ah\n[00:52.86]Ah-ah-ah-ah, ah, ah\n[00:54.86]Ah-ah-ah-ah, ah, ah\n[00:56.55]Ah-ah-ah\n[00:58.11]Ah-ah-ah-ah, ah, ah\n[00:59.97]Ah-ah-ah-ah, ah, ah\n[01:01.82]Ah-ah-ah\n[01:02.99]Pounds and dollars I go spend for your head\n[01:05.53]Talk all they want I don't care what they said\n[01:08.02]'Cause your matter na him I come dey carry for my head\n[01:10.47]Every night na you I want dey carry to my bed ololo\n[01:13.19]Don't tell me no-no-no\n[01:14.90]You can be my partner never riding solo-lo\n[01:17.41]And we can do am low-key no need to pariwo\n[01:20.02]I'm feeling what you doing oya baby carry go (carry go)\n[01:22.72]Uh le, your body dey baka mi isi\n[01:25.80]Uh le, open am make I see\n[01:28.29]Uh le, na you wey dey catch my fancy\n[01:31.06]No dey do me hanky-panky oh no-no-no, no, no\n[01:34.26]Ah-ah-ah-ah, ah, ah\n[01:36.24]Ah-ah-ah-ah, ah, ah\n[01:38.11]Ah-ah-ah\n[01:39.97]Ah-ah-ah-ah, ah, ah\n[01:41.31]Ah-ah-ah-ah, ah, ah\n[01:43.12]Ah-ah-ah\n[01:44.54]Ah-ah-ah-ah, ah, ah\n[01:46.54]Ah-ah-ah-ah, ah, ah\n[01:48.11]Ah-ah-ah\n[01:49.65]Ah-ah-ah-ah, ah, ah (they call me Eugene)\n[01:52.08]Ah-ah-ah-ah, ah, ah\n[01:53.63]Ah-ah-ah\n[01:54.96]Girl I want to go but you got me coming (chee!)\n[01:56.35]Why should I be coming early in the morning?\n[01:58.79]Oya shake make you spend my money\n[02:01.22]Call me Mr Bean I go make you horny\n[02:03.76]Gimme-gimme, baby make you gimme\n[02:06.47]I go show you loving I go take you to my city, city\n[02:09.25]Loneliness dey make I looku pity\n[02:11.86]You want make I sing joromi before you go see me, see me\n[02:14.60]Fine girl you know your body badder\n[02:17.17]Same body but come make you shake it for Ghana\n[02:19.64]Kia-kia dance for me, baby pana\n[02:22.10]Come and killi show, rockstar\n[02:25.47]Ah-ah-ah-ah, ah, ah\n[02:27.85]Ah-ah-ah-ah, ah, ah\n[02:29.52]Ah-ah-ah\n[02:31.00]Ah-ah-ah-ah, ah, ah\n[02:33.05]Ah-ah-ah-ah, ah, ah\n[02:34.81]Ah-ah-ah\n[02:36.27]Ah-ah-ah-ah, ah, ah\n[02:38.01]Ah-ah-ah-ah, ah, ah\n[02:39.86]Ah-ah-ah\n[02:41.28]Ah-ah-ah-ah, ah, ah\n[02:43.39]Ah-ah-ah-ah, ah, ah\n[02:44.97]Ah-ah-ah\n"
+      "lyrics": "[ti:love nwantiti (ah ah ah) [feat. Joeboy & Kuami Eugene] [Remix]]\n[ar:CKay]\n[by:SpotiFLAC-Mobile (source: LRCLIB (cached fallback))]\n\n[00:05.72]Ckay yeah-yeah, aah yeah\n[00:11.62]My baby, my valentine\n[00:14.08]Girl na you dey make my temperature dey rise\n[00:16.87]If you leave me I go die, I swear\n[00:19.44]You're like the oxygen, I need to survive, I'll be honest\n[00:23.96]Your loving dey totori me\n[00:26.55]I am so obsessed\n[00:28.94]I want to chop your nkwobi (uh-le)\n[00:31.80]Your body dey baka mi isi (uh-le)\n[00:34.97]Open am make I see (uh-le)\n[00:37.41]Yemu love nwantiti\n[00:39.37]Come and make a bad man sing oh yeah\n[00:42.33]Ah-ah-ah-ah, ah, ah\n[00:44.68]Ah-ah-ah-ah, ah, ah\n[00:46.91]Ah-ah-ah\n[00:47.94]Ah-ah-ah-ah, ah, ah\n[00:49.72]Ah-ah-ah-ah, ah, ah\n[00:51.51]Ah-ah-ah\n[00:52.86]Ah-ah-ah-ah, ah, ah\n[00:54.86]Ah-ah-ah-ah, ah, ah\n[00:56.55]Ah-ah-ah\n[00:58.11]Ah-ah-ah-ah, ah, ah\n[00:59.97]Ah-ah-ah-ah, ah, ah\n[01:01.82]Ah-ah-ah\n[01:02.99]Pounds and dollars I go spend for your head\n[01:05.53]Talk all they want I don't care what they said\n[01:08.02]'Cause your matter na him I come dey carry for my head\n[01:10.47]Every night na you I want dey carry to my bed ololo\n[01:13.19]Don't tell me no-no-no\n[01:14.90]You can be my partner never riding solo-lo\n[01:17.41]And we can do am low-key no need to pariwo\n[01:20.02]I'm feeling what you doing oya baby carry go (carry go)\n[01:22.72]Uh le, your body dey baka mi isi\n[01:25.80]Uh le, open am make I see\n[01:28.29]Uh le, na you wey dey catch my fancy\n[01:31.06]No dey do me hanky-panky oh no-no-no, no, no\n[01:34.26]Ah-ah-ah-ah, ah, ah\n[01:36.24]Ah-ah-ah-ah, ah, ah\n[01:38.11]Ah-ah-ah\n[01:39.97]Ah-ah-ah-ah, ah, ah\n[01:41.31]Ah-ah-ah-ah, ah, ah\n[01:43.12]Ah-ah-ah\n[01:44.54]Ah-ah-ah-ah, ah, ah\n[01:46.54]Ah-ah-ah-ah, ah, ah\n[01:48.11]Ah-ah-ah\n[01:49.65]Ah-ah-ah-ah, ah, ah (they call me Eugene)\n[01:52.08]Ah-ah-ah-ah, ah, ah\n[01:53.63]Ah-ah-ah\n[01:54.96]Girl I want to go but you got me coming (chee!)\n[01:56.35]Why should I be coming early in the morning?\n[01:58.79]Oya shake make you spend my money\n[02:01.22]Call me Mr Bean I go make you horny\n[02:03.76]Gimme-gimme, baby make you gimme\n[02:06.47]I go show you loving I go take you to my city, city\n[02:09.25]Loneliness dey make I looku pity\n[02:11.86]You want make I sing joromi before you go see me, see me\n[02:14.60]Fine girl you know your body badder\n[02:17.17]Same body but come make you shake it for Ghana\n[02:19.64]Kia-kia dance for me, baby pana\n[02:22.10]Come and killi show, rockstar\n[02:25.47]Ah-ah-ah-ah, ah, ah\n[02:27.85]Ah-ah-ah-ah, ah, ah\n[02:29.52]Ah-ah-ah\n[02:31.00]Ah-ah-ah-ah, ah, ah\n[02:33.05]Ah-ah-ah-ah, ah, ah\n[02:34.81]Ah-ah-ah\n[02:36.27]Ah-ah-ah-ah, ah, ah\n[02:38.01]Ah-ah-ah-ah, ah, ah\n[02:39.86]Ah-ah-ah\n[02:41.28]Ah-ah-ah-ah, ah, ah\n[02:43.39]Ah-ah-ah-ah, ah, ah\n[02:44.97]Ah-ah-ah\n",
+      "coverUrl": "assets/covers/cover_143.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "11cplEbZK7yZwtoMo9qLN8tWzUnhZPf12",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=11cplEbZK7yZwtoMo9qLN8tWzUnhZPf12"
     },
     {
       "id": "gdrive_track_144",
@@ -2595,7 +3310,12 @@
       "sizeBytes": 19484899,
       "sizeMB": "18.58",
       "hasLyrics": true,
-      "lyrics": "[ti:love nwantiti (feat. Dj Yo! & AX'EL) (Remix)]\n[ar:CKay]\n[by:SpotiFLAC-Mobile (source: LRCLIB (cached fallback))]\n\n[00:05.67]Oh, no, no, no, no-ooh (A-A-AX'EL)\n[00:11.12]My baby, my valentine, yeah\n[00:13.82]Girl, na you dey make my temperature dey rise\n[00:16.48]If you leave me I go die, I swear (DJ Yo!)\n[00:19.46]You are like the oxygen I need to survive\n[00:22.04]I'll be honest, your loving dey totori me\n[00:26.86]I am so obsessed\n[00:29.31]I want to chop your nkwobi\n[00:31.66]Ule, your body dey gbakam isi\n[00:34.39]Ule, open am make I see ule\n[00:37.96]Nyem love nwantiti\n[00:39.95]Wey fit make a bad man sing, oh\n[00:42.53]Ah-ah-ah-ah, ah, ah\n[00:45.14]Ah-ah-ah-ah, ah, ah\n[00:46.70]Ah-ah-ah-ah\n[00:47.98]Ah-ah-ah-ah, ah, ah\n[00:50.54]Ah-ah-ah-ah, ah, ah\n[00:52.29]Ah-ah-ah-ah\n[00:53.83]Ah-ah-ah-ah, ah, ah\n[00:55.98]Ah-ah-ah-ah, ah, ah\n[00:57.51]Ah-ah-ah-ah\n[00:58.56]Ah-ah-ah-ah, ah, ah\n[01:01.15]Ah-ah-ah-ah, ah, ah\n[01:02.86]Aah-ah-ah\n[01:03.92]Pounds and dollars, I go spend for your head\n[01:06.45]Talk all they want, I don't care what they say\n[01:08.74]'Cause you matter, na eim I wan dey carry for my head\n[01:11.62]Every night, na you I wan dey carry to my bed\n[01:14.04]Ololo, no tell me no-no-no\n[01:16.51]You can be my partner, never riding solo-lo\n[01:18.91]And we can do am low-key, no need to pariwo\n[01:21.61]I'm feeling what you're doing oya baby carry go, carry go\n[01:24.72]Ule, your body dey gbakam isi\n[01:27.33]Ule, open am make I see ule\n[01:31.09]Na you wey dey catch my fancy\n[01:33.18]No dey do me hanky panky\n[01:34.87]Oh no-no-no, no\n[01:35.95]Ah-ah-ah-ah, ah, ah\n[01:38.50]Ah-ah-ah-ah, ah, ah\n[01:40.13]Ah-ah-ah-ah\n[01:41.24]Ah-ah-ah-ah, ah, ah\n[01:43.66]Ah-ah-ah-ah, ah, ah\n[01:45.49]Ah-ah-ah-ah\n[01:46.38]Ah-ah-ah-ah, ah, ah\n[01:49.01]Ah-ah-ah-ah, ah, ah\n[01:50.79]Ah-ah-ah-ah\n[01:51.86]Ah-ah-ah-ah, ah, ah\n[01:54.64]Ah-ah-ah-ah, ah, ah\n[01:56.59]Girl, I want to go but you got me coming\n[01:59.19]Why should I be coming early in the morning?\n[02:01.93]Oya, shake am, make you spend my money\n[02:04.60]Call me Mr. Bean, I go make you horny\n[02:07.26]Ay, gimme, gimme baby, make you gimme\n[02:09.89]I go show you loving, I go take you to my city, city\n[02:13.17]Loneliness dey make I look pity\n[02:15.19]You want make I sing Joromi before you go see me, see me\n[02:18.45]Fine girl, you know your body badder\n[02:20.50]Same body but come make you shake it for Ghana\n[02:23.31]Kia-kia, dance for me, baby pana\n[02:25.89]Come and kill show, no, no-no\n[02:29.31]Ah-ah-ah-ah, ah, ah\n[02:31.73]Ah-ah-ah-ah, ah, ah\n[02:33.40]Ah-ah-ah-ah\n[02:35.14]Ah-ah-ah-ah, ah, ah\n[02:37.15]Ah-ah-ah-ah, ah, ah\n[02:38.81]Ah-ah-ah-ah\n[02:40.32]Ah-ah-ah-ah, ah, ah\n[02:42.42]Ah-ah-ah-ah, ah, ah\n[02:44.25]Ah-ah-ah-ah\n[02:45.62]Ah-ah-ah-ah, ah, ah\n[02:47.96]Ah-ah-ah-ah, ah, ah\n[02:49.40]Ah-ah-ah-ah\n[02:50.69]Exclusivity\n[02:52.15]A-A-AX'EL\n[02:56.08]DJ Yo!\n"
+      "lyrics": "[ti:love nwantiti (feat. Dj Yo! & AX'EL) (Remix)]\n[ar:CKay]\n[by:SpotiFLAC-Mobile (source: LRCLIB (cached fallback))]\n\n[00:05.67]Oh, no, no, no, no-ooh (A-A-AX'EL)\n[00:11.12]My baby, my valentine, yeah\n[00:13.82]Girl, na you dey make my temperature dey rise\n[00:16.48]If you leave me I go die, I swear (DJ Yo!)\n[00:19.46]You are like the oxygen I need to survive\n[00:22.04]I'll be honest, your loving dey totori me\n[00:26.86]I am so obsessed\n[00:29.31]I want to chop your nkwobi\n[00:31.66]Ule, your body dey gbakam isi\n[00:34.39]Ule, open am make I see ule\n[00:37.96]Nyem love nwantiti\n[00:39.95]Wey fit make a bad man sing, oh\n[00:42.53]Ah-ah-ah-ah, ah, ah\n[00:45.14]Ah-ah-ah-ah, ah, ah\n[00:46.70]Ah-ah-ah-ah\n[00:47.98]Ah-ah-ah-ah, ah, ah\n[00:50.54]Ah-ah-ah-ah, ah, ah\n[00:52.29]Ah-ah-ah-ah\n[00:53.83]Ah-ah-ah-ah, ah, ah\n[00:55.98]Ah-ah-ah-ah, ah, ah\n[00:57.51]Ah-ah-ah-ah\n[00:58.56]Ah-ah-ah-ah, ah, ah\n[01:01.15]Ah-ah-ah-ah, ah, ah\n[01:02.86]Aah-ah-ah\n[01:03.92]Pounds and dollars, I go spend for your head\n[01:06.45]Talk all they want, I don't care what they say\n[01:08.74]'Cause you matter, na eim I wan dey carry for my head\n[01:11.62]Every night, na you I wan dey carry to my bed\n[01:14.04]Ololo, no tell me no-no-no\n[01:16.51]You can be my partner, never riding solo-lo\n[01:18.91]And we can do am low-key, no need to pariwo\n[01:21.61]I'm feeling what you're doing oya baby carry go, carry go\n[01:24.72]Ule, your body dey gbakam isi\n[01:27.33]Ule, open am make I see ule\n[01:31.09]Na you wey dey catch my fancy\n[01:33.18]No dey do me hanky panky\n[01:34.87]Oh no-no-no, no\n[01:35.95]Ah-ah-ah-ah, ah, ah\n[01:38.50]Ah-ah-ah-ah, ah, ah\n[01:40.13]Ah-ah-ah-ah\n[01:41.24]Ah-ah-ah-ah, ah, ah\n[01:43.66]Ah-ah-ah-ah, ah, ah\n[01:45.49]Ah-ah-ah-ah\n[01:46.38]Ah-ah-ah-ah, ah, ah\n[01:49.01]Ah-ah-ah-ah, ah, ah\n[01:50.79]Ah-ah-ah-ah\n[01:51.86]Ah-ah-ah-ah, ah, ah\n[01:54.64]Ah-ah-ah-ah, ah, ah\n[01:56.59]Girl, I want to go but you got me coming\n[01:59.19]Why should I be coming early in the morning?\n[02:01.93]Oya, shake am, make you spend my money\n[02:04.60]Call me Mr. Bean, I go make you horny\n[02:07.26]Ay, gimme, gimme baby, make you gimme\n[02:09.89]I go show you loving, I go take you to my city, city\n[02:13.17]Loneliness dey make I look pity\n[02:15.19]You want make I sing Joromi before you go see me, see me\n[02:18.45]Fine girl, you know your body badder\n[02:20.50]Same body but come make you shake it for Ghana\n[02:23.31]Kia-kia, dance for me, baby pana\n[02:25.89]Come and kill show, no, no-no\n[02:29.31]Ah-ah-ah-ah, ah, ah\n[02:31.73]Ah-ah-ah-ah, ah, ah\n[02:33.40]Ah-ah-ah-ah\n[02:35.14]Ah-ah-ah-ah, ah, ah\n[02:37.15]Ah-ah-ah-ah, ah, ah\n[02:38.81]Ah-ah-ah-ah\n[02:40.32]Ah-ah-ah-ah, ah, ah\n[02:42.42]Ah-ah-ah-ah, ah, ah\n[02:44.25]Ah-ah-ah-ah\n[02:45.62]Ah-ah-ah-ah, ah, ah\n[02:47.96]Ah-ah-ah-ah, ah, ah\n[02:49.40]Ah-ah-ah-ah\n[02:50.69]Exclusivity\n[02:52.15]A-A-AX'EL\n[02:56.08]DJ Yo!\n",
+      "coverUrl": "assets/covers/cover_144.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1J4_0QeOPHQ6xRxe9QR4V6v0TX2ezO9Oa",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1J4_0QeOPHQ6xRxe9QR4V6v0TX2ezO9Oa"
     },
     {
       "id": "gdrive_track_145",
@@ -2613,7 +3333,12 @@
       "sizeBytes": 24817776,
       "sizeMB": "23.67",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_145.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1cjWQlTwqrgIbJooYnRq7YUTTGd0pnYj8",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1cjWQlTwqrgIbJooYnRq7YUTTGd0pnYj8"
     },
     {
       "id": "gdrive_track_146",
@@ -2631,7 +3356,12 @@
       "sizeBytes": 25432769,
       "sizeMB": "24.25",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_146.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "16M120X3BBevu9iPQIsbMEl_OR2oOCPnF",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=16M120X3BBevu9iPQIsbMEl_OR2oOCPnF"
     },
     {
       "id": "gdrive_track_147",
@@ -2649,7 +3379,12 @@
       "sizeBytes": 26175925,
       "sizeMB": "24.96",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_147.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1yq909qdbuuSA0rmp035deqi9DNv-CvE_",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1yq909qdbuuSA0rmp035deqi9DNv-CvE_"
     },
     {
       "id": "gdrive_track_148",
@@ -2667,7 +3402,12 @@
       "sizeBytes": 42719967,
       "sizeMB": "40.74",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_148.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1xzgwAy5y3T0CwDMw5TR5fR65hgw7dXvr",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1xzgwAy5y3T0CwDMw5TR5fR65hgw7dXvr"
     },
     {
       "id": "gdrive_track_149",
@@ -2685,7 +3425,12 @@
       "sizeBytes": 44278203,
       "sizeMB": "42.23",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_149.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1KMvNWqn8gQ3CXud1TrmbL5qUyDvn_Qxz",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1KMvNWqn8gQ3CXud1TrmbL5qUyDvn_Qxz"
     },
     {
       "id": "gdrive_track_150",
@@ -2703,7 +3448,12 @@
       "sizeBytes": 23964132,
       "sizeMB": "22.85",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_150.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1F27tgW6-CKiKzXm_NEn64rmna7vi1pzI",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1F27tgW6-CKiKzXm_NEn64rmna7vi1pzI"
     },
     {
       "id": "gdrive_track_151",
@@ -2721,7 +3471,12 @@
       "sizeBytes": 34836802,
       "sizeMB": "33.22",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_151.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1KEz4pvymH2JiXnxuXtk9nNeI76ukqmg9",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1KEz4pvymH2JiXnxuXtk9nNeI76ukqmg9"
     },
     {
       "id": "gdrive_track_152",
@@ -2739,7 +3494,12 @@
       "sizeBytes": 42541093,
       "sizeMB": "40.57",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_152.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1N8jBn2zbisD8LPiY3SKHZD5RN1nNBsV6",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1N8jBn2zbisD8LPiY3SKHZD5RN1nNBsV6"
     },
     {
       "id": "gdrive_track_153",
@@ -2757,7 +3517,12 @@
       "sizeBytes": 26278783,
       "sizeMB": "25.06",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_153.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1VvK3VhsMq5ChFJUUVA5cyf24-vws_rFr",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1VvK3VhsMq5ChFJUUVA5cyf24-vws_rFr"
     },
     {
       "id": "gdrive_track_154",
@@ -2775,7 +3540,12 @@
       "sizeBytes": 22757271,
       "sizeMB": "21.70",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_154.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1vNTdc-YonJMiIgiqfDqXE7UgzGxoGmW3",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1vNTdc-YonJMiIgiqfDqXE7UgzGxoGmW3"
     },
     {
       "id": "gdrive_track_155",
@@ -2793,7 +3563,12 @@
       "sizeBytes": 24494926,
       "sizeMB": "23.36",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_155.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1FUrNC9MhamIgKxKTWLccqdEeQuT3Z4Xh",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1FUrNC9MhamIgKxKTWLccqdEeQuT3Z4Xh"
     },
     {
       "id": "gdrive_track_156",
@@ -2811,7 +3586,12 @@
       "sizeBytes": 44186352,
       "sizeMB": "42.14",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_156.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "16WfSATVo_u63OfM1qzf1mqqQL3P-lGhY",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=16WfSATVo_u63OfM1qzf1mqqQL3P-lGhY"
     },
     {
       "id": "gdrive_track_157",
@@ -2829,7 +3609,12 @@
       "sizeBytes": 27760529,
       "sizeMB": "26.47",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_157.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1Ep7EmdIjjVFcWPg9jSxKC1OSsPvbxyTM",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1Ep7EmdIjjVFcWPg9jSxKC1OSsPvbxyTM"
     },
     {
       "id": "gdrive_track_158",
@@ -2847,7 +3632,12 @@
       "sizeBytes": 29087649,
       "sizeMB": "27.74",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_158.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1LalBzwwKYyaZQq3YRgMlcbMeku6gbhhO",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1LalBzwwKYyaZQq3YRgMlcbMeku6gbhhO"
     },
     {
       "id": "gdrive_track_159",
@@ -2865,7 +3655,12 @@
       "sizeBytes": 48512176,
       "sizeMB": "46.26",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_159.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1lRaH4zq5cYJDM4tbtQnFDm4ETUxODC8S",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1lRaH4zq5cYJDM4tbtQnFDm4ETUxODC8S"
     },
     {
       "id": "gdrive_track_160",
@@ -2883,7 +3678,12 @@
       "sizeBytes": 18117805,
       "sizeMB": "17.28",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_160.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1ondK488GqVTMQsMBwsU5cIJ2pOWZq0F_",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1ondK488GqVTMQsMBwsU5cIJ2pOWZq0F_"
     },
     {
       "id": "gdrive_track_161",
@@ -2901,7 +3701,12 @@
       "sizeBytes": 23216394,
       "sizeMB": "22.14",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_161.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1fPEOUFS-67XUYjvy3zyWMuC7E-JPT_XU",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1fPEOUFS-67XUYjvy3zyWMuC7E-JPT_XU"
     },
     {
       "id": "gdrive_track_162",
@@ -2919,7 +3724,12 @@
       "sizeBytes": 10501908,
       "sizeMB": "10.02",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_162.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1XJc7m7OwLN9T8A0FJYrphjN5r5Dn9Slf",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1XJc7m7OwLN9T8A0FJYrphjN5r5Dn9Slf"
     },
     {
       "id": "gdrive_track_163",
@@ -2937,7 +3747,12 @@
       "sizeBytes": 9785227,
       "sizeMB": "9.33",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_163.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1fb7JZ9l3QHgM0hICv9IwELOYzdGvioWB",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1fb7JZ9l3QHgM0hICv9IwELOYzdGvioWB"
     },
     {
       "id": "gdrive_track_164",
@@ -2955,7 +3770,12 @@
       "sizeBytes": 8242040,
       "sizeMB": "7.86",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_164.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1r-lxWIKCevbIRQjGLGSx53PKNDFmurGr",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1r-lxWIKCevbIRQjGLGSx53PKNDFmurGr"
     },
     {
       "id": "gdrive_track_165",
@@ -2973,7 +3793,12 @@
       "sizeBytes": 25876370,
       "sizeMB": "24.68",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_165.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1T-mxM2jkKGkPISnhZyI69kGF6TA21ZxF",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1T-mxM2jkKGkPISnhZyI69kGF6TA21ZxF"
     },
     {
       "id": "gdrive_track_166",
@@ -2991,7 +3816,12 @@
       "sizeBytes": 33613887,
       "sizeMB": "32.06",
       "hasLyrics": true,
-      "lyrics": "[ti:One Dance]\n[ar:Drake]\n[by:SpotiFLAC-Mobile (source: LRCLIB (cached fallback))]\n\n[00:02.73]Baby, I like your style\n[00:11.02]Grips on your waist, front way, back way\n[00:14.13]You know that I don't play\n[00:15.91]Streets not safe but I never run away\n[00:18.64]Even when I'm away\n[00:20.68]Oti, oti\n[00:22.00]There's never much love when we go OT\n[00:24.68]I pray to make it back in one piece\n[00:26.88]I pray, I pray\n[00:29.05]That's why I need a one dance\n[00:31.54]Got a Hennessy in my hand\n[00:33.79]One more time 'fore I go\n[00:35.94]Higher powers takin' a hold on me\n[00:38.92]I need a one dance\n[00:40.79]Got a Hennessy in my hand\n[00:43.05]One more time 'fore I go\n[00:45.02]Higher powers takin' a hold on me\n[00:49.02]Baby, I like your style\n[00:57.04]Strength and guidance\n[00:59.18]All that I'm wishing for my friends\n[01:01.54]Nobody makes it from my ends\n[01:03.88]I had to bust up the silence\n[01:06.14]You know you gotta stick by me\n[01:08.84]Soon as you see the text, reply me\n[01:11.19]I don't wanna spend time fighting\n[01:13.79]We've got no time\n[01:15.35]And that's why I need a one dance\n[01:17.74]Got a Hennessy in my hand\n[01:19.91]One more time 'fore I go\n[01:22.03]Higher powers taking a hold on me\n[01:25.16]I need a one dance\n[01:27.05]Got a Hennessy in my hand\n[01:29.25]One more time 'fore I go\n[01:31.20]Higher powers taking a hold on me\n[01:34.46]Got a pretty girl and she love me long time\n[01:36.70]Wine it, wine it, very long time\n[01:39.09]Oh, yeah, very long time\n[01:41.46]Back up, back up, back up and wine it\n[01:43.68]Back up, back up and wine it, girl\n[01:45.77]Back up, back up, back up and wine it\n[01:48.22]Oh, yeah, very long time\n[01:50.52]Back, up, back up and wine it, girl\n[01:53.57]Oh, tell me I need to know\n[01:58.86]Where do you wanna go?\n[02:02.94]'Cause if you're down, I'll take it slow\n[02:07.66]Make you lose control\n[02:11.61]Where, where, where\n[02:14.06]Where, where, where, where (oh, yeah, very long time)\n[02:16.49]Where, where, where (Back up, back up, and wine am, girl)\n[02:18.56]Where, where, where, where\n[02:20.96]'Cause if you're down (back up, back up, and-)\n[02:23.83]'Cause if you're down (back up, back up, and-)\n[02:25.95]'Cause if you're down (back up, back up, and-)\n[02:29.80]I need a one dance (where, where, where)\n[02:31.78]Got a Hennessy in my hand (where, where, where, where)\n[02:34.05]One more time 'fore I go (where)\n[02:36.50]Higher powers taking a hold on me (where, where, where, where)\n[02:39.34]I need a one dance\n[02:40.99]Got a Hennessy in my hand\n[02:43.32]One more time 'fore I go\n[02:45.67]Higher powers taking a hold on me\n"
+      "lyrics": "[ti:One Dance]\n[ar:Drake]\n[by:SpotiFLAC-Mobile (source: LRCLIB (cached fallback))]\n\n[00:02.73]Baby, I like your style\n[00:11.02]Grips on your waist, front way, back way\n[00:14.13]You know that I don't play\n[00:15.91]Streets not safe but I never run away\n[00:18.64]Even when I'm away\n[00:20.68]Oti, oti\n[00:22.00]There's never much love when we go OT\n[00:24.68]I pray to make it back in one piece\n[00:26.88]I pray, I pray\n[00:29.05]That's why I need a one dance\n[00:31.54]Got a Hennessy in my hand\n[00:33.79]One more time 'fore I go\n[00:35.94]Higher powers takin' a hold on me\n[00:38.92]I need a one dance\n[00:40.79]Got a Hennessy in my hand\n[00:43.05]One more time 'fore I go\n[00:45.02]Higher powers takin' a hold on me\n[00:49.02]Baby, I like your style\n[00:57.04]Strength and guidance\n[00:59.18]All that I'm wishing for my friends\n[01:01.54]Nobody makes it from my ends\n[01:03.88]I had to bust up the silence\n[01:06.14]You know you gotta stick by me\n[01:08.84]Soon as you see the text, reply me\n[01:11.19]I don't wanna spend time fighting\n[01:13.79]We've got no time\n[01:15.35]And that's why I need a one dance\n[01:17.74]Got a Hennessy in my hand\n[01:19.91]One more time 'fore I go\n[01:22.03]Higher powers taking a hold on me\n[01:25.16]I need a one dance\n[01:27.05]Got a Hennessy in my hand\n[01:29.25]One more time 'fore I go\n[01:31.20]Higher powers taking a hold on me\n[01:34.46]Got a pretty girl and she love me long time\n[01:36.70]Wine it, wine it, very long time\n[01:39.09]Oh, yeah, very long time\n[01:41.46]Back up, back up, back up and wine it\n[01:43.68]Back up, back up and wine it, girl\n[01:45.77]Back up, back up, back up and wine it\n[01:48.22]Oh, yeah, very long time\n[01:50.52]Back, up, back up and wine it, girl\n[01:53.57]Oh, tell me I need to know\n[01:58.86]Where do you wanna go?\n[02:02.94]'Cause if you're down, I'll take it slow\n[02:07.66]Make you lose control\n[02:11.61]Where, where, where\n[02:14.06]Where, where, where, where (oh, yeah, very long time)\n[02:16.49]Where, where, where (Back up, back up, and wine am, girl)\n[02:18.56]Where, where, where, where\n[02:20.96]'Cause if you're down (back up, back up, and-)\n[02:23.83]'Cause if you're down (back up, back up, and-)\n[02:25.95]'Cause if you're down (back up, back up, and-)\n[02:29.80]I need a one dance (where, where, where)\n[02:31.78]Got a Hennessy in my hand (where, where, where, where)\n[02:34.05]One more time 'fore I go (where)\n[02:36.50]Higher powers taking a hold on me (where, where, where, where)\n[02:39.34]I need a one dance\n[02:40.99]Got a Hennessy in my hand\n[02:43.32]One more time 'fore I go\n[02:45.67]Higher powers taking a hold on me\n",
+      "coverUrl": "assets/covers/cover_166.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1C9dhJNe9FOrwGPrHynQ2WXJ49cZQnK52",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1C9dhJNe9FOrwGPrHynQ2WXJ49cZQnK52"
     },
     {
       "id": "gdrive_track_167",
@@ -3009,7 +3839,12 @@
       "sizeBytes": 9789648,
       "sizeMB": "9.34",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": null,
+      "hasCover": false,
+      "extension": "FLAC",
+      "driveFileId": "17scjcorG4Sud5c3NQ7C9QnzVhQqqLx_q",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=17scjcorG4Sud5c3NQ7C9QnzVhQqqLx_q"
     },
     {
       "id": "gdrive_track_168",
@@ -3027,7 +3862,12 @@
       "sizeBytes": 19310006,
       "sizeMB": "18.42",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_168.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1SiOuGZiRXVvJndLqHTUCtYpouneFg4pF",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1SiOuGZiRXVvJndLqHTUCtYpouneFg4pF"
     },
     {
       "id": "gdrive_track_169",
@@ -3045,7 +3885,12 @@
       "sizeBytes": 25479134,
       "sizeMB": "24.30",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_169.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1RWEV3GuNJmBx9DyviwtT_O-W6NClK4UL",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1RWEV3GuNJmBx9DyviwtT_O-W6NClK4UL"
     },
     {
       "id": "gdrive_track_170",
@@ -3063,7 +3908,12 @@
       "sizeBytes": 41393353,
       "sizeMB": "39.48",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_170.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1_RY891wJlWSSLGLdBdznzOaw5oRcOtRv",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1_RY891wJlWSSLGLdBdznzOaw5oRcOtRv"
     },
     {
       "id": "gdrive_track_171",
@@ -3081,7 +3931,12 @@
       "sizeBytes": 24389479,
       "sizeMB": "23.26",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_171.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1pLqI1uUJQHx93K2JICZExdlagnOpu730",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1pLqI1uUJQHx93K2JICZExdlagnOpu730"
     },
     {
       "id": "gdrive_track_172",
@@ -3099,7 +3954,12 @@
       "sizeBytes": 27223871,
       "sizeMB": "25.96",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_172.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1mWyz1t99TKQpHsBDUEeInPAwzzBSuH66",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1mWyz1t99TKQpHsBDUEeInPAwzzBSuH66"
     },
     {
       "id": "gdrive_track_173",
@@ -3117,7 +3977,12 @@
       "sizeBytes": 28684505,
       "sizeMB": "27.36",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_173.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "12Kos94stV-cKbwu86m6fHSLtw4kH8Rsc",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=12Kos94stV-cKbwu86m6fHSLtw4kH8Rsc"
     },
     {
       "id": "gdrive_track_174",
@@ -3135,7 +4000,12 @@
       "sizeBytes": 23665126,
       "sizeMB": "22.57",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_174.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1U6QyxB6tRG1kOAqiD-dy7qMxNN3c1ZEK",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1U6QyxB6tRG1kOAqiD-dy7qMxNN3c1ZEK"
     },
     {
       "id": "gdrive_track_175",
@@ -3153,7 +4023,12 @@
       "sizeBytes": 30740048,
       "sizeMB": "29.32",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_175.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1GUO-NPazx4ClLXrs5bV3u2Tgiv9JofL_",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1GUO-NPazx4ClLXrs5bV3u2Tgiv9JofL_"
     },
     {
       "id": "gdrive_track_176",
@@ -3171,7 +4046,12 @@
       "sizeBytes": 28171377,
       "sizeMB": "26.87",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_176.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1hmhEtmNYPg3amdrb8HwG3H4OqD-tRJ98",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1hmhEtmNYPg3amdrb8HwG3H4OqD-tRJ98"
     },
     {
       "id": "gdrive_track_177",
@@ -3189,7 +4069,12 @@
       "sizeBytes": 46204029,
       "sizeMB": "44.06",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_177.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1S2cCgEfYGYAQMvzuDZGVNDe5H_fPnRLO",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1S2cCgEfYGYAQMvzuDZGVNDe5H_fPnRLO"
     },
     {
       "id": "gdrive_track_178",
@@ -3207,7 +4092,12 @@
       "sizeBytes": 17694838,
       "sizeMB": "16.88",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_178.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1OXfWn2xsrN95E_Hax-GNty7rcrNKOPQV",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1OXfWn2xsrN95E_Hax-GNty7rcrNKOPQV"
     },
     {
       "id": "gdrive_track_179",
@@ -3225,7 +4115,12 @@
       "sizeBytes": 25643991,
       "sizeMB": "24.46",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_179.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1aSay98hCgKw_MlIPq5icrVm8dlW6GLjL",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1aSay98hCgKw_MlIPq5icrVm8dlW6GLjL"
     },
     {
       "id": "gdrive_track_180",
@@ -3243,7 +4138,12 @@
       "sizeBytes": 16723650,
       "sizeMB": "15.95",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_180.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1pbGABzwp1SQ1uOGLkItjqZ-OP-0UL5zc",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1pbGABzwp1SQ1uOGLkItjqZ-OP-0UL5zc"
     },
     {
       "id": "gdrive_track_181",
@@ -3261,7 +4161,12 @@
       "sizeBytes": 16361462,
       "sizeMB": "15.60",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_181.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1E3v1EkwvEcO9Lc0xRaSJJ2zWIrpxWzqH",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1E3v1EkwvEcO9Lc0xRaSJJ2zWIrpxWzqH"
     },
     {
       "id": "gdrive_track_182",
@@ -3279,7 +4184,12 @@
       "sizeBytes": 30558093,
       "sizeMB": "29.14",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_182.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1w1EUqQgVR9VEzSeJkM_m9d-2TETUgRWi",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1w1EUqQgVR9VEzSeJkM_m9d-2TETUgRWi"
     },
     {
       "id": "gdrive_track_183",
@@ -3297,7 +4207,12 @@
       "sizeBytes": 12516022,
       "sizeMB": "11.94",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_183.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1lX_dyJt6yAfMKR79JU1Tj5ELefUydEsO",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1lX_dyJt6yAfMKR79JU1Tj5ELefUydEsO"
     },
     {
       "id": "gdrive_track_184",
@@ -3315,7 +4230,12 @@
       "sizeBytes": 20601296,
       "sizeMB": "19.65",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_184.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "15Svmp8-gGOOwrDB2jfB8Wx3IL4Xm-5Ni",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=15Svmp8-gGOOwrDB2jfB8Wx3IL4Xm-5Ni"
     },
     {
       "id": "gdrive_track_185",
@@ -3333,7 +4253,12 @@
       "sizeBytes": 12924952,
       "sizeMB": "12.33",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_185.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1EPZu-urkVH6mQtVFLuVXL7oY7AjWXxro",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1EPZu-urkVH6mQtVFLuVXL7oY7AjWXxro"
     },
     {
       "id": "gdrive_track_186",
@@ -3351,7 +4276,12 @@
       "sizeBytes": 6406614,
       "sizeMB": "6.11",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_186.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1WZz4o_AnBo-d2DtK0hk9mVua6xGTIxDX",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1WZz4o_AnBo-d2DtK0hk9mVua6xGTIxDX"
     },
     {
       "id": "gdrive_track_187",
@@ -3369,7 +4299,12 @@
       "sizeBytes": 6406621,
       "sizeMB": "6.11",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_187.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1OxZI4hPPOwVRB_2ZgjobR8fGjYTleOi0",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1OxZI4hPPOwVRB_2ZgjobR8fGjYTleOi0"
     },
     {
       "id": "gdrive_track_188",
@@ -3387,7 +4322,12 @@
       "sizeBytes": 42145341,
       "sizeMB": "40.19",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_188.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1OThwIpyB_xFoTTAW329TSbYPQ0NJOwPO",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1OThwIpyB_xFoTTAW329TSbYPQ0NJOwPO"
     },
     {
       "id": "gdrive_track_189",
@@ -3405,7 +4345,12 @@
       "sizeBytes": 11997902,
       "sizeMB": "11.44",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_189.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1cu9ZC68PHuBmuqdJaQNEshgJ27fjlhxO",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1cu9ZC68PHuBmuqdJaQNEshgJ27fjlhxO"
     },
     {
       "id": "gdrive_track_190",
@@ -3423,7 +4368,12 @@
       "sizeBytes": 23183825,
       "sizeMB": "22.11",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_190.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1as4JeLU8f3btRPrDFAve0x0WxpBlPWCA",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1as4JeLU8f3btRPrDFAve0x0WxpBlPWCA"
     },
     {
       "id": "gdrive_track_191",
@@ -3441,7 +4391,12 @@
       "sizeBytes": 19262222,
       "sizeMB": "18.37",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_191.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1Y3NL5MyNXCYhPzVMD-eQXU-cliKkKC2_",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1Y3NL5MyNXCYhPzVMD-eQXU-cliKkKC2_"
     },
     {
       "id": "gdrive_track_192",
@@ -3459,7 +4414,12 @@
       "sizeBytes": 21540563,
       "sizeMB": "20.54",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_192.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1y0et4glPYO5ntqPL_S4f9YIgymK_je2Q",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1y0et4glPYO5ntqPL_S4f9YIgymK_je2Q"
     },
     {
       "id": "gdrive_track_193",
@@ -3477,7 +4437,12 @@
       "sizeBytes": 21830859,
       "sizeMB": "20.82",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_193.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1Zza8DE0k6qB_JvjofR70TEv716IUN-3j",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1Zza8DE0k6qB_JvjofR70TEv716IUN-3j"
     },
     {
       "id": "gdrive_track_194",
@@ -3495,7 +4460,12 @@
       "sizeBytes": 25570083,
       "sizeMB": "24.39",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_194.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1_FnWrbM8LKe0SHuDzt7IciYfSrMaCIYM",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1_FnWrbM8LKe0SHuDzt7IciYfSrMaCIYM"
     },
     {
       "id": "gdrive_track_195",
@@ -3513,7 +4483,12 @@
       "sizeBytes": 10519729,
       "sizeMB": "10.03",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_195.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1WI9FpbIyYnrJPZKbrQDM88VGPtHSnI3f",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1WI9FpbIyYnrJPZKbrQDM88VGPtHSnI3f"
     },
     {
       "id": "gdrive_track_196",
@@ -3531,7 +4506,12 @@
       "sizeBytes": 30552092,
       "sizeMB": "29.14",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_196.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1fVQj89PGV-Gz81uZsfNCx_l5250dugFQ",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1fVQj89PGV-Gz81uZsfNCx_l5250dugFQ"
     },
     {
       "id": "gdrive_track_197",
@@ -3549,7 +4529,12 @@
       "sizeBytes": 13866903,
       "sizeMB": "13.22",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_197.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1RnvgxRRgaD-5T-yurc-iJukUyL5vCGhl",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1RnvgxRRgaD-5T-yurc-iJukUyL5vCGhl"
     },
     {
       "id": "gdrive_track_198",
@@ -3567,7 +4552,12 @@
       "sizeBytes": 6613882,
       "sizeMB": "6.31",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_198.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1o24Z97PtfV75NCvCri677MpJw7TnR_Pz",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1o24Z97PtfV75NCvCri677MpJw7TnR_Pz"
     },
     {
       "id": "gdrive_track_199",
@@ -3585,7 +4575,12 @@
       "sizeBytes": 22443987,
       "sizeMB": "21.40",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_199.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1PzBE_NkCLXTiTaHub0yjq9BgAol_2__F",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1PzBE_NkCLXTiTaHub0yjq9BgAol_2__F"
     },
     {
       "id": "gdrive_track_200",
@@ -3603,7 +4598,12 @@
       "sizeBytes": 8347688,
       "sizeMB": "7.96",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": null,
+      "hasCover": false,
+      "extension": "FLAC",
+      "driveFileId": "1TS7--UrqZ0RrlqBsQ-dsWYm4FcsFkQQ4",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1TS7--UrqZ0RrlqBsQ-dsWYm4FcsFkQQ4"
     },
     {
       "id": "gdrive_track_201",
@@ -3621,7 +4621,12 @@
       "sizeBytes": 20805221,
       "sizeMB": "19.84",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_201.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1z5LmlZap-y5F0oYcB_4gvjGEdPYiOzV_",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1z5LmlZap-y5F0oYcB_4gvjGEdPYiOzV_"
     },
     {
       "id": "gdrive_track_202",
@@ -3639,7 +4644,12 @@
       "sizeBytes": 37811106,
       "sizeMB": "36.06",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_202.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1FcLh4F6Nfr3NQ8ptKimTPWqYfmQce2Wy",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1FcLh4F6Nfr3NQ8ptKimTPWqYfmQce2Wy"
     },
     {
       "id": "gdrive_track_203",
@@ -3657,7 +4667,12 @@
       "sizeBytes": 41092009,
       "sizeMB": "39.19",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_203.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1WmVt51mwj5mjBRSQxiTc9bzdf7TDHfZb",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1WmVt51mwj5mjBRSQxiTc9bzdf7TDHfZb"
     },
     {
       "id": "gdrive_track_204",
@@ -3675,7 +4690,12 @@
       "sizeBytes": 9602611,
       "sizeMB": "9.16",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": null,
+      "hasCover": false,
+      "extension": "FLAC",
+      "driveFileId": "1nKSrdl543ybIDP0zt9qCjZ_SrD48DW1k",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1nKSrdl543ybIDP0zt9qCjZ_SrD48DW1k"
     },
     {
       "id": "gdrive_track_205",
@@ -3693,7 +4713,12 @@
       "sizeBytes": 33499891,
       "sizeMB": "31.95",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_205.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "19qcWA6_5UoPfq3Hd-k9g8wcs0SBuQR1U",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=19qcWA6_5UoPfq3Hd-k9g8wcs0SBuQR1U"
     },
     {
       "id": "gdrive_track_206",
@@ -3711,7 +4736,12 @@
       "sizeBytes": 11687991,
       "sizeMB": "11.15",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_206.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1X-39tFefdAEHNBbRjDkEsPC_lfwnUmSJ",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1X-39tFefdAEHNBbRjDkEsPC_lfwnUmSJ"
     },
     {
       "id": "gdrive_track_207",
@@ -3729,7 +4759,12 @@
       "sizeBytes": 25211140,
       "sizeMB": "24.04",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_207.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "13f3NuUZtGreUwPBU0C-X2JVf_9wjgHlv",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=13f3NuUZtGreUwPBU0C-X2JVf_9wjgHlv"
     },
     {
       "id": "gdrive_track_208",
@@ -3747,7 +4782,12 @@
       "sizeBytes": 31237428,
       "sizeMB": "29.79",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_208.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1Z7wK2xAzvCFIt5HPlWaU8XaoTxtZYaVM",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1Z7wK2xAzvCFIt5HPlWaU8XaoTxtZYaVM"
     },
     {
       "id": "gdrive_track_209",
@@ -3765,7 +4805,12 @@
       "sizeBytes": 29958657,
       "sizeMB": "28.57",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_209.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1NJaDqUCRniowChupa8rpjjJo2rpaMnCf",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1NJaDqUCRniowChupa8rpjjJo2rpaMnCf"
     },
     {
       "id": "gdrive_track_210",
@@ -3783,7 +4828,12 @@
       "sizeBytes": 56867750,
       "sizeMB": "54.23",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_210.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1MTcCmt5IyKf78GOLkcf72Q-8sRXtNbvs",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1MTcCmt5IyKf78GOLkcf72Q-8sRXtNbvs"
     },
     {
       "id": "gdrive_track_211",
@@ -3801,7 +4851,12 @@
       "sizeBytes": 47279270,
       "sizeMB": "45.09",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_211.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "14m24TIUfuQfKSd0kraoLSE3wtCIPnLy_",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=14m24TIUfuQfKSd0kraoLSE3wtCIPnLy_"
     },
     {
       "id": "gdrive_track_212",
@@ -3819,7 +4874,12 @@
       "sizeBytes": 14327265,
       "sizeMB": "13.66",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_212.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "17oSNyZpwQW_rLe5ZvqZW1zgkxtP1IUHi",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=17oSNyZpwQW_rLe5ZvqZW1zgkxtP1IUHi"
     },
     {
       "id": "gdrive_track_213",
@@ -3837,7 +4897,12 @@
       "sizeBytes": 5796838,
       "sizeMB": "5.53",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_213.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1QrZYJCjN4geWh6bkK6uwemdFWv7SYPtw",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1QrZYJCjN4geWh6bkK6uwemdFWv7SYPtw"
     },
     {
       "id": "gdrive_track_214",
@@ -3855,7 +4920,12 @@
       "sizeBytes": 7995977,
       "sizeMB": "7.63",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_214.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1rbjZNr2ekWZQTBMIbn2R4YeG5IspUOgC",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1rbjZNr2ekWZQTBMIbn2R4YeG5IspUOgC"
     },
     {
       "id": "gdrive_track_215",
@@ -3873,7 +4943,12 @@
       "sizeBytes": 5787369,
       "sizeMB": "5.52",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_215.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1jxrTpGjKKt6SLwwWBMOVqKKHz_2WsImA",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1jxrTpGjKKt6SLwwWBMOVqKKHz_2WsImA"
     },
     {
       "id": "gdrive_track_216",
@@ -3891,7 +4966,12 @@
       "sizeBytes": 44980244,
       "sizeMB": "42.90",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_216.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1lhtGFFetA3tWRTmImHlzKOd83LCeo_pR",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1lhtGFFetA3tWRTmImHlzKOd83LCeo_pR"
     },
     {
       "id": "gdrive_track_217",
@@ -3909,7 +4989,12 @@
       "sizeBytes": 26428047,
       "sizeMB": "25.20",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_217.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1dDqcwsSHaZ9LJPo6x7GToCAZDsWbZIZv",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1dDqcwsSHaZ9LJPo6x7GToCAZDsWbZIZv"
     },
     {
       "id": "gdrive_track_218",
@@ -3927,7 +5012,12 @@
       "sizeBytes": 23106193,
       "sizeMB": "22.04",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_218.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "150GQt-avLYqxC1gX6_ZX6EsJ1aTvuoRa",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=150GQt-avLYqxC1gX6_ZX6EsJ1aTvuoRa"
     },
     {
       "id": "gdrive_track_219",
@@ -3945,7 +5035,12 @@
       "sizeBytes": 28414317,
       "sizeMB": "27.10",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_219.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1i0iuKToYSf6miOTTyruoGKqBZPpj-jXm",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1i0iuKToYSf6miOTTyruoGKqBZPpj-jXm"
     },
     {
       "id": "gdrive_track_220",
@@ -3963,7 +5058,12 @@
       "sizeBytes": 13359882,
       "sizeMB": "12.74",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_220.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1hiyYojhrl50aN9LsDrQtjjY_VJ_fXxyd",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1hiyYojhrl50aN9LsDrQtjjY_VJ_fXxyd"
     },
     {
       "id": "gdrive_track_221",
@@ -3981,7 +5081,12 @@
       "sizeBytes": 32208232,
       "sizeMB": "30.72",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_221.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1zcSXlhmFft9mDslhoGOZTiw4WOaNivc-",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1zcSXlhmFft9mDslhoGOZTiw4WOaNivc-"
     },
     {
       "id": "gdrive_track_222",
@@ -3999,7 +5104,12 @@
       "sizeBytes": 29194707,
       "sizeMB": "27.84",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_222.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1hCbhjgszKuJEiGvIDVKoCrNdLURgQkDf",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1hCbhjgszKuJEiGvIDVKoCrNdLURgQkDf"
     },
     {
       "id": "gdrive_track_223",
@@ -4017,7 +5127,12 @@
       "sizeBytes": 26241461,
       "sizeMB": "25.03",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_223.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "12s_6dFCP9dM7VhOgX7nqWXceHEfzRJ9f",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=12s_6dFCP9dM7VhOgX7nqWXceHEfzRJ9f"
     },
     {
       "id": "gdrive_track_224",
@@ -4035,7 +5150,12 @@
       "sizeBytes": 15642347,
       "sizeMB": "14.92",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_224.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1HWLfKLQbVQFoCQhg1qZ69txD_kCzUSlR",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1HWLfKLQbVQFoCQhg1qZ69txD_kCzUSlR"
     },
     {
       "id": "gdrive_track_225",
@@ -4053,7 +5173,12 @@
       "sizeBytes": 12909992,
       "sizeMB": "12.31",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_225.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1RM4Cpx-TxrVhI-ukODxLI8iYpPf8bZ-3",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1RM4Cpx-TxrVhI-ukODxLI8iYpPf8bZ-3"
     },
     {
       "id": "gdrive_track_226",
@@ -4071,7 +5196,12 @@
       "sizeBytes": 30995460,
       "sizeMB": "29.56",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_226.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1zENSzWMS85z4QLEyJ8MfnHXj2OK_Vb68",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1zENSzWMS85z4QLEyJ8MfnHXj2OK_Vb68"
     },
     {
       "id": "gdrive_track_227",
@@ -4089,7 +5219,12 @@
       "sizeBytes": 36112726,
       "sizeMB": "34.44",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_227.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1o8-aOamU0Otj3XtCEFuEQNEmB_U8-9U6",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1o8-aOamU0Otj3XtCEFuEQNEmB_U8-9U6"
     },
     {
       "id": "gdrive_track_228",
@@ -4107,7 +5242,12 @@
       "sizeBytes": 23783105,
       "sizeMB": "22.68",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_228.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1-gVjYxFlQUprHxrFSSXBgpTVvKVpDiz7",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1-gVjYxFlQUprHxrFSSXBgpTVvKVpDiz7"
     },
     {
       "id": "gdrive_track_229",
@@ -4125,7 +5265,12 @@
       "sizeBytes": 17631020,
       "sizeMB": "16.81",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_229.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1FdkCuMBc77d2UrqzlJJjje7QDAG64kKm",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1FdkCuMBc77d2UrqzlJJjje7QDAG64kKm"
     },
     {
       "id": "gdrive_track_230",
@@ -4143,7 +5288,12 @@
       "sizeBytes": 8735373,
       "sizeMB": "8.33",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_230.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1cZSGO0y7B4UJgIpmfzhXhQ7onB_twwUI",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1cZSGO0y7B4UJgIpmfzhXhQ7onB_twwUI"
     },
     {
       "id": "gdrive_track_231",
@@ -4161,7 +5311,12 @@
       "sizeBytes": 26750202,
       "sizeMB": "25.51",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_231.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1r0t_EqnTkXNv2pX5_TQobc3cQ7qF5EMV",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1r0t_EqnTkXNv2pX5_TQobc3cQ7qF5EMV"
     },
     {
       "id": "gdrive_track_232",
@@ -4179,7 +5334,12 @@
       "sizeBytes": 25403041,
       "sizeMB": "24.23",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_232.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1BsufOEJHunop_pZw6nECGkxGqx54jl_H",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1BsufOEJHunop_pZw6nECGkxGqx54jl_H"
     },
     {
       "id": "gdrive_track_233",
@@ -4197,7 +5357,12 @@
       "sizeBytes": 15900569,
       "sizeMB": "15.16",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": null,
+      "hasCover": false,
+      "extension": "FLAC",
+      "driveFileId": "1fZebgTMDMtQbEKUOI-hjPkxsQSkO_ThF",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1fZebgTMDMtQbEKUOI-hjPkxsQSkO_ThF"
     },
     {
       "id": "gdrive_track_234",
@@ -4215,7 +5380,12 @@
       "sizeBytes": 8939917,
       "sizeMB": "8.53",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_234.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1j8lXgY6S0NKNmgaGo-oXWnWWS-4NJ96n",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1j8lXgY6S0NKNmgaGo-oXWnWWS-4NJ96n"
     },
     {
       "id": "gdrive_track_235",
@@ -4233,7 +5403,12 @@
       "sizeBytes": 17885427,
       "sizeMB": "17.06",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_235.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "15874eogMuu8THOHH7wBOT5bvmoJsQ8rp",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=15874eogMuu8THOHH7wBOT5bvmoJsQ8rp"
     },
     {
       "id": "gdrive_track_236",
@@ -4251,7 +5426,12 @@
       "sizeBytes": 24985453,
       "sizeMB": "23.83",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_236.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "14EbKLN-rPbEOJjyPGHsGQetoepjKAWMX",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=14EbKLN-rPbEOJjyPGHsGQetoepjKAWMX"
     },
     {
       "id": "gdrive_track_237",
@@ -4269,7 +5449,12 @@
       "sizeBytes": 35918501,
       "sizeMB": "34.25",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_237.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1OnogFoiwS8kMkOp2CZkEfKcwLdEhp4t4",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1OnogFoiwS8kMkOp2CZkEfKcwLdEhp4t4"
     },
     {
       "id": "gdrive_track_238",
@@ -4287,7 +5472,12 @@
       "sizeBytes": 25843018,
       "sizeMB": "24.65",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_238.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1GoLDdL_ceQIlivU2go_eicHIZK-8Gg3s",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1GoLDdL_ceQIlivU2go_eicHIZK-8Gg3s"
     },
     {
       "id": "gdrive_track_239",
@@ -4305,7 +5495,12 @@
       "sizeBytes": 20393826,
       "sizeMB": "19.45",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_239.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1C7_fFh-ROtuPCgB1ZiwgcebTt-c_wmiv",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1C7_fFh-ROtuPCgB1ZiwgcebTt-c_wmiv"
     },
     {
       "id": "gdrive_track_240",
@@ -4323,7 +5518,12 @@
       "sizeBytes": 52636465,
       "sizeMB": "50.20",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_240.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1_I4cuOaa_5DW5WMS_L4XXRm-5I69JH6w",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1_I4cuOaa_5DW5WMS_L4XXRm-5I69JH6w"
     },
     {
       "id": "gdrive_track_241",
@@ -4341,7 +5541,12 @@
       "sizeBytes": 28251344,
       "sizeMB": "26.94",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_241.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1PiSykcxI2Hjf52sYAXWTitglMIbzr31P",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1PiSykcxI2Hjf52sYAXWTitglMIbzr31P"
     },
     {
       "id": "gdrive_track_242",
@@ -4359,7 +5564,12 @@
       "sizeBytes": 21083188,
       "sizeMB": "20.11",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_242.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1znIcW2TTk-xqBkQIdH6SYZoy1OeU_ZwM",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1znIcW2TTk-xqBkQIdH6SYZoy1OeU_ZwM"
     },
     {
       "id": "gdrive_track_243",
@@ -4377,7 +5587,12 @@
       "sizeBytes": 54463583,
       "sizeMB": "51.94",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_243.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1_Eu5oaqiorO5L9ENLwmkZ82qrgvbTLPk",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1_Eu5oaqiorO5L9ENLwmkZ82qrgvbTLPk"
     },
     {
       "id": "gdrive_track_244",
@@ -4395,7 +5610,12 @@
       "sizeBytes": 70038188,
       "sizeMB": "66.79",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_244.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1OT5zzzY33tjrWoDKk8Ch8FBDghBAJBTU",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1OT5zzzY33tjrWoDKk8Ch8FBDghBAJBTU"
     },
     {
       "id": "gdrive_track_245",
@@ -4413,7 +5633,12 @@
       "sizeBytes": 22594639,
       "sizeMB": "21.55",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_245.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1HF--STtN3jXkqWeyzRAe-sswLVx93NGy",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1HF--STtN3jXkqWeyzRAe-sswLVx93NGy"
     },
     {
       "id": "gdrive_track_246",
@@ -4431,7 +5656,12 @@
       "sizeBytes": 29875285,
       "sizeMB": "28.49",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_246.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1rOhJDX4NS9Lk1ypzk0-GWWZzmuQj8C-c",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1rOhJDX4NS9Lk1ypzk0-GWWZzmuQj8C-c"
     },
     {
       "id": "gdrive_track_247",
@@ -4449,7 +5679,12 @@
       "sizeBytes": 65040986,
       "sizeMB": "62.03",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_247.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1hVv6tNhp61YvzaFQ_cOYaUo4CLqAOBSC",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1hVv6tNhp61YvzaFQ_cOYaUo4CLqAOBSC"
     },
     {
       "id": "gdrive_track_248",
@@ -4467,7 +5702,12 @@
       "sizeBytes": 28506502,
       "sizeMB": "27.19",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_248.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1TSAwV2OfHGCj0Rb76UVj5bmFn0kqqbSw",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1TSAwV2OfHGCj0Rb76UVj5bmFn0kqqbSw"
     },
     {
       "id": "gdrive_track_249",
@@ -4485,7 +5725,12 @@
       "sizeBytes": 25662394,
       "sizeMB": "24.47",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_249.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1zpDie2gF9cNRz2rW3q1Vi6J73pOwFZKM",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1zpDie2gF9cNRz2rW3q1Vi6J73pOwFZKM"
     },
     {
       "id": "gdrive_track_250",
@@ -4503,7 +5748,12 @@
       "sizeBytes": 41266163,
       "sizeMB": "39.35",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_250.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1jR21CnLlJRG3o_MSystTz2bXOPadoILx",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1jR21CnLlJRG3o_MSystTz2bXOPadoILx"
     },
     {
       "id": "gdrive_track_251",
@@ -4521,7 +5771,12 @@
       "sizeBytes": 24814056,
       "sizeMB": "23.66",
       "hasLyrics": false,
-      "lyrics": ""
+      "lyrics": "",
+      "coverUrl": "assets/covers/cover_251.jpg",
+      "hasCover": true,
+      "extension": "FLAC",
+      "driveFileId": "1MVZp0C_tXuyQuz_jq-huos3YMAWWc59Y",
+      "driveStreamUrl": "https://drive.google.com/uc?export=download&id=1MVZp0C_tXuyQuz_jq-huos3YMAWWc59Y"
     }
   ]
 }

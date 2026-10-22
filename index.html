@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
-  <title>Poweramp Audiophile Player | Hi-Res Lossless Audio</title>
-  <meta name="description" content="Reproductor de música audiófilo de alta fidelidad con soporte FLAC 24-bit/96kHz, ecualizador gráfico de 10 bandas y fondo dinámico." />
-  <meta name="theme-color" content="#07090e" />
+  <title>Powerify | Poweramp x Spotify Audiophile Player</title>
+  <meta name="description" content="Reproductor audiófilo de alta fidelidad que fusiona la interfaz de Spotify y el motor de sonido y ecualizador de 10 bandas de Poweramp." />
+  <meta name="theme-color" content="#121212" />
 
-  <!-- Google Fonts: Outfit (UI) y JetBrains Mono (Métricas Técnicas) -->
+  <!-- Google Fonts: Outfit (UI moderna) y JetBrains Mono (Métricas audiófilas) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -21,16 +21,16 @@
   <!-- Estilos Personalizados del Reproductor -->
   <link rel="stylesheet" href="css/style.css" />
 </head>
-<body class="bg-[#07090e] text-slate-100 flex flex-col min-h-screen">
+<body class="bg-[#0c0d12] text-slate-100 flex flex-col h-screen overflow-hidden select-none">
 
-  <!-- Elemento HTML5 Audio Nativo conectado a Web Audio API -->
+  <!-- Elemento HTML5 Audio Nativo conectado al grafo de Web Audio API -->
   <audio id="audio-core" preload="auto" crossorigin="anonymous"></audio>
 
-  <!-- Inputs Ocultos para Selección de Archivos Locales -->
+  <!-- Inputs Ocultos para Selección de Archivos Locales / Carpeta -->
   <input type="file" id="input-folder-fallback" webkitdirectory directory multiple class="hidden" />
   <input type="file" id="input-files-fallback" multiple accept="audio/*,.flac,.wav,.mp3,.m4a" class="hidden" />
 
-  <!-- Fondo Ambiental Dinámico Reactivo (Apple Music / Poweramp Blur) -->
+  <!-- Fondo Ambiental Dinámico Reactivo (Apple Music & Poweramp Blur) -->
   <div class="ambient-background-wrapper">
     <div class="ambient-blob ambient-blob-1"></div>
     <div class="ambient-blob ambient-blob-2"></div>
@@ -38,271 +38,272 @@
     <div class="ambient-overlay-noise"></div>
   </div>
 
-  <!-- Overlay de Carga de Biblioteca -->
-  <div id="library-loading-overlay" class="fixed inset-0 bg-black/80 backdrop-blur-md z-50 flex flex-col items-center justify-center hidden">
-    <div class="relative w-16 h-16 mb-4">
-      <div class="absolute inset-0 rounded-full border-4 border-cyan-500/20"></div>
-      <div class="absolute inset-0 rounded-full border-4 border-cyan-400 border-t-transparent animate-spin"></div>
+  <!-- Modal / Banner Guía de Conexión de Carpeta Google Drive -->
+  <div id="drive-guide-modal" class="fixed inset-0 bg-black/85 backdrop-blur-xl z-50 flex items-center justify-center p-4 hidden">
+    <div class="glass-panel p-6 max-w-lg w-full border border-emerald-500/40 shadow-2xl space-y-4">
+      <div class="flex items-center justify-between pb-3 border-b border-white/10">
+        <div class="flex items-center space-x-2.5">
+          <div class="w-10 h-10 rounded-xl bg-emerald-500/20 flex items-center justify-center text-emerald-400">
+            <i data-lucide="folder-check" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <h3 class="font-bold text-base text-white">Vincular Carpeta de Música</h3>
+            <p class="text-[11px] text-slate-400">Reproducción FLAC Lossless 24-bit sin compresión</p>
+          </div>
+        </div>
+        <button id="btn-close-drive-guide" class="p-1.5 rounded-lg text-slate-400 hover:text-white bg-white/5">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <div class="text-xs text-slate-300 space-y-2.5">
+        <p>Tus 251 canciones FLAC de alta resolución están listas en tu nube de Google Drive:</p>
+        <div class="p-3.5 bg-black/60 rounded-xl border border-white/10 font-mono text-[11px] space-y-1.5">
+          <div class="flex items-center justify-between">
+            <span class="text-slate-400">Cuenta de Nube:</span>
+            <span class="text-white font-bold">ulianovksi@gmail.com (5 TB)</span>
+          </div>
+          <div class="flex items-center justify-between">
+            <span class="text-slate-400">Ruta Sincronizada:</span>
+            <span class="text-emerald-400 font-bold truncate max-w-[240px]">G:\Mi unidad\MÚSICA FLAC ULICITO</span>
+          </div>
+          <div class="flex items-center justify-between">
+            <span class="text-slate-400">Formato de Audio:</span>
+            <span class="text-amber-400 font-bold">FLAC 24-bit / 48kHz - 96kHz</span>
+          </div>
+        </div>
+        <p class="text-[11px] text-slate-400">
+          Haz clic en el botón de abajo para autorizar la lectura directa con 1 solo clic. Tu navegador recordará el permiso de forma permanente en IndexedDB sin volver a preguntar.
+        </p>
+      </div>
+
+      <div class="space-y-2 pt-2">
+        <button id="btn-modal-link-drive" class="w-full py-3 rounded-xl bg-gradient-to-r from-emerald-500 to-cyan-500 hover:from-emerald-400 hover:to-cyan-400 text-black font-extrabold text-xs transition shadow-lg shadow-emerald-500/25 flex items-center justify-center space-x-2 active:scale-98">
+          <i data-lucide="folder-symlink" class="w-4 h-4"></i>
+          <span>Vincular Carpeta de Google Drive (G:\Mi unidad\...)</span>
+        </button>
+        <button id="btn-start-demo-audio" class="w-full py-2.5 rounded-xl bg-white/10 hover:bg-white/15 text-slate-300 font-medium text-xs transition flex items-center justify-center space-x-2">
+          <i data-lucide="play-circle" class="w-4 h-4 text-cyan-400"></i>
+          <span>Probar Ecualizador y Visualizador (Demo Sintetizado)</span>
+        </button>
+      </div>
     </div>
-    <h3 class="text-lg font-bold text-white tracking-wide">Indexando Biblioteca Audiófila...</h3>
-    <p class="text-xs text-slate-400 mt-1">Extrayendo carátulas HD y metadatos FLAC sin compresión</p>
   </div>
 
-  <!-- Barra de Encabezado Superior -->
-  <header class="relative z-10 px-4 lg:px-8 py-3.5 border-b border-white/10 flex items-center justify-between glass-panel !rounded-none !border-t-0 !border-x-0">
-    <div class="flex items-center space-x-3">
-      <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-cyan-500 to-blue-600 flex items-center justify-center shadow-lg shadow-cyan-500/30">
-        <i data-lucide="activity" class="w-5 h-5 text-black"></i>
-      </div>
-      <div>
-        <div class="flex items-center space-x-2">
-          <h1 class="text-lg font-extrabold tracking-tight text-white">POWERAMP</h1>
-          <span class="text-[10px] uppercase font-mono font-bold px-1.5 py-0.5 rounded bg-cyan-500/20 text-cyan-300 border border-cyan-500/40">HI-RES AUDIO</span>
+  <!-- ==================== CONTENEDOR PRINCIPAL: SIDEBAR + STAGE + POWERAMP STUDIO ==================== -->
+  <div class="flex-1 flex overflow-hidden relative">
+
+    <!-- ========== SIDEBAR IZQUIERDO (SPOTIFY STYLE) ========== -->
+    <aside class="w-64 lg:w-72 bg-[#12131a]/90 backdrop-blur-2xl border-r border-white/5 flex flex-col justify-between p-4 flex-shrink-0 hidden md:flex z-20">
+      <div class="space-y-6">
+        <!-- Logo Powerify (Poweramp x Spotify) -->
+        <div class="flex items-center space-x-3 px-2">
+          <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-emerald-400 to-cyan-400 flex items-center justify-center shadow-lg shadow-emerald-500/30">
+            <i data-lucide="activity" class="w-5 h-5 text-black"></i>
+          </div>
+          <div>
+            <div class="flex items-center space-x-1.5">
+              <span class="text-lg font-black tracking-tighter text-white">POWER</span>
+              <span class="text-lg font-black tracking-tighter text-emerald-400">IFY</span>
+              <span class="text-[9px] font-mono font-bold px-1.5 py-0.2 rounded bg-cyan-500/20 text-cyan-300 border border-cyan-500/40 ml-1">HI-RES</span>
+            </div>
+            <p class="text-[10px] text-slate-400 font-mono">Poweramp Engine • Spotify UI</p>
+          </div>
         </div>
-        <p class="text-[11px] text-slate-400 hidden sm:block">Motor WebAudio Float32 • Nube Google Drive (5 TB)</p>
-      </div>
-    </div>
 
-    <!-- Indicador de Nube y Botones de Acción -->
-    <div class="flex items-center space-x-2 sm:space-x-3">
-      <!-- Badge de Estado de Google Drive Cloud -->
-      <div id="cloud-storage-badge" class="cursor-pointer" onclick="window.gDriveSync && window.gDriveSync.showConnectModal()">
-        <div class="flex items-center space-x-1.5 px-2.5 py-1 rounded-xl bg-blue-500/15 border border-blue-400/30 text-blue-300 text-xs font-mono shadow-sm hover:bg-blue-500/25 transition">
-          <svg class="w-3.5 h-3.5 text-blue-400" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"/>
-          </svg>
-          <span class="font-bold text-white hidden sm:inline">Google Drive</span>
-          <span class="text-slate-400 hidden sm:inline">•</span>
-          <span class="text-emerald-400 font-bold">5 TB Cloud</span>
+        <!-- Enlaces Principales de Navegación -->
+        <nav class="space-y-1 font-semibold text-sm">
+          <a href="#" class="flex items-center space-x-3 px-3 py-2.5 rounded-xl text-white bg-white/10 transition">
+            <i data-lucide="home" class="w-5 h-5 text-emerald-400"></i>
+            <span>Inicio</span>
+          </a>
+          <a href="#search" onclick="document.getElementById('spotify-search-input').focus()" class="flex items-center space-x-3 px-3 py-2.5 rounded-xl text-slate-400 hover:text-white hover:bg-white/5 transition">
+            <i data-lucide="search" class="w-5 h-5"></i>
+            <span>Buscar</span>
+          </a>
+          <a href="#" onclick="window.libraryManager && window.libraryManager.setFilter('fav')" class="flex items-center space-x-3 px-3 py-2.5 rounded-xl text-slate-400 hover:text-white hover:bg-white/5 transition">
+            <i data-lucide="heart" class="w-5 h-5 text-rose-400"></i>
+            <span>Canciones Favoritas</span>
+          </a>
+        </nav>
+
+        <!-- Tarjeta de Estado de Google Drive (5 TB) -->
+        <div class="p-3.5 rounded-2xl bg-gradient-to-br from-blue-900/20 to-emerald-900/20 border border-blue-500/30 space-y-2">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+              <svg class="w-4 h-4 text-blue-400" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"/>
+              </svg>
+              <span class="text-xs font-bold text-white">Google Drive</span>
+            </div>
+            <span class="text-[10px] font-mono text-emerald-400 font-bold">5 TB Cloud</span>
+          </div>
+          <p class="text-[11px] text-slate-300 font-mono truncate">ulianovksi@gmail.com</p>
+          <button id="sidebar-btn-link-drive" class="w-full py-1.5 px-2 rounded-xl bg-white/10 hover:bg-white/15 text-white text-xs font-medium flex items-center justify-center space-x-1.5 transition">
+            <i data-lucide="folder-symlink" class="w-3.5 h-3.5 text-emerald-400"></i>
+            <span>Vincular Carpeta Drive</span>
+          </button>
         </div>
-      </div>
 
-      <button id="btn-reconnect-folder" class="hidden px-3 py-1.5 rounded-xl bg-cyan-500/15 hover:bg-cyan-500/25 border border-cyan-500/30 text-cyan-300 text-xs font-medium flex items-center space-x-1.5 transition">
-        <i data-lucide="refresh-cw" class="w-3.5 h-3.5"></i>
-        <span class="hidden sm:inline">Reconectar Biblioteca</span>
-      </button>
-
-      <button id="btn-open-folder" class="px-3.5 py-1.5 rounded-xl bg-white/10 hover:bg-white/15 border border-white/10 text-white text-xs font-semibold flex items-center space-x-2 transition shadow-sm active:scale-95">
-        <i data-lucide="folder-open" class="w-4 h-4 text-cyan-400"></i>
-        <span class="hidden sm:inline">Vincular Carpeta</span>
-        <span class="sm:hidden">Carpeta</span>
-      </button>
-
-      <button onclick="document.getElementById('input-files-fallback').click()" class="p-2 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-slate-300 transition" title="Seleccionar archivos sueltos">
-        <i data-lucide="file-plus" class="w-4 h-4"></i>
-      </button>
-    </div>
-  </header>
-
-  <!-- Contenedor Principal (Layout de 3 Columnas en Desktop MSI / Pestañas en Xiaomi 15) -->
-  <main class="relative z-10 flex-1 grid grid-cols-1 lg:grid-cols-12 gap-5 p-3 sm:p-5 lg:p-6 max-w-[1920px] mx-auto w-full overflow-hidden">
-
-    <!-- ==================== COLUMNA 1: BIBLIOTECA MUSICAL ==================== -->
-    <section id="section-library" class="lg:col-span-4 flex flex-col glass-panel p-4 h-[calc(100vh-130px)] lg:h-[calc(100vh-110px)] overflow-hidden">
-      <!-- Encabezado de la Biblioteca -->
-      <div class="flex items-center justify-between pb-3 border-b border-white/10">
-        <div class="flex items-center space-x-2">
-          <i data-lucide="library" class="w-5 h-5 text-cyan-400"></i>
-          <h2 class="font-bold text-base tracking-wide">Biblioteca</h2>
-        </div>
-        <!-- Estadísticas Rápidas -->
-        <div class="flex items-center space-x-2 font-mono text-[11px] text-slate-400">
-          <span class="bg-white/5 px-2 py-0.5 rounded border border-white/5">
-            <span id="stat-total-tracks" class="text-white font-bold">0</span> pistas
-          </span>
-          <span class="bg-cyan-500/10 px-2 py-0.5 rounded border border-cyan-500/20 text-cyan-300">
-            <span id="stat-flac-count" class="font-bold">0</span> FLAC
-          </span>
+        <!-- Filtros Rápidos de la Biblioteca -->
+        <div class="space-y-2">
+          <span class="text-[11px] uppercase tracking-wider font-mono text-slate-500 font-bold px-2">Filtros de Audio</span>
+          <div class="flex flex-wrap gap-1.5 px-1">
+            <button data-filter="all" class="filter-pill active px-3 py-1 rounded-full text-xs bg-emerald-500 text-black font-semibold transition">Todos</button>
+            <button data-filter="flac" class="filter-pill px-3 py-1 rounded-full text-xs bg-white/5 text-slate-300 hover:bg-white/10 transition">FLAC Hi-Res</button>
+            <button data-filter="fav" class="filter-pill px-3 py-1 rounded-full text-xs bg-white/5 text-slate-300 hover:bg-white/10 transition">Favoritos</button>
+          </div>
         </div>
       </div>
 
-      <!-- Barra de Búsqueda -->
-      <div class="relative my-3">
-        <i data-lucide="search" class="w-4 h-4 text-slate-400 absolute left-3 top-1/2 -translate-y-1/2"></i>
-        <input 
-          type="text" 
-          id="library-search-input" 
-          placeholder="Buscar por título, artista o álbum..." 
-          class="w-full pl-9 pr-3 py-2 bg-black/40 border border-white/10 rounded-xl text-xs text-white placeholder-slate-500 focus:outline-none focus:border-cyan-400 transition"
-        />
+      <!-- Footer del Sidebar -->
+      <div class="pt-4 border-t border-white/5 text-[11px] text-slate-500 font-mono flex items-center justify-between">
+        <span id="sidebar-track-stats">251 pistas • 6.42 GB</span>
+        <button id="btn-reconnect-folder" class="text-cyan-400 hover:underline hidden" title="Reconectar">Reconectar</button>
       </div>
+    </aside>
 
-      <!-- Filtros por Formato -->
-      <div class="flex items-center space-x-1.5 pb-2 overflow-x-auto text-xs no-scrollbar">
-        <button data-filter="all" class="filter-pill active px-3 py-1 rounded-lg bg-cyan-500 text-black font-semibold transition">Todos</button>
-        <button data-filter="flac" class="filter-pill px-3 py-1 rounded-lg bg-white/5 text-slate-300 hover:bg-white/10 transition">FLAC Hi-Res</button>
-        <button data-filter="wav" class="filter-pill px-3 py-1 rounded-lg bg-white/5 text-slate-300 hover:bg-white/10 transition">WAV</button>
-        <button data-filter="mp3" class="filter-pill px-3 py-1 rounded-lg bg-white/5 text-slate-300 hover:bg-white/10 transition">MP3</button>
-        <button data-filter="fav" class="filter-pill px-3 py-1 rounded-lg bg-white/5 text-slate-300 hover:bg-white/10 transition flex items-center space-x-1">
-          <i data-lucide="heart" class="w-3 h-3 text-rose-400"></i>
-          <span>Favoritos</span>
-        </button>
-      </div>
+    <!-- ========== ÁREA CENTRAL: SPOTIFY HERO + PLAYLIST TRACK TABLE ========== -->
+    <main class="flex-1 flex flex-col overflow-y-auto pb-28 relative">
 
-      <!-- Selector de Ordenamiento -->
-      <div class="flex items-center justify-between text-[11px] text-slate-400 py-1.5 px-1 border-b border-white/5">
-        <span>Ordenar:</span>
-        <select id="library-sort-select" class="bg-transparent text-slate-300 border-none outline-none cursor-pointer hover:text-white font-medium">
-          <option value="title" class="bg-slate-900">Título (A-Z)</option>
-          <option value="artist" class="bg-slate-900">Artista (A-Z)</option>
-          <option value="album" class="bg-slate-900">Álbum</option>
-          <option value="size" class="bg-slate-900">Mayor Tamaño</option>
-        </select>
-      </div>
-
-      <!-- Lista Scrollable de Canciones -->
-      <div id="track-list-container" class="flex-1 overflow-y-auto space-y-1.5 pr-1 mt-2">
-        <!-- Renderizado dinámico desde library-manager.js -->
-      </div>
-    </section>
-
-    <!-- ==================== COLUMNA 2: REPRODUCTOR PRINCIPAL & VISUALIZADOR ==================== -->
-    <section id="section-player" class="lg:col-span-5 flex flex-col justify-between glass-panel p-5 sm:p-6 h-[calc(100vh-130px)] lg:h-[calc(100vh-110px)] relative overflow-hidden mobile-active">
-
-      <!-- Badge de Especificaciones Técnicas Audiófilas (Poweramp Hi-Res) -->
-      <div class="flex items-center justify-between">
-        <div id="audiophile-specs-badge" class="flex items-center space-x-2">
-          <span class="inline-flex items-center px-2 py-0.5 rounded text-[11px] font-bold font-mono tracking-wider bg-cyan-500/20 text-cyan-300 border border-cyan-500/40">
-            <i data-lucide="sparkles" class="w-3 h-3 mr-1 inline"></i>
-            FLAC LOSSLESS
-          </span>
-          <span class="text-[11px] font-mono text-slate-400">16-bit / 44.1 kHz</span>
+      <!-- Barra de Encabezado Superior Sticky (Spotify Style) -->
+      <header class="sticky top-0 z-30 px-4 lg:px-8 py-3.5 bg-[#0c0d12]/80 backdrop-blur-xl border-b border-white/5 flex items-center justify-between">
+        <!-- Buscador Central Spotify con Debounce -->
+        <div class="relative w-72 sm:w-96">
+          <i data-lucide="search" class="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2"></i>
+          <input 
+            type="text" 
+            id="spotify-search-input" 
+            placeholder="¿Qué quieres escuchar hoy?" 
+            class="w-full pl-10 pr-8 py-2 bg-[#20222b] hover:bg-[#282a36] focus:bg-[#282a36] border border-white/5 focus:border-emerald-400 rounded-full text-xs text-white placeholder-slate-400 focus:outline-none transition-all shadow-inner"
+          />
+          <button id="btn-clear-search" class="absolute right-2.5 top-1/2 -translate-y-1/2 text-slate-400 hover:text-white hidden">
+            <i data-lucide="x" class="w-3.5 h-3.5"></i>
+          </button>
         </div>
 
-        <!-- Botón para ver Letras Sincronizadas -->
-        <button id="btn-toggle-lyrics" class="p-2 rounded-xl bg-white/5 hover:bg-white/10 text-slate-300 hover:text-cyan-400 transition" title="Letras Sincronizadas (Karaoke)">
-          <i data-lucide="align-left" class="w-5 h-5"></i>
-        </button>
-      </div>
+        <!-- Botones de Acción Derecha -->
+        <div class="flex items-center space-x-2 sm:space-x-3">
+          <!-- Botón Toggle de Poweramp Studio (EQ + Visualizer) -->
+          <button id="btn-toggle-poweramp-studio" class="px-3.5 py-1.5 rounded-full bg-cyan-500/20 hover:bg-cyan-500/30 border border-cyan-400/40 text-cyan-300 text-xs font-semibold flex items-center space-x-2 transition shadow-lg shadow-cyan-500/20 active:scale-95">
+            <i data-lucide="sliders" class="w-4 h-4 text-cyan-400"></i>
+            <span class="hidden sm:inline">Studio EQ Poweramp</span>
+            <span class="sm:hidden">EQ</span>
+          </button>
 
-      <!-- Disco de Vinilo / Carátula Central con Giro 3D -->
-      <div class="relative my-auto py-2">
-        <div id="vinyl-wrapper" class="vinyl-container group cursor-pointer">
-          <div class="vinyl-disc">
-            <div class="vinyl-grooves"></div>
-            <div class="vinyl-center-art">
-              <img id="player-vinyl-cover" src="" alt="Vinilo" class="w-full h-full object-cover" />
-              <div class="vinyl-center-hole"></div>
+          <!-- Indicador de Nube Google Drive -->
+          <div id="cloud-storage-badge" class="cursor-pointer" onclick="document.getElementById('drive-guide-modal').classList.remove('hidden')">
+            <div class="flex items-center space-x-1.5 px-3 py-1.5 rounded-full bg-blue-500/15 border border-blue-400/30 text-blue-300 text-xs font-mono hover:bg-blue-500/25 transition">
+              <svg class="w-3.5 h-3.5 text-blue-400" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"/>
+              </svg>
+              <span class="font-bold text-white hidden md:inline">Google Drive</span>
+              <span class="text-emerald-400 font-bold">5 TB</span>
             </div>
           </div>
         </div>
+      </header>
 
-        <!-- Imagen oculta de referencia para extracción de color -->
-        <img id="player-album-cover" src="" alt="" class="hidden" />
-      </div>
-
-      <!-- Información del Tema Actual -->
-      <div class="text-center px-2">
-        <div class="flex items-center justify-center space-x-2">
-          <h2 id="player-track-title" class="text-xl sm:text-2xl font-extrabold text-white tracking-tight truncate max-w-[85%]">
-            Selecciona una pista
-          </h2>
-          <button id="player-btn-fav" class="text-slate-400 hover:text-rose-400 transition p-1" title="Favorito">
-            <i data-lucide="heart" class="w-5 h-5"></i>
-          </button>
-        </div>
-        <p id="player-track-artist" class="text-sm sm:text-base font-medium text-cyan-300 truncate mt-1">
-          Artista
-        </p>
-        <p id="player-track-album" class="text-xs text-slate-400 truncate mt-0.5">
-          Álbum
-        </p>
-      </div>
-
-      <!-- Visualizador de Espectro Canvas (60 FPS) -->
-      <div class="relative w-full h-24 my-2 rounded-xl overflow-hidden bg-black/40 border border-white/5 flex items-center justify-center">
-        <canvas id="visualizer-canvas" class="w-full h-full"></canvas>
-
-        <!-- Selector de Modo de Visualizador -->
-        <div class="absolute top-1.5 right-1.5 flex items-center space-x-1 bg-black/60 backdrop-blur-md rounded-lg p-0.5 border border-white/10">
-          <button data-mode="bars" class="btn-vis-mode active p-1 rounded text-xs text-cyan-300 bg-cyan-500/20" title="Barras de Espectro">
-            <i data-lucide="bar-chart-2" class="w-3.5 h-3.5"></i>
-          </button>
-          <button data-mode="wave" class="btn-vis-mode p-1 rounded text-xs text-slate-400 hover:text-white" title="Osciloscopio Neón">
-            <i data-lucide="activity" class="w-3.5 h-3.5"></i>
-          </button>
-          <button data-mode="radial" class="btn-vis-mode p-1 rounded text-xs text-slate-400 hover:text-white" title="Nebula Circular">
-            <i data-lucide="disc" class="w-3.5 h-3.5"></i>
-          </button>
-        </div>
-      </div>
-
-      <!-- Barra de Tiempo (Scrubbing de Alta Precisión) -->
-      <div class="space-y-1.5">
-        <input type="range" id="player-seek-slider" min="0" max="100" value="0" step="0.1" class="seek-slider" />
-        <div class="flex items-center justify-between text-xs font-mono text-slate-400">
-          <span id="time-current">0:00</span>
-          <span id="time-duration">0:00</span>
-        </div>
-      </div>
-
-      <!-- Controles de Reproducción Maestros -->
-      <div class="flex items-center justify-between pt-2">
-        <!-- Shuffle -->
-        <button id="btn-shuffle" class="p-2.5 rounded-xl text-slate-400 hover:text-white transition" title="Aleatorio">
-          <i data-lucide="shuffle" class="w-5 h-5"></i>
-        </button>
-
-        <!-- Anterior -->
-        <button id="btn-prev" class="p-3 rounded-2xl bg-white/5 hover:bg-white/10 text-white transition active:scale-95" title="Anterior">
-          <i data-lucide="skip-back" class="w-6 h-6 fill-current"></i>
-        </button>
-
-        <!-- Play / Pause Principal -->
-        <button id="btn-play-pause" class="w-16 h-16 rounded-full bg-cyan-400 hover:bg-cyan-300 text-black flex items-center justify-center transition-all duration-300 active:scale-95 shadow-lg shadow-cyan-500/30" title="Reproducir / Pausa">
-          <i data-lucide="play" class="w-7 h-7 text-black fill-current translate-x-0.5"></i>
-        </button>
-
-        <!-- Siguiente -->
-        <button id="btn-next" class="p-3 rounded-2xl bg-white/5 hover:bg-white/10 text-white transition active:scale-95" title="Siguiente">
-          <i data-lucide="skip-forward" class="w-6 h-6 fill-current"></i>
-        </button>
-
-        <!-- Repetir -->
-        <div class="relative">
-          <button id="btn-repeat" class="p-2.5 rounded-xl text-slate-400 hover:text-white transition" title="Repetir">
-            <i data-lucide="repeat" class="w-5 h-5"></i>
-          </button>
-          <span id="repeat-badge-one" class="hidden absolute top-1 right-1 text-[9px] font-bold bg-cyan-400 text-black rounded-full w-3.5 h-3.5 flex items-center justify-center">1</span>
-        </div>
-      </div>
-
-      <!-- Barra de Volumen & Velocidad -->
-      <div class="flex items-center space-x-3 pt-2">
-        <button id="btn-mute" class="text-slate-400 hover:text-white transition">
-          <i data-lucide="volume-2" class="w-5 h-5"></i>
-        </button>
-        <input type="range" id="player-volume-slider" min="0" max="1" step="0.01" value="0.9" class="seek-slider flex-1" />
-      </div>
-
-      <!-- Drawer Modal de Letras Sincronizadas -->
-      <div id="lyrics-drawer-modal" class="absolute inset-0 bg-[#07090ecc] backdrop-blur-2xl z-20 flex flex-col p-6 hidden transition-all duration-300">
-        <div class="flex items-center justify-between pb-4 border-b border-white/10">
-          <div class="flex items-center space-x-2">
-            <i data-lucide="mic" class="w-5 h-5 text-cyan-400"></i>
-            <h3 class="font-bold text-lg text-white">Letras en Tiempo Real</h3>
+      <!-- Banner Hero Dinámico (Spotify Playlist Header con Fondo Gradiente Reactivo) -->
+      <section class="spotify-hero-banner relative p-6 sm:p-8 lg:p-10 flex flex-col md:flex-row items-center md:items-end space-y-4 md:space-y-0 md:space-x-7 overflow-hidden">
+        <div class="hero-cover-wrapper relative w-48 h-48 sm:w-56 sm:h-56 rounded-2xl overflow-hidden shadow-2xl flex-shrink-0 bg-slate-900 border border-white/10 group cursor-pointer" onclick="toggleVinylFullScreen()">
+          <img id="hero-album-cover" src="assets/covers/cover_1.jpg" alt="Carátula" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity">
+            <i data-lucide="maximize-2" class="w-8 h-8 text-white"></i>
           </div>
-          <button id="btn-close-lyrics" class="p-1.5 rounded-lg bg-white/5 text-slate-400 hover:text-white transition">
-            <i data-lucide="x" class="w-5 h-5"></i>
+        </div>
+
+        <div class="flex flex-col space-y-2 text-center md:text-left z-10 min-w-0">
+          <div class="flex items-center justify-center md:justify-start space-x-2">
+            <span class="text-xs font-bold uppercase tracking-widest text-emerald-400 font-mono">PLAYLIST PÚBLICA • AUDIÓFILO</span>
+            <span class="text-xs text-slate-400">•</span>
+            <span class="text-xs font-mono text-cyan-300 bg-cyan-500/20 px-2 py-0.5 rounded border border-cyan-400/30">FLAC 24-BIT / 96kHz</span>
+          </div>
+
+          <h1 id="hero-playlist-title" class="text-3xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-none drop-shadow-md truncate">
+            Música Ulicito
+          </h1>
+
+          <p class="text-xs sm:text-sm text-slate-300 font-medium line-clamp-2">
+            Biblioteca de Alta Resolución albergada en Google Drive (5 TB) de <strong class="text-white">ulianovksi@gmail.com</strong>. Procesamiento 32-bit Float sin compresión.
+          </p>
+
+          <div class="flex items-center justify-center md:justify-start space-x-2 text-xs font-mono text-slate-300 pt-1">
+            <span class="font-bold text-white">Ulianov</span>
+            <span>•</span>
+            <span id="hero-track-count">251 canciones</span>
+            <span>•</span>
+            <span class="text-emerald-400">6.42 GB Lossless</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Barra de Acciones de la Playlist (Spotify Action Bar) -->
+      <section class="px-6 sm:px-8 py-4 flex items-center justify-between border-b border-white/5">
+        <div class="flex items-center space-x-4 sm:space-x-6">
+          <!-- Botón de Play Gigante de Spotify -->
+          <button id="btn-hero-play" class="w-14 h-14 rounded-full bg-emerald-500 hover:bg-emerald-400 text-black flex items-center justify-center shadow-xl shadow-emerald-500/30 transition-all duration-200 hover:scale-105 active:scale-95" title="Reproducir">
+            <i data-lucide="play" class="w-6 h-6 fill-current translate-x-0.5"></i>
+          </button>
+
+          <!-- Botón Shuffle -->
+          <button id="btn-hero-shuffle" class="p-2.5 rounded-full text-slate-400 hover:text-white transition" title="Aleatorio">
+            <i data-lucide="shuffle" class="w-6 h-6"></i>
+          </button>
+
+          <!-- Botón de Favorito Playlist -->
+          <button id="btn-hero-fav" class="p-2.5 rounded-full text-slate-400 hover:text-rose-400 transition" title="Favorito">
+            <i data-lucide="heart" class="w-6 h-6"></i>
+          </button>
+
+          <!-- Botón Letras Sincronizadas (Karaoke) -->
+          <button id="btn-hero-lyrics" class="p-2.5 rounded-full text-slate-400 hover:text-cyan-400 transition" title="Letras Sincronizadas">
+            <i data-lucide="mic" class="w-6 h-6"></i>
           </button>
         </div>
-        <div id="lyrics-display" class="flex-1 overflow-y-auto">
-          <!-- Renderizado dinámico desde lyrics-engine.js -->
+
+        <!-- Selector de Ordenamiento -->
+        <div class="flex items-center space-x-2 text-xs text-slate-400 font-medium">
+          <span class="hidden sm:inline">Ordenar:</span>
+          <select id="library-sort-select" class="bg-[#181922] text-slate-200 px-3 py-1.5 rounded-lg border border-white/10 outline-none cursor-pointer hover:border-emerald-400 transition text-xs font-mono">
+            <option value="title">Título (A-Z)</option>
+            <option value="artist">Artista (A-Z)</option>
+            <option value="album">Álbum</option>
+            <option value="size">Mayor Tamaño (MB)</option>
+          </select>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- ==================== COLUMNA 3: ECUALIZADOR AUDIÓFILO DE 10 BANDAS ==================== -->
-    <section id="section-equalizer" class="lg:col-span-3 flex flex-col justify-between glass-panel p-4 sm:p-5 h-[calc(100vh-130px)] lg:h-[calc(100vh-110px)] overflow-hidden mobile-hidden">
+      <!-- Tabla de Pistas Estilo Spotify (# | TÍTULO | ÁLBUM | CALIDAD | ⏱️) -->
+      <section class="px-4 sm:px-8 py-2">
+        <!-- Encabezados de la Tabla -->
+        <div class="grid grid-cols-12 gap-3 px-3 py-2 text-xs font-mono font-bold uppercase tracking-wider text-slate-500 border-b border-white/5 select-none">
+          <div class="col-span-1 text-center">#</div>
+          <div class="col-span-6 sm:col-span-5">Título & Artista</div>
+          <div class="col-span-3 hidden sm:block">Álbum</div>
+          <div class="col-span-2 text-center">Calidad</div>
+          <div class="col-span-3 sm:col-span-1 text-right pr-2">Tamaño</div>
+        </div>
 
-      <!-- Encabezado del Ecualizador & Switch Bypass -->
-      <div class="flex items-center justify-between pb-2 border-b border-white/10">
+        <!-- Contenedor de Filas de Canciones -->
+        <div id="track-list-container" class="divide-y divide-white/[0.03] mt-1">
+          <!-- Inyectado dinámicamente desde library-manager.js -->
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ========== STUDIO POWERAMP (ECUALIZADOR 10-BANDAS + VISUALIZADOR ESTÉREO) ========== -->
+    <aside id="poweramp-studio-panel" class="w-80 lg:w-96 bg-[#10121a]/95 backdrop-blur-2xl border-l border-white/10 p-5 flex flex-col justify-between overflow-y-auto z-30 transition-all duration-300 hidden lg:flex">
+      
+      <!-- Encabezado de Poweramp Studio -->
+      <div class="flex items-center justify-between pb-3 border-b border-white/10">
         <div class="flex items-center space-x-2">
           <div id="eq-status-led" class="w-2.5 h-2.5 rounded-full bg-cyan-400 shadow-md shadow-cyan-400 transition-colors duration-300"></div>
-          <h2 class="font-bold text-base tracking-wide text-white">Ecualizador 10-Bandas</h2>
+          <h2 class="font-extrabold text-base tracking-wide text-white">Poweramp Studio</h2>
         </div>
 
-        <!-- Toggle Bypass con Estética Poweramp -->
+        <!-- Interruptor Bypass con Estética Poweramp -->
         <label class="flex items-center cursor-pointer space-x-2 text-xs">
           <span class="text-slate-400 font-medium">Bypass</span>
           <div class="relative">
@@ -312,23 +313,23 @@
         </label>
       </div>
 
-      <!-- Curva Analítica del Ecualizador en Tiempo Real -->
-      <div class="relative w-full h-20 my-2 rounded-xl bg-black/50 border border-white/10 overflow-hidden">
+      <!-- Curva de Respuesta en Frecuencia Analítica en Tiempo Real -->
+      <div class="relative w-full h-24 my-2 rounded-xl bg-black/60 border border-white/10 overflow-hidden shadow-inner">
         <canvas id="eq-curve-canvas" class="w-full h-full"></canvas>
-        <span class="absolute top-1 left-2 text-[9px] font-mono text-cyan-400/80">RESPUESTA EN FRECUENCIA (dB)</span>
+        <span class="absolute top-1.5 left-2.5 text-[9px] font-mono text-cyan-400/80 font-bold tracking-wider">RESPUESTA EN FRECUENCIA (dB)</span>
       </div>
 
       <!-- Presets & Reset Flat -->
-      <div class="flex items-center space-x-2 my-1">
+      <div class="flex items-center space-x-2 my-1.5">
         <div class="flex-1">
-          <select id="eq-preset-selector" class="w-full py-1.5 px-2 bg-black/40 border border-white/10 rounded-xl text-xs font-medium text-slate-200 outline-none cursor-pointer focus:border-cyan-400">
-            <option value="flat">Flat (Estudio Neutro)</option>
+          <select id="eq-preset-selector" class="w-full py-1.5 px-2 bg-black/50 border border-white/10 rounded-xl text-xs font-semibold text-slate-200 outline-none cursor-pointer focus:border-cyan-400">
+            <option value="flat">Flat (Referencia Neutra)</option>
             <option value="warm">Audiophile Warm (Cálido)</option>
-            <option value="bass">Bass Extreme (Poweramp)</option>
+            <option value="bass">Bass Extreme (Poweramp Club)</option>
             <option value="vshape">V-Shape (Punch & Brillo)</option>
             <option value="vocal">Vocal Clarity (Voces)</option>
             <option value="rock">Rock & Metal</option>
-            <option value="electronic">Electronic / Synth</option>
+            <option value="electronic">Electronic / Synthwave</option>
             <option value="acoustic">Acoustic / Classical</option>
             <option value="treble">Treble Sparkle</option>
             <option value="latenight">Late Night</option>
@@ -340,11 +341,11 @@
       </div>
 
       <!-- Control de Pre-Amp y Medidores VU Estéreo -->
-      <div class="flex items-center justify-between p-3 rounded-xl bg-black/40 border border-white/5 my-1">
+      <div class="flex items-center justify-between p-3.5 rounded-2xl bg-black/50 border border-white/5 my-1.5">
         <!-- Slider Pre-Amp -->
         <div class="flex-1 pr-3">
-          <div class="flex items-center justify-between text-xs font-mono mb-1">
-            <span class="text-slate-400 font-semibold">PRE-AMP</span>
+          <div class="flex items-center justify-between text-xs font-mono mb-1.5">
+            <span class="text-slate-400 font-bold">PRE-AMP</span>
             <span id="preamp-db-readout" class="text-cyan-400 font-bold">0.0 dB</span>
           </div>
           <input type="range" id="eq-preamp-slider" min="-15" max="15" step="0.1" value="0" class="seek-slider" />
@@ -356,47 +357,146 @@
             <div class="vu-meter-column">
               <div id="vu-meter-left" class="vu-meter-bar"></div>
             </div>
-            <span class="text-[9px] font-mono text-slate-400 mt-1">L</span>
+            <span class="text-[9px] font-mono text-slate-400 mt-1 font-bold">L</span>
           </div>
           <div class="flex flex-col items-center">
             <div class="vu-meter-column">
               <div id="vu-meter-right" class="vu-meter-bar"></div>
             </div>
-            <span class="text-[9px] font-mono text-slate-400 mt-1">R</span>
+            <span class="text-[9px] font-mono text-slate-400 mt-1 font-bold">R</span>
           </div>
         </div>
       </div>
 
       <!-- Los 10 Sliders Verticales de Frecuencia (31Hz a 16kHz) -->
-      <div id="eq-sliders-container" class="grid grid-cols-5 sm:grid-cols-10 gap-1 p-2 bg-black/30 rounded-xl border border-white/5 my-1">
+      <div id="eq-sliders-container" class="grid grid-cols-5 sm:grid-cols-10 gap-1 p-2 bg-black/40 rounded-2xl border border-white/5 my-1.5">
         <!-- Inyectados dinámicamente desde app.js -->
+      </div>
+
+      <!-- Visualizador de Espectro Canvas a 60 FPS -->
+      <div class="relative w-full h-24 my-2 rounded-xl overflow-hidden bg-black/60 border border-white/10 flex items-center justify-center">
+        <canvas id="visualizer-canvas" class="w-full h-full"></canvas>
+        <div class="absolute top-1.5 right-1.5 flex items-center space-x-1 bg-black/70 backdrop-blur-md rounded-lg p-0.5 border border-white/10">
+          <button data-mode="bars" class="btn-vis-mode active p-1 rounded text-xs text-cyan-300 bg-cyan-500/20" title="Barras Poweramp">
+            <i data-lucide="bar-chart-2" class="w-3.5 h-3.5"></i>
+          </button>
+          <button data-mode="wave" class="btn-vis-mode p-1 rounded text-xs text-slate-400 hover:text-white" title="Osciloscopio Neón">
+            <i data-lucide="activity" class="w-3.5 h-3.5"></i>
+          </button>
+          <button data-mode="radial" class="btn-vis-mode p-1 rounded text-xs text-slate-400 hover:text-white" title="Nebula Circular">
+            <i data-lucide="disc" class="w-3.5 h-3.5"></i>
+          </button>
+        </div>
       </div>
 
       <!-- Footer Técnico del Motor de Audio -->
       <div class="pt-2 border-t border-white/5">
-        <p id="hw-specs-details" class="text-[10px] font-mono text-slate-500 text-center truncate">
-          Motor: 32-bit Float Internal • DAC Direct
+        <p id="hw-specs-details" class="text-[10px] font-mono text-slate-400 text-center truncate">
+          Motor: 32-bit Float Internal • DAC Direct 48.0 kHz
         </p>
       </div>
-    </section>
+    </aside>
 
-  </main>
+  </div>
 
-  <!-- ==================== BARRA DE NAVEGACIÓN MÓVIL (XIAOMI 15) ==================== -->
-  <nav class="lg:hidden relative z-20 flex items-center justify-around py-3 border-t border-white/10 glass-panel !rounded-none !border-x-0 !border-b-0 bg-[#07090e]/95 backdrop-blur-xl">
-    <button data-section="library" class="mobile-nav-btn flex flex-col items-center space-y-1 text-slate-400 text-xs transition">
-      <i data-lucide="library" class="w-5 h-5"></i>
-      <span>Biblioteca</span>
-    </button>
-    <button data-section="player" class="mobile-nav-btn flex flex-col items-center space-y-1 text-cyan-400 font-semibold text-xs transition">
-      <i data-lucide="disc" class="w-5 h-5"></i>
-      <span>Reproductor</span>
-    </button>
-    <button data-section="equalizer" class="mobile-nav-btn flex flex-col items-center space-y-1 text-slate-400 text-xs transition">
-      <i data-lucide="sliders" class="w-5 h-5"></i>
-      <span>Ecualizador</span>
-    </button>
-  </nav>
+  <!-- ==================== BARRA DE REPRODUCCIÓN PERSISTENTE INFERIOR (SPOTIFY STYLE) ==================== -->
+  <footer class="fixed bottom-0 left-0 right-0 h-20 bg-[#121319]/95 backdrop-blur-2xl border-t border-white/10 px-4 lg:px-6 flex items-center justify-between z-40">
+    
+    <!-- Parte Izquierda: Carátula, Título, Artista y Like -->
+    <div class="flex items-center space-x-3.5 w-1/4 min-w-[180px]">
+      <div class="relative w-12 h-12 rounded-lg overflow-hidden flex-shrink-0 bg-slate-900 border border-white/10 shadow-lg cursor-pointer" onclick="toggleVinylFullScreen()">
+        <img id="player-album-cover" src="assets/covers/cover_1.jpg" alt="Carátula" class="w-full h-full object-cover" />
+      </div>
+      <div class="flex flex-col min-w-0 pr-2">
+        <span id="player-track-title" class="font-bold text-sm text-white truncate hover:underline cursor-pointer">
+          Selecciona una pista
+        </span>
+        <span id="player-track-artist" class="text-xs text-slate-400 truncate hover:underline cursor-pointer">
+          Artista
+        </span>
+      </div>
+      <button id="player-btn-fav" class="text-slate-400 hover:text-rose-400 transition p-1" title="Favorito">
+        <i data-lucide="heart" class="w-5 h-5"></i>
+      </button>
+    </div>
+
+    <!-- Parte Central: Controles y Barra de Progreso (Scrub Bar) -->
+    <div class="flex flex-col items-center justify-center w-2/4 max-w-2xl px-2">
+      <!-- Botones Principales -->
+      <div class="flex items-center space-x-5 mb-1">
+        <button id="btn-shuffle" class="p-1.5 text-slate-400 hover:text-white transition" title="Aleatorio">
+          <i data-lucide="shuffle" class="w-4 h-4"></i>
+        </button>
+        <button id="btn-prev" class="p-1.5 text-slate-300 hover:text-white transition active:scale-95" title="Anterior">
+          <i data-lucide="skip-back" class="w-5 h-5 fill-current"></i>
+        </button>
+        <button id="btn-play-pause" class="w-10 h-10 rounded-full bg-white hover:bg-slate-200 text-black flex items-center justify-center transition-all duration-200 hover:scale-105 active:scale-95 shadow-md" title="Reproducir / Pausa">
+          <i data-lucide="play" class="w-5 h-5 text-black fill-current translate-x-0.5"></i>
+        </button>
+        <button id="btn-next" class="p-1.5 text-slate-300 hover:text-white transition active:scale-95" title="Siguiente">
+          <i data-lucide="skip-forward" class="w-5 h-5 fill-current"></i>
+        </button>
+        <div class="relative">
+          <button id="btn-repeat" class="p-1.5 text-slate-400 hover:text-white transition" title="Repetir">
+            <i data-lucide="repeat" class="w-4 h-4"></i>
+          </button>
+          <span id="repeat-badge-one" class="hidden absolute -top-1 -right-1 text-[8px] font-bold bg-emerald-400 text-black rounded-full w-3.5 h-3.5 flex items-center justify-center">1</span>
+        </div>
+      </div>
+
+      <!-- Barra de Scrubbing -->
+      <div class="w-full flex items-center space-x-2.5">
+        <span id="time-current" class="text-[11px] font-mono text-slate-400 w-8 text-right">0:00</span>
+        <input type="range" id="player-seek-slider" min="0" max="100" value="0" step="0.1" class="seek-slider flex-1" />
+        <span id="time-duration" class="text-[11px] font-mono text-slate-400 w-8">0:00</span>
+      </div>
+    </div>
+
+    <!-- Parte Derecha: Badge Audiófilo, Letras, EQ Toggle y Volumen -->
+    <div class="flex items-center justify-end space-x-3 w-1/4 min-w-[180px]">
+      <!-- Badge de Calidad FLAC -->
+      <div id="audiophile-specs-badge" class="hidden xl:flex items-center space-x-1.5">
+        <span class="px-2 py-0.5 rounded text-[10px] font-bold font-mono tracking-wider bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
+          FLAC HI-RES
+        </span>
+      </div>
+
+      <!-- Botón Letras -->
+      <button id="btn-toggle-lyrics" class="p-2 rounded-lg text-slate-400 hover:text-white hover:bg-white/5 transition" title="Letras Sincronizadas">
+        <i data-lucide="mic" class="w-4 h-4"></i>
+      </button>
+
+      <!-- Botón Poweramp Studio EQ (Móvil y Escritorio) -->
+      <button id="btn-bar-eq-toggle" class="p-2 rounded-lg text-slate-400 hover:text-cyan-400 hover:bg-white/5 transition" title="Ecualizador Poweramp">
+        <i data-lucide="sliders" class="w-4 h-4"></i>
+      </button>
+
+      <!-- Slider de Volumen -->
+      <div class="flex items-center space-x-2">
+        <button id="btn-mute" class="text-slate-400 hover:text-white transition">
+          <i data-lucide="volume-2" class="w-4 h-4"></i>
+        </button>
+        <input type="range" id="player-volume-slider" min="0" max="1" step="0.01" value="0.9" class="seek-slider w-20 sm:w-24" />
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- ==================== MODAL DE LETRAS SINCRONIZADAS (KARAOKE) ==================== -->
+  <div id="lyrics-drawer-modal" class="fixed inset-0 bg-[#07090e]/95 backdrop-blur-2xl z-50 flex flex-col p-6 hidden">
+    <div class="flex items-center justify-between pb-4 border-b border-white/10 max-w-2xl mx-auto w-full">
+      <div class="flex items-center space-x-2.5">
+        <i data-lucide="mic" class="w-5 h-5 text-emerald-400"></i>
+        <h3 class="font-bold text-lg text-white">Letras Sincronizadas (Karaoke)</h3>
+      </div>
+      <button id="btn-close-lyrics" class="p-1.5 rounded-lg bg-white/5 text-slate-400 hover:text-white transition">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+    </div>
+    <div id="lyrics-display" class="flex-1 overflow-y-auto max-w-2xl mx-auto w-full">
+      <!-- Renderizado dinámico desde lyrics-engine.js -->
+    </div>
+  </div>
 
   <!-- Scripts Modulares del Reproductor Audiófilo -->
   <script src="js/flac-parser.js"></script>

@@ -85,24 +85,32 @@ class AudioEngine {
       return filter;
     });
 
-    // 4. Balance estéreo
+    // 4. Limitador / Compresor Dinámico Suave (Evita distorsión digital al subir +12dB en graves)
+    this.limiterNode = this.audioCtx.createDynamicsCompressor();
+    this.limiterNode.threshold.value = -1.0; // Comienza a proteger a -1.0 dB
+    this.limiterNode.knee.value = 6;
+    this.limiterNode.ratio.value = 12;
+    this.limiterNode.attack.value = 0.003;
+    this.limiterNode.release.value = 0.08;
+
+    // 5. Balance estéreo
     if (this.audioCtx.createStereoPanner) {
       this.pannerNode = this.audioCtx.createStereoPanner();
       this.pannerNode.pan.value = 0.0;
     }
 
-    // 5. Analizador de Espectro FFT
+    // 6. Analizador de Espectro FFT
     this.analyserNode = this.audioCtx.createAnalyser();
     this.analyserNode.fftSize = 2048; // 1024 bins de frecuencia para alta resolución
     this.analyserNode.smoothingTimeConstant = 0.85; // Suavizado fluido
     this.analyserNode.minDecibels = -90;
     this.analyserNode.maxDecibels = -10;
 
-    // 6. Master Gain
+    // 7. Master Gain
     this.masterGainNode = this.audioCtx.createGain();
     this.masterGainNode.gain.value = 1.0;
 
-    // Conectar el grafo: Source -> PreAmp -> EQ[0..9] -> Panner -> Analyser -> MasterGain -> Destination
+    // Conectar el grafo: Source -> PreAmp -> EQ[0..9] -> Panner -> Limiter -> Analyser -> MasterGain -> Destination
     let currentNode = this.sourceNode;
     currentNode.connect(this.preAmpNode);
     currentNode = this.preAmpNode;
@@ -117,12 +125,64 @@ class AudioEngine {
       currentNode = this.pannerNode;
     }
 
-    currentNode.connect(this.analyserNode);
+    currentNode.connect(this.limiterNode);
+    this.limiterNode.connect(this.analyserNode);
     this.analyserNode.connect(this.masterGainNode);
     this.masterGainNode.connect(this.audioCtx.destination);
 
     this.isInitialized = true;
     console.log(`[AudioEngine] Web Audio Engine activo a ${this.audioCtx.sampleRate} Hz (Float32)`);
+  }
+
+  /**
+   * Generador de Audio de Prueba Audiófilo Sintetizado
+   * Crea un ritmo suave con sub-graves y agudos limpios para probar el ecualizador
+   * si la fuente de red aún no está vinculada.
+   */
+  startSynthesizedDemo() {
+    if (!this.audioCtx) return;
+    if (this.demoInterval) clearInterval(this.demoInterval);
+
+    let step = 0;
+    this.demoInterval = setInterval(() => {
+      if (!this.isInitialized || !this.audioCtx) return;
+      const t = this.audioCtx.currentTime;
+
+      // Sub-bajo (Kick 55Hz a 35Hz) en pasos 0 y 2
+      if (step % 2 === 0) {
+        const osc = this.audioCtx.createOscillator();
+        const g = this.audioCtx.createGain();
+        osc.frequency.setValueAtTime(90, t);
+        osc.frequency.exponentialRampToValueAtTime(38, t + 0.12);
+        g.gain.setValueAtTime(0.7, t);
+        g.gain.exponentialRampToValueAtTime(0.001, t + 0.35);
+        osc.connect(g);
+        g.connect(this.preAmpNode);
+        osc.start(t);
+        osc.stop(t + 0.36);
+      }
+
+      // Hi-Hat / Aire (10kHz a 14kHz) en cada paso
+      const hatOsc = this.audioCtx.createOscillator();
+      const hatGain = this.audioCtx.createGain();
+      hatOsc.type = 'triangle';
+      hatOsc.frequency.setValueAtTime(10000 + (step % 4) * 1200, t);
+      hatGain.gain.setValueAtTime(0.06, t);
+      hatGain.gain.exponentialRampToValueAtTime(0.0001, t + 0.08);
+      hatOsc.connect(hatGain);
+      hatGain.connect(this.preAmpNode);
+      hatOsc.start(t);
+      hatOsc.stop(t + 0.09);
+
+      step = (step + 1) % 8;
+    }, 280);
+  }
+
+  stopSynthesizedDemo() {
+    if (this.demoInterval) {
+      clearInterval(this.demoInterval);
+      this.demoInterval = null;
+    }
   }
 
   /**

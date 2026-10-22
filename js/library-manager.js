@@ -398,45 +398,58 @@ class LibraryManager {
       }`;
       div.dataset.id = track.id;
 
-      const isHiRes = track.bitDepth >= 24 || track.sampleRate > 44100;
-      const badgeClass = track.extension === 'FLAC' 
-        ? (isHiRes ? 'bg-amber-400/20 text-amber-300 border border-amber-400/40' : 'bg-cyan-400/20 text-cyan-300 border border-cyan-400/30')
+      const fmt = track.format || track.extension || 'FLAC';
+      const isHiRes = (track.bitDepth && track.bitDepth >= 24) || (track.sampleRate && track.sampleRate > 44100);
+      const badgeClass = fmt === 'FLAC' 
+        ? (isHiRes ? 'bg-amber-400/20 text-amber-300 border border-amber-400/40 shadow-sm shadow-amber-400/10' : 'bg-emerald-400/20 text-emerald-300 border border-emerald-400/30')
         : 'bg-slate-700 text-slate-300';
 
       const thumbSrc = track.coverUrl || window.ColorExtractor.generateFallbackCover(track.title, track.artist);
+      const trackNum = (index + 1).toString().padStart(2, '0');
 
       div.innerHTML = `
         <div class="flex items-center space-x-3 overflow-hidden flex-1">
-          <div class="relative w-11 h-11 rounded-lg overflow-hidden flex-shrink-0 bg-slate-900 shadow-md">
-            <img src="${thumbSrc}" alt="Carátula" class="w-full h-full object-cover" loading="lazy" />
+          <!-- Número de pista / Indicador de reproducción estilo Spotify -->
+          <span class="w-6 text-center text-xs font-mono font-semibold text-slate-500 group-hover:hidden flex-shrink-0">
+            ${isCurrent ? '<i data-lucide="volume-2" class="w-4 h-4 text-emerald-400 inline"></i>' : trackNum}
+          </span>
+          <span class="w-6 text-center text-xs text-white hidden group-hover:flex items-center justify-center flex-shrink-0">
+            <i data-lucide="play" class="w-4 h-4 text-emerald-400 fill-current"></i>
+          </span>
+
+          <!-- Carátula del Álbum -->
+          <div class="relative w-10 h-10 rounded-md overflow-hidden flex-shrink-0 bg-slate-900 shadow-md">
+            <img src="${thumbSrc}" alt="Carátula" class="w-full h-full object-cover" loading="lazy" onerror="this.src=window.ColorExtractor.generateFallbackCover('${track.title.replace(/'/g, '')}', '${track.artist.replace(/'/g, '')}')" />
             ${isCurrent ? `
-              <div class="absolute inset-0 bg-black/50 flex items-center justify-center">
-                <span class="flex space-x-0.5 items-end h-4">
-                  <span class="w-1 bg-cyan-400 animate-pulse h-3"></span>
-                  <span class="w-1 bg-cyan-400 animate-pulse h-4" style="animation-delay: 0.15s"></span>
-                  <span class="w-1 bg-cyan-400 animate-pulse h-2" style="animation-delay: 0.3s"></span>
+              <div class="absolute inset-0 bg-black/60 flex items-center justify-center">
+                <span class="flex space-x-0.5 items-end h-3.5">
+                  <span class="w-0.5 bg-emerald-400 animate-pulse h-2.5"></span>
+                  <span class="w-0.5 bg-emerald-400 animate-pulse h-3.5" style="animation-delay: 0.15s"></span>
+                  <span class="w-0.5 bg-emerald-400 animate-pulse h-2" style="animation-delay: 0.3s"></span>
                 </span>
               </div>
             ` : ''}
           </div>
 
+          <!-- Título y Artista -->
           <div class="flex flex-col min-w-0 pr-2">
-            <span class="font-medium text-sm truncate ${isCurrent ? 'text-cyan-400 font-semibold' : 'text-slate-100 group-hover:text-cyan-300'}">${track.title}</span>
+            <span class="font-medium text-sm truncate ${isCurrent ? 'text-emerald-400 font-bold' : 'text-slate-100 group-hover:text-white'}">${track.title}</span>
             <div class="flex items-center space-x-2 text-xs text-slate-400 truncate mt-0.5">
-              <span class="truncate">${track.artist}</span>
+              <span class="truncate hover:underline text-slate-300">${track.artist}</span>
               <span>•</span>
               <span class="text-[10px] uppercase font-mono px-1.5 py-0.2 rounded ${badgeClass}">
-                ${track.extension} ${track.bitDepth ? track.bitDepth + 'b' : ''}
+                ${fmt} ${track.bitDepth ? track.bitDepth + 'b' : '16b'}
               </span>
             </div>
           </div>
         </div>
 
-        <div class="flex items-center space-x-2 flex-shrink-0 pl-2">
+        <!-- Botón de Favoritos y Tamaño -->
+        <div class="flex items-center space-x-3 flex-shrink-0 pl-2">
           <button class="btn-fav p-1.5 rounded-lg text-slate-400 hover:text-rose-400 transition" title="Favorito">
             <i data-lucide="heart" class="w-4 h-4 ${isFav ? 'fill-rose-500 text-rose-500' : ''}"></i>
           </button>
-          <span class="text-xs font-mono text-slate-500 hidden sm:inline">${track.sizeMB} MB</span>
+          <span class="text-xs font-mono text-slate-400 hidden sm:inline">${track.sizeMB} MB</span>
         </div>
       `;
 

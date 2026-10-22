@@ -12,12 +12,12 @@ const os = require('os');
 
 const PORT = process.env.PORT || 3000;
 const STATIC_DIR = __dirname;
-let MUSIC_DIR = process.env.MUSIC_DIR || 'F:\\FOTOS XIAOMI 15-2026\\MÚSICA ULICITO';
+const GDRIVE_DIR = 'G:\\Mi unidad\\MÚSICA FLAC ULICITO';
+const LOCAL_FALLBACK = 'F:\\FOTOS XIAOMI 15-2026\\MÚSICA ULICITO';
+let MUSIC_DIR = process.env.MUSIC_DIR || (fs.existsSync(GDRIVE_DIR) ? GDRIVE_DIR : LOCAL_FALLBACK);
 
-// Si no existe la ruta configurada, buscar alternativas locales
-if (!fs.existsSync(MUSIC_DIR)) {
-  console.warn(`[AVISO] La ruta ${MUSIC_DIR} no fue encontrada en este momento.`);
-}
+console.log(`[STORAGE] Fuente de Audio Configurada: ${fs.existsSync(GDRIVE_DIR) ? 'Google Drive Cloud (G:\\Mi unidad\\...)' : 'Local'}`);
+
 
 const MIME_TYPES = {
   '.html': 'text/html; charset=utf-8',

@@ -16,6 +16,8 @@ document.addEventListener('DOMContentLoaded', async () => {
   const visualizer = new AudioVisualizer(mainCanvas, audioEngine);
   const libraryManager = new LibraryManager();
   const lyricsEngine = new LyricsEngine(lyricsContainer);
+  const gDriveSync = new GoogleDriveSync(libraryManager);
+  window.gDriveSync = gDriveSync;
 
   let isPlaying = false;
   let isShuffle = false;
@@ -661,6 +663,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   initEqualizerUI();
   bindEvents();
   await libraryManager.init();
+  await gDriveSync.init();
 
   if (window.lucide) {
     window.lucide.createIcons();

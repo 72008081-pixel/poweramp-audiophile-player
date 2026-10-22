@@ -13,7 +13,10 @@ from http.server import HTTPServer, BaseHTTPRequestHandler
 
 PORT = int(os.environ.get("PORT", 3000))
 STATIC_DIR = os.path.dirname(os.path.abspath(__file__))
-MUSIC_DIR = os.environ.get("MUSIC_DIR", r"F:\FOTOS XIAOMI 15-2026\MÚSICA ULICITO")
+GDRIVE_DIR = r"G:\Mi unidad\MÚSICA FLAC ULICITO"
+LOCAL_FALLBACK = r"F:\FOTOS XIAOMI 15-2026\MÚSICA ULICITO"
+MUSIC_DIR = os.environ.get("MUSIC_DIR", GDRIVE_DIR if os.path.exists(GDRIVE_DIR) else LOCAL_FALLBACK)
+
 
 MIME_TYPES = {
     ".html": "text/html; charset=utf-8",

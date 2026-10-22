@@ -1,22 +1,27 @@
 /* ==========================================================================
-   Powerify: Spotify UI x Poweramp Audiophile Engine
-   Diseño Dark Obsidian, Transiciones Suaves, Glassmorphism y Acentos Neón
+   Powerify: Spotify Desktop UI x Poweramp Audiophile Engine
+   Diseño Dark Obsidian (#121212), Spotify Green (#1ed760), Poweramp Cyan (#00f0ff)
    ========================================================================== */
 
 :root {
-  --bg-core: #0c0d12;
-  --bg-sidebar: #121319;
-  --bg-card: rgba(24, 26, 36, 0.7);
-  --border-subtle: rgba(255, 255, 255, 0.08);
+  --bg-core: #090a0f;
+  --bg-base: #121212;
+  --bg-surface: #181818;
+  --bg-highlight: #282828;
+  --bg-press: #000000;
+  
+  --spotify-green: #1ed760;
+  --spotify-green-hover: #1fdf64;
+  --spotify-subdued: #b3b3b3;
+  --spotify-border: rgba(255, 255, 255, 0.08);
 
-  --spotify-green: #10b981;
   --poweramp-cyan: #00f0ff;
   --poweramp-amber: #f59e0b;
 
   --ambient-c1: #102a20;
   --ambient-c2: #08151f;
-  --ambient-accent: #10b981;
-  --ambient-glow: rgba(16, 185, 129, 0.35);
+  --ambient-accent: #1ed760;
+  --ambient-glow: rgba(30, 215, 96, 0.35);
 
   --font-main: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --font-mono: 'JetBrains Mono', 'SF Mono', Consolas, monospace;
@@ -27,6 +32,25 @@
   margin: 0;
   padding: 0;
   -webkit-tap-highlight-color: transparent;
+  outline: none !important;
+}
+
+*:focus, *:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none !important;
+}
+
+button:focus, button:focus-visible {
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 
 body {
@@ -39,7 +63,7 @@ body {
   user-select: none;
 }
 
-/* --- Fondo Ambiental Dinámico (Apple Music Blur Skin) --- */
+/* --- Fondo Ambiental Reactivo Dinámico --- */
 .ambient-background-wrapper {
   position: fixed;
   inset: 0;
@@ -52,7 +76,7 @@ body {
   position: absolute;
   border-radius: 50%;
   filter: blur(140px);
-  opacity: 0.45;
+  opacity: 0.4;
   transition: all 2.2s cubic-bezier(0.4, 0, 0.2, 1);
   will-change: transform, background, opacity;
 }
@@ -94,7 +118,7 @@ body {
 .ambient-overlay-noise {
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at center, transparent 0%, rgba(12, 13, 18, 0.85) 100%);
+  background: radial-gradient(circle at center, transparent 0%, rgba(9, 10, 15, 0.88) 100%);
   backdrop-filter: blur(35px);
 }
 
@@ -110,45 +134,110 @@ body {
   100% { transform: translate(30px, -15px) scale(0.94); }
 }
 
-/* --- Banner Hero Dinámico Estilo Spotify --- */
+/* --- Banner Hero Dinámico Estilo Spotify Desktop --- */
 .spotify-hero-banner {
-  background: linear-gradient(to bottom, rgba(16, 185, 129, 0.25) 0%, rgba(12, 13, 18, 0.8) 100%);
-  border-bottom: 1px solid var(--border-subtle);
-  transition: background 1.8s ease;
+  background: linear-gradient(to bottom, rgba(160, 20, 60, 0.7) 0%, rgba(18, 18, 18, 0.95) 100%);
+  border-bottom: 1px solid var(--spotify-border);
+  transition: background 1.5s ease;
 }
 
 /* --- Paneles y Glassmorphism --- */
 .glass-panel {
-  background: rgba(18, 19, 26, 0.82);
+  background: rgba(24, 24, 24, 0.85);
   backdrop-filter: blur(28px);
   -webkit-backdrop-filter: blur(28px);
-  border: 1px solid var(--border-subtle);
-  border-radius: 1.25rem;
+  border: 1px solid var(--spotify-border);
+  border-radius: 0.75rem;
 }
 
 /* --- Filas de Canciones Estilo Spotify --- */
-.track-item {
-  transition: background 0.15s ease, transform 0.1s ease;
+.spotify-track-row {
+  transition: background-color 0.15s ease;
+  border-radius: 6px;
 }
 
-.track-item:hover {
-  background: rgba(255, 255, 255, 0.06);
+.spotify-track-row:hover {
+  background-color: rgba(255, 255, 255, 0.08);
 }
 
-.track-item.active {
-  background: rgba(16, 185, 129, 0.12);
-  border-left: 3px solid var(--spotify-green);
+.spotify-track-row.playing {
+  background-color: rgba(30, 215, 96, 0.12);
+}
+
+.spotify-track-row.playing .track-title {
+  color: var(--spotify-green) !important;
+}
+
+/* --- Barras Animadas de Ecualizador Spotify --- */
+.spotify-equalizer-bars {
+  display: inline-flex;
+  align-items: flex-end;
+  gap: 2px;
+  height: 14px;
+  width: 14px;
+}
+
+.spotify-equalizer-bars span {
+  width: 2.5px;
+  background-color: var(--spotify-green);
+  border-radius: 1px;
+  animation: bounceBar 0.8s ease-in-out infinite alternate;
+}
+
+.spotify-equalizer-bars span:nth-child(1) { height: 40%; animation-delay: 0.1s; }
+.spotify-equalizer-bars span:nth-child(2) { height: 100%; animation-delay: 0.3s; }
+.spotify-equalizer-bars span:nth-child(3) { height: 60%; animation-delay: 0.2s; }
+.spotify-equalizer-bars span:nth-child(4) { height: 80%; animation-delay: 0.4s; }
+
+@keyframes bounceBar {
+  0% { height: 20%; }
+  100% { height: 100%; }
+}
+
+/* --- Botones de Control de la Barra Inferior (Sin bordes/outlines) --- */
+.spotify-ctrl-btn {
+  position: relative;
+  background: transparent !important;
+  border: none !important;
+  outline: none !important;
+  color: var(--spotify-subdued);
+  transition: color 0.15s ease, transform 0.1s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spotify-ctrl-btn:hover {
+  color: #ffffff;
+}
+
+.spotify-ctrl-btn.active {
+  color: var(--spotify-green) !important;
+}
+
+.spotify-ctrl-btn.active::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 4px;
+  background-color: var(--spotify-green);
+  border-radius: 50%;
+  box-shadow: 0 0 6px rgba(30, 215, 96, 0.8);
 }
 
 /* --- Sliders Verticales de Ecualizador (Poweramp Style) --- */
 .eq-vertical-slider {
   -webkit-appearance: none;
   appearance: none;
-  width: 150px;
+  width: 140px;
   height: 5px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 3px;
-  outline: none;
+  outline: none !important;
+  border: none !important;
   transform: rotate(-90deg);
   cursor: pointer;
   transition: background 0.2s ease;
@@ -184,24 +273,26 @@ body {
   cursor: pointer;
 }
 
-/* --- Sliders Horizontales (Scrub Bar y Volumen) --- */
-.seek-slider {
+/* --- Barra de Progreso y Volumen Estilo Spotify --- */
+.spotify-seek-slider {
   -webkit-appearance: none;
   appearance: none;
   width: 100%;
   height: 4px;
   border-radius: 2px;
-  background: rgba(255, 255, 255, 0.16);
-  outline: none;
+  background: #4d4d4d;
+  outline: none !important;
+  border: none !important;
   cursor: pointer;
+  position: relative;
   transition: height 0.15s ease;
 }
 
-.seek-slider:hover {
+.spotify-seek-slider:hover {
   height: 6px;
 }
 
-.seek-slider::-webkit-slider-thumb {
+.spotify-seek-slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
   width: 12px;
@@ -214,8 +305,8 @@ body {
   transition: opacity 0.15s ease, transform 0.15s ease;
 }
 
-.seek-slider:hover::-webkit-slider-thumb,
-.seek-slider:active::-webkit-slider-thumb {
+.spotify-seek-slider:hover::-webkit-slider-thumb,
+.spotify-seek-slider:active::-webkit-slider-thumb {
   opacity: 1;
   transform: scale(1.15);
 }
@@ -223,8 +314,8 @@ body {
 /* --- VU Meter Estéreo Poweramp --- */
 .vu-meter-column {
   width: 7px;
-  height: 70px;
-  background: rgba(0, 0, 0, 0.6);
+  height: 64px;
+  background: rgba(0, 0, 0, 0.7);
   border-radius: 3px;
   overflow: hidden;
   display: flex;
@@ -241,10 +332,20 @@ body {
   box-shadow: 0 0 6px rgba(0, 240, 255, 0.3);
 }
 
+/* --- Tarjeta Muestra de la Letra (Spotify Right Sidebar) --- */
+.spotify-lyrics-card {
+  background: linear-gradient(135deg, #7c121d 0%, #4a0d14 100%);
+  border-radius: 12px;
+  padding: 16px;
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
 /* --- Scrollbars Personalizadas Minimalistas --- */
 ::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
+  width: 8px;
+  height: 8px;
 }
 
 ::-webkit-scrollbar-track {
@@ -252,19 +353,21 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.12);
-  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.3);
 }
 
 /* --- Letras Sincronizadas --- */
 .active-lyric {
   color: #ffffff !important;
-  text-shadow: 0 0 18px var(--ambient-accent), 0 0 30px var(--ambient-glow);
+  text-shadow: 0 0 18px var(--spotify-green), 0 0 30px var(--ambient-glow);
   font-weight: 800 !important;
+  transform: scale(1.02);
+  transition: all 0.2s ease;
 }
 
 /* --- Responsive para Móvil (Xiaomi 15) --- */

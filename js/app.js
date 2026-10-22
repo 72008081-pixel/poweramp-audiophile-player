@@ -1,7 +1,8 @@
 /**
  * Powerify: Spotify UI x Poweramp Audiophile Engine
  * Master Coordinator: Web Audio API Float32, Spotify Track Table,
- * Poweramp 10-Band EQ, 60fps Canvas Visualizer y Google Drive Cloud.
+ * Fisher-Yates Shuffle Queue, 3-State Repeat Mode, Right Sidebar Views,
+ * Poweramp 10-Band EQ Studio, y Live Synced Karaoke.
  */
 
 document.addEventListener('DOMContentLoaded', async () => {
@@ -10,6 +11,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   const mainCanvas = document.getElementById('visualizer-canvas');
   const eqCurveCanvas = document.getElementById('eq-curve-canvas');
   const lyricsContainer = document.getElementById('lyrics-display');
+  const rightSidebarLyrics = document.getElementById('sidebar-live-lyrics-preview');
 
   // Inicializar subsistemas
   const audioEngine = new AudioEngine(audioElement);
@@ -17,16 +19,20 @@ document.addEventListener('DOMContentLoaded', async () => {
   const libraryManager = new LibraryManager();
   const lyricsEngine = new LyricsEngine(lyricsContainer);
   const gDriveSync = new GoogleDriveSync(libraryManager);
+
   window.gDriveSync = gDriveSync;
   window.libraryManager = libraryManager;
+  window.audioEngine = audioEngine;
+  window.visualizer = visualizer;
 
   let isPlaying = false;
   let isShuffle = false;
   let repeatMode = 'off'; // 'off', 'all', 'one'
   let currentSpeed = 1.0;
   let isSeeking = false;
+  let currentRightSidebarTab = 'spotify'; // 'spotify' | 'poweramp'
 
-  // --- Inicialización del AudioContext tras primer gesto del usuario ---
+  // --- Desbloqueo del AudioContext tras primer gesto ---
   const unlockAudio = async () => {
     if (!audioEngine.isInitialized) {
       await audioEngine.init();
@@ -43,54 +49,28 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (!track) return;
 
     await unlockAudio();
-
-    // Detener demo sintetizado si estaba sonando
     audioEngine.stopSynthesizedDemo();
 
-    // Actualizar fuente del audio
     audioElement.src = track.streamUrl || '';
     audioElement.playbackRate = currentSpeed;
+    audioElement.loop = (repeatMode === 'one');
 
-    // Actualizar información visual en el Reproductor Inferior y Banner Hero
-    const titleEl = document.getElementById('player-track-title');
-    const artistEl = document.getElementById('player-track-artist');
-    const coverImg = document.getElementById('player-album-cover');
-    const heroCover = document.getElementById('hero-album-cover');
-    const heroTitle = document.getElementById('hero-playlist-title');
-
-    if (titleEl) titleEl.textContent = track.title;
-    if (artistEl) artistEl.textContent = track.artist;
-    if (heroTitle && track.album) heroTitle.textContent = track.album;
-
-    const coverUrl = track.coverUrl || window.ColorExtractor.generateFallbackCover(track.title, track.artist);
-    if (coverImg) coverImg.src = coverUrl;
-    if (heroCover) heroCover.src = coverUrl;
-
-    // Extraer colores para iluminar suavemente el banner y fondo
-    window.ColorExtractor.extractColors(coverUrl).then(colors => {
-      visualizer.setAccentColor(colors.accent, colors.glow);
-      const heroBanner = document.querySelector('.spotify-hero-banner');
-      if (heroBanner && colors.c1) {
-        heroBanner.style.background = `linear-gradient(to bottom, ${colors.c1Dark || 'rgba(16, 185, 129, 0.3)'} 0%, rgba(12, 13, 18, 0.95) 100%)`;
-      }
-    });
-
-    // Actualizar Badge Audiófilo Hi-Res
-    updateAudiophileBadge(track);
+    // Actualizar UI del Reproductor Inferior, Banner Hero y Panel Derecho
+    updateNowPlayingInfo(track);
 
     // Cargar letras sincronizadas
     lyricsEngine.load(track.lyrics || '');
 
-    // Actualizar botón de favorito
+    // Actualizar estados de botones de favorito
     updateFavButton(track.id);
 
-    // MediaSession API para pantalla de bloqueo (Windows MSI / Xiaomi 15)
+    // MediaSession API para integración con pantalla de bloqueo y teclado multimedia
     if ('mediaSession' in navigator) {
       navigator.mediaSession.metadata = new MediaMetadata({
         title: track.title,
         artist: track.artist,
-        album: track.album || 'Música Ulicito',
-        artwork: [{ src: coverUrl, sizes: '512x512', type: 'image/jpeg' }]
+        album: track.album || 'MÚSICA ULICITO',
+        artwork: [{ src: track.coverUrl || 'assets/covers/cover_1.jpg', sizes: '512x512', type: 'image/jpeg' }]
       });
     }
 
@@ -99,27 +79,54 @@ document.addEventListener('DOMContentLoaded', async () => {
       isPlaying = true;
       updatePlayPauseUI(true);
     } catch (e) {
-      console.warn('Esperando interacción o error de red:', e);
+      console.warn('Reproducción en espera o error de red:', e);
       isPlaying = false;
       updatePlayPauseUI(false);
     }
   };
 
-  // Manejo de errores de carga de audio (ejemplo: si en GitHub Pages aún no se vincula la carpeta)
+  // Actualiza títulos, carátulas y fondos dinámicos
+  const updateNowPlayingInfo = (track) => {
+    const titleEl = document.getElementById('player-track-title');
+    const artistEl = document.getElementById('player-track-artist');
+    const coverImg = document.getElementById('player-album-cover');
+    const rightCover = document.getElementById('right-panel-cover');
+    const rightTitle = document.getElementById('right-panel-title');
+    const rightArtist = document.getElementById('right-panel-artist');
+
+    if (titleEl) titleEl.textContent = track.title;
+    if (artistEl) artistEl.textContent = track.artist;
+    if (rightTitle) rightTitle.textContent = track.title;
+    if (rightArtist) rightArtist.textContent = track.artist;
+
+    const coverUrl = track.coverUrl || `assets/covers/cover_${((track.index || 0) % 241) + 1}.jpg`;
+    if (coverImg) coverImg.src = coverUrl;
+    if (rightCover) rightCover.src = coverUrl;
+
+    // Extraer colores reactivos para iluminar el banner y el fondo
+    window.ColorExtractor.extractColors(coverUrl).then(colors => {
+      visualizer.setAccentColor(colors.accent, colors.glow);
+      const heroBanner = document.querySelector('.spotify-hero-banner');
+      if (heroBanner && colors.c1) {
+        heroBanner.style.background = `linear-gradient(to bottom, ${colors.c1Dark || 'rgba(160, 20, 60, 0.7)'} 0%, rgba(18, 18, 18, 0.95) 100%)`;
+      }
+    });
+
+    updateAudiophileBadge(track);
+  };
+
+  // Manejo de errores de carga de audio (Fallback automático a demo sintetizado)
   audioElement.addEventListener('error', (e) => {
     console.warn('[AudioElement] Archivo no accesible directamente en red estática:', e);
-    const cur = libraryManager.getCurrentTrack();
-    // Iniciar demo sintetizado con sub-graves y agudos para que el usuario pueda probar el EQ
     audioEngine.startSynthesizedDemo();
     isPlaying = true;
     updatePlayPauseUI(true);
 
-    // Mostrar modal informativo
     const modal = document.getElementById('drive-guide-modal');
     if (modal) modal.classList.remove('hidden');
   });
 
-  // Actualiza el badge con especificaciones técnicas (Poweramp Style)
+  // Badge audiófilo con especificaciones de hardware y pista
   const updateAudiophileBadge = (track) => {
     const badgeEl = document.getElementById('audiophile-specs-badge');
     if (!badgeEl) return;
@@ -167,16 +174,19 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (btnHero) btnHero.innerHTML = heroIcon;
 
     if (window.lucide) window.lucide.createIcons();
+    libraryManager.renderTrackList();
   };
 
   const updateFavButton = (trackId) => {
     const btnBar = document.getElementById('player-btn-fav');
-    const btnHero = document.getElementById('btn-hero-fav');
+    const rightFav = document.getElementById('right-panel-fav');
     const isFav = libraryManager.isFavorite(trackId);
 
-    const icon = `<i data-lucide="heart" class="w-5 h-5 ${isFav ? 'fill-rose-500 text-rose-500' : 'text-slate-400'}"></i>`;
-    if (btnBar) btnBar.innerHTML = icon;
-    if (btnHero) btnHero.innerHTML = `<i data-lucide="heart" class="w-6 h-6 ${isFav ? 'fill-rose-500 text-rose-500' : 'text-slate-400'}"></i>`;
+    const barIcon = `<i data-lucide="heart" class="w-5 h-5 ${isFav ? 'fill-[#1ed760] text-[#1ed760]' : 'text-slate-400'}"></i>`;
+    const rightIcon = `<i data-lucide="${isFav ? 'check-circle' : 'plus-circle'}" class="w-6 h-6 ${isFav ? 'text-[#1ed760]' : 'text-slate-400'}"></i>`;
+
+    if (btnBar) btnBar.innerHTML = barIcon;
+    if (rightFav) rightFav.innerHTML = rightIcon;
 
     if (window.lucide) window.lucide.createIcons();
   };
@@ -186,7 +196,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     await unlockAudio();
 
     if (audioEngine.demoInterval) {
-      // Si está en modo demo sintetizado
       audioEngine.stopSynthesizedDemo();
       isPlaying = false;
       updatePlayPauseUI(false);
@@ -228,9 +237,63 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (prev) loadTrack(prev);
   };
 
+  // --- Aleatorio (Shuffle) Fisher-Yates con Indicador Verde y Sin Bordes ---
+  const toggleShuffle = () => {
+    isShuffle = !isShuffle;
+    libraryManager.initShuffleQueue();
+    updateShuffleUI();
+  };
+
+  const updateShuffleUI = () => {
+    const shuffleBtn = document.getElementById('btn-shuffle');
+    const heroShuffleBtn = document.getElementById('btn-hero-shuffle');
+
+    [shuffleBtn, heroShuffleBtn].forEach(btn => {
+      if (!btn) return;
+      btn.classList.toggle('active', isShuffle);
+      btn.classList.toggle('text-[#1ed760]', isShuffle);
+      btn.classList.toggle('text-slate-400', !isShuffle);
+    });
+  };
+
+  // --- Repetir (Repeat) 3 Estados: Off -> All -> One ---
+  const toggleRepeat = () => {
+    if (repeatMode === 'off') {
+      repeatMode = 'all';
+      audioElement.loop = false;
+    } else if (repeatMode === 'all') {
+      repeatMode = 'one';
+      audioElement.loop = true;
+    } else {
+      repeatMode = 'off';
+      audioElement.loop = false;
+    }
+    updateRepeatUI();
+  };
+
+  const updateRepeatUI = () => {
+    const repeatBtn = document.getElementById('btn-repeat');
+    const badge = document.getElementById('repeat-badge-one');
+    if (!repeatBtn) return;
+
+    if (repeatMode === 'off') {
+      repeatBtn.classList.remove('active', 'text-[#1ed760]');
+      repeatBtn.classList.add('text-slate-400');
+      if (badge) badge.classList.add('hidden');
+    } else if (repeatMode === 'all') {
+      repeatBtn.classList.remove('text-slate-400');
+      repeatBtn.classList.add('active', 'text-[#1ed760]');
+      if (badge) badge.classList.add('hidden');
+    } else if (repeatMode === 'one') {
+      repeatBtn.classList.remove('text-slate-400');
+      repeatBtn.classList.add('active', 'text-[#1ed760]');
+      if (badge) badge.classList.remove('hidden');
+    }
+  };
+
   // --- Eventos del elemento HTML <audio> ---
   audioElement.addEventListener('timeupdate', () => {
-    if (isSeeking) return; // Evitar saltos de cursor mientras el usuario arrastra la barra
+    if (isSeeking) return;
 
     const current = audioElement.currentTime;
     const duration = audioElement.duration || 0;
@@ -247,15 +310,28 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (timeDur && duration > 0) timeDur.textContent = formatTime(duration);
 
     lyricsEngine.update(current);
+
+    // Actualizar snippet de letra en el sidebar derecho
+    if (rightSidebarLyrics) {
+      const activeLine = document.querySelector('#lyrics-display .active-lyric');
+      if (activeLine) {
+        rightSidebarLyrics.innerHTML = `<p class="text-white">${activeLine.textContent}</p>`;
+      }
+    }
   });
 
   audioElement.addEventListener('ended', () => {
     if (repeatMode === 'one') {
       audioElement.currentTime = 0;
-      audioElement.play();
-    } else {
-      playNext();
+      audioElement.play().catch(() => {});
+      return;
     }
+    if (repeatMode === 'off' && libraryManager.isLastTrackInList() && !isShuffle) {
+      isPlaying = false;
+      updatePlayPauseUI(false);
+      return;
+    }
+    playNext();
   });
 
   const formatTime = (seconds) => {
@@ -265,25 +341,24 @@ document.addEventListener('DOMContentLoaded', async () => {
     return `${m}:${s < 10 ? '0' : ''}${s}`;
   };
 
-  // --- Configuración del Ecualizador UI (10 Bandas) ---
+  // --- Configuración del Ecualizador Poweramp UI (10 Bandas) ---
   const initEqualizerUI = () => {
     const container = document.getElementById('eq-sliders-container');
     if (!container) return;
     container.innerHTML = '';
 
-    // Renderizar los 10 sliders de frecuencia
     audioEngine.frequencies.forEach((freq, idx) => {
       const label = audioEngine.bandLabels[idx];
       const initialGain = audioEngine.gains[idx];
 
       const bandCol = document.createElement('div');
-      bandCol.className = 'eq-band-col flex flex-col items-center justify-between h-44 py-1 select-none';
+      bandCol.className = 'eq-band-col flex flex-col items-center justify-between h-36 py-1 select-none';
 
       bandCol.innerHTML = `
         <span class="text-[9px] font-mono font-bold text-cyan-400 band-db-readout" id="band-db-${idx}">
           ${initialGain > 0 ? '+' : ''}${initialGain.toFixed(1)}
         </span>
-        <div class="relative flex-1 flex items-center justify-center my-1.5">
+        <div class="relative flex-1 flex items-center justify-center my-1">
           <input 
             type="range" 
             min="-15" 
@@ -296,7 +371,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             data-index="${idx}"
           />
         </div>
-        <span class="text-[10px] font-mono font-medium text-slate-300 tracking-tighter">${label}</span>
+        <span class="text-[9px] font-mono font-medium text-slate-400 tracking-tighter">${label}</span>
       `;
 
       const slider = bandCol.querySelector('.eq-vertical-slider');
@@ -402,21 +477,76 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
   };
 
-  // --- Enlazar Botones y Controles Principales ---
+  // --- Toggle y Pestañas del Panel Lateral Derecho ---
+  window.toggleRightSidebar = () => {
+    const panel = document.getElementById('right-sidebar-panel');
+    if (panel) panel.classList.toggle('hidden');
+  };
+
+  const setRightSidebarView = (viewName) => {
+    currentRightSidebarTab = viewName;
+    const spotifyView = document.getElementById('view-spotify-now-playing');
+    const powerampView = document.getElementById('view-poweramp-studio');
+    const tabSpotify = document.getElementById('tab-btn-spotify-view');
+    const tabPoweramp = document.getElementById('tab-btn-poweramp-view');
+
+    if (viewName === 'spotify') {
+      if (spotifyView) spotifyView.classList.remove('hidden');
+      if (powerampView) powerampView.classList.add('hidden');
+      if (tabSpotify) {
+        tabSpotify.classList.add('text-white', 'border-b-2', 'border-[#1ed760]');
+        tabSpotify.classList.remove('text-slate-400');
+      }
+      if (tabPoweramp) {
+        tabPoweramp.classList.remove('text-cyan-400', 'border-b-2', 'border-cyan-400');
+        tabPoweramp.classList.add('text-slate-400');
+      }
+    } else {
+      if (spotifyView) spotifyView.classList.add('hidden');
+      if (powerampView) powerampView.classList.remove('hidden');
+      if (tabPoweramp) {
+        tabPoweramp.classList.add('text-cyan-400', 'border-b-2', 'border-cyan-400');
+        tabPoweramp.classList.remove('text-slate-400');
+      }
+      if (tabSpotify) {
+        tabSpotify.classList.remove('text-white', 'border-b-2', 'border-[#1ed760]');
+        tabSpotify.classList.add('text-slate-400');
+      }
+      updateEQCurve();
+    }
+  };
+
+  // --- Enlazar Todos los Botones y Controles ---
   const bindEvents = () => {
-    // Play / Pause Principal e Inferior
+    // 1. Play / Pause
     const playBtnBar = document.getElementById('btn-play-pause');
     const playBtnHero = document.getElementById('btn-hero-play');
     if (playBtnBar) playBtnBar.addEventListener('click', togglePlayPause);
     if (playBtnHero) playBtnHero.addEventListener('click', togglePlayPause);
 
-    // Siguiente / Anterior
+    // 2. Next / Prev
     const nextBtn = document.getElementById('btn-next');
     const prevBtn = document.getElementById('btn-prev');
     if (nextBtn) nextBtn.addEventListener('click', playNext);
     if (prevBtn) prevBtn.addEventListener('click', playPrev);
 
-    // Barra de tiempo interactiva (Scrubbing sin jitter)
+    // 3. Shuffle (Aleatorio)
+    const shuffleBtn = document.getElementById('btn-shuffle');
+    const heroShuffleBtn = document.getElementById('btn-hero-shuffle');
+    if (shuffleBtn) shuffleBtn.addEventListener('click', toggleShuffle);
+    if (heroShuffleBtn) {
+      heroShuffleBtn.addEventListener('click', () => {
+        isShuffle = true;
+        updateShuffleUI();
+        playNext();
+      });
+    }
+
+    // 4. Repeat (Repetir)
+    const repeatBtn = document.getElementById('btn-repeat');
+    if (repeatBtn) repeatBtn.addEventListener('click', toggleRepeat);
+
+    // 5. Seek Slider (Progreso de pista con soporte táctil y mouse sin jitter)
     const seekSlider = document.getElementById('player-seek-slider');
     if (seekSlider) {
       seekSlider.addEventListener('mousedown', () => { isSeeking = true; });
@@ -442,7 +572,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       seekSlider.addEventListener('touchend', () => { isSeeking = false; });
     }
 
-    // Volumen y Mute
+    // 6. Volumen y Mute
     const volSlider = document.getElementById('player-volume-slider');
     const muteBtn = document.getElementById('btn-mute');
     if (volSlider) {
@@ -472,44 +602,55 @@ document.addEventListener('DOMContentLoaded', async () => {
       if (window.lucide) window.lucide.createIcons();
     };
 
-    // Shuffle & Repeat
-    const shuffleBtn = document.getElementById('btn-shuffle');
-    const heroShuffleBtn = document.getElementById('btn-hero-shuffle');
-    const toggleShuffle = () => {
-      isShuffle = !isShuffle;
-      if (shuffleBtn) shuffleBtn.classList.toggle('text-emerald-400', isShuffle);
-      if (heroShuffleBtn) heroShuffleBtn.classList.toggle('text-emerald-400', isShuffle);
+    // 7. Favoritos
+    const favBtn = document.getElementById('player-btn-fav');
+    const rightFavBtn = document.getElementById('right-panel-fav');
+    const toggleCurrentFav = () => {
+      const cur = libraryManager.getCurrentTrack();
+      if (cur) {
+        libraryManager.toggleFavorite(cur.id);
+        updateFavButton(cur.id);
+      }
     };
-    if (shuffleBtn) shuffleBtn.addEventListener('click', toggleShuffle);
-    if (heroShuffleBtn) heroShuffleBtn.addEventListener('click', toggleShuffle);
+    if (favBtn) favBtn.addEventListener('click', toggleCurrentFav);
+    if (rightFavBtn) rightFavBtn.addEventListener('click', toggleCurrentFav);
 
-    const repeatBtn = document.getElementById('btn-repeat');
-    if (repeatBtn) {
-      repeatBtn.addEventListener('click', () => {
-        if (repeatMode === 'off') repeatMode = 'all';
-        else if (repeatMode === 'all') repeatMode = 'one';
-        else repeatMode = 'off';
+    // 8. Panel Derecho y Pestañas
+    const btnToggleRightSidebar = document.getElementById('btn-toggle-right-sidebar');
+    const btnCloseRightSidebar = document.getElementById('btn-close-right-sidebar');
+    const tabSpotify = document.getElementById('tab-btn-spotify-view');
+    const tabPoweramp = document.getElementById('tab-btn-poweramp-view');
+    const btnBarEqToggle = document.getElementById('btn-bar-eq-toggle');
 
-        repeatBtn.classList.toggle('text-emerald-400', repeatMode !== 'off');
-        const badge = document.getElementById('repeat-badge-one');
-        if (badge) badge.classList.toggle('hidden', repeatMode !== 'one');
+    if (btnToggleRightSidebar) btnToggleRightSidebar.addEventListener('click', window.toggleRightSidebar);
+    if (btnCloseRightSidebar) btnCloseRightSidebar.addEventListener('click', window.toggleRightSidebar);
+
+    if (tabSpotify) tabSpotify.addEventListener('click', () => setRightSidebarView('spotify'));
+    if (tabPoweramp) tabPoweramp.addEventListener('click', () => setRightSidebarView('poweramp'));
+
+    if (btnBarEqToggle) {
+      btnBarEqToggle.addEventListener('click', () => {
+        const panel = document.getElementById('right-sidebar-panel');
+        if (panel && panel.classList.contains('hidden')) {
+          panel.classList.remove('hidden');
+        }
+        setRightSidebarView('poweramp');
       });
     }
 
-    // Toggle de Poweramp Studio (EQ + Visualizer)
-    const studioPanel = document.getElementById('poweramp-studio-panel');
-    const btnToggleStudio = document.getElementById('btn-toggle-poweramp-studio');
-    const btnBarEqToggle = document.getElementById('btn-bar-eq-toggle');
+    // 9. Letras Sincronizadas
+    const btnToggleLyrics = document.getElementById('btn-toggle-lyrics');
+    const btnCloseLyrics = document.getElementById('btn-close-lyrics');
+    const lyricsModal = document.getElementById('lyrics-drawer-modal');
 
-    const toggleStudio = () => {
-      if (!studioPanel) return;
-      studioPanel.classList.toggle('hidden');
-      updateEQCurve();
-    };
-    if (btnToggleStudio) btnToggleStudio.addEventListener('click', toggleStudio);
-    if (btnBarEqToggle) btnBarEqToggle.addEventListener('click', toggleStudio);
+    if (btnToggleLyrics && lyricsModal) {
+      btnToggleLyrics.addEventListener('click', () => lyricsModal.classList.toggle('hidden'));
+    }
+    if (btnCloseLyrics && lyricsModal) {
+      btnCloseLyrics.addEventListener('click', () => lyricsModal.classList.add('hidden'));
+    }
 
-    // Modos de Visualizador
+    // 10. Modos de Visualizador
     const visModeBtns = document.querySelectorAll('.btn-vis-mode');
     visModeBtns.forEach(btn => {
       btn.addEventListener('click', () => {
@@ -520,164 +661,121 @@ document.addEventListener('DOMContentLoaded', async () => {
       });
     });
 
-    // Buscador Central Spotify con Debounce y botón limpiar
+    // 11. Búsqueda y Debounce
     const searchInput = document.getElementById('spotify-search-input');
-    const btnClearSearch = document.getElementById('btn-clear-search');
-    let searchTimeout = null;
+    const clearSearchBtn = document.getElementById('btn-clear-search');
+    let searchDebounce;
 
     if (searchInput) {
       searchInput.addEventListener('input', (e) => {
         const val = e.target.value;
-        if (btnClearSearch) btnClearSearch.classList.toggle('hidden', !val);
+        if (clearSearchBtn) clearSearchBtn.classList.toggle('hidden', !val);
 
-        clearTimeout(searchTimeout);
-        searchTimeout = setTimeout(() => {
+        clearTimeout(searchDebounce);
+        searchDebounce = setTimeout(() => {
           libraryManager.setSearchQuery(val);
-        }, 150);
+        }, 200);
       });
     }
 
-    if (btnClearSearch) {
-      btnClearSearch.addEventListener('click', () => {
-        searchInput.value = '';
-        btnClearSearch.classList.add('hidden');
+    if (clearSearchBtn) {
+      clearSearchBtn.addEventListener('click', () => {
+        if (searchInput) searchInput.value = '';
+        clearSearchBtn.classList.add('hidden');
         libraryManager.setSearchQuery('');
-        searchInput.focus();
       });
     }
 
-    // Filtros de formato
-    const filterPills = document.querySelectorAll('.filter-pill');
-    filterPills.forEach(pill => {
-      pill.addEventListener('click', () => {
-        filterPills.forEach(p => p.classList.remove('active', 'bg-emerald-500', 'text-black', 'font-semibold'));
-        filterPills.forEach(p => p.classList.add('bg-white/5', 'text-slate-300'));
-        pill.classList.remove('bg-white/5', 'text-slate-300');
-        pill.classList.add('active', 'bg-emerald-500', 'text-black', 'font-semibold');
-        libraryManager.setFilter(pill.dataset.filter);
-      });
-    });
-
+    // 12. Selector de Ordenación
     const sortSelect = document.getElementById('library-sort-select');
     if (sortSelect) {
-      sortSelect.addEventListener('change', (e) => libraryManager.setSortBy(e.target.value));
+      sortSelect.addEventListener('change', (e) => {
+        libraryManager.setSortBy(e.target.value);
+      });
     }
 
-    // Vincular Carpeta de Google Drive / Local
-    const bindFolderAction = () => libraryManager.openDirectoryPicker();
-    const btnLinkDrive = document.getElementById('sidebar-btn-link-drive');
-    const btnModalLinkDrive = document.getElementById('btn-modal-link-drive');
-    const btnCloseDriveGuide = document.getElementById('btn-close-drive-guide');
-    const btnDemoAudio = document.getElementById('btn-start-demo-audio');
+    // 13. Vincular Carpeta y Fallbacks
+    const btnLinkDriveSidebar = document.getElementById('sidebar-btn-link-drive');
+    const btnLinkDriveModal = document.getElementById('btn-modal-link-drive');
+    const btnCloseDriveModal = document.getElementById('btn-close-drive-guide');
+    const btnStartDemo = document.getElementById('btn-start-demo-audio');
 
-    if (btnLinkDrive) btnLinkDrive.addEventListener('click', bindFolderAction);
-    if (btnModalLinkDrive) btnModalLinkDrive.addEventListener('click', () => {
-      document.getElementById('drive-guide-modal').classList.add('hidden');
-      bindFolderAction();
-    });
-    if (btnCloseDriveGuide) btnCloseDriveGuide.addEventListener('click', () => {
-      document.getElementById('drive-guide-modal').classList.add('hidden');
-    });
-    if (btnDemoAudio) btnDemoAudio.addEventListener('click', async () => {
-      document.getElementById('drive-guide-modal').classList.add('hidden');
-      await unlockAudio();
-      audioEngine.startSynthesizedDemo();
-      isPlaying = true;
-      updatePlayPauseUI(true);
-    });
-
-    // Letras: Seek al hacer clic en línea
-    lyricsEngine.setSeekCallback((seconds) => {
-      audioElement.currentTime = seconds;
-    });
-
-    // Toggle de letras
-    const btnToggleLyrics = document.getElementById('btn-toggle-lyrics');
-    const btnHeroLyrics = document.getElementById('btn-hero-lyrics');
-    const lyricsModal = document.getElementById('lyrics-drawer-modal');
-    const btnCloseLyrics = document.getElementById('btn-close-lyrics');
-
-    const toggleLyrics = () => {
-      if (lyricsModal) lyricsModal.classList.toggle('hidden');
+    const handleLinkFolder = () => {
+      libraryManager.openDirectoryPicker();
+      const modal = document.getElementById('drive-guide-modal');
+      if (modal) modal.classList.add('hidden');
     };
-    if (btnToggleLyrics) btnToggleLyrics.addEventListener('click', toggleLyrics);
-    if (btnHeroLyrics) btnHeroLyrics.addEventListener('click', toggleLyrics);
-    if (btnCloseLyrics) btnCloseLyrics.addEventListener('click', () => lyricsModal.classList.add('hidden'));
 
-    // Atajos de teclado audiófilos
-    window.addEventListener('keydown', (e) => {
-      if (e.target.tagName === 'INPUT' || e.target.tagName === 'SELECT') return;
+    if (btnLinkDriveSidebar) btnLinkDriveSidebar.addEventListener('click', handleLinkFolder);
+    if (btnLinkDriveModal) btnLinkDriveModal.addEventListener('click', handleLinkFolder);
+    if (btnCloseDriveModal) {
+      btnCloseDriveModal.addEventListener('click', () => {
+        document.getElementById('drive-guide-modal').classList.add('hidden');
+      });
+    }
+
+    if (btnStartDemo) {
+      btnStartDemo.addEventListener('click', async () => {
+        await unlockAudio();
+        audioEngine.startSynthesizedDemo();
+        isPlaying = true;
+        updatePlayPauseUI(true);
+        document.getElementById('drive-guide-modal').classList.add('hidden');
+      });
+    }
+
+    const folderInputFallback = document.getElementById('input-folder-fallback');
+    if (folderInputFallback) {
+      folderInputFallback.addEventListener('change', (e) => {
+        if (e.target.files && e.target.files.length > 0) {
+          libraryManager.loadFromFileInput(e.target.files);
+        }
+      });
+    }
+
+    // 14. Teclado Multimedia y Atajos
+    document.addEventListener('keydown', (e) => {
+      if (['input', 'textarea'].includes(document.activeElement.tagName.toLowerCase())) return;
 
       if (e.code === 'Space') {
         e.preventDefault();
         togglePlayPause();
-      } else if (e.code === 'ArrowRight') {
-        e.preventDefault();
-        audioElement.currentTime = Math.min(audioElement.duration || 0, audioElement.currentTime + 5);
-      } else if (e.code === 'ArrowLeft') {
-        e.preventDefault();
-        audioElement.currentTime = Math.max(0, audioElement.currentTime - 5);
-      } else if (e.code === 'ArrowUp') {
-        e.preventDefault();
-        audioElement.volume = Math.min(1, audioElement.volume + 0.05);
-        if (volSlider) volSlider.value = audioElement.volume;
-        updateVolumeIcon(audioElement.volume);
-      } else if (e.code === 'ArrowDown') {
-        e.preventDefault();
-        audioElement.volume = Math.max(0, audioElement.volume - 0.05);
-        if (volSlider) volSlider.value = audioElement.volume;
-        updateVolumeIcon(audioElement.volume);
-      } else if (e.key === 'm' || e.key === 'M') {
-        audioElement.muted = !audioElement.muted;
-        updateVolumeIcon(audioElement.muted ? 0 : audioElement.volume);
-      } else if (e.key === 'e' || e.key === 'E') {
-        toggleStudio();
+      } else if (e.code === 'ArrowRight' && e.ctrlKey) {
+        playNext();
+      } else if (e.code === 'ArrowLeft' && e.ctrlKey) {
+        playPrev();
+      } else if (e.code === 'KeyM') {
+        if (muteBtn) muteBtn.click();
+      } else if (e.code === 'KeyS') {
+        toggleShuffle();
+      } else if (e.code === 'KeyR') {
+        toggleRepeat();
       }
     });
   };
 
-  // Callback al seleccionar pista
+  // --- Arranque del Sistema ---
   libraryManager.setTrackChangeCallback((track) => {
     loadTrack(track);
   });
 
-  // Callback al cargar biblioteca inicialmente
   libraryManager.setLibraryLoadedCallback((tracks) => {
-    console.log(`[Powerify] Biblioteca lista con ${tracks.length} temas`);
+    console.log(`[Powerify] ${tracks.length} pistas cargadas.`);
     if (tracks.length > 0 && !audioElement.src) {
       const first = tracks[0];
-      libraryManager.currentTrackIndex = 0;
-
-      const titleEl = document.getElementById('player-track-title');
-      const artistEl = document.getElementById('player-track-artist');
-      const coverImg = document.getElementById('player-album-cover');
-      const heroCover = document.getElementById('hero-album-cover');
-
-      if (titleEl) titleEl.textContent = first.title;
-      if (artistEl) artistEl.textContent = first.artist;
-
-      const coverUrl = first.coverUrl || window.ColorExtractor.generateFallbackCover(first.title, first.artist);
-      if (coverImg) coverImg.src = coverUrl;
-      if (heroCover) heroCover.src = coverUrl;
-
-      window.ColorExtractor.extractColors(coverUrl).then(colors => {
-        visualizer.setAccentColor(colors.accent, colors.glow);
-      });
-
-      updateAudiophileBadge(first);
-      lyricsEngine.load(first.lyrics || '');
+      updateNowPlayingInfo(first);
       updateFavButton(first.id);
-      libraryManager.renderTrackList();
     }
   });
 
-  // Inicializar UI y listeners
   initEqualizerUI();
   bindEvents();
+  updateShuffleUI();
+  updateRepeatUI();
+
+  // Inicializar biblioteca y sincronización en la nube
   await libraryManager.init();
   await gDriveSync.init();
 
-  if (window.lucide) {
-    window.lucide.createIcons();
-  }
+  if (window.lucide) window.lucide.createIcons();
 });

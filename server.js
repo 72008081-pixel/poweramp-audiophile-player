@@ -18,6 +18,21 @@ let MUSIC_DIR = process.env.MUSIC_DIR || (fs.existsSync(GDRIVE_DIR) ? GDRIVE_DIR
 
 console.log(`[STORAGE] Fuente de Audio Configurada: ${fs.existsSync(GDRIVE_DIR) ? 'Google Drive Cloud (G:\\Mi unidad\\...)' : 'Local'}`);
 
+// Cargar catálogo de metadatos enriquecidos de la nube
+let cloudManifestMap = new Map();
+try {
+  const cLibPath = path.join(STATIC_DIR, 'data', 'cloud-library.json');
+  if (fs.existsSync(cLibPath)) {
+    const rawData = JSON.parse(fs.readFileSync(cLibPath, 'utf8'));
+    if (rawData && rawData.tracks) {
+      rawData.tracks.forEach(t => cloudManifestMap.set(t.fileName, t));
+    }
+    console.log(`[CATALOG] Catálogo maestro cargado: ${cloudManifestMap.size} pistas indexadas.`);
+  }
+} catch (e) {
+  console.warn('[CATALOG] No se pudo precargar cloud-library.json:', e.message);
+}
+
 
 const MIME_TYPES = {
   '.html': 'text/html; charset=utf-8',
@@ -215,6 +230,20 @@ function scanMusicDirectory(dir) {
               }
             }
 
+            let duration = '3:45';
+            let durationSeconds = 225;
+
+            // Enriquecer con metadatos del catálogo si coincide el fileName
+            if (cloudManifestMap && cloudManifestMap.has(entry.name)) {
+              const enriched = cloudManifestMap.get(entry.name);
+              if (enriched.title) title = enriched.title;
+              if (enriched.artist) artist = enriched.artist;
+              if (enriched.album) album = enriched.album;
+              if (enriched.duration) duration = enriched.duration;
+              if (enriched.durationSeconds) durationSeconds = enriched.durationSeconds;
+              if (enriched.lyrics) lyrics = enriched.lyrics;
+            }
+
             results.push({
               id: Buffer.from(fullPath).toString('base64url'),
               path: fullPath,
@@ -227,6 +256,8 @@ function scanMusicDirectory(dir) {
               artist,
               album,
               year,
+              duration,
+              durationSeconds,
               hasLyrics: !!lyrics,
               lyrics,
               hasCover: meta ? meta.hasCover : false,

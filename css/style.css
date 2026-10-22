@@ -1,0 +1,342 @@
+/* ==========================================================================
+   Poweramp Audiophile Player - High Fidelity Design System
+   Paleta Audiófila: Fondos Carbón/Obsidiana, Glassmorphism y Acentos Neón Dinámicos
+   ========================================================================== */
+
+:root {
+  --bg-core: #07090e;
+  --bg-surface: rgba(14, 18, 27, 0.72);
+  --bg-card: rgba(22, 28, 42, 0.55);
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-focus: rgba(0, 240, 255, 0.45);
+
+  /* Variables dinámicas inyectadas por ColorExtractor */
+  --ambient-c1: #1a2238;
+  --ambient-c2: #0b1120;
+  --ambient-accent: #00f0ff;
+  --ambient-glow: rgba(0, 240, 255, 0.35);
+
+  --font-main: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', 'SF Mono', Consolas, monospace;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--bg-core);
+  color: #f1f5f9;
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+  user-select: none;
+}
+
+/* --- Fondo Dinámico y Ambiental (Apple Music & Poweramp Blur) --- */
+.ambient-background-wrapper {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.ambient-blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.6;
+  transition: all 1.8s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform, background, opacity;
+}
+
+.ambient-blob-1 {
+  width: 70vw;
+  height: 70vw;
+  max-width: 800px;
+  max-height: 800px;
+  top: -15%;
+  left: -10%;
+  background: var(--ambient-c1);
+  animation: floatAmbient1 24s ease-in-out infinite alternate;
+}
+
+.ambient-blob-2 {
+  width: 65vw;
+  height: 65vw;
+  max-width: 750px;
+  max-height: 750px;
+  bottom: -15%;
+  right: -10%;
+  background: var(--ambient-c2);
+  animation: floatAmbient2 28s ease-in-out infinite alternate;
+}
+
+.ambient-blob-3 {
+  width: 45vw;
+  height: 45vw;
+  max-width: 500px;
+  max-height: 500px;
+  top: 30%;
+  left: 25%;
+  background: var(--ambient-accent);
+  opacity: 0.25;
+  filter: blur(150px);
+  animation: pulseAmbient 16s ease-in-out infinite alternate;
+}
+
+.ambient-overlay-noise {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, transparent 0%, rgba(7, 9, 14, 0.75) 100%);
+  backdrop-filter: blur(40px);
+}
+
+@keyframes floatAmbient1 {
+  0% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(60px, 40px) scale(1.1); }
+  100% { transform: translate(-30px, 60px) scale(0.95); }
+}
+
+@keyframes floatAmbient2 {
+  0% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(-50px, -40px) scale(1.08); }
+  100% { transform: translate(40px, -20px) scale(0.92); }
+}
+
+@keyframes pulseAmbient {
+  0% { opacity: 0.15; transform: scale(0.85); }
+  100% { opacity: 0.3; transform: scale(1.15); }
+}
+
+/* --- Paneles y Glassmorphism --- */
+.glass-panel {
+  background: var(--bg-surface);
+  backdrop-filter: blur(28px);
+  -webkit-backdrop-filter: blur(28px);
+  border: 1px solid var(--border-subtle);
+  border-radius: 1.5rem;
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.6);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glass-card {
+  background: var(--bg-card);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border-subtle);
+  border-radius: 1rem;
+}
+
+/* --- Disco de Vinilo Giratorio Poweramp --- */
+.vinyl-container {
+  position: relative;
+  width: 280px;
+  height: 280px;
+  margin: 0 auto;
+  perspective: 1000px;
+}
+
+@media (min-width: 640px) {
+  .vinyl-container {
+    width: 320px;
+    height: 320px;
+  }
+}
+
+.vinyl-disc {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: radial-gradient(circle, #0b0d13 38%, #1c202d 40%, #0d0f17 48%, #202434 50%, #0a0c12 62%, #1b1e2a 64%, #08090d 75%);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.7), inset 0 0 0 2px rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.vinyl-center-art {
+  width: 44%;
+  height: 44%;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+  position: relative;
+}
+
+.vinyl-center-hole {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #000000;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  z-index: 2;
+}
+
+.vinyl-grooves {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: repeating-radial-gradient(circle, transparent 0, transparent 4px, rgba(255, 255, 255, 0.02) 5px);
+  pointer-events: none;
+}
+
+/* Animación de rotación continua al reproducir */
+.vinyl-container.playing .vinyl-disc {
+  animation: spinVinyl 18s linear infinite;
+}
+
+@keyframes spinVinyl {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* --- Sliders Verticales de Ecualizador (Poweramp Style) --- */
+.eq-vertical-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 160px;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 3px;
+  outline: none;
+  transform: rotate(-90deg);
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.eq-vertical-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 2px solid var(--ambient-accent);
+  box-shadow: 0 0 10px var(--ambient-glow), 0 2px 4px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  transition: transform 0.15s ease, background 0.15s ease, box-shadow 0.15s ease;
+}
+
+.eq-vertical-slider::-webkit-slider-thumb:hover,
+.eq-vertical-slider:active::-webkit-slider-thumb {
+  transform: scale(1.25);
+  background: var(--ambient-accent);
+  box-shadow: 0 0 16px var(--ambient-accent);
+}
+
+.eq-vertical-slider::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 2px solid var(--ambient-accent);
+  box-shadow: 0 0 10px var(--ambient-glow);
+  cursor: pointer;
+}
+
+/* --- Slider Horizontal de Tiempo (Scrub Bar) --- */
+.seek-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 5px;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.12);
+  outline: none;
+  cursor: pointer;
+  transition: height 0.15s ease;
+}
+
+.seek-slider:hover {
+  height: 8px;
+}
+
+.seek-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 2px solid var(--ambient-accent);
+  box-shadow: 0 0 8px var(--ambient-glow);
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.2s ease, transform 0.15s ease;
+}
+
+.seek-slider:hover::-webkit-slider-thumb,
+.seek-slider:active::-webkit-slider-thumb {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+/* --- VU Meter Estéreo --- */
+.vu-meter-column {
+  width: 8px;
+  height: 80px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.vu-meter-bar {
+  width: 100%;
+  height: 0%;
+  background: linear-gradient(to top, #10b981 0%, #06b6d4 60%, #eab308 85%, #ef4444 100%);
+  transition: height 0.06s cubic-bezier(0.1, 0.9, 0.2, 1);
+  box-shadow: 0 0 6px rgba(0, 240, 255, 0.3);
+}
+
+/* --- Scrollbars Personalizadas Audiófilas --- */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--ambient-accent);
+}
+
+/* --- Clases de Visualización y Estados --- */
+.active-lyric {
+  color: #ffffff !important;
+  text-shadow: 0 0 20px var(--ambient-accent), 0 0 35px var(--ambient-glow);
+  font-weight: 700 !important;
+}
+
+/* --- Responsive Adaptativo para Teléfonos (Xiaomi 15) --- */
+@media (max-width: 1023px) {
+  .mobile-hidden {
+    display: none !important;
+  }
+  .mobile-active {
+    display: flex !important;
+  }
+}
